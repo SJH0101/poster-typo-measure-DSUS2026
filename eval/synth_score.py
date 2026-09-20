@@ -1,0 +1,528 @@
+"""합성 포스터 채점 — 사전등록 docs/synth_preregister.json 의 «종속변인 · 채점 정의» 그대로.
+
+    python eval/synth_score.py --dir ~/.typo-mcp/synth --manifest docs/synth_manifest.json \
+        --prereg docs/synth_preregister.json --cache-dir ~/.typo-mcp --out docs/synth_result.json
+
+셀마다 (1) 파이프라인으로 잰다 — Surya 줄 → detect_surya.group → measure/ground.py,
+measure_corpus.measure_items 그대로 (skew=False: 기울기 0° 로 그렸고 EasyOCR 각은 안 쓴다).
+캐시 ~/.typo-mcp/synth-{셀}.json (provenance synthetic). 있으면 다시 안 잰다 (--remeasure).
+(2) 정답과 짝지어 베이스라인 오차 · 재현율을 낸다. (3) 규칙 채택 정오 셋 — rules.derive ·
+격자 공유 AUC (eval/series_check.grid_sharing) · check_layout (eval/series_check.judge).
+
+새 지표를 더하지 않는다. 문턱을 두지 않는다 (AUC_MIN 은 discrim 의 것).
+"""
+import argparse
+import hashlib
+import json
+import os
+import random
+import sys
+import tempfile
+from collections import Counter
+
+import numpy as np
+from PIL import ImageFont
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, ROOT)
+sys.path.insert(0, os.path.join(ROOT, 'eval'))
+import detector_score as DSc      # noqa: E402  iou · held · inside (같은 정의를 쓴다)
+import discrim                    # noqa: E402
+import measure_corpus as MC       # noqa: E402
+import rules                      # noqa: E402
+import series_check as SC         # noqa: E402  grid_sharing · judge
+import synth_gen as SG           # noqa: E402  stroke_overlaps (획 겹침 세기 — 기록만)
+
+IOU_MIN = DSc.IOU_MIN             # 0.5
+INSIDE = DSc.INSIDE               # 0.5
+LINE_TOL = 0.2                    # 줄 재현: |오차| ≤ 0.2·행간
+MATCH_WIN = 0.5                   # 줄 짝짓기 창: 0.5·행간
+NULL_SEED = SC.SEED               # 20260911
+KEY = 'lead_over_cap'
+
+# 사전등록의 예상 (정오를 세는 항목만)
+EXPECT = {
+    'shared_grid':  dict(adopt=True,  auc_ge=True,  pass_a=1.0, viol_a=None),
+    'independent':  dict(adopt=True,  auc_ge=False, pass_a=1.0, viol_a=None),
+    'random':       dict(adopt=None,  auc_ge=False, pass_a=None, viol_a=1.0),
+}
+
+
+def _sha(p):
+    return hashlib.sha256(open(os.path.expanduser(p), 'rb').read()).hexdigest()
+
+
+def _lead_of(tb):
+    """한 줄 블록은 lead_px 가 없다 — 템플릿 정의대로 2·x높이(= g) 를 쓴다."""
+    return tb['lead_px'] if tb.get('lead_px') else 2.0 * tb['xh_px']
+
+
+# ── 획 겹침 (사전등록 수정 3, 2026-09-16 — 기록만) ─────────────────
+# 390장 생성기에는 겹침 검사가 없었다. 다시 만들지 않기로 했으므로(수정 3) 조건마다 몇 판이 겹치는지 세어 적는다.
+# 판정은 참값 줄을 마스터 좌표에서 되살려 글자 마스크를 겹쳐 보는 것이다 (eval/synth_gen.stroke_overlaps).
+
+_SFONT = {}
+
+
+def _stroke_font(fi, px):
+    k = (fi['file'], fi['index'], round(px, 6))
+    if k not in _SFONT:
+        _SFONT[k] = ImageFont.truetype(fi['file'], px, index=fi['index'])
+    return _SFONT[k]
+
+
+def stroke_pairs(t):
+    """참값 한 장 → (획이 겹친 줄 쌍, 잉크 상자가 겹친 줄 쌍 수). 마스터 좌표에서 센다."""
+    k = t['master_scale'] / t['scale_from_800']
+    blocks = []
+    for b in t['blocks']:
+        f = _stroke_font(t['font'], b['font_px'] * k)
+        ls = []
+        for l in b['lines']:
+            bb = f.getbbox(l['text'], anchor='ls')
+            base = int(round(l['baseline_y'] * k)); x = int(round(l['x1'] * k)) - bb[0]
+            ls.append(dict(text=l['text'], x=x, baseline=base,
+                           ink=[x + bb[0], base + bb[1], x + bb[2], base + bb[3]]))
+        blocks.append(dict(id=b['id'], font=f, lines=ls))
+    return SG.stroke_overlaps(dict(blocks=blocks))
+
+
+def overlaps(truths):
+    """셀의 겹침 집계 — (요약, 획이 겹친 판 열쇠, 상자가 겹친 판 열쇠)."""
+    kinds = Counter()
+    stroke, box, npx, nbox_all = [], [], [], 0
+    for k in sorted(truths):
+        pairs, nbox = stroke_pairs(truths[k])
+        if pairs:
+            stroke.append(k)
+            npx += [p[4] for p in pairs]
+            kinds.update('블록 안' if p[0] == p[2] else '-'.join(sorted((p[0], p[2]))) for p in pairs)
+        if nbox:
+            box.append(k)
+            nbox_all += nbox
+    out = dict(표시='결과를 본 뒤 더한 기술 통계 (사전등록 수정 3, 2026-09-16) — 채점 정의 · 기존 값은 그대로',
+               정의=('획 겹침 = 참값 줄을 마스터 좌표에서 되살려 줄마다 따로 그린 글자 마스크(알파 > 0)의 교집합이 1px 이상인 줄 쌍 '
+                   '(eval/synth_gen.stroke_overlaps). 상자 겹침 = 두 줄의 잉크 외접 상자가 가로 · 세로로 함께 겹치는 쌍이며 획 겹침의 상한이다'),
+               겹친_판=len(stroke), 겹친_판_seed=[int(k.split('/')[-1]) for k in stroke],
+               겹친_쌍=int(sum(kinds.values())), 쌍_종류=dict(kinds),
+               겹친_픽셀_중앙=(round(float(np.median(npx)), 1) if npx else None),
+               겹친_픽셀_최대=(max(npx) if npx else None),
+               상자_겹침_판=len(box), 상자_겹침_쌍=nbox_all)
+    return out, stroke, box
+
+
+# ── 재기 ────────────────────────────────────────────────────────
+
+def _tilde(p):
+    """기록에 남기는 경로는 홈을 ~ 로 접는다 — 셸이 ~ 를 펴서 넘겨도 결과 파일이 같게."""
+    h = os.path.expanduser('~')
+    return '~' + p[len(h):] if p.startswith(h) else p
+
+
+def measure_cell(cell, cond, items, cache, remeasure, split_lines=False):
+    if os.path.exists(cache) and not remeasure:
+        d = json.load(open(cache))
+        if set(d['raw']) >= {k for k, _ in items}:
+            return d['raw'], d.get('provenance')
+    raw, failed = MC.measure_items(items, skew=False, batch=8, log=lambda *a, **k: None, split_lines=split_lines)
+    prov = MC.provenance(f'eval/synth_score.py — {cell}', len(raw))
+    prov.update(synthetic=True, cell=cell, condition=cond, skew='안 잼 (기울기 0° 로 그림)',
+                failed=[(os.path.basename(p), w) for p, w in failed])
+    if split_lines:
+        prov.update(split_lines='detect_surya.split_wide_lines — 선택 처리 (--split-lines)')
+    os.makedirs(os.path.dirname(cache), exist_ok=True)
+    json.dump(dict(raw=raw, rules={}, source=f'synth/{cell}', detector='surya', provenance=prov),
+              open(cache, 'w'), ensure_ascii=False)
+    return raw, prov
+
+
+# ── 짝짓기 · 오차 ───────────────────────────────────────────────
+
+def match_blocks(truth_blocks, meas_blocks):
+    T = [tb['ink_box'] for tb in truth_blocks]
+    P = [[b['x1'], b['y1'], b['x2'], b['y2']] for b in meas_blocks]
+    mr, mp = DSc.match(T, P)
+    merged = sum(1 for j, p in enumerate(P)
+                 if sum(1 for r in T if DSc.held(p, r) >= INSIDE) >= 2)
+    split = sum(1 for j, p in enumerate(P)
+                if j not in mp and any(DSc.inside(p, r) >= INSIDE for r in T))
+    return mr, merged, split
+
+
+def match_lines(tlines, tlead, bases, caps, xtops):
+    """정답 줄 ↔ 측정 base. 차가 0.5·행간 이내인 가장 가까운 것, 1:1 (차 작은 순)."""
+    pairs = sorted(((abs(mb - tl['baseline_y']), i, j)
+                    for i, tl in enumerate(tlines) for j, mb in enumerate(bases)),
+                   key=lambda t: t[0])
+    mi, mj, out = {}, {}, []
+    for dlt, i, j in pairs:
+        if dlt > MATCH_WIN * tlead:
+            break
+        if i in mi or j in mj:
+            continue
+        mi[i] = j; mj[j] = i
+        tl = tlines[i]
+        out.append(dict(i=i, j=j, err=bases[j] - tl['baseline_y'],
+                        cap_err=(None if caps[j] is None else caps[j] - tl['cap_y']),
+                        xtop_err=(None if xtops[j] is None else xtops[j] - tl['xtop_y'])))
+    return out
+
+
+DIRECT_KINDS = (('베이스라인', 'bases', 'baseline_y'), ('캡선', 'caps', 'cap_y'), ('x높이선', 'xtops', 'xtop_y'))
+
+
+def direct_lines(t, m):
+    """판 전체에서 참값 선 ↔ 측정 선을 직접 짝짓는다 — 블록 대응을 거치지 않는다.
+    결과를 본 뒤 더한 기술 통계 (2026-09-14). 선 종류마다 따로, 차가 0.5·행간(참값 블록) 안이고 가로 범위
+    (참값 줄 잉크 x1~x2 · 측정 블록 x1~x2)가 겹치는 후보 가운데 차가 작은 순서로 1:1. 허용은 기존 줄 재현과 같은 0.2·행간.
+    캡선 참값은 모든 줄에 글꼴 값으로 적혀 있으므로, 잉크가 캡 · 어센더 높이에 닿는 줄(has_ascender)만 참값으로 센다."""
+    out = {}
+    for name, mk, tk in DIRECT_KINDS:
+        T = []
+        for tb in t['blocks']:
+            lead = _lead_of(tb)
+            for ln in tb['lines']:
+                if mk == 'caps' and not ln['has_ascender']:
+                    continue
+                T.append(dict(y=ln[tk], lead=lead, x1=ln['x1'], x2=ln['x2'], upper=any(ch.isupper() for ch in ln['text'])))
+        P = [(v, b['x1'], b['x2']) for b in m['blocks'] for v in b[mk] if v is not None]
+        cand = sorted((abs(p[0] - tl['y']), i, j) for i, tl in enumerate(T) for j, p in enumerate(P)
+                      if abs(p[0] - tl['y']) <= MATCH_WIN * tl['lead'] and min(tl['x2'], p[2]) - max(tl['x1'], p[1]) > 0)
+        mi, mj, pairs = set(), set(), []
+        for _d, i, j in cand:
+            if i in mi or j in mj:
+                continue
+            mi.add(i); mj.add(j)
+            e = P[j][0] - T[i]['y']
+            pairs.append(dict(err=e, hit=abs(e) <= LINE_TOL * T[i]['lead'], upper=T[i]['upper']))
+        out[name] = dict(n_truth=len(T), n_truth_upper=sum(tl['upper'] for tl in T), n_meas=len(P), pairs=pairs)
+    return out
+
+
+def _direct_summary(posters):
+    """결과를 본 뒤 더한 기술 통계 (2026-09-14) — 블록 짝짓기를 거치지 않는 선 단위 재현 · 정밀 · 오차."""
+    def stats(ps, n_t):
+        ae = [abs(q['err']) for q in ps]; hit = sum(q['hit'] for q in ps)
+        e = [q['err'] for q in ps]
+        return dict(참값_선=n_t, 창안_짝=len(ps), 허용안_짝=hit, 재현율=(round(hit / n_t, 4) if n_t else None),
+                    오차_절대_중앙=_q(ae, (50,))[50], 오차_절대_10_90=[_q(ae, (10,))[10], _q(ae, (90,))[90]],
+                    편향_중앙=_q(e, (50,))[50],
+                    # 사전등록 docs/xheight_g1_preregister.json «보고에 더할 필드» — ink.py 를 고치기 전에 더했다
+                    오차_분포=(dict(행_단위_일치=round(float(np.mean([abs(x) <= 0.5 for x in e])), 4),
+                                  위로_1행_이상=round(float(np.mean([x <= -1 for x in e])), 4),
+                                  아래로_1행_이상=round(float(np.mean([x >= 1 for x in e])), 4),
+                                  최악=[round(float(min(e)), 3), round(float(max(e)), 3)]) if e else None))
+    out = dict(표시='결과를 본 뒤 더한 기술 통계 (2026-09-14) — 채점 정의 · 기존 값은 그대로',
+               정의=('판 전체에서 참값 선과 측정 선을 선 종류마다 직접 짝짓는다 (블록 대응을 거치지 않음). 후보: |차| ≤ 0.5·행간 (참값 블록 행간, '
+                   '한 줄 블록은 2·x높이) 이고 참값 줄 잉크 x1~x2 와 측정 블록 x1~x2 가 가로로 겹침. 차가 작은 순서로 1:1. '
+                   '재현율 = |차| ≤ 0.2·행간 인 짝 ÷ 참값 선, 정밀도 = 같은 짝 ÷ 측정 선, 창안짝_정밀도 = 창 안 짝 ÷ 측정 선 (기존 줄_정밀도와 같은 식). '
+                   '오차 통계는 창 안 짝 전부로 낸다 (기존과 같다). 캡선 참값 선 = 잉크가 캡 · 어센더 높이에 닿는 줄 (has_ascender: 대문자 · b d f h k l t · 숫자 · ß)'))
+    for name, _mk, _tk in DIRECT_KINDS:
+        agg = [p['direct'][name] for p in posters]
+        nt = sum(a['n_truth'] for a in agg); nm = sum(a['n_meas'] for a in agg)
+        prs = [q for a in agg for q in a['pairs']]
+        d = stats(prs, nt)
+        d.update(측정_선=nm, 정밀도=(round(d['허용안_짝'] / nm, 4) if nm else None),
+                 창안짝_정밀도=(round(len(prs) / nm, 4) if nm else None))
+        if name == '캡선':
+            nu = sum(a['n_truth_upper'] for a in agg)
+            d['전체_줄'] = sum(p['n_truth'] for p in posters)
+            d['대문자_포함_줄'] = stats([q for q in prs if q['upper']], nu)
+            d['대문자_없는_줄'] = stats([q for q in prs if not q['upper']], nt - nu)
+            if nu == 0:
+                d['대문자_구분_주의'] = ('참값 줄 문구에 대문자가 든 줄이 없다 — 이 셀의 캡선 참값 줄은 모두 소문자 어센더(b d f h k l t) · 숫자 · ß 줄이며, '
+                                   '대문자와 어센더를 나눠 볼 수 없다')
+        out[name] = d
+    return out
+
+
+def score_poster(t, m):
+    """한 장: 줄 오차 목록 · 재현 · 블록 짝."""
+    mr, merged, split = match_blocks(t['blocks'], m['blocks'])
+    rows, n_truth, n_hit = [], 0, 0
+    per_block = {}
+    ls = dict(lost=0, in_matched=0, no_pair=0, out_tol=0)   # 줄 분해 — 결과를 본 뒤 더한 기술 통계 (2026-09-14)
+    for i, tb in enumerate(t['blocks']):
+        lead = _lead_of(tb)
+        n_truth += tb['n']
+        if i not in mr:
+            per_block[tb['id']] = None
+            ls['lost'] += tb['n']
+            continue
+        mb = m['blocks'][mr[i]]
+        got = match_lines(tb['lines'], lead, mb['bases'], mb['caps'], mb['xtops'])
+        hit_b = 0
+        for g in got:
+            g.update(block=tb['id'], lead=lead, pct=100.0 * g['err'] / lead,
+                     err800=g['err'] / t['scale_from_800'])
+            if abs(g['err']) <= LINE_TOL * lead:
+                n_hit += 1
+                hit_b += 1
+        ls['in_matched'] += tb['n']; ls['no_pair'] += tb['n'] - len(got); ls['out_tol'] += len(got) - hit_b
+        rows += got
+        per_block[tb['id']] = dict(j=mr[i], bases=list(mb['bases']),
+                                   caps=list(mb['caps']), n=mb['n'])
+    n_meas = sum(len(b['bases']) for b in m['blocks'])
+    return dict(rows=rows, n_truth=n_truth, n_hit=n_hit, n_meas=n_meas,
+                n_matched=len(rows), blocks_hit=len(mr), blocks=len(t['blocks']),
+                merged=merged, split=split, per_block=per_block, line_split=ls, direct=direct_lines(t, m))
+
+
+def _q(a, ps):
+    a = np.asarray([x for x in a if x is not None], float)
+    if a.size == 0:
+        return {p: None for p in ps}
+    return {p: round(float(np.percentile(a, p)), 3) for p in ps}
+
+
+def summarize(posters):
+    err = [r['err'] for p in posters for r in p['rows']]
+    pct = [r['pct'] for p in posters for r in p['rows']]
+    e800 = [r['err800'] for p in posters for r in p['rows']]
+    ae = [abs(x) for x in err]
+    apct = [abs(x) for x in pct]
+    cap = [r['cap_err'] for p in posters for r in p['rows'] if r['cap_err'] is not None]
+    xt = [r['xtop_err'] for p in posters for r in p['rows'] if r['xtop_err'] is not None]
+    nt = sum(p['n_truth'] for p in posters); nh = sum(p['n_hit'] for p in posters)
+    nm = sum(p['n_meas'] for p in posters); nmat = sum(p['n_matched'] for p in posters)
+    bt = sum(p['blocks'] for p in posters); bh = sum(p['blocks_hit'] for p in posters)
+    return dict(
+        판=len(posters), 정답_줄=nt, 측정_줄=nm, 짝지은_줄=nmat,
+        편향_px=dict(중앙=_q(err, (50,))[50], 구간_10_90=[_q(err, (10,))[10], _q(err, (90,))[90]]),
+        절대오차_px=dict(중앙=_q(ae, (50,))[50], p90=_q(ae, (90,))[90], 구간_10_90=[_q(ae, (10,))[10], _q(ae, (90,))[90]]),
+        절대오차_pct행간=dict(중앙=_q(apct, (50,))[50], p90=_q(apct, (90,))[90]),
+        편향_pct행간_중앙=_q(pct, (50,))[50],
+        절대오차_800기준_px=dict(중앙=_q([abs(x) for x in e800], (50,))[50], p90=_q([abs(x) for x in e800], (90,))[90]),
+        줄_재현율=round(nh / nt, 4) if nt else None,
+        줄_정밀도=round(nmat / nm, 4) if nm else None,
+        블록_재현율=round(bh / bt, 4) if bt else None,
+        과병합=sum(p['merged'] for p in posters), 과분할=sum(p['split'] for p in posters),
+        캡_오차_px=dict(중앙=_q(cap, (50,))[50], 절대_중앙=_q([abs(x) for x in cap], (50,))[50], n=len(cap)),
+        x높이선_오차_px=dict(중앙=_q(xt, (50,))[50], 절대_중앙=_q([abs(x) for x in xt], (50,))[50], n=len(xt)),
+        줄_재현율_장별=[round(p['n_hit'] / p['n_truth'], 3) for p in posters],
+        줄_분해=_line_split(posters, nh),
+        선_직접_짝=_direct_summary(posters),
+        캡높이_오차_px=_cap_height(posters))
+
+
+def _cap_height(posters):
+    """결과를 본 뒤 더한 기술 통계 (2026-09-14). 캡 높이(베이스라인 − 캡선) 오차 = 측정 (base − cap) − 정답 (baseline_y − cap_y)
+    = 베이스라인 오차 − 캡선 오차. 기존 캡_오차_px 와 같은 줄 (짝지은 블록 안에서 짝지어지고 측정 캡이 있는 줄)."""
+    e = [r['err'] - r['cap_err'] for p in posters for r in p['rows'] if r['cap_err'] is not None]
+    ae = [abs(x) for x in e]
+    return dict(표시='결과를 본 뒤 더한 기술 통계 (2026-09-14) — 채점 정의 · 기존 값은 그대로',
+                n=len(e), 절대_중앙=_q(ae, (50,))[50], 절대_p90=_q(ae, (90,))[90],
+                편향_중앙=_q(e, (50,))[50], 구간_10_90=[_q(e, (10,))[10], _q(e, (90,))[90]])
+
+
+def _line_split(posters, nh):
+    """결과를 본 뒤 더한 기술 통계 (2026-09-14). 줄 재현율의 분모(정답 줄)를 네 칸으로 나눈다.
+    채점 정의(블록 짝 · 줄 짝 · 허용 0.2·행간)와 문턱은 그대로다."""
+    c = Counter()
+    for p in posters:
+        c.update(p['line_split'])
+    return dict(
+        표시='결과를 본 뒤 더한 기술 통계 (2026-09-14) — 채점 정의 · 문턱은 그대로',
+        짝_없는_블록의_줄=c['lost'], 짝지은_블록_안_줄=c['in_matched'],
+        줄_짝_못_지음=c['no_pair'], 짝했지만_허용_밖=c['out_tol'], 재현=nh,
+        짝지은_블록_안_재현율=(round(nh / c['in_matched'], 4) if c['in_matched'] else None),
+        주의=('줄_짝_못_지음에는 짝지은 측정 블록이 그 정답 블록의 줄 일부만 가진 경우(과분할 짝)의 묶기 오차가 섞인다. '
+            '짝지은_블록_안_재현율은 재기만의 재현율이 아니다'))
+
+
+# ── 규칙 채택 정오 ──────────────────────────────────────────────
+
+def truth_raw(truths):
+    """정답을 raw 모양으로 — 격자 공유 지표가 읽는 필드만 (size · blocks: bases · n · y1 · y2)."""
+    out = {}
+    for k, t in truths.items():
+        out[k] = dict(size=t['canvas'], skewed=False,
+                      blocks=[dict(n=tb['n'], bases=[l['baseline_y'] for l in tb['lines']],
+                                   x1=tb['ink_box'][0], y1=tb['ink_box'][1],
+                                   x2=tb['ink_box'][2], y2=tb['ink_box'][3])
+                              for tb in t['blocks']])
+    return out
+
+
+def _rule_entry(R):
+    e = R['rules'].get(KEY) or R['not_rules'].get(KEY)
+    if not e:
+        return dict(verdict='없음')
+    return {k: e.get(k) for k in ('verdict', 'median', 'lo', 'hi', 'cv', 'n', 'n_all')}
+
+
+def check_blocks(cache, truths, posters):
+    """③ n≥3 정답 블록마다 (a) 정답 입력 (b) 측정 입력으로 check_layout."""
+    res = {}
+    for tag in ('a', 'b'):
+        cnt, kinds, n_na = Counter(), Counter(), 0
+        for k, t in truths.items():
+            pb = posters[k]['per_block']
+            for tb in t['blocks']:
+                if tb['n'] < 3:
+                    continue
+                if tag == 'a':
+                    cap, bases = tb['cap_px'], [l['baseline_y'] for l in tb['lines']]
+                else:
+                    mb = pb.get(tb['id'])
+                    cs = ([b - c for b, c in zip(mb['bases'], mb['caps']) if c is not None] if mb else [])
+                    if not mb or len(mb['bases']) < 3 or not cs:
+                        n_na += 1
+                        continue
+                    cap, bases = float(np.median(cs)), sorted(float(x) for x in mb['bases'])
+                verdict, ks = SC.judge(cache, cap, bases, None)
+                cnt[verdict] += 1
+                for x in ks:
+                    kinds[x] += 1
+        n = sum(cnt.values())
+        res[tag] = dict(블록=n, 측정_불가=n_na,
+                        통과율=round(cnt['통과'] / n, 4) if n else None,
+                        보류율=round(cnt['보류'] / n, 4) if n else None,
+                        위반율=round(cnt['위반'] / n, 4) if n else None,
+                        위반_종류=dict(kinds))
+    return res
+
+
+def rule_checks(cell, cond, raw, truths, posters):
+    R = rules.derive(raw)
+    ex = EXPECT[cond['rule']]
+    out = {'①_lead_over_cap': _rule_entry(R)}
+    out['①_lead_over_cap']['채택'] = KEY in R['rules']
+    out['①_lead_over_cap']['예상'] = ex['adopt']
+    out['①_lead_over_cap']['정오'] = (None if ex['adopt'] is None
+                                    else ('정' if (KEY in R['rules']) == ex['adopt'] else '오'))
+    g_t = SC.grid_sharing(truth_raw(truths), random.Random(NULL_SEED))
+    g_m = SC.grid_sharing(raw, random.Random(NULL_SEED))
+    for name, g in (('정답', g_t), ('측정', g_m)):
+        ok = g.get('AUC_MIN_넘음')
+        g['예상_AUC_MIN_넘음'] = ex['auc_ge']
+        g['정오'] = None if ok is None else ('정' if ok == ex['auc_ge'] else '오')
+    out['②_격자공유'] = dict(정답=g_t, 측정=g_m)
+    with tempfile.TemporaryDirectory() as tmp:
+        c = os.path.join(tmp, 'rules.json')
+        rules.save(c, {}, R)
+        cb = check_blocks(c, truths, posters)
+    a = cb['a']
+    if ex['pass_a'] is not None:
+        a['예상'] = f'통과율 {ex["pass_a"]}'
+        a['정오'] = '정' if a['통과율'] == ex['pass_a'] else '오'
+    elif ex['viol_a'] is not None:
+        a['예상'] = f'위반율 {ex["viol_a"]} · 종류 블록 내 행간 일정'
+        only = set(a['위반_종류']) <= {'블록 내 행간 일정'}
+        a['정오'] = '정' if (a['위반율'] == ex['viol_a'] and only) else '오'
+    out['③_check_layout'] = cb
+    out['블록안_행간일정_검산_측정'] = SC.within_block(raw)
+    return out
+
+
+# ── 사전등록 예측 가운데 수치가 있는 것 ─────────────────────────
+
+def predictions(S):
+    b = S['base']
+    P = {}
+    if 'res_1600' in S:
+        r = S['res_1600']
+        P['해상도 1600 — 재현율 ±0.03 안'] = dict(
+            줄_차=round(r['줄_재현율'] - b['줄_재현율'], 4), 블록_차=round(r['블록_재현율'] - b['블록_재현율'], 4),
+            판정=('맞음' if abs(r['줄_재현율'] - b['줄_재현율']) <= 0.03 and abs(r['블록_재현율'] - b['블록_재현율']) <= 0.03 else '틀림'))
+        P['해상도 1600 — 800 기준 |오차| 중앙이 준다'] = dict(
+            기준=b['절대오차_800기준_px']['중앙'], _1600=r['절대오차_800기준_px']['중앙'],
+            판정=('판단 불가' if None in (b['절대오차_800기준_px']['중앙'], r['절대오차_800기준_px']['중앙'])
+                 else '맞음' if r['절대오차_800기준_px']['중앙'] < b['절대오차_800기준_px']['중앙'] else '틀림'))
+    if 'xh_3' in S:
+        r = S['xh_3']
+        P['x높이 3 — 줄 재현율 크게 떨어짐 · 캡/x높이 오차 > 20% 행간'] = dict(
+            줄_재현율=r['줄_재현율'], 기준=b['줄_재현율'],
+            캡_절대오차_px=r['캡_오차_px']['절대_중앙'], x높이선_절대오차_px=r['x높이선_오차_px']['절대_중앙'],
+            행간_px=6.0)
+    if 'jpeg_95' in S and 'jpeg_45' in S:
+        d95 = abs((S['jpeg_95']['절대오차_px']['중앙'] or 0) - (b['절대오차_px']['중앙'] or 0))
+        P['JPEG — 95 vs 72 |오차| 중앙 차 ≤ 0.25px, 45 에서 커짐'] = dict(
+            차_95=round(d95, 3), 중앙_45=S['jpeg_45']['절대오차_px']['중앙'], 중앙_72=b['절대오차_px']['중앙'],
+            판정=('맞음' if d95 <= 0.25 and (S['jpeg_45']['절대오차_px']['중앙'] or 0) > (b['절대오차_px']['중앙'] or 0) else '틀림'))
+    return P
+
+
+def subset(cell, cond, keep, raw, truths, posters, n_all):
+    """겹치지 않은 판만으로 같은 채점을 다시 낸다 — 참고용 (사전등록 수정 3). 채점 정의 · 문턱은 그대로다."""
+    head = dict(표시='참고 — 겹침이 있는 판을 뺀 값 (사전등록 수정 3, 2026-09-16). 채점 정의 · 문턱 · 기존 값은 그대로', 판=len(keep))
+    if len(keep) == n_all:
+        head['비고'] = '이 셀에는 겹친 판이 없어 전체 값과 같다'
+        return head
+    if len(keep) < 2:
+        head['비고'] = f'남는 판이 {len(keep)}장이라 계산하지 않는다'
+        return head
+    sub = {k: posters[k] for k in keep}
+    S = summarize(list(sub.values()))
+    head.update({k: S[k] for k in ('줄_재현율', '줄_정밀도', '블록_재현율', '절대오차_px', '절대오차_pct행간', '편향_px')})
+    head['선_직접_짝'] = {k: v for k, v in S['선_직접_짝'].items() if k not in ('표시', '정의')}
+    head['캡높이_오차_px'] = S['캡높이_오차_px']
+    head['규칙'] = rule_checks(cell, cond, {k: raw[k] for k in keep}, {k: truths[k] for k in keep}, sub)
+    return head
+
+
+def main(argv=None):
+    ap = argparse.ArgumentParser(description='합성 포스터 채점 — 경로는 모두 인자')
+    ap.add_argument('--dir', required=True, help='이미지 · 정답 폴더')
+    ap.add_argument('--manifest', required=True)
+    ap.add_argument('--prereg', required=True)
+    ap.add_argument('--cache-dir', required=True, help='셀별 측정 캐시 폴더 (~/.typo-mcp)')
+    ap.add_argument('--out', required=True)
+    ap.add_argument('--cells', nargs='*')
+    ap.add_argument('--remeasure', action='store_true')
+    ap.add_argument('--split-lines', action='store_true',
+                    help='선택 처리: 줄 상자 가로 빈틈 > 상자 높이면 가른다 (detect_surya.split_wide_lines). '
+                         '기본은 꺼짐. 켜면 캐시를 synth-{셀}-splitlines.json 에 따로 둔다')
+    a = ap.parse_args(argv)
+    D = os.path.expanduser(a.dir)
+    M = json.load(open(a.manifest))
+    cells = a.cells or list(M['cells'])
+    res = dict(무엇='합성 포스터 통제 실험 — 파이프라인이 정답을 얼마나 되찾는가',
+               사전등록=a.prereg, 사전등록_sha256=_sha(a.prereg),
+               manifest=a.manifest, manifest_sha256=_sha(a.manifest),
+               manifest_provenance=M.get('provenance'),
+               정의=dict(블록_짝='IoU ≥ 0.5 · 1:1 탐욕 (detector_score.match)',
+                       줄_짝='짝지은 블록 안, |측정 base − 정답 baseline_y| ≤ 0.5·행간, 가장 가까운 것 1:1',
+                       줄_재현='|오차| ≤ 0.2·행간', 행간='블록 lead_px, 한 줄 블록은 2·x높이',
+                       오차='측정 base − 정답 baseline_y (px), % 는 행간 대비',
+                       격자공유='eval/series_check.grid_sharing · 귀무 200벌 seed 20260911',
+                       check_layout='eval/series_check.judge 기본 호출(layer 없음), 규칙은 그 셀의 rules.derive'),
+               셀={})
+    prov = {}
+    for cell in cells:
+        cond = M['cells'][cell]
+        seeds = [it['seed'] for it in M['items'] if it['cell'] == cell]
+        items = [(f'{cell}/{s:03d}', os.path.join(D, cell, f'{s:03d}.jpg')) for s in seeds]
+        for k, p in items:
+            if _sha(p) != next(it['image_sha256'] for it in M['items'] if it['cell'] == cell and it['seed'] == int(k.split('/')[-1])):
+                sys.exit(f'manifest 와 다른 이미지: {p}')
+        cache = os.path.join(os.path.expanduser(a.cache_dir),
+                             f'synth-{cell}-splitlines.json' if a.split_lines else f'synth-{cell}.json')
+        raw, prov[cell] = measure_cell(cell, cond, items, cache, a.remeasure, split_lines=a.split_lines)
+        truths = {k: json.load(open(p[:-4] + '.json')) for k, p in items}
+        posters = {k: score_poster(truths[k], raw[k]) for k, _ in items if k in raw}
+        failed = [k for k, _ in items if k not in raw]
+        S = summarize(list(posters.values()))
+        S['측정_실패_판'] = failed
+        S['조건'] = cond
+        S['규칙'] = rule_checks(cell, cond, {k: raw[k] for k in posters}, {k: truths[k] for k in posters}, posters)
+        S['캐시'] = _tilde(os.path.join(a.cache_dir, os.path.basename(cache)))   # 기록은 홈을 ~ 로 접는다
+        ov, stroke, box = overlaps({k: truths[k] for k in posters})
+        S['획_겹침'] = ov
+        for name, bad in (('획겹침_없는_판만', stroke), ('상자겹침_없는_판만', box)):
+            keep = [k for k in posters if k not in set(bad)]
+            S[name] = subset(cell, cond, keep, raw, truths, posters, len(posters))
+        res['셀'][cell] = S
+        print(f'{cell:18s} 줄재현 {S["줄_재현율"]}  블록재현 {S["블록_재현율"]}  |오차| 중앙 {S["절대오차_px"]["중앙"]}px '
+              f'({S["절대오차_pct행간"]["중앙"]}%)  편향 {S["편향_px"]["중앙"]}  '
+              f'① {S["규칙"]["①_lead_over_cap"]["정오"]} ② {S["규칙"]["②_격자공유"]["정답"]["정오"]}/{S["규칙"]["②_격자공유"]["측정"]["정오"]} '
+              f'③a {S["규칙"]["③_check_layout"]["a"].get("정오")} 통과(b) {S["규칙"]["③_check_layout"]["b"]["통과율"]}', flush=True)
+    res['측정_provenance'] = prov
+    if 'base' in res['셀']:
+        res['예측_수치_판정'] = predictions(res['셀'])
+    json.dump(res, open(a.out, 'w'), ensure_ascii=False, indent=1)
+    print('→', a.out)
+
+
+if __name__ == '__main__':
+    main()

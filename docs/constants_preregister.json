@@ -1,0 +1,607 @@
+{
+ "무엇": "측정 파이프라인 수치 상수의 근거 정하기 — 대상 상수마다 근거 방식 · 계획 · 결정 규칙을 결과를 보기 전에 고정한다",
+ "날짜": "2026-09-17",
+ "박은 때": "결과를 보기 전에 적는다. 이 파일의 계획은 아직 하나도 실행하지 않았다 (라벨 없는 실물 관찰 · 합성 스윕 · 정의 유도 모두). 이 파일을 단독 커밋한 뒤 실행한다",
+ "커밋 시점 HEAD": "ca228bd",
+ "출처": "docs/CONSTANTS_AUDIT.md «근거 계획 초안 — 측정 갈래» 절 (ca228bd) 을 굳힌 것. 조사 방법 · 분류 · 논문 경로 판정은 그 문서에 있다",
+ "CLAUDE.md 규칙 5 와의 관계": "«결과를 보고 파라미터를 바꾸지 않는다» 의 예외 절차다. 상수는 이 파일의 결정 규칙으로만 바꾼다. 4장 · 5장 채점 결과를 보고 바꾸지 않는다",
+ "대상 상수": {
+  "범위": "CONSTANTS_AUDIT 의 분류 «임의» · 논문 경로 4장 · 5장 · 둘 다 · 갈래 «측정» 가운데 «논문 수치 무관» 12묶음을 뺀 20묶음과 새 값 e. SoM 그림 값은 실험조건으로 옮겨 대상이 아니다",
+  "논문 수치 무관으로 뺀 것": [
+   "measure/ink.py:142 descender depth",
+   "measure/region.py:31 ALIGN_EPS",
+   "measure/grid.py 격자 상수 6묶음",
+   "detect_surya.py COL_GAP · COL_MIN · COL_H · COL_W"
+  ],
+  "목록": [
+   {
+    "순서": "1",
+    "위치": [
+     "— (새 값, 식에서 쓰임: min_h · 어센더 2행 · 발음기호 틈 최소)"
+    ],
+    "이름": "e (가장자리 번짐 행 수)",
+    "현재 값": "— (새 값)",
+    "근거 방식": "라벨 없는 실물 관찰",
+    "계획": "판: 공통 222장, Surya 줄 새로 뽑음. 창 = Surya 줄 상자 + PAD, 극성 맞춤, 섞임 공간 = 인코딩값 공간 (현재 파이프라인과 같음, 한계에 기록). 열마다 세로 밝기 프로파일에서 가장자리 = 배경 평탄 구간과 잉크 평탄 구간 (각각 연속 2행 이상) 사이의 전이. u = (v − 배경 수준) ÷ (잉크 수준 − 배경 수준), 배경 수준 = 창 밝기 중앙값, 잉크 수준 = 잉크 문턱 행과 같은 분위. 폭 = u 가 0.1 을 지나는 자리와 0.9 를 지나는 자리 사이의 행 수 (이웃 행 사이 선형 보간). 위 · 아래 가장자리를 모두 센다. e = ⌈모든 폭의 중앙값⌉",
+    "식 꼴 변경": "—",
+    "결정 규칙": "e = ⌈모든 가장자리 폭의 중앙값⌉ (새 값). e 를 쓰는 식 (min_h · 어센더 2행 · 발음기호 틈 최소) 은 이 값으로 계산한다",
+    "바뀌면 다시 만들 산출물 (코드 경로)": "e 를 쓰는 식 (min_h · 어센더 2행 · 발음기호 틈 최소) 의 산출물을 따른다"
+   },
+   {
+    "순서": "1",
+    "위치": [
+     "measure/ink.py:42",
+     "baseline/skew.py:39 (경로 없음)"
+    ],
+    "이름": "threshold() · 배경 × 0.72",
+    "현재 값": "0.72",
+    "근거 방식": "합성 스윕",
+    "계획": "세트: 새 seed 7201~, 셀 구성은 4장 측정 실험(합성 통제 실험, docs/synth_manifest.json 의 13셀)과 같다, 현재 생성기 그대로. 격자: threshold 의 곱 k = 0.50~0.90, 0.02 간격. 지표: 베이스라인 · x높이선 · 상단 잉크선 재현율 (표 1 직접 짝 정의). 평평: 선 종류마다 최고 재현율 − 0.02 안의 연속 구간. 결정: 0.72 가 세 선 종류 모두의 평평 구간 안이면 유지, 아니면 세 구간의 교집합 가운데 격자 점으로 바꾼다. 교집합이 없으면 멈추고 보고한다. 보조 서술 (근거 아님): 흰 바탕 · 검정 글자에서 선형광 기준 절반 덮임은 배경 × 0.735 근처. baseline/skew.py:39 의 0.72 는 같은 값으로 따라간다",
+    "식 꼴 변경": "—",
+    "결정 규칙": "0.72 가 베이스라인 · x높이선 · 상단 잉크선 세 선 종류 모두의 평평 구간 (최고 재현율 − 0.02 안의 연속 구간) 안이면 유지. 아니면 세 구간의 교집합 가운데 격자 점으로 바꾼다. 교집합이 없으면 멈추고 보고한다. baseline/skew.py:39 의 0.72 는 같은 값으로 따라간다",
+    "바뀌면 다시 만들 산출물 (코드 경로)": "파이프라인 캐시 4개 (remeasure → measure_corpus → ground.entry) · 합성 캐시 synth-*.json → docs/synth_result.json · docs/clean_result.json · docs/clean_c_diag.json · docs/measure_pad_result.json (group_gap.elements · measure_pad_check → region.measure) · 봉인 docs/brockmann_group_explore.json (group_gap.elements) (baseline/skew.py 는 경로 없음)"
+   },
+   {
+    "순서": "2",
+    "위치": [
+     "measure/ink.py:44",
+     "measure/ink.py:142",
+     "measure/probe.py:30"
+    ],
+    "이름": "lines · descender 의 min_h",
+    "현재 값": "2",
+    "근거 방식": "정의·물리 유도",
+    "계획": "식: min_h = e + 1. e = 가장자리 번짐 행 수 (e 행, 순서 1)",
+    "식 꼴 변경": "—",
+    "결정 규칙": "유도식으로 계산한 값이 현재 값과 같으면 유지한다. 다르면 계산값으로 바꾼다 («식 꼴 변경» 행은 상수를 그 식으로 바꾼다). 정수 상수는 식의 ⌈ ⌉ · ⌊ ⌋ 를 따른다",
+    "바뀌면 다시 만들 산출물 (코드 경로)": "파이프라인 캐시 4개 (remeasure → measure_corpus → ground.entry) · 합성 캐시 synth-*.json → docs/synth_result.json · docs/clean_result.json · docs/clean_c_diag.json · docs/measure_pad_result.json (group_gap.elements · measure_pad_check → region.measure) · 봉인 docs/brockmann_group_explore.json (group_gap.elements) (descender 쪽은 없음)"
+   },
+   {
+    "순서": "2",
+    "위치": [
+     "measure/ink.py:129"
+    ],
+    "이름": "baseline(… frac=)",
+    "현재 값": "0.5",
+    "근거 방식": "정의·물리 유도",
+    "계획": "식: 베이스라인 = (행 잉크 칸 수 ≥ frac × 글줄 최대 행 잉크 칸 수 인 마지막 행) + 1, frac = 덮임 절반 0.5 (라벨 요청서 6절 «절반 넘게 진하면» 과 같은 약속으로 둠)",
+    "식 꼴 변경": "—",
+    "결정 규칙": "유도식으로 계산한 값이 현재 값과 같으면 유지한다. 다르면 계산값으로 바꾼다 («식 꼴 변경» 행은 상수를 그 식으로 바꾼다). 정수 상수는 식의 ⌈ ⌉ · ⌊ ⌋ 를 따른다",
+    "바뀌면 다시 만들 산출물 (코드 경로)": "파이프라인 캐시 4개 · 합성 캐시 → docs/synth_result.json · docs/clean_result.json · docs/clean_c_diag.json (C 요소 베이스라인) · 봉인 docs/brockmann_group_explore.json"
+   },
+   {
+    "순서": "2",
+    "위치": [
+     "measure/ink.py:210"
+    ],
+    "이름": "split_marks() · 어센더 2행",
+    "현재 값": "2",
+    "근거 방식": "정의·물리 유도",
+    "계획": "식: 문턱 = max(e + 1, ⌊(어센더_em − x높이_em) ÷ x높이_em × x높이_px ÷ 2⌋). Helvetica b d h k l 윗끝 0.717~0.719em, x 0.523em → 0.37 × x높이. e = 가장자리 번짐 행 수 (e 행, 순서 1)",
+    "식 꼴 변경": "식 꼴 변경",
+    "결정 규칙": "유도식으로 계산한 값이 현재 값과 같으면 유지한다. 다르면 계산값으로 바꾼다 («식 꼴 변경» 행은 상수를 그 식으로 바꾼다). 정수 상수는 식의 ⌈ ⌉ · ⌊ ⌋ 를 따른다",
+    "바뀌면 다시 만들 산출물 (코드 경로)": "파이프라인 캐시 4개 · 합성 캐시 → docs/synth_result.json (caps 는 C 요소에 들어가지 않음)"
+   },
+   {
+    "순서": "2",
+    "위치": [
+     "measure/ink.py:98"
+    ],
+    "이름": "lines() · 발음기호 small",
+    "현재 값": "0.5",
+    "근거 방식": "정의·물리 유도",
+    "계획": "식: small = 점 · 악센트 덩어리 높이_em ÷ 몸통 높이_em 의 Helvetica 실측 최댓값",
+    "식 꼴 변경": "—",
+    "결정 규칙": "유도식으로 계산한 값이 현재 값과 같으면 유지한다. 다르면 계산값으로 바꾼다 («식 꼴 변경» 행은 상수를 그 식으로 바꾼다). 정수 상수는 식의 ⌈ ⌉ · ⌊ ⌋ 를 따른다",
+    "바뀌면 다시 만들 산출물 (코드 경로)": "파이프라인 캐시 4개 (remeasure → measure_corpus → ground.entry) · 합성 캐시 synth-*.json → docs/synth_result.json · docs/clean_result.json · docs/clean_c_diag.json · docs/measure_pad_result.json (group_gap.elements · measure_pad_check → region.measure) · 봉인 docs/brockmann_group_explore.json (group_gap.elements)"
+   },
+   {
+    "순서": "2",
+    "위치": [
+     "measure/ink.py:101"
+    ],
+    "이름": "lines() · 발음기호 틈 최소",
+    "현재 값": "3",
+    "근거 방식": "정의·물리 유도",
+    "계획": "식: 틈 최소 = ⌈(점 아래끝 − x높이선)_em ÷ x높이_em × x높이_px⌉ + e",
+    "식 꼴 변경": "식 꼴 변경",
+    "결정 규칙": "유도식으로 계산한 값이 현재 값과 같으면 유지한다. 다르면 계산값으로 바꾼다 («식 꼴 변경» 행은 상수를 그 식으로 바꾼다). 정수 상수는 식의 ⌈ ⌉ · ⌊ ⌋ 를 따른다",
+    "바뀌면 다시 만들 산출물 (코드 경로)": "파이프라인 캐시 4개 (remeasure → measure_corpus → ground.entry) · 합성 캐시 synth-*.json → docs/synth_result.json · docs/clean_result.json · docs/clean_c_diag.json · docs/measure_pad_result.json (group_gap.elements · measure_pad_check → region.measure) · 봉인 docs/brockmann_group_explore.json (group_gap.elements)"
+   },
+   {
+    "순서": "2",
+    "위치": [
+     "measure/ink.py:101"
+    ],
+    "이름": "lines() · 발음기호 틈 비",
+    "현재 값": "0.6",
+    "근거 방식": "정의·물리 유도",
+    "계획": "식: 틈 비 = (점 아래끝 − x높이선)_em ÷ 몸통 높이_em 의 Helvetica 실측 최댓값",
+    "식 꼴 변경": "—",
+    "결정 규칙": "유도식으로 계산한 값이 현재 값과 같으면 유지한다. 다르면 계산값으로 바꾼다 («식 꼴 변경» 행은 상수를 그 식으로 바꾼다). 정수 상수는 식의 ⌈ ⌉ · ⌊ ⌋ 를 따른다",
+    "바뀌면 다시 만들 산출물 (코드 경로)": "파이프라인 캐시 4개 (remeasure → measure_corpus → ground.entry) · 합성 캐시 synth-*.json → docs/synth_result.json · docs/clean_result.json · docs/clean_c_diag.json · docs/measure_pad_result.json (group_gap.elements · measure_pad_check → region.measure) · 봉인 docs/brockmann_group_explore.json (group_gap.elements)"
+   },
+   {
+    "순서": "2",
+    "위치": [
+     "measure/region.py:78"
+    ],
+    "이름": "measure() · 최소 창",
+    "현재 값": "4",
+    "근거 방식": "정의·물리 유도",
+    "계획": "식: 최소 창 = 2 × min_h (띠 하나 = min_h 행, 위 · 아래 가장자리)",
+    "식 꼴 변경": "—",
+    "결정 규칙": "유도식으로 계산한 값이 현재 값과 같으면 유지한다. 다르면 계산값으로 바꾼다 («식 꼴 변경» 행은 상수를 그 식으로 바꾼다). 정수 상수는 식의 ⌈ ⌉ · ⌊ ⌋ 를 따른다",
+    "바뀌면 다시 만들 산출물 (코드 경로)": "파이프라인 캐시 4개 (remeasure → measure_corpus → ground.entry) · 합성 캐시 synth-*.json → docs/synth_result.json · docs/clean_result.json · docs/clean_c_diag.json · docs/measure_pad_result.json (group_gap.elements · measure_pad_check → region.measure) · 봉인 docs/brockmann_group_explore.json (group_gap.elements)"
+   },
+   {
+    "순서": "3",
+    "위치": [
+     "measure/ink.py:16"
+    ],
+    "이름": "FRAG_WIDE",
+    "현재 값": "0.4",
+    "근거 방식": "라벨 없는 실물 관찰",
+    "계획": "통계: 창마다 ink.lines 가 만든 띠 가운데 이웃 글줄이 있는 띠의 폭 ÷ 이웃 글줄 폭 (FRAG_WIDE 판정 전 값, 0~1). KDE (Silverman) 공통 규칙으로 최솟점. 대체: 공통 규칙",
+    "식 꼴 변경": "—",
+    "결정 규칙": "공통 규칙 «라벨 없는 실물 관찰» 로 값을 고른다 — KDE 두 봉우리이면 최솟점, 아니면 Otsu 문턱 (η² ≥ 0.5), η² < 0.5 이면 합성 스윕으로 넘긴다. 고른 값이 현재 값과 같으면 유지, 다르면 바꾼다. 정수 상수는 반올림",
+    "바뀌면 다시 만들 산출물 (코드 경로)": "파이프라인 캐시 4개 (remeasure → measure_corpus → ground.entry) · 합성 캐시 synth-*.json → docs/synth_result.json · docs/clean_result.json · docs/clean_c_diag.json · docs/measure_pad_result.json (group_gap.elements · measure_pad_check → region.measure) · 봉인 docs/brockmann_group_explore.json (group_gap.elements)"
+   },
+   {
+    "순서": "3",
+    "위치": [
+     "measure/ink.py:18",
+     "measure/probe.py:78"
+    ],
+    "이름": "FRAG_COVER",
+    "현재 값": "0.35",
+    "근거 방식": "라벨 없는 실물 관찰",
+    "계획": "통계: 같은 띠의 제 폭 안 잉크 칸 몫 (FRAG_COVER 판정 전 값, 0~1). KDE (Silverman) 최솟점. 대체: 공통 규칙",
+    "식 꼴 변경": "—",
+    "결정 규칙": "공통 규칙 «라벨 없는 실물 관찰» 로 값을 고른다 — KDE 두 봉우리이면 최솟점, 아니면 Otsu 문턱 (η² ≥ 0.5), η² < 0.5 이면 합성 스윕으로 넘긴다. 고른 값이 현재 값과 같으면 유지, 다르면 바꾼다. 정수 상수는 반올림",
+    "바뀌면 다시 만들 산출물 (코드 경로)": "파이프라인 캐시 4개 (remeasure → measure_corpus → ground.entry) · 합성 캐시 synth-*.json → docs/synth_result.json · docs/clean_result.json · docs/clean_c_diag.json · docs/measure_pad_result.json (group_gap.elements · measure_pad_check → region.measure) · 봉인 docs/brockmann_group_explore.json (group_gap.elements)"
+   },
+   {
+    "순서": "3",
+    "위치": [
+     "measure/ink.py:37"
+    ],
+    "이름": "polarity() 꼬리 백분위",
+    "현재 값": "5 · 95",
+    "근거 방식": "라벨 없는 실물 관찰",
+    "계획": "통계: 창마다 활자 화소 몫 (극성 맞춘 뒤 문턱 아래 화소 ÷ 창 화소). 값: 공통 규칙을 따른다",
+    "식 꼴 변경": "—",
+    "결정 규칙": "공통 규칙 «라벨 없는 실물 관찰» 로 값을 고른다 — KDE 두 봉우리이면 최솟점, 아니면 Otsu 문턱 (η² ≥ 0.5), η² < 0.5 이면 합성 스윕으로 넘긴다. 고른 값이 현재 값과 같으면 유지, 다르면 바꾼다. 정수 상수는 반올림",
+    "바뀌면 다시 만들 산출물 (코드 경로)": "파이프라인 캐시 4개 (remeasure → measure_corpus → ground.entry) · 합성 캐시 synth-*.json → docs/synth_result.json · docs/clean_result.json · docs/clean_c_diag.json · docs/measure_pad_result.json (group_gap.elements · measure_pad_check → region.measure) · 봉인 docs/brockmann_group_explore.json (group_gap.elements)"
+   },
+   {
+    "순서": "3",
+    "위치": [
+     "measure/ink.py:50",
+     "measure/probe.py:46",
+     "baseline/detect.py:114 (경로 없음)",
+     "baseline/detect.py:182 (경로 없음)"
+    ],
+    "이름": "lines() · peak 백분위",
+    "현재 값": "90",
+    "근거 방식": "라벨 없는 실물 관찰",
+    "계획": "통계: 창마다 잉크가 있는 행의 행 잉크량 ÷ 그 행들의 중앙값. 값: KDE (Silverman) 로 두 봉우리 (몸통 행 · 테두리 · 가로줄 같은 튀는 행) 사이 최솟점 위의 몫 q, 백분위 = 100 × (1 − q). 대체: 공통 규칙",
+    "식 꼴 변경": "—",
+    "결정 규칙": "공통 규칙 «라벨 없는 실물 관찰» 로 값을 고른다 — KDE 두 봉우리이면 최솟점, 아니면 Otsu 문턱 (η² ≥ 0.5), η² < 0.5 이면 합성 스윕으로 넘긴다. 고른 값이 현재 값과 같으면 유지, 다르면 바꾼다. 정수 상수는 반올림",
+    "바뀌면 다시 만들 산출물 (코드 경로)": "파이프라인 캐시 4개 (remeasure → measure_corpus → ground.entry) · 합성 캐시 synth-*.json → docs/synth_result.json · docs/clean_result.json · docs/clean_c_diag.json · docs/measure_pad_result.json (group_gap.elements · measure_pad_check → region.measure) · 봉인 docs/brockmann_group_explore.json (group_gap.elements) (measure/probe.py · baseline/detect.py 는 경로 없음)"
+   },
+   {
+    "순서": "3",
+    "위치": [
+     "measure/ink.py:51",
+     "measure/probe.py:47"
+    ],
+    "이름": "lines() · on 백분위",
+    "현재 값": "5",
+    "근거 방식": "라벨 없는 실물 관찰",
+    "계획": "통계: 창 행 잉크량 ÷ 창 최대 행 잉크량 (배경 행 · 글자 행). KDE (Silverman) 최솟점 v*, 값 = v* 를 넘는 첫 백분위. 대체: 공통 규칙",
+    "식 꼴 변경": "—",
+    "결정 규칙": "공통 규칙 «라벨 없는 실물 관찰» 로 값을 고른다 — KDE 두 봉우리이면 최솟점, 아니면 Otsu 문턱 (η² ≥ 0.5), η² < 0.5 이면 합성 스윕으로 넘긴다. 고른 값이 현재 값과 같으면 유지, 다르면 바꾼다. 정수 상수는 반올림",
+    "바뀌면 다시 만들 산출물 (코드 경로)": "파이프라인 캐시 4개 (remeasure → measure_corpus → ground.entry) · 합성 캐시 synth-*.json → docs/synth_result.json · docs/clean_result.json · docs/clean_c_diag.json · docs/measure_pad_result.json (group_gap.elements · measure_pad_check → region.measure) · 봉인 docs/brockmann_group_explore.json (group_gap.elements)"
+   },
+   {
+    "순서": "4",
+    "위치": [
+     "measure/ink.py:44"
+    ],
+    "이름": "lines(… body_h=)",
+    "현재 값": "4",
+    "근거 방식": "합성 스윕",
+    "계획": "격자 {2, 3, 4, 5, 6}. 셀: 새 seed xh_3 · xh_5 · base 각 30장. 지표: 표 1 베이스라인 직접 짝 재현율 · 정밀도 (셀 평균). 평평: 두 지표 모두 최적 − δ 안",
+    "식 꼴 변경": "—",
+    "결정 규칙": "공통 규칙 «합성 스윕» — 현재 값이 모든 지표의 평평 구간 안이면 유지, 아니면 평평 구간들의 교집합 가운데 격자 점으로 바꾼다. 교집합이 없으면 멈추고 보고한다",
+    "바뀌면 다시 만들 산출물 (코드 경로)": "파이프라인 캐시 4개 (remeasure → measure_corpus → ground.entry) · 합성 캐시 synth-*.json → docs/synth_result.json · docs/clean_result.json · docs/clean_c_diag.json · docs/measure_pad_result.json (group_gap.elements · measure_pad_check → region.measure) · 봉인 docs/brockmann_group_explore.json (group_gap.elements)"
+   },
+   {
+    "순서": "4",
+    "위치": [
+     "measure/ink.py:187"
+    ],
+    "이름": "split_marks() · 되돌림 어깨",
+    "현재 값": "0.5",
+    "근거 방식": "합성 스윕",
+    "계획": "격자 {0.3, 0.4, 0.5, 0.6, 0.7}. 셀: 새 seed base · xh_5 · xh_12, G1 되돌림이 쓰인 줄만 센다. 지표: x높이선 «참값과 같은 행» 몫. 평평: 최적 − δ 안",
+    "식 꼴 변경": "—",
+    "결정 규칙": "공통 규칙 «합성 스윕» — 현재 값이 모든 지표의 평평 구간 안이면 유지, 아니면 평평 구간들의 교집합 가운데 격자 점으로 바꾼다. 교집합이 없으면 멈추고 보고한다",
+    "바뀌면 다시 만들 산출물 (코드 경로)": "파이프라인 캐시 4개 · 합성 캐시 → docs/synth_result.json · docs/clean_result.json · docs/clean_c_diag.json (C 요소 x높이 — 공유 요소 판정) · 봉인 docs/brockmann_group_explore.json"
+   },
+   {
+    "순서": "4",
+    "위치": [
+     "measure/region.py:30"
+    ],
+    "이름": "region.PAD",
+    "현재 값": "3",
+    "근거 방식": "합성 스윕",
+    "계획": "격자 {1, 2, 3, 4, 5, 6}. 셀: 새 seed base · xh_18 과 깨끗한 세트 층 셋. 지표: 표 1 베이스라인 · 상단 잉크선 재현율, 깨끗한 세트 C 블록 F1. 평평: 세 지표 모두 최적 − δ 안",
+    "식 꼴 변경": "—",
+    "결정 규칙": "공통 규칙 «합성 스윕» — 현재 값이 모든 지표의 평평 구간 안이면 유지, 아니면 평평 구간들의 교집합 가운데 격자 점으로 바꾼다. 교집합이 없으면 멈추고 보고한다",
+    "바뀌면 다시 만들 산출물 (코드 경로)": "파이프라인 캐시 4개 (remeasure → measure_corpus → ground.entry) · 합성 캐시 synth-*.json → docs/synth_result.json · docs/clean_result.json · docs/clean_c_diag.json · docs/measure_pad_result.json (group_gap.elements · measure_pad_check → region.measure) · 봉인 docs/brockmann_group_explore.json (group_gap.elements)"
+   },
+   {
+    "순서": "병행",
+    "위치": [
+     "detect_surya.py:25"
+    ],
+    "이름": "detect_surya.X_OVER",
+    "현재 값": "0.15",
+    "근거 방식": "라벨 없는 실물 관찰",
+    "계획": "통계: 세로 이웃 줄 쌍 (사이에 다른 줄 없음) 의 가로 겹침 ÷ 좁은 쪽 폭 (0~1). KDE (Silverman) 두 봉우리 (다른 단 · 같은 단) 최솟점. 대체: 공통 규칙",
+    "식 꼴 변경": "—",
+    "결정 규칙": "공통 규칙 «라벨 없는 실물 관찰» 로 값을 고른다 — KDE 두 봉우리이면 최솟점, 아니면 Otsu 문턱 (η² ≥ 0.5), η² < 0.5 이면 합성 스윕으로 넘긴다. 고른 값이 현재 값과 같으면 유지, 다르면 바꾼다. 정수 상수는 반올림",
+    "바뀌면 다시 만들 산출물 (코드 경로)": "파이프라인 캐시 4개 (boxes_norm → 측정 창) · 합성 캐시 → docs/synth_result.json · docs/clean_result.json · docs/clean_a_sweep.json · docs/clean_c_diag.json · 봉인 docs/brockmann_group_explore.json (C 사슬 · C 폴백)"
+   },
+   {
+    "순서": "병행",
+    "위치": [
+     "detect_surya.py:28"
+    ],
+    "이름": "detect_surya.MIN_AREA",
+    "현재 값": "200",
+    "근거 방식": "라벨 없는 실물 관찰",
+    "계획": "통계: Surya 줄 상자 넓이 log10(px², 800px 판으로 환산). KDE (Silverman) 두 봉우리 (부스러기 · 글줄) 최솟점. 대체: 공통 규칙",
+    "식 꼴 변경": "—",
+    "결정 규칙": "공통 규칙 «라벨 없는 실물 관찰» 로 값을 고른다 — KDE 두 봉우리이면 최솟점, 아니면 Otsu 문턱 (η² ≥ 0.5), η² < 0.5 이면 합성 스윕으로 넘긴다. 고른 값이 현재 값과 같으면 유지, 다르면 바꾼다. 정수 상수는 반올림",
+    "바뀌면 다시 만들 산출물 (코드 경로)": "파이프라인 캐시 4개 (boxes_norm → 측정 창) · 합성 캐시 → docs/synth_result.json · docs/clean_result.json · docs/clean_a_sweep.json · docs/clean_c_diag.json · 봉인 docs/brockmann_group_explore.json (C 사슬 · C 폴백)"
+   },
+   {
+    "순서": "병행",
+    "위치": [
+     "detect_surya.py:24"
+    ],
+    "이름": "detect_surya.H_RATIO",
+    "현재 값": "0.60 · 1.70",
+    "근거 방식": "라벨 없는 실물 관찰",
+    "계획": "통계: 세로 이웃 줄 쌍 (가로 겹침 > X_OVER) 의 log(큰 높이 ÷ 작은 높이). KDE (Silverman) 두 봉우리 (같은 크기 · 다른 크기) 최솟점 r*, 값 = (e^−r*, e^r*). 대체: 공통 규칙",
+    "식 꼴 변경": "—",
+    "결정 규칙": "공통 규칙 «라벨 없는 실물 관찰» 로 값을 고른다 — KDE 두 봉우리이면 최솟점, 아니면 Otsu 문턱 (η² ≥ 0.5), η² < 0.5 이면 합성 스윕으로 넘긴다. 고른 값이 현재 값과 같으면 유지, 다르면 바꾼다. 정수 상수는 반올림",
+    "바뀌면 다시 만들 산출물 (코드 경로)": "파이프라인 캐시 4개 (boxes_norm → 측정 창) · 합성 캐시 → docs/synth_result.json · docs/clean_result.json · docs/clean_a_sweep.json · docs/clean_c_diag.json · 봉인 docs/brockmann_group_explore.json (C 사슬 · C 폴백)"
+   },
+   {
+    "순서": "병행",
+    "위치": [
+     "detect_surya.py:26"
+    ],
+    "이름": "detect_surya.Y_GAP",
+    "현재 값": "−0.40 · 1.60",
+    "근거 방식": "라벨 없는 실물 관찰",
+    "계획": "통계: 같은 쌍의 세로 틈 ÷ 위 줄 높이. 상한 = KDE (Silverman) 두 봉우리 (줄 사이 · 블록 사이) 최솟점, 하한 = 음수 쪽 1% 분위. 대체: 공통 규칙",
+    "식 꼴 변경": "—",
+    "결정 규칙": "공통 규칙 «라벨 없는 실물 관찰» 로 값을 고른다 — KDE 두 봉우리이면 최솟점, 아니면 Otsu 문턱 (η² ≥ 0.5), η² < 0.5 이면 합성 스윕으로 넘긴다. 고른 값이 현재 값과 같으면 유지, 다르면 바꾼다. 정수 상수는 반올림",
+    "바뀌면 다시 만들 산출물 (코드 경로)": "파이프라인 캐시 4개 (boxes_norm → 측정 창) · 합성 캐시 → docs/synth_result.json · docs/clean_result.json · docs/clean_a_sweep.json · docs/clean_c_diag.json · 봉인 docs/brockmann_group_explore.json (C 사슬 · C 폴백)"
+   }
+  ]
+ },
+ "공통 규칙": {
+  "라벨 없는 실물 관찰": {
+   "판": "네 코퍼스 코어 측정 대상에서 라벨링 main 50장 · 연습 2장을 뺀 222장 (브로크만 71 · 호프만 108 · 로제 16 · 루더 27, remeasure.keys_of 기준, 2026-09-17)",
+   "Surya 줄": "222장에 새로 뽑아 새 파일에 둔다. ~/.typo-mcp/brockmann50/lines.json 은 쓰지 않는다",
+   "KDE": "가우스 커널, 대역폭 Silverman 규칙 h = 0.9 × min(σ, IQR ÷ 1.34) × n^(−1/5) (통계마다 자료에서 계산), 값 격자 h/20",
+   "두 봉우리": "국소 최댓값 둘 이상이고 둘째 봉우리 높이 ≥ 가장 높은 봉우리의 5%. 값 = 가장 높은 두 봉우리 사이 밀도 최솟점",
+   "두 봉우리가 아니면": "Otsu 두 무리 문턱 (같은 값 격자). 두 무리 분리도 η² < 0.5 이면 그 상수는 합성 스윕으로 넘긴다",
+   "합성 스윕으로 넘길 때": "격자 = 현재 값 × {0.50, 0.75, 1.00, 1.25, 1.50} 의 5점 (정수 상수는 반올림, 겹친 점은 하나로). 지표 = 그 상수가 영향을 주는 선 종류(베이스라인 · x높이선 · 상단 잉크선)의 재현율. 평평 · 결정은 «합성 스윕» 규칙"
+  },
+  "합성 스윕": {
+   "세트": "현재 생성기 그대로, 셀 구성은 행마다 적은 것. 생성 뒤 사람 확인 (CLAUDE.md 규칙 9) 다음에 채점",
+   "한 번에 한 상수": "나머지 상수는 지금 값에 둔다",
+   "δ": 0.02,
+   "평평": "지표마다 최적값에서 δ 안인 격자 점들의 연속 구간",
+   "결정": "현재 값이 모든 지표의 평평 구간 안이면 유지. 아니면 평평 구간 교집합의 가운데 격자 점. 교집합이 없으면 멈추고 보고한다"
+  },
+  "정의·물리 유도": {
+   "글꼴 비율": "Helvetica (/System/Library/Fonts/Helvetica.ttc index 0) 를 1000px 로 잰 em 비율",
+   "섞임 공간": "인코딩값 공간 (현재 파이프라인과 같음)"
+  }
+ },
+ "의존 순서": {
+  "1": "섞임 공간 (인코딩값 공간으로 둔다) · e · 잉크 문턱",
+  "2": "정의·물리 유도 (e 를 쓰는 식 포함)",
+  "3": "새 마스크 (1 · 2 로 바뀐 값) 위에서 라벨 없는 실물 관찰",
+  "4": "합성 스윕 (3 에서 넘어온 상수 포함)",
+  "병행": "A 상수 4개 (X_OVER · MIN_AREA · H_RATIO · Y_GAP) — Surya 줄 상자만 쓰고 잉크 마스크에 기대지 않는다",
+  "앞 단계가 바뀌면": "뒤 단계는 바뀐 값 위에서 돌린다"
+ },
+ "seed 구간": {
+  "합성 스윕": "7201~7999 (새로 만든다)",
+  "쓰지 않는 구간": "섞임 공간 탐색 7001~7015 · 7101~7120 (scratchpad, 탐색용)",
+  "4장 재실행": "기존 평가 세트 seed 그대로 — 합성 통제 실험 1~30 (docs/synth_manifest.json) · 깨끗한 세트 3001~3718 (docs/clean_manifest.json)",
+  "이미 쓴 seed": "합성 진단 101~110 · 묶기 비교 240장 1~240 · pad 검증 개발 901~960 · 검증 2001~2060 · [4] 설계 5001~5040",
+  "겹침": "합성 스윕 구간과 4장 재실행 구간 · 이미 쓴 seed 는 서로 겹치지 않는다"
+ },
+ "바뀐 값이 있을 때": {
+  "다시 만들 산출물": "행마다 «바뀌면 다시 만들 산출물» 의 합집합. 파이프라인 캐시 4개 = ~/.typo-mcp/{brockmann, corpus, rose, ruder}.json (remeasure.py), 합성 캐시 ~/.typo-mcp/synth-*.json → docs/synth_result.json, docs/clean_result.json · docs/clean_c_diag.json · docs/clean_a_sweep.json · docs/measure_pad_result.json, 봉인 docs/brockmann_group_explore.json. eval/run_all.py 로 다시 만들고 바뀐 결과 파일을 legacy_numbers.md 에 적는다",
+  "5장 2단계와의 관계": "eval/brockmann_stage2_score.py 는 선 측정을 다시 재어 파이프라인 캐시와 같은지 확인하고 다르면 멈춘다 — 캐시를 먼저 다시 만든다",
+  "재봉인 절차": [
+   "옛 봉인 파일은 열지 않는다. 지금의 sha256 만 이 파일에 남긴다 (아래)",
+   "바뀐 상수로 1단계 탐색 파일을 봉인 상태로 새로 만든다 — eval/brockmann_group_explore.py explore (수치를 화면에 찍지 않음)",
+   "Surya 줄 (~/.typo-mcp/brockmann50/lines.json) · SoM 그림 · VLM 패스 파일은 이 상수들을 거치지 않으므로 (코드 경로) 다시 만들지 않는다. sha256 이 같은지 확인한다",
+   "새 파일의 봉인 필드를 확인하고 새 sha256 을 이 파일의 «수정 기록» 에 적는다. 바뀐 키 확인은 eval/sealed_keydiff.py 로만 한다",
+   "봉인 해제 조건은 docs/brockmann_stage2_preregister.json 그대로"
+  ],
+  "옛 봉인 sha256 (2026-09-17, 내용은 읽지 않음)": {
+   "docs/brockmann_group_explore.json (마지막 커밋 a166e70)": "7eed6552601de724eb9737003286506280fe8abef311995c26e6d48d7b76f252",
+   "boxes/brockmann_vlm_pass1.json": "dd3d3c8a8270c02bfe545be79344648c92a7cb932e60bae816cdd1ad11a85ba2",
+   "boxes/brockmann_vlm_pass2.json": "a87daf8932e5fa656e94a5aa121d09b1ea50c5dfaa3b526440d320a611e9f587",
+   "~/.typo-mcp/brockmann50/lines.json": "444b35184bf1267ac497a55aa2878b756e722729b707c7854355b80fcc29d84f",
+   "~/.typo-mcp/brockmann50/manifest.json": "6306bb83062af3b49343912c2c4b34fe71e487c01d2b343a08c0b38b55be407e"
+  }
+ },
+ "4장 재실행의 (b) 강건성 조건": {
+  "조건": "(b) 선형광 렌더 — 합성 통제 실험 셀 구성에 렌더만 «4배 마스터 덮임을 선형광에서 바탕 · 잉크와 섞기 → 선형광에서 축소 → sRGB 로 되돌림» 으로 바꾼 조건 1행",
+  "경로": "scratchpad mix/verify_synth.py 의 render_linear 를 eval/ 로 옮겨 쓴다 (계획만, 아직 옮기지 않음)",
+  "용도": "강건성 조건으로 보고한다. 상수 결정 규칙에는 쓰지 않는다"
+ },
+ "한계": [
+  "섞임 공간을 판별하지 못했다 — 탐색 (scratchpad, 탐색용) 의 글자 단계 흰 바탕 · 검정에서 두 렌더의 인코딩 u 기준값 차 0.0041 로 가르지 못했다 (docs/CONSTANTS_AUDIT.md «섞임 공간 판별 탐색 — 종료»)",
+  "밝기 통계 (e 등) 와 측정은 인코딩값 공간을 가정한다. 실물 인쇄 · 스캔의 섞임 공간은 확인하지 않았다",
+  "정의·물리 유도의 글꼴 비율은 Helvetica 에서만 잰다. 실물 코퍼스의 글꼴 (Akzidenz-Grotesk 등) 비율은 다를 수 있다"
+ ],
+ "수정 기록": [
+  {
+   "수정": 1,
+   "날짜": "2026-09-17",
+   "박은 때": "결과를 보기 전. 이 파일의 계획은 아직 하나도 실행하지 않았다",
+   "커밋 전 HEAD": "2fd61e2",
+   "1 라벨 없는 실물 관찰의 결정 규칙 (본문 행마다의 «결정 규칙» 과 공통 규칙을 바꾼다)": "현재 값이 KDE 두 봉우리 사이에 있으면 유지. 밖이면 두 봉우리 사이 KDE 최솟점으로 바꾼다. 정수 상수는 반올림. Otsu 로 넘어간 경우도 같은 식 — 현재 값이 두 무리 중앙값 사이면 유지, 밖이면 Otsu 문턱으로 바꾼다. Otsu 두 무리 분리도 η² < 0.5 이면 합성 스윕으로 넘기는 규칙은 그대로",
+   "2 합성 스윕 공용 세트": "4장 측정 실험(합성 통제 실험, docs/synth_manifest.json)과 같은 13셀 × seed 7201~7230 = 390장. 현재 생성기 그대로. 모든 합성 스윕 (본문 행의 합성 스윕과 실물 관찰에서 넘어온 상수 모두) 이 이 세트를 쓴다. 본문의 행마다 적은 셀 · seed 는 이 세트로 바꾼다. 생성 뒤 사람 확인 (CLAUDE.md 규칙 9) 다음에 채점",
+   "3 (b) 강건성 조건": "4장 측정 실험 13셀 × seed 1~30 을 렌더만 «4배 마스터 덮임을 선형광에서 바탕 · 잉크와 섞기 → 선형광에서 축소 → sRGB 로 되돌림» 으로 바꿔 만든다 (390장, 같은 seed 로 (a) 와 짝 비교). 판정 없음 — 선 종류별(베이스라인 · x높이선 · 상단 잉크선) 재현율 · |오차| 중앙값을 (a) 와 나란히 적는다. 생성 뒤 사람 확인 (규칙 9) 다음에 채점",
+   "seed 구간 (바뀜)": "합성 스윕 공용 세트 7201~7230. (b) 강건성 조건은 기존 평가 seed 1~30 을 렌더만 바꿔 다시 쓴다",
+   "바뀌지 않는 것": "대상 상수 · 근거 방식 · 정의·물리 유도와 합성 스윕의 결정 규칙 · δ 0.02 · KDE Silverman · 의존 순서 · 재봉인 절차 · 한계"
+  },
+  {
+   "수정": 2,
+   "날짜": "2026-09-18",
+   "박은 때": "생성기 수정 전. 아래 생성기 변경 · 재생성 · 채점 정의 변경은 아직 하나도 실행하지 않았다. 단 5 (clean 블록 채점 참조) 는 기존 결과(docs/clean_result.json)를 본 뒤의 수정이다",
+   "커밋 전 HEAD": "44fb89a",
+   "계기": "합성 스윕 공용 세트(수정 1 의 2) 미리보기 26장 사람 확인 (2026-09-18) — 승인 보류. rule_independent · rule_random 에서 글줄끼리 겹쳐 찍힘, xh_18 에서 제목 디센더가 오른쪽 단 첫 줄에 맞닿음. 이 세트로는 검출 · 채점을 하지 않았다",
+   "1 synth_gen 쌓기 규칙": "13셀 전부. 같은 열 블록을 템플릿 순서대로 위에서부터 놓는다 (두 열에 걸친 블록은 두 열 모두의 앞 블록). 첫 베이스라인 = max(템플릿 자리 u0·g + phase, 앞 블록 마지막 베이스라인 + 2g). 2g 출처 = base 셀에서 눈으로 구분되는 경계(E→D) 의 간격. shared_grid 는 phase 0 이고 앞 블록 마지막 베이스라인도 g 의 정수배라 격자 정수배가 유지된다. 아래로 넘치면 기존 규칙대로 다시 뽑는다",
+   "2 rule_random 간격 하한": "간격 = max(행간 × U(0.70, 1.30), 1.75 × 블록 x높이). 1.75 = 정의된 최저 행간 수준 (INDEP_RATIOS 의 최솟값)",
+   "3 겹침 검사": "기본으로 켠다 (layout_checked). 한도(문구 50번 · 위상 20회차)를 넘어도 획 겹침이 남으면 멈추는 동작은 그대로 둔다. 재추첨 횟수는 참값 «겹침_재생성» 에 기록한다",
+   "4 «안 보이는 경계» 정의": "같은 열 · 잉크 상자 가로 겹침 · 두 블록 x높이가 같음 · 블록 사이 간격(아래 블록 첫 베이스라인 − 위 블록 마지막 베이스라인) ≤ 줄 간격(위 블록 행간, 위 블록이 1줄이면 아래 블록 행간). 생성기 산출물에서 이 수가 0 이어야 한다 (clean 세트의 c_in 쌍은 제외)",
+   "5 clean 블록 채점 참조": "c_in 쌍은 한 블록으로 합친다. 근거 = docs/clean_preregister.json «조작변인 — 여유 c» › «근거» 원문: «c_in 은 경계 간격이 블록 안과 같아 C 가 가를 정보가 없고 사람 라벨 규칙으로도 병합인 자리.» 기존 결과를 본 뒤의 수정이다. 원 정의(c_in 쌍을 두 블록으로 둔 참조)의 값은 참고 열로 함께 보고한다",
+   "6 재생성": "4장 합성 세트(seed 1~30, docs/synth_manifest.json) 와 합성 스윕 공용 세트(seed 7201~7230) 모두 수정된 생성기로 다시 만든다. 각 세트는 생성 뒤 사람 확인 (CLAUDE.md 규칙 9) 다음에 검출 · 채점한다. 4장 재실행 결과에 «표 1-참고 블록 과병합이 옛 템플릿(B→E 1g) 때문이었음» 을 적는다",
+   "7 clean_gen": "clean 세트 280장의 획 겹침 · 블록 사이 상자 맞닿음 확인 결과에 따라 clean_gen 을 고칠지는 수정 3 에서 정한다",
+   "한계": "xh_18 에서 가장 아래 잉크 ÷ 판 높이 최대 0.955 (넘침 한도 0.98) — 설계 사본 시험 생성 seed 7201~7230 (탐색용, 저장소 밖)"
+  },
+  {
+   "수정": "2 보충",
+   "날짜": "2026-09-18",
+   "박은 때": "수정 2 (48bdfa0) 와 그 생성기 반영 (bc46683) 뒤, 합성 스윕 공용 세트 재생성을 확정하기 전 · 4장 합성 세트(1~30) 재생성 전. 수정 2 원문은 그대로 두고, 사용자가 수정 2 에 넣도록 지시한 항 가운데 빠진 두 항을 더한다",
+   "커밋 전 HEAD": "bc46683",
+   "한계 (더함)": "rule_random 은 블록 안 간격이 행간 × U(0.70, 1.30) (하한 1.75 × x높이) 로 흔들려, 블록 안 간격 변동이 눈으로 경계처럼 보일 수 있다 — 이 셀의 과분할을 해석할 때 한계로 적는다 (설계안 3 시험본 사람 확인 2026-09-18 의 참고). 수정 2 의 한계 (xh_18 가장 아래 잉크 최대 0.955) 와 함께 읽는다",
+   "사람 확인 이전 규칙": "수정된 생성기로 다시 만든 세트의 이미지 sha256 이 설계안 3 시험본 (저장소 밖 scratchpad design/out_13, 같은 셀 · seed · PYTHONHASHSEED=4) 과 판마다 모두 같으면, 시험본 26장에 대한 사람 확인 (2026-09-18 승인) 을 그 세트에 적용한다. 하나라도 다르면 적용하지 않고 다른 판 목록만 보고한 뒤 멈춘다"
+  },
+  {
+   "수정": 3,
+   "날짜": "2026-09-18",
+   "박은 때": "생성기 고치기 전 · 스윕 공용 세트를 다시 만들기 전",
+   "커밋 전 HEAD": "d07b042",
+   "1 해시 순서 의존 제거": "eval/synth_gen.py 에서 결과가 파이썬 해시 순서(str 집합 순회)에 기대는 곳을 정렬된 순서로 순회하게 고친다. 결과를 바꾸는 곳은 fill_line 폴백 (문구 하나도 안 들어가는 폭에서 낱말 집합을 폭으로만 정렬 — 폭이 같은 낱말 순서가 해시 순서를 따른다) 이며 (폭, 문자열) 순으로 정렬한다. _min_distance 의 글자 집합 순회는 최댓값만 쓰므로 결과는 같지만 함께 정렬 순회로 바꾼다",
+   "2 PYTHONHASHSEED=4 고정 철회": "수정 2 보충의 «사람 확인 이전 규칙» 과 스윕 공용 세트 재생성(d07b042)에 쓴 PYTHONHASHSEED=4 는 근거 없는 값이었다 (설계안 3 시험본의 xh_18 폴백 낱말을 옛 세트와 맞추려고 고른 값). 철회한다. 고친 코드는 해시 시드와 무관해야 하며, PYTHONHASHSEED 0 · 1 · 4 로 만든 390장의 이미지 sha256 이 모두 같은지 확인한다. 하나라도 다르면 멈춘다",
+   "3 스윕 공용 세트": "고친 코드로 다시 만든다 (13셀 × seed 7201~7230). 사람 확인 (CLAUDE.md 규칙 9) 과 Surya 줄 추출을 다시 한다. d07b042 세트, 그 세트에 옮긴 승인, 그 세트의 Surya 줄 (~/.typo-mcp/synth_sweep_lines) 은 쓰지 않는다",
+   "4 clean 세트": "다시 만들지 않는다 — 저장된 이미지가 데이터다. 해시 의존 확인 결과 (탐색용): clean_gen 은 synth_gen.fill_line 을 부르지 않고 문구를 eval/clean_phrases.py (정렬된 목록 · 삽입 순서 dict) 로 채운다. PYTHONHASHSEED 0 · 1 · 4 에서 clean_gen.layout 문구가 저장 참값과 280/280 판 같다 → 한계로 기록할 해시 의존 없음",
+   "5 clean_gen 배치": "고치지 않는다 — 280장에서 획 겹침 판 0 · 블록 사이 상자 맞닿음 판 0 (탐색용 확인). 수정 2 의 «clean_gen 수정 여부는 수정 3 에서» 를 이것으로 정한다",
+   "참고 group 세트 (폐기)": "group_gen 은 synth_gen.fill_line 을 불러 같은 폴백 경로를 탄다. PYTHONHASHSEED 0 · 1 · 4 에서 저장 참값과 문구가 다른 판 128 · 120 · 106 / 240 (다른 원인이 섞였는지는 가르지 않았다). 폐기된 세트라 다시 만들지 않는다"
+  },
+  {
+   "수정": 4,
+   "날짜": "2026-09-18",
+   "박은 때": "결과를 보기 전. 이 수정에 걸린 상수의 실물 관찰 · 합성 스윕은 아직 하나도 실행하지 않았다",
+   "커밋 전 HEAD": "b35ef5f",
+   "이미 실행된 것 (사실)": "이 수정을 받기 전에 e 측정 (eval/constants_e.py, 라벨 없는 실물 222장) 을 한 번 실행했다 — 결과 파일 docs/constants_e.json (커밋하지 않음). 실행 로그의 끝 줄 (e 값 · 중앙값 · 가장자리 수 한 줄) 이 작업 세션 (Claude) 화면에 찍혔고, 사용자는 보지 않았다. 결과 파일은 열지 않았다. 잉크 문턱 스윕 (eval/constants_ink_sweep.py, 합성 스윕 공용 세트) 도 실행이 끝났으나 결과는 아직 아무도 보지 않았다 — 이 스윕은 합성 스윕이라 이 수정의 폐지 대상이 아니다",
+   "1 원칙": "파이프라인 상수는 실물 데이터로 정하지 않는다 (라벨 여부와 무관). 근거: 라벨 없는 실물 222장에 채점 대상과 같은 작가 (브로크만 71) 가 들어 있고, «합성으로 완성 → 실물 적용» 원칙과 충돌한다",
+   "2 «라벨 없는 실물 관찰» 폐지": "이 방식을 없앤다. 해당 상수 — FRAG_WIDE · FRAG_COVER · polarity() 꼬리 백분위 · lines() peak 백분위 · lines() on 백분위 · detect_surya.X_OVER · MIN_AREA · H_RATIO · Y_GAP — 는 합성 스윕으로 옮긴다. 격자 = 현재 값 × {0.50, 0.75, 1.00, 1.25, 1.50} (공통 규칙 «합성 스윕으로 넘길 때» 와 같음, 정수 상수는 반올림, 겹친 점은 하나로). 지표 = 그 상수가 영향을 주는 출력. 평평 · 결정 = 공통 규칙 «합성 스윕» (δ 0.02). A 상수 (X_OVER · MIN_AREA · H_RATIO · Y_GAP) 의 지표 = 합성 블록 채점의 재현율 · 과병합. 세트 = 합성 스윕 공용 세트",
+   "3 e 측정 폐지": "e 행을 없앤다. min_h = 2 는 정의 (번진 가장자리 1행 + 몸통 1행) 로 둔다. e 를 쓰던 식 — split_marks() 어센더 문턱 max(e + 1, …) · lines() 발음기호 틈 최소 ⌈…⌉ + e — 은 e = 1 로 둔다. measure() 최소 창 = 2 × min_h 는 min_h = 2 를 따른다",
+   "4 한계": "합성에는 실물 잡음 (얼룩 · 사진 · 인쇄 번짐) 이 없다. 잡음 관련 상수의 합성 스윕이 평평하면, 실물 잡음에 대한 근거는 없는 것으로 적는다",
+   "5 unlabeled222 Surya 줄": "~/.typo-mcp/unlabeled222 의 Surya 줄은 상수 작업에 쓰지 않는다 (보관만). docs/unlabeled222_manifest.json 도 보관만 한다",
+   "바뀌는 본문": "공통 규칙 «라벨 없는 실물 관찰» · 수정 1 의 1 (실물 관찰 결정 규칙) · 의존 순서의 «1 · e» 와 «3 라벨 없는 실물 관찰» · 대상 상수 e 행과 위 9개 상수의 근거 방식 · 계획 · 결정 규칙 은 이 수정으로 대신한다"
+  },
+  {
+   "수정": 5,
+   "날짜": "2026-09-18",
+   "박은 때": "B1 (잉크 문턱 합성 스윕) 결과를 열기 전. B1 은 실행이 끝났고 결과 파일 docs/constants_ink_threshold.json 은 아직 아무도 열지 않았다",
+   "커밋 전 HEAD": "c3fe03b",
+   "(a) 합성 스윕 판정 해석 두 가지": {
+    "결정 곡선": "선 종류 (지표) 마다 13셀 단순 평균 재현율 — 셀 재현율 = 셀 안 판을 모은 허용안 짝 ÷ 참값 선. «lines(… body_h=)» 행의 «셀 평균» 과 같게. 셀별 곡선 · 셀별 평평 구간은 참고로 함께 보고한다",
+    "가운데 격자 점": "평평 구간 교집합의 격자 점이 짝수 개면 가운데 두 점 중 낮은 쪽",
+    "적용": "eval/constants_ink_sweep.py (B1) 에 실행 전에 이미 박혀 있던 해석이다. 이후 모든 합성 스윕에 같은 두 규칙을 쓴다"
+   },
+   "(b) 4장 평가 세트": {
+    "평가 세트": "seed 8001~8050 × 13셀 = 650장, 현재 생성기 (수정 2 · 3 반영). 상수 동결 뒤 한 번만 측정 · 채점한다. 4장 논문 수치용",
+    "조정 세트": "합성 스윕 공용 세트 seed 7201~7230 × 13셀 = 390장. 상수 고르기 (평평 구간 확인) 에만 쓴다",
+    "근거": "seed 1~30 은 개발 중에 여러 번 본 세트다",
+    "구성": "두 세트는 같은 13셀 구성이고 포스터가 겹치지 않는다 (seed 구간이 다르다)",
+    "(b) 빛 기준 렌더 강건성 조건": "수정 1 의 3 (seed 1~30) 을 평가 세트 seed 8001~8050 으로 바꾼다",
+    "바뀌는 본문": "seed 구간 «4장 재실행» 의 합성 통제 실험 1~30 · 수정 1 의 3 · seed 구간 (바뀜) · 수정 2 의 6 가운데 4장 합성 세트 (seed 1~30) 재생성 부분"
+   },
+   "(c) b35ef5f 의 seed 1~30 새 세트": "~/.typo-mcp/synth 의 수정 2 · 3 생성기 seed 1~30 세트 (docs/synth_manifest.json, b35ef5f) 는 보관만 하고 4장 수치에 쓰지 않는다. 그 미리보기 (docs/synth_preview.json) 는 사람 확인하지 않는다"
+  },
+  {
+   "수정": 6,
+   "날짜": "2026-09-18",
+   "박은 때": "코드 반영 전. docs/constants_definitions.json (522d61e) 의 계산과 탐색 (분모 확인, scratchpad) 을 본 뒤다",
+   "커밋 전 HEAD": "522d61e",
+   "1 분모 환산": "유도값 (발음기호 small · 틈 비) 은 x높이 기준 비이고, 코드 (measure/ink.py lines() :98 · :101) 는 띠 높이 nb.h 에 곱한다. 환산 비 = 어센더 ÷ x높이 = 0.719 ÷ 0.523 = 1.3748 (Helvetica 1000px 실측, b d h 윗끝). 근거: nb.h 는 행 잉크 문턱을 넘는 연속 행 (어센더 윗끝 ~ 베이스라인) 이며, 조정 세트 실측 nb.h ÷ 측정 x높이 중앙값 1.375 (13셀 모음 8,995띠 · 흡수 후보 2,100) 가 이와 같다 (탐색용)",
+   "2 순서 2 최종 판정": {
+    "min_h": "2 유지",
+    "region.measure() 최소 창": "4 유지",
+    "baseline(… frac=)": "0.5 유지",
+    "lines() 발음기호 small": "0.5 → 0.284 (= 0.3901 ÷ 1.3748; 0.3901 = å 고리 높이 ÷ x높이)",
+    "lines() 발음기호 틈 비": "0.6 → 0.131 (= 0.1797 ÷ 1.3748; 0.1797 = i 점 아래끝 틈 ÷ x높이)",
+    "lines() 발음기호 틈 최소": "3 유지. 식 (⌈틈 비 × x높이_px⌉ + e) 으로 바꾸지 않는다 — 흡수 고리 안에서는 x높이를 알 수 없고 (baseline · split_marks 는 고리 뒤에 불림) 구조 변경 비용이 크다. 3 의 정의 = 번진 가장자리 1행 + 점 1행 + 몸통 1행",
+    "split_marks() 어센더 2행": "2 → max(2, ⌊(어센더 − x높이) ÷ x높이 × x높이_px ÷ 2⌋), 비 (어센더 − x높이) ÷ x높이 = 0.3748 (글꼴 실측, 어센더 0.719). x높이_px = split_marks 안의 base − x높이선 행. x높이 3 · 5 · 8 · 12 px 에서는 2, 18 px 에서만 3",
+    "e": "수정 4 대로 e = 1 (max 의 2 = e + 1)"
+   },
+   "3 baseline/detect.py": "baseline/detect.py 가 measure.ink.lines 를 import 해서 부르지만 (:14 · :391) 논문 경로가 아니다 (CONSTANTS_AUDIT «경로 없음»). 이 수정의 판정 근거 · 확인에 쓰지 않는다",
+   "4 한계": "유도는 Helvetica 기준이다. 실물 코퍼스는 Akzidenz-Grotesk 계열이라 글꼴 비율 (어센더 ÷ x높이 · 발음기호 크기 · 틈) 이 다를 수 있다"
+  },
+  {
+   "수정": 7,
+   "날짜": "2026-09-18",
+   "박은 때": "코드 반영 전. 수정 6 반영 (1691dd3) 뒤 확인 · 탐색을 본 뒤다",
+   "커밋 전 HEAD": "1691dd3",
+   "1 발음기호 틈 문턱": "유도식 그대로 구현한다 — 틈 문턱 = ⌈0.1797 × nb x높이⌉ + 1. 0.1797 = i 점 아래끝과 x높이선 거리 ÷ x높이 (Helvetica 1000px 실측), + 1 = e (수정 4 의 e = 1). nb x높이는 흡수 고리 안에서 nb 구간에 baseline() · split_marks() 를 불러 잰다 (base − x_top). 두 함수는 lines() 결과를 쓰지 않으므로 순환 참조가 없다 (코드 경로 확인). 판마다 x높이를 재는 횟수는 조정 세트에서 중앙 1~16.5회 (메모: 열쇠 = nb 의 (s, e, span))",
+   "2 물러남": "x높이를 못 재면 (잉크 없는 띠 · 몸통 덩어리 없음 → x높이 ≤ 0) max(3, nb.h × 0.131) 로 물러난다. MARK_GAP_RATIO 0.131 은 이 물러남 경로에만 남는다. 조정 세트에서 물러난 횟수는 0이었다 (탐색)",
+   "3 이유": "수정 6 은 «흡수 고리 안에서 x높이를 알 수 없다» 는 판단으로 바닥값 3만 남겼으나, 확인 결과 잴 수 있었다. 이 수정은 사전등록 유도식을 온전히 구현하는 것이며 성능 기준으로 고르는 것이 아니다",
+   "4 이미 본 결과 (사실 기록)": "수정 6 반영 뒤 조정 세트에서 상단 잉크선 재현율이 네 셀에서 내려간 것을 이미 보았다 (xh_5 0.9059 → 0.8838 · xh_18 0.9568 → 0.9478 · rule_independent 0.9524 → 0.9360 · rule_random 0.9613 → 0.9479, 탐색용). 이 수정의 판정 근거로 쓰지 않는다",
+   "5 어센더 식의 ÷ 2": "유지한다. 한계: ÷ 2 의 근거를 적은 문장이 없다 — 이 항은 근거 계획 초안 (docs/CONSTANTS_AUDIT.md 347d834) 의 식 문장에서 처음 나왔고, 그 앞 초안 (377c898) 에는 없었다. 탐색에서 ÷ 2 를 뺀 식 (max(2, ⌊0.3748 × x높이⌋)) 을 조정 세트에 시험했을 때 상단 잉크선 재현율이 크게 떨어졌다 (예: res_1600 0.9971 → 0.2212 · rule_random 0.9613 → 0.7083, 탐색용). 값은 이 결과로 정하지 않았다",
+   "6 바뀌지 않는 것": "small 0.284 · 틈 최소 물러남 바닥 3 · min_h 2 · 최소 창 4 · baseline frac 0.5 · 어센더 식 (÷ 2 포함) · 수정 4 의 e = 1"
+  },
+  {
+   "수정": 8,
+   "날짜": "2026-09-18",
+   "박은 때": "순서 4 (남은 합성 스윕) 실행 전. 이 수정의 스윕은 아직 하나도 돌리지 않았다",
+   "커밋 전 HEAD": "8067bbe",
+   "1 백분위 상수의 격자": {
+    "규칙": "백분위 상수는 곱하기 격자 대신 꼬리 크기로 격자를 만든다 (100 을 넘지 않게)",
+    "polarity() 꼬리 백분위": "아래 p ∈ {2, 4, 5, 6, 8}, 위 = 100 − p. 두 끝을 대칭으로 함께 움직인다. 근거: 극성 판정이 위 · 아래 꼬리를 대칭으로 견주는 통계다 (measure/ink.py polarity)",
+    "lines() peak 백분위": "100 − (100 − 90) × {0.50, 0.75, 1.00, 1.25, 1.50} = {95, 92.5, 90, 87.5, 85}",
+    "lines() on 백분위": "{2, 4, 5, 6, 8} 그대로 (100 과 무관)"
+   },
+   "2 두 값짜리 상수": "detect_surya.H_RATIO · Y_GAP 은 두 끝을 따로 움직인다 — 한 번에 한 끝, 나머지 끝은 현재 값. 근거: 두 끝의 뜻이 달라 함께 움직이면 어느 끝이 움직였는지 가린다. 격자는 끝마다 현재 값 × {0.50, 0.75, 1.00, 1.25, 1.50}",
+   "3 region.PAD 지표": "clean 세트 C 블록 F1 을 뺀다. 조정 세트의 베이스라인 · 상단 잉크선 재현율 · 정밀도와 블록 상자 IoU (IoU ≥ 0.5 1:1 블록 재현율 · 짝지은 블록 평균 IoU) 로만 판정한다. 근거: clean 채점은 수정 2 의 c_in 참조 변경이 걸려 있어 최종 재계산 때 한 번만 돌린다",
+   "4 정밀도 함께 보고": {
+    "규칙": "순서 4 · 병행 상수 모두 지표에 재현율과 정밀도를 함께 적는다. 판정은 사전등록대로 재현율 (블록 상수는 블록 재현율 · 과병합) 로 하고, 정밀도가 δ (0.02) 넘게 떨어지는 격자 점이 있으면 결과 파일과 보고에 표시한다. 판정은 바꾸지 않는다",
+    "기준": "떨어짐의 기준은 현재 값에서의 정밀도다 — 정밀도 < 현재 값 정밀도 − δ 인 격자 점을 표시한다",
+    "근거": "재현율만 보면 느슨한 문턱이 유리해 보이는 편향이 있다",
+    "잉크 문턱": "순서 1 잉크 문턱 판정 (docs/constants_ink_threshold.json) 에도 같은 표를 사후로 더한다. 판정 (유지 0.72) 은 바꾸지 않는다"
+   },
+   "5 바뀌지 않는 것": "세트 (조정 세트 = 합성 스윕 공용 세트 seed 7201~7230, 13셀) · 한 번에 한 상수 · δ 0.02 · 평평과 결정 규칙 · 수정 5 의 두 해석 (13셀 단순 평균 · 짝수면 낮은 쪽)"
+  },
+  {
+   "수정": 9,
+   "날짜": "2026-09-18",
+   "박은 때": "재스윕 전. 순서 4 첫 스윕 (docs/constants_sweep4.json, 4930d62) 결과를 본 뒤다 — 이 수정은 판정 규칙을 고치는 것이고, 값은 규칙대로 다시 돌려 정한다",
+   "커밋 전 HEAD": "4930d62",
+   "1 격자 끝점": "평평 구간이 격자 끝점에서 끝나면 (구간의 한쪽 끝이 격자의 첫 점 또는 마지막 점) 그 방향으로 격자를 넓혀 다시 돌린다. 넓힌 뒤에도 끝점이면 다시 넓히되 최대 2회. 그래도 끝점이면 «격자 한계» 로 적고 현재 값을 유지한다. 근거: 끝점은 최적이 격자 밖에 있을 수 있어 가운데 점을 정할 수 없다",
+   "2 블록 상수의 결정 지표": "detect_surya.H_RATIO · Y_GAP · X_OVER · MIN_AREA 는 결정 지표에 과분할을 더한다. 판정 = 블록 재현율 평평 구간 안에서 과병합 + 과분할 의 합이 가장 작은 격자 점 (같은 값이 여럿이면 가장 작은 격자 점). 그 점이 현재 값이면 유지, 아니면 바꿀 값. 근거: 재현율만 보면 블록을 잘게 쪼개는 방향이 유리해 보이는 편향이 있다",
+   "3 표본 부족": "결정 지표의 표본이 30 (짝 · 블록 · 쌍) 미만이면 그 지표로 판정하지 않는다. «표본 부족» 으로 적고 현재 값을 유지하며, 곡선은 참고로 남긴다. 근거: split_marks() 되돌림 어깨는 격자마다 짝이 5쌍뿐이어서 한두 줄로 판정이 뒤집힌다",
+   "4 이 수정으로 다시 돌리는 것": "detect_surya.Y_GAP 상한 (격자 0.2 · 0.4 · 0.6 · 0.8 · 1.0 · 1.2 · 1.6) · H_RATIO 하한 (0.60 · 0.675 · 0.75 · 0.825 · 0.90) · 블록 상수 전체 (과분할을 더한 판정) · split_marks() 되돌림 어깨 (표본 부족 판정). 나머지 상수의 격자 · 지표는 그대로",
+   "5 바뀌지 않는 것": "세트 (조정 세트) · 한 번에 한 상수 · δ 0.02 · 평평 구간 정의 · 수정 5 의 두 해석 · 수정 8 의 백분위 격자 · 정밀도 함께 보고"
+  },
+  {
+   "수정": 10,
+   "날짜": "2026-09-18",
+   "박은 때": "코드 반영 전. 수정 9 재스윕 (4a4b120) 결과를 본 뒤 판정 규칙을 고친다 — 값은 규칙대로 다시 돌려 정한다",
+   "커밋 전 HEAD": "4a4b120",
+   "1 동점 처리": "결정 지표가 여러 격자 점에서 같으면 «가장 작은 점» 이 아니라 현재 값을 유지한다. 현재 값이 그 동점 무리에 들면 «유지 (효과 없음)» 으로 적는다. 근거: 지표가 같다는 것은 이 세트에서 그 상수가 결과를 바꾸지 않는다는 뜻이고, 근거 없이 값을 바꾸게 된다. 이에 따라 detect_surya.Y_GAP 하한 · X_OVER · MIN_AREA 는 «유지 (효과 없음)»",
+   "2 격자 끝점 규칙": "«선택된 점이 격자의 끝일 때» 로 고친다 (평평 구간이 끝점 한 점만 남은 때도 그대로 포함). 그 방향으로 넓혀 다시 돌리고, 넓히기는 최대 2회. 그래도 끝이면 «격자 한계» 로 적고 현재 값을 유지한다. 이에 따라 detect_surya.H_RATIO 상한을 다시 돌린다 (격자 1.70 · 2.55 · 3.4 · 4.25 · 5.1)",
+   "3 한계": "이 세트에서 효과가 관찰되지 않은 상수 (Y_GAP 하한 · X_OVER · MIN_AREA) 는 근거를 얻지 못한 것으로 적는다 — 값이 옳다는 뜻이 아니라, 조정 세트가 그 상수를 가르지 못한다는 뜻이다",
+   "4 바뀌지 않는 것": "세트 · 한 번에 한 상수 · δ 0.02 · 평평 구간 정의 · 수정 5 의 두 해석 · 수정 8 의 백분위 격자와 정밀도 보고 · 수정 9 의 블록 결정 지표 (과병합 + 과분할) 와 표본 30 규칙"
+  },
+  {
+   "수정": 11,
+   "날짜": "2026-09-18",
+   "박은 때": "재봉인 기록 — «바뀐 값이 있을 때» 절의 재봉인 절차를 따른 결과만 적는다. 옛 봉인 파일은 열지 않았다",
+   "커밋 전 HEAD": "a0c9f3d",
+   "바뀐 상수": "detect_surya H_RATIO (0.60, 1.70) → (0.675, 2.55) · Y_GAP 상한 1.60 → 0.8 (a0c9f3d), measure/ink.py 발음기호 · 어센더 (1691dd3 · 8067bbe)",
+   "다시 만든 것": "파이프라인 캐시 4개 (~/.typo-mcp/{brockmann, corpus, rose, ruder}.json, remeasure.py, 274장, 5분 52초) · 봉인 docs/brockmann_group_explore.json (eval/brockmann_group_explore.py explore, 1.2초). 옛 파일은 ~/.typo-mcp/pre_sweep4/ 로 옮겨 두었다 (지우지 않음)",
+   "봉인 입력 sha256 (그대로임을 확인, 열지 않음)": {
+    "~/.typo-mcp/brockmann50/lines.json": "444b35184bf1267ac497a55aa2878b756e722729b707c7854355b80fcc29d84f",
+    "~/.typo-mcp/brockmann50/manifest.json": "6306bb83062af3b49343912c2c4b34fe71e487c01d2b343a08c0b38b55be407e",
+    "boxes/brockmann_vlm_pass1.json": "dd3d3c8a8270c02bfe545be79344648c92a7cb932e60bae816cdd1ad11a85ba2",
+    "boxes/brockmann_vlm_pass2.json": "a87daf8932e5fa656e94a5aa121d09b1ea50c5dfaa3b526440d320a611e9f587"
+   },
+   "새 봉인 sha256": {
+    "docs/brockmann_group_explore.json (새로 만듦)": "75260d2503a5878577901f4d6f807c4b94729df9c8a8317da6bd434c1cddf959",
+    "옛 파일 (a166e70, ~/.typo-mcp/pre_sweep4/brockmann_group_explore.json.bak)": "7eed6552601de724eb9737003286506280fe8abef311995c26e6d48d7b76f252"
+   },
+   "확인": "새 파일의 «봉인» 필드가 그대로 있다 (내용 수치는 보지 않았다). 바뀐 열쇠 확인이 필요하면 eval/sealed_keydiff.py 로만 한다",
+   "아직 안 한 것": "4장 (합성) · clean 재채점, run_all 바이트 확인 — 사용자 지시로 보류"
+  },
+  {
+   "수정": 12,
+   "날짜": "2026-09-18",
+   "박은 때": "재채점 전. 상수 반영 (a0c9f3d · 8067bbe) 과 캐시 · 봉인 재생성 (f1e4a38) 뒤, run_all 을 돌리기 전이다",
+   "커밋 전 HEAD": "f1e4a38",
+   "1 세트 항목 분리": "eval/refs.json 에 synth_tune (조정 세트 seed 7201~7230) 과 synth_eval (평가 세트 seed 8001~8050) 을 따로 둔다. 4장 채점 (eval/synth_score.py) 은 synth_eval 만 읽는다. 조정 세트는 상수 스윕 (순서 1 · 4) 만 읽는다. seed 1~30 세트 (docs/synth_manifest.json · ~/.typo-mcp/synth) 는 어느 항목에도 넣지 않는다 — 보관만 (수정 5 의 (c))",
+   "2 clean c_in 참조 구현": "수정 2 의 5 를 eval/group_score.py 에 넣는다. 블록 채점의 참값은 c_in 쌍으로 이어진 블록을 하나로 합친 것 (본 수치) 이고, 원 정의 (합치지 않은 참값) 는 참고 열로 함께 낸다. 쌍 병합률 곡선 (수준별) 의 정의는 바꾸지 않는다",
+   "3 (b) 빛 기준 렌더": "scratchpad 의 render_linear 를 eval/ 로 옮겨 (eval/render_linear.py) 평가 세트 seed 8001~8050 × 13셀 로 (b) 조건 세트를 만든다 (수정 1 의 3 이행, 판정 없음 · 강건성 보고용). 생성 뒤 자동 검증과 사람 확인 (CLAUDE.md 규칙 9) 다음에 Surya · 채점",
+   "4 검출기 비교": "run_all 을 --redetect 로 돌려 Surya 묶음 상자 (boxes/surya_run1·2.json · boxes/surya_lines.json) 를 새 상수로 다시 만든다. 까닭: 이 파일들은 detect_surya.boxes_norm 을 거쳐 H_RATIO · Y_GAP 을 탄다 (detector_compare.py:141 · :167). EasyOCR 상자 · 사람 상자 · VLM 상자는 이 상수를 거치지 않으므로 그대로 쓴다",
+   "5 캐시 원칙": "이번 재채점이 읽는 캐시 · 중간 산출물은 모두 새 상수 뒤에 만든 것이어야 한다. 보관 폴더 (~/.typo-mcp/pre_sweep4 · synth_pre_amend2 · synth_sweep_d07b042_hash4 · synth_sweep_pre_amend2 · synth_sweep_amend2_hash0 · synth_sweep_lines_d07b042) 는 읽지 않는다. Surya 줄은 이 상수를 거치지 않으므로 (group_score.detect 에 detect_surya 상수가 없다) 다시 뽑지 않는다"
+  },
+  {
+   "수정": 13,
+   "날짜": "2026-09-18",
+   "박은 때": "clean A 문턱 훑기 (eval/clean_a_sweep.py) 를 다시 돌리기 전",
+   "커밋 전 HEAD": "34989ea",
+   "1 clean_a_sweep 격자 확장": "docs/clean_a_sweep_preregister.json 의 H_RATIO 격자에 하한 0.675 · 상한 2.55 를 더한다 (25쌍 → 36쌍, 조합 7,625 → 10,980). 까닭: A 문턱이 수정 10 판정으로 (0.675, 2.55) 로 바뀌어 «원래 문턱» 행이 격자에 없다. 판정 규칙 (층 가중 블록 F1 최대, 같으면 원래 문턱에 가까운 조합) · 지표 · 입력은 그대로다",
+   "2 clean 오라클": "합친 참조 (c_in 병합) 에서는 오라클도 합친 블록으로 묶는다 (34989ea). 원 정의 표는 그대로다 — 오라클이 그 참조의 상한이 되게 한다",
+   "3 남은 단계": "clean_a_sweep · measure_pad · 봉인 탐색 재생성 · 잉크 문턱 스윕 · 순서 4 스윕 · 정의 유도 · idml 을 이어서 돌린다. 캐시 원칙 (수정 12 의 5) 은 그대로"
+  },
+  {
+   "수정": 14,
+   "제목": "상수 동결",
+   "날짜": "2026-09-18",
+   "박은 때": "새 상수 위에서 다시 돌린 재판정 결과를 본 뒤. 이 수정으로 상수 근거 작업을 끝낸다",
+   "커밋 전 HEAD": "039e03d",
+   "1 1회로 종료": "상수 근거 작업을 1회로 끝낸다. 재판정 결과는 값 변경에 쓰지 않는다. 근거: 이 작업의 목적은 상수마다 근거를 붙이는 것이지 최적값에 수렴하는 것이 아니다. 한 상수를 반영하면 다른 상수의 판정이 움직여 절차가 끝나지 않고, 반영할 때마다 4장 · 2절 · 5장을 다시 해야 한다. 이 사전등록에는 반복 횟수 규칙이 없었다 — 그 빠짐을 여기에 적어 둔다",
+   "2 동결된 값": {
+    "순서 1 잉크 문턱": "measure/ink.py threshold() 배경 × 0.72 (조정 세트 스윕, 유지)",
+    "순서 2 정의 유도": {
+     "lines · descender min_h": 2,
+     "region.measure() 최소 창": 4,
+     "baseline(frac=)": 0.5,
+     "split_marks() 어센더 문턱": "max(2, ⌊0.3748 × x높이_px ÷ 2⌋) (식)",
+     "lines() 발음기호 small": 0.284,
+     "lines() 발음기호 틈 문턱": "⌈0.1797 × nb x높이⌉ + 1, 못 재면 max(3, nb.h × 0.131)"
+    },
+    "순서 4 · 병행": {
+     "lines(body_h=)": 4,
+     "split_marks() 되돌림 어깨": "0.5 (표본 부족 — 유지)",
+     "region.PAD": 3,
+     "FRAG_WIDE": 0.4,
+     "FRAG_COVER": 0.35,
+     "polarity() 꼬리 백분위": "5 · 95 (효과 없음)",
+     "lines() peak 백분위": 90,
+     "lines() on 백분위": "5 (효과 없음)",
+     "detect_surya.X_OVER": "0.15 (효과 없음)",
+     "detect_surya.MIN_AREA": "200 (효과 없음)",
+     "detect_surya.H_RATIO": [
+      0.675,
+      2.55
+     ],
+     "detect_surya.Y_GAP": [
+      -0.4,
+      0.8
+     ]
+    }
+   },
+   "3 재판정은 민감도 자료": "새 상수 위에서 조정 세트를 다시 돌린 판정 — 잉크 문턱 «바꿀 값 0.52» · detect_surya.H_RATIO 상한 «바꿀 값 3.4» · Y_GAP 하한 «격자 끝점» (docs/constants_ink_threshold.json · docs/constants_sweep4.json, 039e03d) — 은 값에 반영하지 않는다. «상수 간 상호작용 민감도 자료» 로 4장 (합성 실험) 과 6장 (한계) 에 적는다",
+   "4 clean A 훑기의 기준": "docs/clean_a_sweep.json 의 F1 은 원 정의 (c_in 을 합치지 않은 참값) 기준이다. docs/clean_result.json 의 본 수치는 합친 정의 기준이라 둘의 F1 은 바로 견줄 수 없다 («원래_문턱_재현.clean_result_와_같음» 이 false 인 까닭). 이 차이는 고치지 않고 보고에 적는다",
+   "5 오라클": "합친 참조에서는 오라클도 합친 블록으로 묶는다 (34989ea). 그 결과 합친 정의에서 오라클 블록 F1 = 1.0 이다 (원 정의에서도 1.0)",
+   "6 봉인 탐색 파일 sha256 이력": {
+    "현재 유효한 값": "b016a1cadc121450230e… (docs/brockmann_group_explore.json, 039e03d 시점). 2026-09-18 run_all 남은 단계에서 새 상수 (detect_surya a0c9f3d · measure/ink 8067bbe) 로 다시 만들었다",
+    "그 앞": "75260d2503a5878577901f4d6f807c4b94729df9c8a8317da6bd434c1cddf959 (수정 11, f1e4a38 시점). detect_surya · measure/ink 반영 뒤 재봉인 절차로 만든 값",
+    "최초": "7eed6552601de724eb9737003286506280fe8abef311995c26e6d48d7b76f252 (a166e70). 옛 상수로 만든 값",
+    "왜 바뀌었나": "상수가 바뀔 때마다 사전등록 «바뀐 값이 있을 때» 절차대로 다시 만들었다. 파일 내용은 어느 시점에도 열지 않았다",
+    "봉인 입력": "~/.typo-mcp/brockmann50/lines.json 444b3518… · manifest.json 6306bb83… · boxes/brockmann_vlm_pass1.json dd3d3c8a… · pass2.json a87daf89… — 모두 그대로다 (이 상수들을 거치지 않는다)"
+   }
+  }
+ ]
+}

@@ -1,0 +1,164 @@
+"""상자 하나를 받아 그 안을 잰다 — 재는 쪽의 입구.
+
+어디를 잴지는 부르는 쪽이 정하고, 이 파일은 재기만 한다.
+typographic metrology 의 «재는» 쪽이다. 짚는 쪽은 VLM 이 맡는다.
+
+왜 나눴나 (judgment–measurement separation). 덩어리를 «찾는» 일과 그 안을
+«재는» 일은 잘하는 쪽이 다르다. 오페라하우스 두 장을 IDML 가이드로 대조해
+그 경계를 실측했다.
+
+    덩어리 찾기   VLM 6/6 맞음         ·  baseline 의 detect.run() 은 17개·12개로 쪼갬
+    상자 위치     VLM 여덟 변 중 일곱이 ±1px
+    행간 재기     VLM +24% 편향        ·  이 파일은 21.0px (정답 21px)
+    정렬 판정     —                    ·  왼쪽 흩어짐 0.0px 대 오른쪽 39.6px
+
+경계가 «상자를 짚는 일» 과 «상자 안을 재는 일» 사이에 있다. 짚기는 추정이
+허용되고 재기는 허용되지 않는다 — 재는 값이 행간/활자높이 같은 비율이라
+24% 편향이 규칙 채택을 통째로 바꾸기 때문이다.
+
+baseline 의 detect.run() 처럼 스스로 판면을 훑지 않으므로, 도형을 글자로 오인하거나
+검은 바탕의 흰 글자를 놓치는 실패가 구조적으로 생기지 않는다 — 잴 자리를
+이미 받았기 때문이다.
+
+    from measure.region import measure
+    measure(path, (x1, y1, x2, y2))   # 좌표는 원본 픽셀
+"""
+import numpy as np
+from PIL import Image
+from measure import ink, grid
+
+PAD = 3          # 상자 가장자리의 획이 잘리지 않게 조금 넓혀 잡는다
+ALIGN_EPS = 3.0  # 정렬로 인정하는 흩어짐 (px). 왼쪽은 이보다 훨씬 고르다
+
+
+SPLIT_GAP_XH = 1.5   # 가로로 가르는 빈틈 / 블록 x높이. 라벨 50장 · 합성 평가 세트 실측 (2026-09-18):
+                     # 블록 안 낱말 틈은 x높이의 0.667 (실물 p95) · 0.75 (합성 p95) 이고 합성 최댓값이 1.5,
+                     # 라벨의 가로로 떨어진 블록 사이 틈은 중앙 3.3 (실물) · 3.9 (합성) 다. 두 분포 사이에 둔다.
+
+
+def split_columns(src, box, xh):
+    """블록 안 가로 빈틈이 SPLIT_GAP_XH × x높이보다 넓으면 그 자리에서 가른 상자 목록을 돌려준다.
+
+    까닭 — 좌우로 나란한 두 텍스트 블록이 한 상자로 묶이면 같은 높이의 두 글줄이 한 띠가 되어
+    선이 하나만 나온다 (브로크만 50장 미검출 135줄 가운데 90줄이 이 자리였다, 2026-09-18 탐색).
+    묶기(detect_surya.group)는 세로로만 잇고 가로로 가르지 않으며, COL_* 는 판 단위 단 세기에만 쓰인다.
+    빈틈 기준은 그 블록에서 잰 x높이 × SPLIT_GAP_XH 다. 열은 블록의 모든 행에서 비어야 빈틈으로 센다
+    (여러 줄 블록에서는 «모든 글줄에서 비는 자리» 조건과 같다).
+    가를 자리가 없으면 [box] 를 그대로 돌려준다.
+    """
+    if not xh or xh <= 0:
+        return [box]
+    g = (src.astype(float) if isinstance(src, np.ndarray)
+         else np.asarray(Image.open(src).convert('L')).astype(float))
+    H, W = g.shape
+    x1, y1, x2, y2 = box
+    x1 = max(0, int(x1) - PAD); y1 = max(0, int(y1) - PAD)
+    x2 = min(W, int(x2) + PAD); y2 = min(H, int(y2) + PAD)
+    if x2 - x1 < 4 or y2 - y1 < 4:
+        return [box]
+    gp = ink.polarity(g[y1:y2, x1:x2])
+    col = (gp < ink.threshold(gp)).any(axis=0)
+    runs, s = [], None                                   # 잉크가 없는 열의 이어진 구간
+    for i, v in enumerate(col):
+        if not v and s is None:
+            s = i
+        if v and s is not None:
+            runs.append((s, i)); s = None
+    if s is not None:
+        runs.append((s, len(col)))
+    cuts = [(a + b) // 2 + x1 for a, b in runs if 0 < a and b < len(col) and (b - a) > SPLIT_GAP_XH * xh]
+    if not cuts:
+        return [box]
+    out, left = [], box[0]
+    for c in cuts + [box[2]]:
+        if c - left >= 4:
+            out.append([left, box[1], min(c, box[2]), box[3]])
+        left = c
+    return out or [box]
+
+
+def _align(xs, xe):
+    """왼쪽·오른쪽·가운데 중 어느 축이 가장 고른가. 판단이 아니라 측정이다."""
+    if len(xs) < 2:
+        return None, {}
+    c = [(a + b) / 2 for a, b in zip(xs, xe)]
+    sp = {'left': float(np.std(xs)), 'right': float(np.std(xe)),
+          'center': float(np.std(c))}
+    k = min(sp, key=sp.get)
+    return (k if sp[k] <= ALIGN_EPS else 'none'), {a: round(b, 2) for a, b in sp.items()}
+
+
+def _clipped(box, win):
+    """잉크가 창 가장자리에 닿았으면 그 변에서 잘렸다고 본다.
+
+    이 파일은 받은 상자 안만 본다. 상자가 글자를 가로지르면 밖에 남은
+    부분을 볼 방법이 없고, 잘린 값을 아무 말 없이 돌려주게 된다 —
+    1957 Musica Viva 에서 「hans rosbaud」 의 d 와 마지막 줄 셋이 그렇게
+    잘렸다. 그래서 잘림을 값으로 낸다. 짚은 쪽이 상자를 넓혀 다시 부르면 된다.
+
+    PAD 가 판정 여유가 된다. 제대로 짚은 상자는 잉크와 창 사이에 PAD 만큼
+    빈 자리가 있으므로 가장자리에 닿지 않는다.
+    """
+    out = []
+    if box[0] <= win[0] + 1: out.append('left')
+    if box[1] <= win[1] + 1: out.append('top')
+    if box[2] >= win[2] - 1: out.append('right')
+    if box[3] >= win[3] - 1: out.append('bottom')
+    return out
+
+
+def measure(src, box, pad=None):
+    """box = (x1, y1, x2, y2), 원본 픽셀 좌표. 못 재면 n_lines 0 으로 돌려준다.
+
+    pad = (위, 아래) 를 주면 세로 창을 그만큼만 넓힌다. 주지 않으면 PAD — 지금까지와 같다.
+    좌우는 늘 PAD. 줄 상자를 하나씩 잴 때 이웃 줄 잉크가 창에 들어오지 않게 부르는 쪽이
+    줄인다 (group_gap 의 'neighbor_half', docs/measure_pad_preregister.json).
+    """
+    g = (src.astype(float) if isinstance(src, np.ndarray)
+         else np.asarray(Image.open(src).convert('L')).astype(float))
+    H, W = g.shape
+    x1, y1, x2, y2 = box
+    pt, pb = (PAD, PAD) if pad is None else (int(pad[0]), int(pad[1]))
+    x1 = max(0, int(x1) - PAD); y1 = max(0, int(y1) - pt)
+    x2 = min(W, int(x2) + PAD); y2 = min(H, int(y2) + pb)
+    if x2 - x1 < 4 or y2 - y1 < 4:
+        return dict(n_lines=0, why='상자가 너무 작다')
+
+    win = (x1, y1, x2, y2)          # PAD 만큼 넓힌 창. 잘림 판정의 기준이 된다
+    sub = g[y1:y2, x1:x2]
+    gp = ink.polarity(sub)            # 밝은 활자/어두운 바탕을 여기서 뒤집는다
+    th = ink.threshold(gp)
+    ls = ink.lines(gp, th, 0, x2 - x1)
+    if not ls:
+        return dict(n_lines=0, why='줄을 찾지 못했다')
+
+    rows = (gp < th).sum(axis=1).astype(float)      # 행마다 잉크량
+    ls, lead, resid = grid.apply_grid(ls, rows)
+
+    base = [int(l['base']) + y1 for l in ls]
+    xs = [int(l['xs']) + x1 for l in ls]
+    xe = [int(l['xe']) + x1 for l in ls]
+    cap = [None if l['cap'] is None else int(l['cap']) + y1 for l in ls]
+    xh = [float(l['xh']) for l in ls]
+    gaps = [base[i + 1] - base[i] for i in range(len(base) - 1)]
+    al, spread = _align(xs, xe)
+
+    got = (min(xs), min(int(l['ink_top']) + y1 for l in ls),
+           max(xe), max(int(l['ink_bot']) + y1 for l in ls))
+    return dict(
+        clipped=_clipped(got, win),
+        n_lines=len(ls),
+        baselines=base,
+        x_tops=[int(l['x_top']) + y1 for l in ls],
+        caps=cap,
+        x_heights=xh,
+        xh_median=round(float(np.median(xh)), 1),
+        lead=None if lead is None else round(float(lead), 2),
+        lead_measured=None if not gaps else round(float(np.median(gaps)), 1),
+        lead_over_xh=(None if not gaps or not np.median(xh)
+                      else round(float(np.median(gaps) / np.median(xh)), 3)),
+        grid_resid=round(float(resid), 2),
+        align=al, align_spread=spread,
+        x_starts=xs, x_ends=xe,
+        box_ink=got,
+    )

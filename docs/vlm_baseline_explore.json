@@ -1,0 +1,539 @@
+{
+ "what": "탐색용 · 논문 수치 아님",
+ "무엇": "VLM 베이스라인 좌표 정확도 — (a) 원본만 · (b) 번호 딱지 2배 이미지 · (c) 현행 파이프라인, 합의 라벨 기준",
+ "정의": {
+  "짝": "brockmann_stage2_score._direct (창 0.5·행간 · 가로 겹침 · 가까운 순 1:1)",
+  "일행_이내": "|오차| ≤ 1 px",
+  "허용": "|오차| ≤ 0.2·행간 (stage2 선 채점의 재현 · 정밀)",
+  "행간": "stage2 block_L",
+  "제외": "제외 사유 블록 · 판독 불가 블록 안의 답은 뺀다",
+  "b_좌표": "답한 y ÷ 2 (2배 이미지), 가로 범위는 그 번호의 Surya 줄 상자"
+ },
+ "조건별": {
+  "c": {
+   "라벨_줄": 174,
+   "답한_줄": 183,
+   "짝": 174,
+   "놓친_줄": 0,
+   "없는_줄을_만듦": 9,
+   "오차_절대_px": {
+    "중앙": 0.0,
+    "p90": 1.0
+   },
+   "오차_행간비": {
+    "중앙": 0.0,
+    "p90": 0.071
+   },
+   "편향_px_중앙": 0.0,
+   "일행_이내_몫": 1.0,
+   "허용_0p2행간_재현": 1.0,
+   "허용_0p2행간_정밀": 0.9508
+  },
+  "a1": {
+   "라벨_줄": 174,
+   "답한_줄": 181,
+   "짝": 171,
+   "놓친_줄": 3,
+   "없는_줄을_만듦": 10,
+   "오차_절대_px": {
+    "중앙": 1.0,
+    "p90": 3.0
+   },
+   "오차_행간비": {
+    "중앙": 0.071,
+    "p90": 0.222
+   },
+   "편향_px_중앙": -1.0,
+   "일행_이내_몫": 0.5439,
+   "허용_0p2행간_재현": 0.8333,
+   "허용_0p2행간_정밀": 0.8011
+  },
+  "a2": {
+   "라벨_줄": 174,
+   "답한_줄": 185,
+   "짝": 172,
+   "놓친_줄": 2,
+   "없는_줄을_만듦": 13,
+   "오차_절대_px": {
+    "중앙": 1.0,
+    "p90": 3.0
+   },
+   "오차_행간비": {
+    "중앙": 0.083,
+    "p90": 0.2
+   },
+   "편향_px_중앙": -1.0,
+   "일행_이내_몫": 0.5349,
+   "허용_0p2행간_재현": 0.8908,
+   "허용_0p2행간_정밀": 0.8378
+  },
+  "b1": {
+   "라벨_줄": 174,
+   "답한_줄": 163,
+   "짝": 159,
+   "놓친_줄": 15,
+   "없는_줄을_만듦": 4,
+   "오차_절대_px": {
+    "중앙": 1.5,
+    "p90": 2.0
+   },
+   "오차_행간비": {
+    "중앙": 0.083,
+    "p90": 0.167
+   },
+   "편향_px_중앙": -1.5,
+   "일행_이내_몫": 0.4591,
+   "허용_0p2행간_재현": 0.8793,
+   "허용_0p2행간_정밀": 0.9387
+  },
+  "b2": {
+   "라벨_줄": 174,
+   "답한_줄": 163,
+   "짝": 159,
+   "놓친_줄": 15,
+   "없는_줄을_만듦": 4,
+   "오차_절대_px": {
+    "중앙": 1.5,
+    "p90": 2.0
+   },
+   "오차_행간비": {
+    "중앙": 0.083,
+    "p90": 0.167
+   },
+   "편향_px_중앙": -1.5,
+   "일행_이내_몫": 0.4214,
+   "허용_0p2행간_재현": 0.8621,
+   "허용_0p2행간_정밀": 0.9202
+  }
+ },
+ "회차간": {
+  "a": {
+   "두_회차_모두_짝지은_라벨줄": 170,
+   "회차간_y차_px": {
+    "중앙": 1.0,
+    "p90": 2.0
+   },
+   "일행_이내_몫": 0.7647,
+   "답한_줄": [
+    181,
+    185
+   ],
+   "짝": [
+    171,
+    172
+   ]
+  },
+  "b": {
+   "두_회차_모두_짝지은_라벨줄": 159,
+   "회차간_y차_px": {
+    "중앙": 0.0,
+    "p90": 0.5
+   },
+   "일행_이내_몫": 0.9497,
+   "답한_줄": [
+    163,
+    163
+   ],
+   "짝": [
+    159,
+    159
+   ]
+  }
+ },
+ "판별": {
+  "c": {
+   "4": {
+    "라벨_줄": 25,
+    "답한_줄": 25,
+    "짝": 25
+   },
+   "11": {
+    "라벨_줄": 12,
+    "답한_줄": 15,
+    "짝": 12
+   },
+   "19": {
+    "라벨_줄": 11,
+    "답한_줄": 14,
+    "짝": 11
+   },
+   "21": {
+    "라벨_줄": 10,
+    "답한_줄": 10,
+    "짝": 10
+   },
+   "26": {
+    "라벨_줄": 17,
+    "답한_줄": 18,
+    "짝": 17
+   },
+   "30": {
+    "라벨_줄": 16,
+    "답한_줄": 17,
+    "짝": 16
+   },
+   "33": {
+    "라벨_줄": 15,
+    "답한_줄": 15,
+    "짝": 15
+   },
+   "38": {
+    "라벨_줄": 12,
+    "답한_줄": 13,
+    "짝": 12
+   },
+   "42": {
+    "라벨_줄": 27,
+    "답한_줄": 27,
+    "짝": 27
+   },
+   "49": {
+    "라벨_줄": 29,
+    "답한_줄": 29,
+    "짝": 29
+   }
+  },
+  "a1": {
+   "4": {
+    "라벨_줄": 25,
+    "답한_줄": 25,
+    "짝": 25
+   },
+   "11": {
+    "라벨_줄": 12,
+    "답한_줄": 12,
+    "짝": 12
+   },
+   "19": {
+    "라벨_줄": 11,
+    "답한_줄": 14,
+    "짝": 11
+   },
+   "21": {
+    "라벨_줄": 10,
+    "답한_줄": 11,
+    "짝": 10
+   },
+   "26": {
+    "라벨_줄": 17,
+    "답한_줄": 17,
+    "짝": 17
+   },
+   "30": {
+    "라벨_줄": 16,
+    "답한_줄": 18,
+    "짝": 15
+   },
+   "33": {
+    "라벨_줄": 15,
+    "답한_줄": 16,
+    "짝": 15
+   },
+   "38": {
+    "라벨_줄": 12,
+    "답한_줄": 12,
+    "짝": 10
+   },
+   "42": {
+    "라벨_줄": 27,
+    "답한_줄": 27,
+    "짝": 27
+   },
+   "49": {
+    "라벨_줄": 29,
+    "답한_줄": 29,
+    "짝": 29
+   }
+  },
+  "a2": {
+   "4": {
+    "라벨_줄": 25,
+    "답한_줄": 25,
+    "짝": 25
+   },
+   "11": {
+    "라벨_줄": 12,
+    "답한_줄": 12,
+    "짝": 12
+   },
+   "19": {
+    "라벨_줄": 11,
+    "답한_줄": 19,
+    "짝": 11
+   },
+   "21": {
+    "라벨_줄": 10,
+    "답한_줄": 10,
+    "짝": 10
+   },
+   "26": {
+    "라벨_줄": 17,
+    "답한_줄": 17,
+    "짝": 17
+   },
+   "30": {
+    "라벨_줄": 16,
+    "답한_줄": 18,
+    "짝": 16
+   },
+   "33": {
+    "라벨_줄": 15,
+    "답한_줄": 16,
+    "짝": 15
+   },
+   "38": {
+    "라벨_줄": 12,
+    "답한_줄": 12,
+    "짝": 10
+   },
+   "42": {
+    "라벨_줄": 27,
+    "답한_줄": 27,
+    "짝": 27
+   },
+   "49": {
+    "라벨_줄": 29,
+    "답한_줄": 29,
+    "짝": 29
+   }
+  },
+  "b1": {
+   "4": {
+    "라벨_줄": 25,
+    "답한_줄": 25,
+    "짝": 25
+   },
+   "11": {
+    "라벨_줄": 12,
+    "답한_줄": 10,
+    "짝": 10
+   },
+   "19": {
+    "라벨_줄": 11,
+    "답한_줄": 14,
+    "짝": 11
+   },
+   "21": {
+    "라벨_줄": 10,
+    "답한_줄": 9,
+    "짝": 9
+   },
+   "26": {
+    "라벨_줄": 17,
+    "답한_줄": 17,
+    "짝": 17
+   },
+   "30": {
+    "라벨_줄": 16,
+    "답한_줄": 11,
+    "짝": 10
+   },
+   "33": {
+    "라벨_줄": 15,
+    "답한_줄": 15,
+    "짝": 15
+   },
+   "38": {
+    "라벨_줄": 12,
+    "답한_줄": 6,
+    "짝": 6
+   },
+   "42": {
+    "라벨_줄": 27,
+    "답한_줄": 27,
+    "짝": 27
+   },
+   "49": {
+    "라벨_줄": 29,
+    "답한_줄": 29,
+    "짝": 29
+   }
+  },
+  "b2": {
+   "4": {
+    "라벨_줄": 25,
+    "답한_줄": 25,
+    "짝": 25
+   },
+   "11": {
+    "라벨_줄": 12,
+    "답한_줄": 10,
+    "짝": 10
+   },
+   "19": {
+    "라벨_줄": 11,
+    "답한_줄": 14,
+    "짝": 11
+   },
+   "21": {
+    "라벨_줄": 10,
+    "답한_줄": 9,
+    "짝": 9
+   },
+   "26": {
+    "라벨_줄": 17,
+    "답한_줄": 17,
+    "짝": 17
+   },
+   "30": {
+    "라벨_줄": 16,
+    "답한_줄": 11,
+    "짝": 10
+   },
+   "33": {
+    "라벨_줄": 15,
+    "답한_줄": 15,
+    "짝": 15
+   },
+   "38": {
+    "라벨_줄": 12,
+    "답한_줄": 6,
+    "짝": 6
+   },
+   "42": {
+    "라벨_줄": 27,
+    "답한_줄": 27,
+    "짝": 27
+   },
+   "49": {
+    "라벨_줄": 29,
+    "답한_줄": 29,
+    "짝": 29
+   }
+  }
+ },
+ "응답": {
+  "a1": {
+   "files_opened": [
+    "~/.typo-mcp/vlm_baseline/a1_batch1_input.json",
+    "~/.typo-mcp/vlm_baseline/a1_batch2_input.json",
+    "~/Documents/poster/files/docs/vlm_baseline_a_prompt.md",
+    "~/Documents/연구2/브로크만 정리/corpus/코어/Ausstellung/1958_Henry van de Velde - Kunstgewerbemuseum Zürich - 6. Juni - 3.jpg",
+    "~/Documents/연구2/브로크만 정리/corpus/코어/Juni_Festwochen/1960_Viertes Juni-Festkonzert 1960 der Tonhalle-Gesellschaft - Fr.jpg",
+    "~/Documents/연구2/브로크만 정리/corpus/코어/Musica_Viva/1956_Strawinsky - Musica viva - Dienstag, 16. Okt. 1956 - 1. Extr.jpg",
+    "~/Documents/연구2/브로크만 정리/corpus/코어/Musica_Viva/1957_Musica Viva - 16. Volkskonzert - 26.März 1957 - Tonhalle Gro.jpg",
+    "~/Documents/연구2/브로크만 정리/corpus/코어/Musica_Viva/1957_Musica Viva - Thyl Claes - Tonhalle Grosser Saal.jpg",
+    "~/Documents/연구2/브로크만 정리/corpus/코어/Musica_Viva/1958_Tonhalle-Quartett - Zürcher Bläser-Quintett - Strawinsky - S.jpg",
+    "~/Documents/연구2/브로크만 정리/corpus/코어/Musica_Viva/1959_Musica Viva - Kleiner Tonhallesaal - Matthias Hauer - Werner.jpg",
+    "~/Documents/연구2/브로크만 정리/corpus/코어/Opernhaus/1964_Opernhaus Zürich - Die Schneekönigin - Märchenvorstellung. U.jpg",
+    "~/Documents/연구2/브로크만 정리/corpus/코어/Opernhaus/1966_Opernhaus Zürich - Don Carlos - Oper von Giuseppe Verdi - 5..jpg",
+    "~/Documents/연구2/브로크만 정리/corpus/코어/Tonhalle_Konzert/1954_Extrakonzert - Tonhalle Grosser Saal - Solistin Clara Haskil.jpg"
+   ],
+   "model": [
+    "claude-opus-5"
+   ],
+   "model_note": "Claude Code 서브에이전트 (general-purpose), Agent 도구 model=opus 명시, 자기 보고. 묶음마다 서로 모르는 새 세션",
+   "date": "2026-09-19",
+   "회차": 1,
+   "prompt": "docs/vlm_baseline_a_prompt.md",
+   "prompt_sha256": "c85f49025766d4c8b066c2e6e2cdb0c29e23898ed5f1832dcb5f9f3a00e33dd5",
+   "batches": [
+    "a1_batch1.json",
+    "a1_batch2.json"
+   ],
+   "notes": [
+    "a1_batch1.json: 세로로 돌린 가장자리 인쇄소 표기는 모든 장에서 뺐다. 1958 Tonhalle-Quartett 와 1964 Schneekönigin 의 아래쪽 작은 글줄은 줄 간격이 좁아 베이스라인 오차가 클 수 있다.",
+    "a1_batch2.json: 작은 본문 글자(약 8~10px 줄 간격)의 베이스라인은 ±2px 정도 불확실. Thyl Claes 의 손글씨 제목은 기울어져 한 값으로 적기 어려움. 가장자리의 세로 인쇄 표기는 가로 글줄이 아니라서 뺌."
+   ]
+  },
+  "a2": {
+   "files_opened": [
+    "~/.typo-mcp/vlm_baseline/a2_batch1_input.json",
+    "~/.typo-mcp/vlm_baseline/a2_batch2_input.json",
+    "~/Documents/poster/files/docs/vlm_baseline_a_prompt.md",
+    "~/Documents/연구2/브로크만 정리/corpus/코어/Ausstellung/1958_Henry van de Velde - Kunstgewerbemuseum Zürich - 6. Juni - 3.jpg",
+    "~/Documents/연구2/브로크만 정리/corpus/코어/Juni_Festwochen/1960_Viertes Juni-Festkonzert 1960 der Tonhalle-Gesellschaft - Fr.jpg",
+    "~/Documents/연구2/브로크만 정리/corpus/코어/Musica_Viva/1956_Strawinsky - Musica viva - Dienstag, 16. Okt. 1956 - 1. Extr.jpg",
+    "~/Documents/연구2/브로크만 정리/corpus/코어/Musica_Viva/1957_Musica Viva - 16. Volkskonzert - 26.März 1957 - Tonhalle Gro.jpg",
+    "~/Documents/연구2/브로크만 정리/corpus/코어/Musica_Viva/1957_Musica Viva - Thyl Claes - Tonhalle Grosser Saal.jpg",
+    "~/Documents/연구2/브로크만 정리/corpus/코어/Musica_Viva/1958_Tonhalle-Quartett - Zürcher Bläser-Quintett - Strawinsky - S.jpg",
+    "~/Documents/연구2/브로크만 정리/corpus/코어/Musica_Viva/1959_Musica Viva - Kleiner Tonhallesaal - Matthias Hauer - Werner.jpg",
+    "~/Documents/연구2/브로크만 정리/corpus/코어/Opernhaus/1964_Opernhaus Zürich - Die Schneekönigin - Märchenvorstellung. U.jpg",
+    "~/Documents/연구2/브로크만 정리/corpus/코어/Opernhaus/1966_Opernhaus Zürich - Don Carlos - Oper von Giuseppe Verdi - 5..jpg",
+    "~/Documents/연구2/브로크만 정리/corpus/코어/Tonhalle_Konzert/1954_Extrakonzert - Tonhalle Grosser Saal - Solistin Clara Haskil.jpg"
+   ],
+   "model": [
+    "claude-opus-5"
+   ],
+   "model_note": "Claude Code 서브에이전트 (general-purpose), Agent 도구 model=opus 명시, 자기 보고. 묶음마다 서로 모르는 새 세션",
+   "date": "2026-09-19",
+   "회차": 2,
+   "prompt": "docs/vlm_baseline_a_prompt.md",
+   "prompt_sha256": "c85f49025766d4c8b066c2e6e2cdb0c29e23898ed5f1832dcb5f9f3a00e33dd5",
+   "batches": [
+    "a2_batch1.json",
+    "a2_batch2.json"
+   ],
+   "notes": [
+    "a2_batch1.json: 1958 Tonhalle-Quartett 아래쪽의 작은 글(한 줄 약 11px 간격)은 베이스라인 오차가 클 수 있다. 탭으로 맞춘 둘째 단은 별개 글줄로 셌다. 모든 장에서 가장자리의 세로 인쇄소 표기는 뺐다.",
+    "a2_batch2.json: Thyl Claes 의 필기체 제목은 베이스라인이 기울어 한 값으로 평균함. 세로로 회전된 인쇄소 표기(van de Velde 왼쪽, Thyl Claes 오른쪽)는 뺌. 아주 작은 가로 인쇄소 표기(Strawinsky, Juni-Festkonzert)는 넣음. 1959 Musica Viva 오른쪽 작은 글은 줄 간격이 좁아 판정이 어려웠음."
+   ]
+  },
+  "b1": {
+   "files_opened": [
+    "~/.typo-mcp/vlm_baseline/b1_batch1_input.json",
+    "~/.typo-mcp/vlm_baseline/b1_batch2_input.json",
+    "~/.typo-mcp/vlm_baseline/som/04_som.png",
+    "~/.typo-mcp/vlm_baseline/som/11_som.png",
+    "~/.typo-mcp/vlm_baseline/som/19_som.png",
+    "~/.typo-mcp/vlm_baseline/som/21_som.png",
+    "~/.typo-mcp/vlm_baseline/som/26_som.png",
+    "~/.typo-mcp/vlm_baseline/som/30_som.png",
+    "~/.typo-mcp/vlm_baseline/som/33_som.png",
+    "~/.typo-mcp/vlm_baseline/som/38_som.png",
+    "~/.typo-mcp/vlm_baseline/som/42_som.png",
+    "~/.typo-mcp/vlm_baseline/som/49_som.png",
+    "~/Documents/poster/files/docs/vlm_baseline_b_prompt.md"
+   ],
+   "model": [
+    "claude-opus-5"
+   ],
+   "model_note": "Claude Code 서브에이전트 (general-purpose), Agent 도구 model=opus 명시, 자기 보고. 묶음마다 서로 모르는 새 세션",
+   "date": "2026-09-19",
+   "회차": 1,
+   "prompt": "docs/vlm_baseline_b_prompt.md",
+   "prompt_sha256": "67bfca94083fe51a4b552d8b6ba20f305d87cdf0cef0b7c85663122ec5e0bb83",
+   "batches": [
+    "b1_batch1.json",
+    "b1_batch2.json"
+   ],
+   "notes": [
+    "b1_batch1.json: 여러 줄을 덮은 상자(11_som 8번, 21_som 1번)는 첫 줄 베이스라인으로 답함. 26_som 작은 글줄은 흐려서 오차가 클 수 있음.",
+    "b1_batch2.json: 여러 줄이 한 상자에 든 경우(30번 2·8·11, 38번 5·6)는 첫 줄 베이스라인으로 답함. 49번 오른쪽 작은 글줄은 판정이 어려웠음."
+   ]
+  },
+  "b2": {
+   "files_opened": [
+    "~/.typo-mcp/vlm_baseline/b2_batch1_input.json",
+    "~/.typo-mcp/vlm_baseline/b2_batch2_input.json",
+    "~/.typo-mcp/vlm_baseline/som/04_som.png",
+    "~/.typo-mcp/vlm_baseline/som/11_som.png",
+    "~/.typo-mcp/vlm_baseline/som/19_som.png",
+    "~/.typo-mcp/vlm_baseline/som/21_som.png",
+    "~/.typo-mcp/vlm_baseline/som/26_som.png",
+    "~/.typo-mcp/vlm_baseline/som/30_som.png",
+    "~/.typo-mcp/vlm_baseline/som/33_som.png",
+    "~/.typo-mcp/vlm_baseline/som/38_som.png",
+    "~/.typo-mcp/vlm_baseline/som/42_som.png",
+    "~/.typo-mcp/vlm_baseline/som/49_som.png",
+    "~/Documents/poster/files/docs/vlm_baseline_b_prompt.md"
+   ],
+   "model": [
+    "claude-opus-5"
+   ],
+   "model_note": "Claude Code 서브에이전트 (general-purpose), Agent 도구 model=opus 명시, 자기 보고. 묶음마다 서로 모르는 새 세션",
+   "date": "2026-09-19",
+   "회차": 2,
+   "prompt": "docs/vlm_baseline_b_prompt.md",
+   "prompt_sha256": "67bfca94083fe51a4b552d8b6ba20f305d87cdf0cef0b7c85663122ec5e0bb83",
+   "batches": [
+    "b2_batch1.json",
+    "b2_batch2.json"
+   ],
+   "notes": [
+    "b2_batch1.json: 11_som 8번, 21_som 1번은 한 상자가 여러 줄을 감싸서 첫 줄 베이스라인으로 답함. 작은 글자(19·26번 판 아래쪽)는 몇 픽셀 오차가 있을 수 있음.",
+    "b2_batch2.json: Some boxes hold several text lines (30: 2, 8, 11; 38: 5, 6). For those, the baseline of the first line in the box is given. The small text on 49 is hard to read at this scale."
+   ]
+  }
+ }
+}

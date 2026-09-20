@@ -1,0 +1,182 @@
+{
+ "무엇": "합성 스윕 공용 세트 (constants_preregister 수정 1 · 수정 2) — 사람 확인용 미리보기 목록. 셀마다 seed 7201 · 7230",
+ "규칙": "CLAUDE.md 규칙 9 — 사람 확인 전에는 Surya 검출 · 채점을 하지 않는다",
+ "manifest": "docs/synth_sweep_manifest.json",
+ "생성": {
+  "생성기": "eval/synth_gen.py",
+  "commit": "18ec535",
+  "사전등록": "docs/constants_preregister.json 수정 2 (48bdfa0) · 2 보충 (3639951) · 수정 3 (1b61f4c), 생성기 bc46683 · 18ec535",
+  "PYTHONHASHSEED": "설정 안 함 — 해시 시드와 무관 (0 · 1 · 4 로 만든 390장 이미지 · 참값 sha256 이 모두 같음)",
+  "date": "2026-09-18"
+ },
+ "사람_확인": {
+  "기록_시각": "2026-09-18 (확인 결과 메시지를 받은 때)",
+  "확인한_판": 26,
+  "본_것": "해시 의존 제거판 (생성기 18ec535) 미리보기 26장 — scratchpad sweep/preview3 시트 4장, 원본 해상도",
+  "결과": "승인",
+  "발견": "xh 셀은 대체 낱말만 바뀌었고 배치 · 겹침 이상 없음",
+  "참고": "rule_random 블록 안 간격 변동 (기존 한계 그대로 — constants_preregister 수정 2 보충)"
+ },
+ "미리보기_시트": "scratchpad sweep/preview3/sheet_{1_res,2_pol_jpeg,3_xh,4_rule}.png (원본 해상도)",
+ "목록": [
+  {
+   "cell": "base",
+   "seed": 7201,
+   "image": "~/.typo-mcp/synth_sweep/base/7201.jpg"
+  },
+  {
+   "cell": "base",
+   "seed": 7230,
+   "image": "~/.typo-mcp/synth_sweep/base/7230.jpg"
+  },
+  {
+   "cell": "res_1600",
+   "seed": 7201,
+   "image": "~/.typo-mcp/synth_sweep/res_1600/7201.jpg"
+  },
+  {
+   "cell": "res_1600",
+   "seed": 7230,
+   "image": "~/.typo-mcp/synth_sweep/res_1600/7230.jpg"
+  },
+  {
+   "cell": "res_400",
+   "seed": 7201,
+   "image": "~/.typo-mcp/synth_sweep/res_400/7201.jpg"
+  },
+  {
+   "cell": "res_400",
+   "seed": 7230,
+   "image": "~/.typo-mcp/synth_sweep/res_400/7230.jpg"
+  },
+  {
+   "cell": "pol_colored",
+   "seed": 7201,
+   "image": "~/.typo-mcp/synth_sweep/pol_colored/7201.jpg"
+  },
+  {
+   "cell": "pol_colored",
+   "seed": 7230,
+   "image": "~/.typo-mcp/synth_sweep/pol_colored/7230.jpg"
+  },
+  {
+   "cell": "pol_dark",
+   "seed": 7201,
+   "image": "~/.typo-mcp/synth_sweep/pol_dark/7201.jpg"
+  },
+  {
+   "cell": "pol_dark",
+   "seed": 7230,
+   "image": "~/.typo-mcp/synth_sweep/pol_dark/7230.jpg"
+  },
+  {
+   "cell": "xh_3",
+   "seed": 7201,
+   "image": "~/.typo-mcp/synth_sweep/xh_3/7201.jpg"
+  },
+  {
+   "cell": "xh_3",
+   "seed": 7230,
+   "image": "~/.typo-mcp/synth_sweep/xh_3/7230.jpg"
+  },
+  {
+   "cell": "xh_5",
+   "seed": 7201,
+   "image": "~/.typo-mcp/synth_sweep/xh_5/7201.jpg"
+  },
+  {
+   "cell": "xh_5",
+   "seed": 7230,
+   "image": "~/.typo-mcp/synth_sweep/xh_5/7230.jpg"
+  },
+  {
+   "cell": "xh_12",
+   "seed": 7201,
+   "image": "~/.typo-mcp/synth_sweep/xh_12/7201.jpg"
+  },
+  {
+   "cell": "xh_12",
+   "seed": 7230,
+   "image": "~/.typo-mcp/synth_sweep/xh_12/7230.jpg"
+  },
+  {
+   "cell": "xh_18",
+   "seed": 7201,
+   "image": "~/.typo-mcp/synth_sweep/xh_18/7201.jpg"
+  },
+  {
+   "cell": "xh_18",
+   "seed": 7230,
+   "image": "~/.typo-mcp/synth_sweep/xh_18/7230.jpg"
+  },
+  {
+   "cell": "jpeg_95",
+   "seed": 7201,
+   "image": "~/.typo-mcp/synth_sweep/jpeg_95/7201.jpg"
+  },
+  {
+   "cell": "jpeg_95",
+   "seed": 7230,
+   "image": "~/.typo-mcp/synth_sweep/jpeg_95/7230.jpg"
+  },
+  {
+   "cell": "jpeg_45",
+   "seed": 7201,
+   "image": "~/.typo-mcp/synth_sweep/jpeg_45/7201.jpg"
+  },
+  {
+   "cell": "jpeg_45",
+   "seed": 7230,
+   "image": "~/.typo-mcp/synth_sweep/jpeg_45/7230.jpg"
+  },
+  {
+   "cell": "rule_independent",
+   "seed": 7201,
+   "image": "~/.typo-mcp/synth_sweep/rule_independent/7201.jpg"
+  },
+  {
+   "cell": "rule_independent",
+   "seed": 7230,
+   "image": "~/.typo-mcp/synth_sweep/rule_independent/7230.jpg"
+  },
+  {
+   "cell": "rule_random",
+   "seed": 7201,
+   "image": "~/.typo-mcp/synth_sweep/rule_random/7201.jpg"
+  },
+  {
+   "cell": "rule_random",
+   "seed": 7230,
+   "image": "~/.typo-mcp/synth_sweep/rule_random/7230.jpg"
+  }
+ ],
+ "d07b042_세트_확인": {
+  "방식": "constants_preregister 수정 2 보충 «사람 확인 이전 규칙» — 설계안 3 시험본 확인을 옮김",
+  "대조": "390장 이미지 sha256 을 scratchpad design/out_13 과 판 단위 대조 — 다른 판 0 / 390",
+  "옮긴_확인": "«설계안3_시험본_확인» (2026-09-18 01:35 KST 기록, 승인)",
+  "기록_시각": "2026-09-18 01:43 KST",
+  "결과": "승인 (이전)",
+  "철회": "2026-09-18 — constants_preregister 수정 3 (PYTHONHASHSEED=4 고정 철회). 이 세트(d07b042, 파일 ~/.typo-mcp/synth_sweep_d07b042_hash4) 와 그 Surya 줄 (~/.typo-mcp/synth_sweep_lines_d07b042) 은 쓰지 않는다"
+ },
+ "설계안3_시험본_확인": {
+  "대상": "scratchpad/design/out_13 (설계안 3 시험본 — 13셀 쌓기 규칙, BLOCK_GAP_G = 2, PYTHONHASHSEED=4) 의 26장 (셀마다 seed 7201 · 7230). 저장소 밖 · 탐색용",
+  "기록_시각": "2026-09-18 01:35 KST (확인 결과 메시지를 받은 시각)",
+  "확인한_판": 26,
+  "결과": "승인",
+  "참고": "rule_random 블록 안 간격 변동이 눈으로 경계처럼 보일 수 있음 → 과분할 해석 시 한계로 기록",
+  "정정": "2026-09-18 01:41 KST — 처음에 이 승인을 수정 2 생성기로 다시 만든 세트의 것으로 적었으나, 사용자 정정에 따라 설계안 3 시험본 26장에 대한 것으로 고친다. 저장소 세트에는 constants_preregister 수정 2 «사람 확인 이전 규칙» (이미지 sha 가 시험본과 같을 때) 으로만 옮긴다"
+ },
+ "옛_생성기_세트_확인": {
+  "세트": "수정 2 전 생성기로 만든 세트 (manifest 44fb89a). 파일은 ~/.typo-mcp/synth_sweep_pre_amend2 로 옮겨 두었다",
+  "기록_시각": "2026-09-18 00:33 KST (확인 결과 메시지를 받은 시각)",
+  "확인한_판": 26,
+  "결과": "승인 보류 — 폐기 예정",
+  "발견": [
+   "rule_independent 7201 · 7230, rule_random 7201 · 7230: 글줄끼리 같은 높이에 겹쳐 찍힘 (예: rule_independent 7201 오른쪽 단 «geöffnet täglich…» 와 «vorverkauf tonhalle…»). 겹치지 않아도 윗줄 디센더와 아랫줄이 맞닿은 줄이 여러 개",
+   "xh_18 7230: 제목 «ausstellung» 의 g 디센더가 오른쪽 단 첫 줄 «paul» 에 맞닿음",
+   "나머지 10셀 이상 없음"
+  ],
+  "후속": "Surya 줄 추출 · 채점 하지 않음 (폐기 예정)",
+  "정정": "2026-09-18 01:41 KST — «승인 보류» → «승인 보류 — 폐기 예정» (사용자 정정). 이 세트에는 Surya 를 돌리지 않는다"
+ }
+}

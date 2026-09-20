@@ -1,0 +1,2466 @@
+{
+ "무엇": "라벨 없는 실물 222장 — Surya 줄 추출용 판 목록 (docs/constants_preregister.json «라벨 없는 실물 관찰»)",
+ "제외": "라벨링 main 50장 · 연습 2장 (docs/labeling/posters_for_labelers.json), 로제 측정에서 뺀 1장 (remeasure.NO_TEXT)",
+ "image_root": "/",
+ "줄_파일": "~/.typo-mcp/unlabeled222/lines.json",
+ "줄_뽑기": "eval/group_score.py detect --order columns (brockmann50 과 같은 함수 · 설정). 줄 파일 열쇠 = f\"{seed:03d}\"",
+ "provenance_주의": "group_score.detect 는 줄 파일 provenance 에 synthetic=True 를 늘 붙인다 — 이 목록은 실물이다",
+ "환경": {
+  "surya_ocr": "0.22.1",
+  "torch": "2.13.0",
+  "transformers": "5.15.1",
+  "pillow": "10.4.0",
+  "commit": "f941ecc",
+  "date": "2026-09-17"
+ },
+ "코퍼스별": {
+  "brockmann": 71,
+  "corpus": 108,
+  "rose": 16,
+  "ruder": 27
+ },
+ "items": [
+  {
+   "seed": 1,
+   "corpus": "brockmann",
+   "key": "Ausstellung__1953_T - Das Plakat - 400 neue Plakate aus 25 Ländern - Kunstgewe.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Ausstellung/1953_T - Das Plakat - 400 neue Plakate aus 25 Ländern - Kunstgewe.jpg",
+   "image_sha256": "9e1452b80994b8b781080101da128aca7cc8ba1dbff89391629023b642991f77",
+   "size": [
+    564,
+    800
+   ]
+  },
+  {
+   "seed": 2,
+   "corpus": "brockmann",
+   "key": "Ausstellung__1958_The Family of Man - -Wir Menschen- - Kunstgewerbemuseum Züri.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Ausstellung/1958_The Family of Man - -Wir Menschen- - Kunstgewerbemuseum Züri.jpg",
+   "image_sha256": "2ed26ef744d03717084be8ee7376d0a44cc7fc1f3c88d236946d6daab4a37d4c",
+   "size": [
+    562,
+    800
+   ]
+  },
+  {
+   "seed": 3,
+   "corpus": "brockmann",
+   "key": "Ausstellung__1958_Werner Bischof - Das fotografische Werk - Gewerbemuseum Base.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Ausstellung/1958_Werner Bischof - Das fotografische Werk - Gewerbemuseum Base.jpg",
+   "image_sha256": "9068de1781edac6b8707b64b9fd50f41fe3439304a886b949fd69a4cf49d1ab7",
+   "size": [
+    565,
+    800
+   ]
+  },
+  {
+   "seed": 4,
+   "corpus": "brockmann",
+   "key": "Ausstellung__1961_Zürich plant und baut - Helmhaus Zürich - 12.Oktober -15.Nov.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Ausstellung/1961_Zürich plant und baut - Helmhaus Zürich - 12.Oktober -15.Nov.jpg",
+   "image_sha256": "98599bf1e7dd2dce0ff6bd7469dbe1ca4d1650259642c65a2069c162a46f29b6",
+   "size": [
+    567,
+    800
+   ]
+  },
+  {
+   "seed": 5,
+   "corpus": "brockmann",
+   "key": "Ausstellung__1986_Kunsthaus Zürich - Hans Arp - Hugo Ball.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Ausstellung/1986_Kunsthaus Zürich - Hans Arp - Hugo Ball.jpg",
+   "image_sha256": "6d270725152a08054b8e0b73b326f514024acb7772a834b23516b5fb02826295",
+   "size": [
+    566,
+    800
+   ]
+  },
+  {
+   "seed": 6,
+   "corpus": "brockmann",
+   "key": "BEA__1956_Fly Viscount - Fly BEA - British European Airways.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/BEA/1956_Fly Viscount - Fly BEA - British European Airways.jpg",
+   "image_sha256": "914a77377b8a978ea67c8ce7c4cbe4b14185a41c25f5ede234814d49b8e31da3",
+   "size": [
+    566,
+    800
+   ]
+  },
+  {
+   "seed": 7,
+   "corpus": "brockmann",
+   "key": "Juni_Festwochen__1950_Juni-Festwochen Zürich 1950 - Helmhaus - Grosse Chinesische .jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Juni_Festwochen/1950_Juni-Festwochen Zürich 1950 - Helmhaus - Grosse Chinesische .jpg",
+   "image_sha256": "8125b9f191497fd5df00e2d1b570433054c3c23e567e678d2828cc0169373aaf",
+   "size": [
+    567,
+    800
+   ]
+  },
+  {
+   "seed": 8,
+   "corpus": "brockmann",
+   "key": "Juni_Festwochen__1950_Schauspielhaus - Juni-Festwochen Zürich 1950.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Juni_Festwochen/1950_Schauspielhaus - Juni-Festwochen Zürich 1950.jpg",
+   "image_sha256": "f630e34c4684ee2239840e28412ce3c8b0d9f6cff2c1ca4c8cb63db647a95196",
+   "size": [
+    574,
+    800
+   ]
+  },
+  {
+   "seed": 9,
+   "corpus": "brockmann",
+   "key": "Juni_Festwochen__1950_Stadttheater - Juni-Festwochen 1950.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Juni_Festwochen/1950_Stadttheater - Juni-Festwochen 1950.jpg",
+   "image_sha256": "8e5ac34c4faf08aa84486e9fc08c2d7f170d11494c8225560af63c0ea32954a4",
+   "size": [
+    566,
+    800
+   ]
+  },
+  {
+   "seed": 10,
+   "corpus": "brockmann",
+   "key": "Juni_Festwochen__1950_Tonhalle - Juni-Festwochen Zürich 1950.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Juni_Festwochen/1950_Tonhalle - Juni-Festwochen Zürich 1950.jpg",
+   "image_sha256": "2820e9e462388d18345fb06527b580420dbf2f03cdeadb0e76441ae1fb9e473d",
+   "size": [
+    566,
+    800
+   ]
+  },
+  {
+   "seed": 11,
+   "corpus": "brockmann",
+   "key": "Juni_Festwochen__1953_Tonhalle Grosser Saal - Juni-Festwochen Zürich 1953 - Leitun.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Juni_Festwochen/1953_Tonhalle Grosser Saal - Juni-Festwochen Zürich 1953 - Leitun.jpg",
+   "image_sha256": "7ef876419bd08a967bb84be6c2d9eedef3b55eb2bcaa28c72d783bdffcf31d0c",
+   "size": [
+    568,
+    800
+   ]
+  },
+  {
+   "seed": 12,
+   "corpus": "brockmann",
+   "key": "Juni_Festwochen__1955_Erich Schmid - Leitung - Carl Seemann - Klavier - Wolfgang S.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Juni_Festwochen/1955_Erich Schmid - Leitung - Carl Seemann - Klavier - Wolfgang S.jpg",
+   "image_sha256": "2777edeead73e8a56fe685581c438137feff067f1a5f94f4af1f3fbbfd7938b8",
+   "size": [
+    567,
+    800
+   ]
+  },
+  {
+   "seed": 13,
+   "corpus": "brockmann",
+   "key": "Juni_Festwochen__1957_Junifestwochen Zürich 1957 - Stadttheater.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Juni_Festwochen/1957_Junifestwochen Zürich 1957 - Stadttheater.jpg",
+   "image_sha256": "25d41f25a57031d0adc6758e70041044df9e1f132a20370a46fa40ef8cb60ce2",
+   "size": [
+    566,
+    800
+   ]
+  },
+  {
+   "seed": 14,
+   "corpus": "brockmann",
+   "key": "Juni_Festwochen__1959_Juni-Festwochen Zürich 1959 - Stadttheater.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Juni_Festwochen/1959_Juni-Festwochen Zürich 1959 - Stadttheater.jpg",
+   "image_sha256": "0122b2886a5c3dbf87f0eccd597ec8f087683674fb35ad2bd3db3978d8937b97",
+   "size": [
+    563,
+    800
+   ]
+  },
+  {
+   "seed": 15,
+   "corpus": "brockmann",
+   "key": "Juni_Festwochen__1960_Juni-Festwochen Zürich 1960 - Stadttheater.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Juni_Festwochen/1960_Juni-Festwochen Zürich 1960 - Stadttheater.jpg",
+   "image_sha256": "baba3b61cdb32e315671654278d9779c7a2942de36a3a634a80157e0f481dae3",
+   "size": [
+    566,
+    800
+   ]
+  },
+  {
+   "seed": 16,
+   "corpus": "brockmann",
+   "key": "Juni_Festwochen__1961_Juni-Festwochen Zürich - Stadttheater.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Juni_Festwochen/1961_Juni-Festwochen Zürich - Stadttheater.jpg",
+   "image_sha256": "480941fd40f038cc900c97407a91f671de93db9b9e706bb5eaa9337f4503cc65",
+   "size": [
+    564,
+    800
+   ]
+  },
+  {
+   "seed": 17,
+   "corpus": "brockmann",
+   "key": "Juni_Festwochen__1962_Internationale Juni-Festwochen 1962 - Stadttheater Zürich.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Juni_Festwochen/1962_Internationale Juni-Festwochen 1962 - Stadttheater Zürich.jpg",
+   "image_sha256": "7c6b3142431481051f2f381c743719d521b54ac56b34c5a84a98f74689911749",
+   "size": [
+    566,
+    800
+   ]
+  },
+  {
+   "seed": 18,
+   "corpus": "brockmann",
+   "key": "Juni_Festwochen__1962_Internationale Juni-Festwochen Zürich - Sinfonie-Konzerte de.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Juni_Festwochen/1962_Internationale Juni-Festwochen Zürich - Sinfonie-Konzerte de.jpg",
+   "image_sha256": "1a64583a2631d114275a41e0fa366f3e2b22b369a31d71e5208e655beff3515f",
+   "size": [
+    571,
+    800
+   ]
+  },
+  {
+   "seed": 19,
+   "corpus": "brockmann",
+   "key": "Juni_Festwochen__1963_1963 - Sinfonie-Konzerte der Tonhalle-Gesellschaft - Interna.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Juni_Festwochen/1963_1963 - Sinfonie-Konzerte der Tonhalle-Gesellschaft - Interna.jpg",
+   "image_sha256": "0b3d2f39ae810fb11789b4e499d63d2013e4856283a37caa287f5315f5194f26",
+   "size": [
+    563,
+    800
+   ]
+  },
+  {
+   "seed": 20,
+   "corpus": "brockmann",
+   "key": "Juni_Festwochen__1963_Internationale Juni-Festwochen - Stadttheater Zürich - 1963.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Juni_Festwochen/1963_Internationale Juni-Festwochen - Stadttheater Zürich - 1963.jpg",
+   "image_sha256": "485d24609dfbba4e9e119e3cf64b50f370118c7b347543b2a5144cd027b4ea54",
+   "size": [
+    566,
+    800
+   ]
+  },
+  {
+   "seed": 21,
+   "corpus": "brockmann",
+   "key": "Juni_Festwochen__1964_Juni-Festwochen Zürich 1964 - Sinfoniekonzerte.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Juni_Festwochen/1964_Juni-Festwochen Zürich 1964 - Sinfoniekonzerte.jpg",
+   "image_sha256": "10ea9df6ee394d06081157ff03255eb9cdb5b988dbc29b29e5ae22194c72a337",
+   "size": [
+    564,
+    800
+   ]
+  },
+  {
+   "seed": 22,
+   "corpus": "brockmann",
+   "key": "Juni_Festwochen__1964_Stadttheater Zürich - Internationale Juni-Festwochen - (...).jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Juni_Festwochen/1964_Stadttheater Zürich - Internationale Juni-Festwochen - (...).jpg",
+   "image_sha256": "9c6130284f06b73a70db5ba74bcc0f0ede2dfbb05a203cf67d1b681ac3da74bb",
+   "size": [
+    564,
+    800
+   ]
+  },
+  {
+   "seed": 23,
+   "corpus": "brockmann",
+   "key": "Juni_Festwochen__1965_Opernhaus Zürich - Internationale Juni-Festwochen 1965.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Juni_Festwochen/1965_Opernhaus Zürich - Internationale Juni-Festwochen 1965.jpg",
+   "image_sha256": "b5cac81a067c7bc34a7c044741057fb36e423e350c4f5d8651f83e8cce83548e",
+   "size": [
+    565,
+    800
+   ]
+  },
+  {
+   "seed": 24,
+   "corpus": "brockmann",
+   "key": "Juni_Festwochen__1965_Opernhaus Zürich - Internationale Juni-Festwochen Zürich 196.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Juni_Festwochen/1965_Opernhaus Zürich - Internationale Juni-Festwochen Zürich 196.jpg",
+   "image_sha256": "6f378b909503f1cd9409923b04daa2f093bf35a0fdfba4e20d802aaf21e59b5e",
+   "size": [
+    564,
+    800
+   ]
+  },
+  {
+   "seed": 25,
+   "corpus": "brockmann",
+   "key": "Juni_Festwochen__1966_Juni-Festwochen 66 - Tonhalle Gesellschaft Zürich.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Juni_Festwochen/1966_Juni-Festwochen 66 - Tonhalle Gesellschaft Zürich.jpg",
+   "image_sha256": "f1f36ffb0aeb47361f3b77ffbd803120f00dafd86674f9565caa1c5edc5216a3",
+   "size": [
+    564,
+    800
+   ]
+  },
+  {
+   "seed": 26,
+   "corpus": "brockmann",
+   "key": "Juni_Festwochen__1966_Opernhaus Zürich - Internationale Juni-Festwochen Zürich 196.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Juni_Festwochen/1966_Opernhaus Zürich - Internationale Juni-Festwochen Zürich 196.jpg",
+   "image_sha256": "2c70e2d1d8e39b85827d50d4e20060a192122986dc0d185b0e6e785dd266b8f3",
+   "size": [
+    567,
+    800
+   ]
+  },
+  {
+   "seed": 27,
+   "corpus": "brockmann",
+   "key": "Musica_Viva__1956_Musica Viva - Hartmann - Bartok - Honegger - 20. Volkskonzer.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Musica_Viva/1956_Musica Viva - Hartmann - Bartok - Honegger - 20. Volkskonzer.jpg",
+   "image_sha256": "4080cf65c840047a93d2eb53148e76ec9139869c50cd294c74c56274f689206b",
+   "size": [
+    566,
+    800
+   ]
+  },
+  {
+   "seed": 28,
+   "corpus": "brockmann",
+   "key": "Musica_Viva__1957_Musica Viva - Paul Hindemith - Sonate für Viola und Klavier .jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Musica_Viva/1957_Musica Viva - Paul Hindemith - Sonate für Viola und Klavier .jpg",
+   "image_sha256": "e9ef5c7668ef43700e176e356a39c783453d61fe406d40e8f2d93f4087dacb97",
+   "size": [
+    565,
+    800
+   ]
+  },
+  {
+   "seed": 29,
+   "corpus": "brockmann",
+   "key": "Musica_Viva__1958_Musica viva - Dienstag, den 7. Januar 1958 - Schweizerische .jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Musica_Viva/1958_Musica viva - Dienstag, den 7. Januar 1958 - Schweizerische .jpg",
+   "image_sha256": "ba9e1047f9a1ebcd36f22c245bc1bbc0b326c68c4ed26b4e4ea3dc6eddeb2e24",
+   "size": [
+    566,
+    800
+   ]
+  },
+  {
+   "seed": 30,
+   "corpus": "brockmann",
+   "key": "Musica_Viva__1958_Végh-Quartett - Musica Viva - Paul Hindemith - Alban Berg - .jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Musica_Viva/1958_Végh-Quartett - Musica Viva - Paul Hindemith - Alban Berg - .jpg",
+   "image_sha256": "86c6984aeb442dcf24e0223a20ed1063880cd447f8c9eba56757e834b950a35e",
+   "size": [
+    563,
+    800
+   ]
+  },
+  {
+   "seed": 31,
+   "corpus": "brockmann",
+   "key": "Musica_Viva__1959_19. Volkskonzert der Tonhalle-Gesellschaft Zürich - Dienstag.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Musica_Viva/1959_19. Volkskonzert der Tonhalle-Gesellschaft Zürich - Dienstag.jpg",
+   "image_sha256": "bf433064d1c85af175f2911a0dfbc5ca3f26813c3af41cd64c752a5e825d9e5f",
+   "size": [
+    567,
+    800
+   ]
+  },
+  {
+   "seed": 32,
+   "corpus": "brockmann",
+   "key": "Musica_Viva__1960_Donnerstag, den 7.Januar 1960, 20.15 Uhr, Grosser Tonhallesa.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Musica_Viva/1960_Donnerstag, den 7.Januar 1960, 20.15 Uhr, Grosser Tonhallesa.jpg",
+   "image_sha256": "bd96d960eb510749c429ddcaeb7370de7af53046814f2a30d7ffecd3074ef1d9",
+   "size": [
+    562,
+    800
+   ]
+  },
+  {
+   "seed": 33,
+   "corpus": "brockmann",
+   "key": "Musica_Viva__1961_Musica viva - Dienstag, den 18. April 1961 - Tonhalle Grosse.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Musica_Viva/1961_Musica viva - Dienstag, den 18. April 1961 - Tonhalle Grosse.jpg",
+   "image_sha256": "4a99289c7206271e61911e410150ef2c949428666ceb0553d4ff60fb6e6b7cf6",
+   "size": [
+    564,
+    800
+   ]
+  },
+  {
+   "seed": 34,
+   "corpus": "brockmann",
+   "key": "Musica_Viva__1961_Musica viva - The Fine Arts Quartet - Arnold Schönberg - Wal.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Musica_Viva/1961_Musica viva - The Fine Arts Quartet - Arnold Schönberg - Wal.jpg",
+   "image_sha256": "7558eba8b2a2b955c34b5ea96765015db6f65ad8e38fbf5e5340dc0cba106666",
+   "size": [
+    564,
+    800
+   ]
+  },
+  {
+   "seed": 35,
+   "corpus": "brockmann",
+   "key": "Musica_Viva__1961_Rudolf Kelterborn - Karl Amadeus Hartmann - Arnold Schönberg.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Musica_Viva/1961_Rudolf Kelterborn - Karl Amadeus Hartmann - Arnold Schönberg.jpg",
+   "image_sha256": "f2e9770a1b63e3af0bc2aa30c8b5dae87ca2a5606b2f261d3b5c9c9c58ab3e9f",
+   "size": [
+    562,
+    800
+   ]
+  },
+  {
+   "seed": 36,
+   "corpus": "brockmann",
+   "key": "Musica_Viva__1961_Tonhalle Grosser Saal - Musica viva - Freitag, den 6. Januar.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Musica_Viva/1961_Tonhalle Grosser Saal - Musica viva - Freitag, den 6. Januar.jpg",
+   "image_sha256": "88bb48b17c15c92f0ae8cc3b481e109c9d68964d4eba8cb5dc478db83789be6d",
+   "size": [
+    567,
+    800
+   ]
+  },
+  {
+   "seed": 37,
+   "corpus": "brockmann",
+   "key": "Musica_Viva__1962_Musica Viva - Ensemble de Musique Moderne - Eric Satie - Arn.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Musica_Viva/1962_Musica Viva - Ensemble de Musique Moderne - Eric Satie - Arn.jpg",
+   "image_sha256": "0d9c6c425bd5715a4879372439da2ca6b53a0dc54b4f32b5a76fb697283c8ed7",
+   "size": [
+    566,
+    800
+   ]
+  },
+  {
+   "seed": 38,
+   "corpus": "brockmann",
+   "key": "Musica_Viva__1963_Musica Viva - Anton Webern - Alban Berg - Arnold Schönberg -.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Musica_Viva/1963_Musica Viva - Anton Webern - Alban Berg - Arnold Schönberg -.jpg",
+   "image_sha256": "8704c55ed7301a31c6d1be9c1ca688874b593180c37671f21299cde46ed3a2fe",
+   "size": [
+    566,
+    800
+   ]
+  },
+  {
+   "seed": 39,
+   "corpus": "brockmann",
+   "key": "Musica_Viva__1964_Musica Viva - Räto Tschupp - Andrej Lütschg - (...) - Tonhal.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Musica_Viva/1964_Musica Viva - Räto Tschupp - Andrej Lütschg - (...) - Tonhal.jpg",
+   "image_sha256": "84ac1fa717a476710b0953dbd8f267c82c3b602c1d71fa9d92560c0ed090859a",
+   "size": [
+    564,
+    800
+   ]
+  },
+  {
+   "seed": 40,
+   "corpus": "brockmann",
+   "key": "Opernhaus__1964_Opernhaus Zürich - Eröffnung der Spielzeit 1964-65 - Oberon .jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Opernhaus/1964_Opernhaus Zürich - Eröffnung der Spielzeit 1964-65 - Oberon .jpg",
+   "image_sha256": "363db753fc927ad35bded1a5f9c9055cb0b0b2caafa3b4c10bdbde9b9b3489a5",
+   "size": [
+    565,
+    800
+   ]
+  },
+  {
+   "seed": 41,
+   "corpus": "brockmann",
+   "key": "Opernhaus__1964_Opernhaus Zürich - Wiener Blut - Operette von Johann Strauss.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Opernhaus/1964_Opernhaus Zürich - Wiener Blut - Operette von Johann Strauss.jpg",
+   "image_sha256": "4a27714220010ae4663b84f81882f53f97a6712c09fcca952f53bfe8dde5d2c5",
+   "size": [
+    563,
+    800
+   ]
+  },
+  {
+   "seed": 42,
+   "corpus": "brockmann",
+   "key": "Opernhaus__1965_Opernhaus Zürich - Andrea Chenier - Musikalisches Drama von .jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Opernhaus/1965_Opernhaus Zürich - Andrea Chenier - Musikalisches Drama von .jpg",
+   "image_sha256": "e4ef2b2d15248c4ce6f92c3a5c36d19f053e66fb601f980d8a6a5a5cfc9f9ee5",
+   "size": [
+    563,
+    800
+   ]
+  },
+  {
+   "seed": 43,
+   "corpus": "brockmann",
+   "key": "Opernhaus__1965_Opernhaus Zürich - Der Igel als Bräutigam - 4. Dezember 1965.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Opernhaus/1965_Opernhaus Zürich - Der Igel als Bräutigam - 4. Dezember 1965.jpg",
+   "image_sha256": "3827c38514e30a16f832a22885c0cfe8952c68374a7d794715e18943cbb4fea1",
+   "size": [
+    564,
+    800
+   ]
+  },
+  {
+   "seed": 44,
+   "corpus": "brockmann",
+   "key": "Opernhaus__1965_Opernhaus Zürich - Der Liebestrank - Komische Oper von Gaeta.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Opernhaus/1965_Opernhaus Zürich - Der Liebestrank - Komische Oper von Gaeta.jpg",
+   "image_sha256": "4fbd9bdfe3ca1aec5bed2da5b69894a6caad901781b533bd5eadbc9a48bec026",
+   "size": [
+    566,
+    800
+   ]
+  },
+  {
+   "seed": 45,
+   "corpus": "brockmann",
+   "key": "Opernhaus__1965_Opernhaus Zürich - Der Vogelhändler - Operette von Carl Zell.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Opernhaus/1965_Opernhaus Zürich - Der Vogelhändler - Operette von Carl Zell.jpg",
+   "image_sha256": "02a4ffbd5cce9e2a73a4d90267a2605ed2bc3bd7e2f68c844b9235a0d1d1f390",
+   "size": [
+    563,
+    800
+   ]
+  },
+  {
+   "seed": 46,
+   "corpus": "brockmann",
+   "key": "Opernhaus__1965_Opernhaus Zürich - Die Liebe zu den drei Orangen - Oper von .jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Opernhaus/1965_Opernhaus Zürich - Die Liebe zu den drei Orangen - Oper von .jpg",
+   "image_sha256": "3ac197652eb8e0797bdd44ae84decc9e08943c8317133779344d56edca4cf12d",
+   "size": [
+    564,
+    800
+   ]
+  },
+  {
+   "seed": 47,
+   "corpus": "brockmann",
+   "key": "Opernhaus__1965_Opernhaus Zürich - Schwanensee - Ballett von Peter I. Tschai.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Opernhaus/1965_Opernhaus Zürich - Schwanensee - Ballett von Peter I. Tschai.jpg",
+   "image_sha256": "300bc0ba88b198ec0f40f02e6e8cbe95fd53dc1d1de08b8adfc4272df9784a7c",
+   "size": [
+    563,
+    800
+   ]
+  },
+  {
+   "seed": 48,
+   "corpus": "brockmann",
+   "key": "Opernhaus__1965_Opernhaus Zürich - Undine - Ballett von Frederick Ashton - M.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Opernhaus/1965_Opernhaus Zürich - Undine - Ballett von Frederick Ashton - M.jpg",
+   "image_sha256": "3777a09aa55d768170fc560f33bb1407f08c3b9249157e607cb00d3b7dcf0e40",
+   "size": [
+    566,
+    800
+   ]
+  },
+  {
+   "seed": 49,
+   "corpus": "brockmann",
+   "key": "Opernhaus__1966_Opernhaus Zürich - Die lustige Witwe - Operette von Franz Lé.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Opernhaus/1966_Opernhaus Zürich - Die lustige Witwe - Operette von Franz Lé.jpg",
+   "image_sha256": "4dd5ef8a061b0754e47b6d72b86c2cf445a0092d7c426c6f9b02be052f064c24",
+   "size": [
+    565,
+    800
+   ]
+  },
+  {
+   "seed": 50,
+   "corpus": "brockmann",
+   "key": "Opernhaus__1966_Opernhaus Zürich - Wenn ich König wär... - Oper von Adolphe .jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Opernhaus/1966_Opernhaus Zürich - Wenn ich König wär... - Oper von Adolphe .jpg",
+   "image_sha256": "649dfe92c45406a7872457666f23a3dd1b266c18a8faf7c421b850b32f9071cd",
+   "size": [
+    564,
+    800
+   ]
+  },
+  {
+   "seed": 51,
+   "corpus": "brockmann",
+   "key": "Schauspielhaus__1961_Stadttheater Zürich - Fünf Fest-Vorstellungen - Fidelio - Op.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Schauspielhaus/1961_Stadttheater Zürich - Fünf Fest-Vorstellungen - Fidelio - Op.jpg",
+   "image_sha256": "c4aa2c3b8840c8f4502721ff70ce1c379757764a2130a743d4e284de3604454a",
+   "size": [
+    563,
+    800
+   ]
+  },
+  {
+   "seed": 52,
+   "corpus": "brockmann",
+   "key": "Schauspielhaus__1962_Stadttheater Zürich - The New York City Ballet - 11. - 15. S.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Schauspielhaus/1962_Stadttheater Zürich - The New York City Ballet - 11. - 15. S.jpg",
+   "image_sha256": "c5cc617151a427df661a57ecf16af86c6dd71aef6868c56d0b254e78567c9998",
+   "size": [
+    566,
+    800
+   ]
+  },
+  {
+   "seed": 53,
+   "corpus": "brockmann",
+   "key": "Sonstige__1949_Freies Lyceum - Tages- und Abendkurse.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Sonstige/1949_Freies Lyceum - Tages- und Abendkurse.jpg",
+   "image_sha256": "9dffa24910f1b38ec57a8d209159dc104a6aee92fdb1cc5691d7165c95f62a28",
+   "size": [
+    567,
+    800
+   ]
+  },
+  {
+   "seed": 54,
+   "corpus": "brockmann",
+   "key": "Sonstige__1950_Bundesfinanzreform Ja - Zurück zur Verfassung.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Sonstige/1950_Bundesfinanzreform Ja - Zurück zur Verfassung.jpg",
+   "image_sha256": "2fff1a9ca855d68b8a63f627f4e17ea978ead934b4f5aa26cae05cbdde708717",
+   "size": [
+    566,
+    800
+   ]
+  },
+  {
+   "seed": 55,
+   "corpus": "brockmann",
+   "key": "Sonstige__1951_köstlich und nahrhaft - Bschüssig Eierteigwaren.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Sonstige/1951_köstlich und nahrhaft - Bschüssig Eierteigwaren.jpg",
+   "image_sha256": "6bcbbc87052695311141e1373764c26fb5c820c45d4286b1d870ac0d9f5b3765",
+   "size": [
+    564,
+    800
+   ]
+  },
+  {
+   "seed": 56,
+   "corpus": "brockmann",
+   "key": "Sonstige__1955_Für alle... - Oscar Weber.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Sonstige/1955_Für alle... - Oscar Weber.jpg",
+   "image_sha256": "01d19e046f2110195e5ac0dc1826de47fab91fef53553c88b611fb3430acc3c4",
+   "size": [
+    562,
+    800
+   ]
+  },
+  {
+   "seed": 57,
+   "corpus": "brockmann",
+   "key": "Sonstige__1957_Wir telefonieren mit der ganzen Welt - schneller und billige.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Sonstige/1957_Wir telefonieren mit der ganzen Welt - schneller und billige.jpg",
+   "image_sha256": "3f0933a8762783d0be67669f5a303130d2debf4359ba82eb141837a4d8ad2245",
+   "size": [
+    568,
+    800
+   ]
+  },
+  {
+   "seed": 58,
+   "corpus": "brockmann",
+   "key": "Tonhalle_Konzert__1955_Carl Schuricht Leitung - Erica Morini Violine - Beethoven - .jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Tonhalle_Konzert/1955_Carl Schuricht Leitung - Erica Morini Violine - Beethoven - .jpg",
+   "image_sha256": "ee5264ab00fc5683d214107e99b09a754fcbebfa39dad50e0e097cb6d8a29b03",
+   "size": [
+    566,
+    800
+   ]
+  },
+  {
+   "seed": 59,
+   "corpus": "brockmann",
+   "key": "Tonhalle_Konzert__1955_Strawinsky - Berg - Fortner - Tonhalle grosser Saal.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Tonhalle_Konzert/1955_Strawinsky - Berg - Fortner - Tonhalle grosser Saal.jpg",
+   "image_sha256": "43b8813e723c1126b598a4b6e92376ee40a5709db1cb416efd29a56f93a50740",
+   "size": [
+    568,
+    800
+   ]
+  },
+  {
+   "seed": 60,
+   "corpus": "brockmann",
+   "key": "Tonhalle_Konzert__1958_Collegium Musicum Zürich - Leitung- Paul Sieber - 5 Kammeror.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Tonhalle_Konzert/1958_Collegium Musicum Zürich - Leitung- Paul Sieber - 5 Kammeror.jpg",
+   "image_sha256": "4349eccb2edc985eb43a729c99f478f0017f02153d262aecf93d711d89d0c0ec",
+   "size": [
+    566,
+    800
+   ]
+  },
+  {
+   "seed": 61,
+   "corpus": "brockmann",
+   "key": "Verkehr__1953_Automobile-Club de Suisse - Protégez l'enfant!.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Verkehr/1953_Automobile-Club de Suisse - Protégez l'enfant!.jpg",
+   "image_sha256": "af6e20afbd9f8a6b4fd0f46a2e81a551b9ab174e7bb6c69cf343d1c1a77f06d1",
+   "size": [
+    563,
+    800
+   ]
+  },
+  {
+   "seed": 62,
+   "corpus": "brockmann",
+   "key": "Verkehr__1955_Das freundliche Handzeichen schützt vor Unfällen.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Verkehr/1955_Das freundliche Handzeichen schützt vor Unfällen.jpg",
+   "image_sha256": "5f1b2bf52dc1a285bdf211dee1cd021d9c5cee552be6717df800195af779abb3",
+   "size": [
+    565,
+    800
+   ]
+  },
+  {
+   "seed": 63,
+   "corpus": "brockmann",
+   "key": "Verkehr__1957_Überholen ...- Im Zweifel nie!.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Verkehr/1957_Überholen ...- Im Zweifel nie!.jpg",
+   "image_sha256": "e8ebfad27f3527e193364d2553ca45b739bef9562d42bd278412bef8d04dbcb2",
+   "size": [
+    566,
+    800
+   ]
+  },
+  {
+   "seed": 64,
+   "corpus": "brockmann",
+   "key": "Verkehr__1958_Cycliste - Attention - Attention - Cycliste.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Verkehr/1958_Cycliste - Attention - Attention - Cycliste.jpg",
+   "image_sha256": "0ceea7b3c49bbc186ff34a68d189a9ea53f70f7ce64e9403fb53fb010e1e25f2",
+   "size": [
+    564,
+    800
+   ]
+  },
+  {
+   "seed": 65,
+   "corpus": "brockmann",
+   "key": "Verkehr__1958_Strassenbau-Vorlage ja.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Verkehr/1958_Strassenbau-Vorlage ja.jpg",
+   "image_sha256": "31d978ad84f74c68e8908a829df0b0a3dd040d3faa75670f034d378ef0aa589d",
+   "size": [
+    556,
+    800
+   ]
+  },
+  {
+   "seed": 66,
+   "corpus": "brockmann",
+   "key": "Verkehr__1960_Moins de bruit.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Verkehr/1960_Moins de bruit.jpg",
+   "image_sha256": "4646431224dd659e33a02a32b7119342391b288382abfaa4d014925bac634187",
+   "size": [
+    565,
+    800
+   ]
+  },
+  {
+   "seed": 67,
+   "corpus": "brockmann",
+   "key": "Verkehr__1960_Weniger Lärm.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Verkehr/1960_Weniger Lärm.jpg",
+   "image_sha256": "264466cdab9a9b069bfd6da07dc83428f998623bb9dbbcfcbc5c7eb1f49cc026",
+   "size": [
+    564,
+    800
+   ]
+  },
+  {
+   "seed": 68,
+   "corpus": "brockmann",
+   "key": "Volg__1957_Volg Traubensaft naturrein - Energieleistung.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Volg/1957_Volg Traubensaft naturrein - Energieleistung.jpg",
+   "image_sha256": "d3b4ba97269316cf28eb21859935093927a7293f384b5e371a3ff80c0bf507e7",
+   "size": [
+    564,
+    800
+   ]
+  },
+  {
+   "seed": 69,
+   "corpus": "brockmann",
+   "key": "Volg__1957_Volg Traubensaft naturrein - Festlichkeit.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Volg/1957_Volg Traubensaft naturrein - Festlichkeit.jpg",
+   "image_sha256": "07f17ca718bd353f17f67a752b2e4cf585f0a3ead6eb914610a23975872b36ee",
+   "size": [
+    564,
+    800
+   ]
+  },
+  {
+   "seed": 70,
+   "corpus": "brockmann",
+   "key": "Volg__1957_Volg Traubensaft naturrein - Konzentration.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Volg/1957_Volg Traubensaft naturrein - Konzentration.jpg",
+   "image_sha256": "6a167f29a02e03f8ef2e5829a938851f12b428b95fb549cae3756d79f0e76629",
+   "size": [
+    563,
+    800
+   ]
+  },
+  {
+   "seed": 71,
+   "corpus": "brockmann",
+   "key": "Volg__1957_Volg Traubensaft naturrein - Zuverlässigkeit.jpg",
+   "image": "~/Documents/연구2/브로크만 정리/corpus/코어/Volg/1957_Volg Traubensaft naturrein - Zuverlässigkeit.jpg",
+   "image_sha256": "38ee962d9e89119f8cce9bfbb0ce4d80fc8742b6cd778cbd4b6d27f2bcfe5e46",
+   "size": [
+    564,
+    800
+   ]
+  },
+  {
+   "seed": 72,
+   "corpus": "corpus",
+   "key": "Ausstellung__1955_Ausstellung Helmhaus Zürich - Theaterbau von der Antike bis .jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Ausstellung/1955_Ausstellung Helmhaus Zürich - Theaterbau von der Antike bis .jpg",
+   "image_sha256": "3807445f92d9b6707bf9c9759b0e4bf3eba2f9903b7953355b4e14830f723c1c",
+   "size": [
+    567,
+    800
+   ]
+  },
+  {
+   "seed": 73,
+   "corpus": "corpus",
+   "key": "Ausstellung__1967_Aus den Sammlungen des Gewerbe-Museums Basel - Ausstellung A.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Ausstellung/1967_Aus den Sammlungen des Gewerbe-Museums Basel - Ausstellung A.jpg",
+   "image_sha256": "88433f0470de4b1a23fc7bba49a95a081e4a2964e2b27b0c180bd7dc96d71c7c",
+   "size": [
+    566,
+    800
+   ]
+  },
+  {
+   "seed": 74,
+   "corpus": "corpus",
+   "key": "Ausstellung__1967_Aus den Sammlungen des Gewerbe-Museums Basel - Europäische S.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Ausstellung/1967_Aus den Sammlungen des Gewerbe-Museums Basel - Europäische S.jpg",
+   "image_sha256": "a2b66cb0eaa9c4818b5474542295479a7c3b0baeedb3339a3f42223232acedff",
+   "size": [
+    568,
+    800
+   ]
+  },
+  {
+   "seed": 75,
+   "corpus": "corpus",
+   "key": "Ausstellung__1986_Basler Kunst im 20.Jh. in Ausschnitten - Aus dem Besitz von .jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Ausstellung/1986_Basler Kunst im 20.Jh. in Ausschnitten - Aus dem Besitz von .jpg",
+   "image_sha256": "daa2e74912ad125aedc06a9ad3a0e13394d00fdfec381c01232936a02811e4ca",
+   "size": [
+    567,
+    800
+   ]
+  },
+  {
+   "seed": 76,
+   "corpus": "corpus",
+   "key": "Ausstellung__1995_Sehformen der Zeit - Herbert Matter - Foto-Grafiker - Das We.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Ausstellung/1995_Sehformen der Zeit - Herbert Matter - Foto-Grafiker - Das We.jpg",
+   "image_sha256": "b8a2229b2d4f4febee0d4c539d18a06e29527b00341e103c80f1551c54cdd022",
+   "size": [
+    565,
+    800
+   ]
+  },
+  {
+   "seed": 77,
+   "corpus": "corpus",
+   "key": "Freilichtspiele__1957_Basler Freilichtspiele - Katharina Knie - Kannfeld Park Base.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Freilichtspiele/1957_Basler Freilichtspiele - Katharina Knie - Kannfeld Park Base.jpg",
+   "image_sha256": "9e638dc55bdd3c9770df68155bdbc2ea5f7e82cc58548b269ce78819510106b4",
+   "size": [
+    563,
+    800
+   ]
+  },
+  {
+   "seed": 78,
+   "corpus": "corpus",
+   "key": "Freilichtspiele__1959_Giselle - Basler Freilichtspiele.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Freilichtspiele/1959_Giselle - Basler Freilichtspiele.jpg",
+   "image_sha256": "fadf5137fd6e439f8985ca0d00a22ab83fa264b7a5df92ba2f8722409e01d321",
+   "size": [
+    567,
+    798
+   ]
+  },
+  {
+   "seed": 79,
+   "corpus": "corpus",
+   "key": "Freilichtspiele__1963_Wilhelm Tell - Basler Freilichtspiele.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Freilichtspiele/1963_Wilhelm Tell - Basler Freilichtspiele.jpg",
+   "image_sha256": "3bcf86536c4823e71ce0a45b0113acb99af16ff154dc0963de731164202b8c52",
+   "size": [
+    565,
+    800
+   ]
+  },
+  {
+   "seed": 80,
+   "corpus": "corpus",
+   "key": "Gewerbemuseum_Basel__1938_Siedlungsbau in der Schweiz 1938-47 - Ausstellung im Gewerbe.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Gewerbemuseum_Basel/1938_Siedlungsbau in der Schweiz 1938-47 - Ausstellung im Gewerbe.jpg",
+   "image_sha256": "b68a402a2952cc717e7cffd18b4428c0f7129bd24a128207c38eb69be3d628a8",
+   "size": [
+    567,
+    800
+   ]
+  },
+  {
+   "seed": 81,
+   "corpus": "corpus",
+   "key": "Gewerbemuseum_Basel__1949_Ausstellung im Gewerbemuseum Basel - Photographie in der Sch.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Gewerbemuseum_Basel/1949_Ausstellung im Gewerbemuseum Basel - Photographie in der Sch.jpg",
+   "image_sha256": "b561ab6586dbcf788c8aee6a7aa15840a429e0bf8f4d52b12dcda5afc85fe17b",
+   "size": [
+    565,
+    800
+   ]
+  },
+  {
+   "seed": 82,
+   "corpus": "corpus",
+   "key": "Gewerbemuseum_Basel__1951_Dänische Architektur - Gewerbemuseum Basel.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Gewerbemuseum_Basel/1951_Dänische Architektur - Gewerbemuseum Basel.jpg",
+   "image_sha256": "3b36bf87c3f9d2bb80080a69814e320b6661012f2b8c916357a03f37e6042cab",
+   "size": [
+    567,
+    800
+   ]
+  },
+  {
+   "seed": 83,
+   "corpus": "corpus",
+   "key": "Gewerbemuseum_Basel__1952_Ausstellung - Münster Scheiben-Entwürfe und Glasbilder von C.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Gewerbemuseum_Basel/1952_Ausstellung - Münster Scheiben-Entwürfe und Glasbilder von C.jpg",
+   "image_sha256": "cab1aadeffad74a1d840cfd4c31cf01aac48b58f76187461985b39cbb41e4d5a",
+   "size": [
+    567,
+    800
+   ]
+  },
+  {
+   "seed": 84,
+   "corpus": "corpus",
+   "key": "Gewerbemuseum_Basel__1952_Das Holz als Baustoff - Gewerbemuseum Basel.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Gewerbemuseum_Basel/1952_Das Holz als Baustoff - Gewerbemuseum Basel.jpg",
+   "image_sha256": "b5523dbc6e45f5f957614a6144aed6e5605a109244c48f2c4e19368b3e4e3124",
+   "size": [
+    563,
+    800
+   ]
+  },
+  {
+   "seed": 85,
+   "corpus": "corpus",
+   "key": "Gewerbemuseum_Basel__1952_Die Gute Form 1952 - Gewerbemuseum Basel - 10.April - 10.Mai.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Gewerbemuseum_Basel/1952_Die Gute Form 1952 - Gewerbemuseum Basel - 10.April - 10.Mai.jpg",
+   "image_sha256": "93a43db0f21330ffea89c9c4a4bbc85c7de8c3d5c7d38647e91d8d567e539e48",
+   "size": [
+    568,
+    800
+   ]
+  },
+  {
+   "seed": 86,
+   "corpus": "corpus",
+   "key": "Gewerbemuseum_Basel__1954_Ausstellung - Deutsche Gebrauchsgraphik - Gewerbemuseum Base.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Gewerbemuseum_Basel/1954_Ausstellung - Deutsche Gebrauchsgraphik - Gewerbemuseum Base.jpg",
+   "image_sha256": "4cb195b14ac8bdc06c2a43e759bbddc6ee5761efc41fb2b277ea5d34d4b457e5",
+   "size": [
+    558,
+    800
+   ]
+  },
+  {
+   "seed": 87,
+   "corpus": "corpus",
+   "key": "Gewerbemuseum_Basel__1955_Gewerbemuseum Basel - Tempel und Teehaus in Japan.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Gewerbemuseum_Basel/1955_Gewerbemuseum Basel - Tempel und Teehaus in Japan.jpg",
+   "image_sha256": "eee54634e425fc6012ca2f406c718c1913288aa39e92d6bb953765aced12e464",
+   "size": [
+    567,
+    800
+   ]
+  },
+  {
+   "seed": 88,
+   "corpus": "corpus",
+   "key": "Gewerbemuseum_Basel__1959_Alte und neue Formen in Japan - Gewerbemuseum Basel.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Gewerbemuseum_Basel/1959_Alte und neue Formen in Japan - Gewerbemuseum Basel.jpg",
+   "image_sha256": "7d86f8ca42a590b85653d485963f7fc34289542859bb222882f81ede9cf1d1b7",
+   "size": [
+    569,
+    800
+   ]
+  },
+  {
+   "seed": 89,
+   "corpus": "corpus",
+   "key": "Gewerbemuseum_Basel__1961_Basel und die Stadtstrassen der Zukunft - Gewerbemuseum Base.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Gewerbemuseum_Basel/1961_Basel und die Stadtstrassen der Zukunft - Gewerbemuseum Base.jpg",
+   "image_sha256": "22518cc0f10568109c8ae39f4d05dc73dc1d01f7f71e10a06220d3c226fbfe33",
+   "size": [
+    565,
+    800
+   ]
+  },
+  {
+   "seed": 90,
+   "corpus": "corpus",
+   "key": "Gewerbemuseum_Basel__1962_Kunsterziehung in USA - Gewerbemuseum Basel.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Gewerbemuseum_Basel/1962_Kunsterziehung in USA - Gewerbemuseum Basel.jpg",
+   "image_sha256": "7aae1c82e9785684eea25b2313b252006caca0dba3d2141bdf03ad20c2b43d6e",
+   "size": [
+    569,
+    800
+   ]
+  },
+  {
+   "seed": 91,
+   "corpus": "corpus",
+   "key": "Gewerbemuseum_Basel__1968_GM - Gewerbemuseum Basel - Ausstellungen - Bibliothek - Samm.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Gewerbemuseum_Basel/1968_GM - Gewerbemuseum Basel - Ausstellungen - Bibliothek - Samm.jpg",
+   "image_sha256": "d9fcf0d753d3624e476816710eb9b216b1ba36d5bacc6b3f08a8994f88595b22",
+   "size": [
+    565,
+    800
+   ]
+  },
+  {
+   "seed": 92,
+   "corpus": "corpus",
+   "key": "Gewerbemuseum_Basel__1969_Spitzen - Gewerbemuseum Basel.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Gewerbemuseum_Basel/1969_Spitzen - Gewerbemuseum Basel.jpg",
+   "image_sha256": "3a0202ed9361ebf0c969cbcaf428f9b6becb8490092ce828e15cdcdd3582ceb8",
+   "size": [
+    567,
+    800
+   ]
+  },
+  {
+   "seed": 93,
+   "corpus": "corpus",
+   "key": "Gewerbemuseum_Basel__1975_Gewerbemuseum Basel - Ausstellung Plan & Bau - 50 Jahre Arch.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Gewerbemuseum_Basel/1975_Gewerbemuseum Basel - Ausstellung Plan & Bau - 50 Jahre Arch.jpg",
+   "image_sha256": "8fec0c9d26ec19bd5189417dd38b06974db39673451c5e9955c42b6e7be17a24",
+   "size": [
+    565,
+    798
+   ]
+  },
+  {
+   "seed": 94,
+   "corpus": "corpus",
+   "key": "Gewerbemuseum_Basel__1984_Schweizer Künstlerinnen heute - Gewerbemuseum Basel - 1. Apr.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Gewerbemuseum_Basel/1984_Schweizer Künstlerinnen heute - Gewerbemuseum Basel - 1. Apr.jpg",
+   "image_sha256": "6691e8de6cbf328a2a430b3175b29964ad43b0063c6ed142a7f2942c3acf103c",
+   "size": [
+    566,
+    800
+   ]
+  },
+  {
+   "seed": 95,
+   "corpus": "corpus",
+   "key": "Gewerbemuseum_etc__1951_Form & Farbe - Gewerbemuseum Winterthur - 22.6. - 15.7.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Gewerbemuseum_etc/1951_Form & Farbe - Gewerbemuseum Winterthur - 22.6. - 15.7.jpg",
+   "image_sha256": "fd6b727024dba24e773756c761a2549076d2baf32150c543489e78672591306c",
+   "size": [
+    563,
+    800
+   ]
+  },
+  {
+   "seed": 96,
+   "corpus": "corpus",
+   "key": "Gewerbemuseum_etc__1961_Plakate aus der Sammlung des Gewerbemuseums Basel.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Gewerbemuseum_etc/1961_Plakate aus der Sammlung des Gewerbemuseums Basel.jpg",
+   "image_sha256": "e04527d7c8ada1d337b0fc34d5ec10d7031aa064f583e7b5bf10b4b6894138d9",
+   "size": [
+    562,
+    800
+   ]
+  },
+  {
+   "seed": 97,
+   "corpus": "corpus",
+   "key": "Konzert__1953_Stadt Casino - Rotkreuz Bazar - Werk der Gemeindeschwestern .jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Konzert/1953_Stadt Casino - Rotkreuz Bazar - Werk der Gemeindeschwestern .jpg",
+   "image_sha256": "aceacab30d5bba7c83a05f59e7490776b5fec5f3816e4b9ac693590ba60d1160",
+   "size": [
+    566,
+    800
+   ]
+  },
+  {
+   "seed": 98,
+   "corpus": "corpus",
+   "key": "Konzert__1979_Martinskirche - Basler Bach Chor - W.A. Mozart - Leitung- Et.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Konzert/1979_Martinskirche - Basler Bach Chor - W.A. Mozart - Leitung- Et.jpg",
+   "image_sha256": "63e85e4ebb25341bf20ceba568137b42fe1ac96319f9b0e8de09b52eb3de9983",
+   "size": [
+    566,
+    800
+   ]
+  },
+  {
+   "seed": 99,
+   "corpus": "corpus",
+   "key": "Konzert__1980_Basler Bach Chor - Stabat Mater.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Konzert/1980_Basler Bach Chor - Stabat Mater.jpg",
+   "image_sha256": "fec55ea7b6698ebf7aa7f37e6e5a29709fd0a3f2f5b74a4d6cdc81119bfa972c",
+   "size": [
+    565,
+    798
+   ]
+  },
+  {
+   "seed": 100,
+   "corpus": "corpus",
+   "key": "Konzert__1986_Basler Bach-Chor - Stadtcasino Basel - Stabat Mater.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Konzert/1986_Basler Bach-Chor - Stadtcasino Basel - Stabat Mater.jpg",
+   "image_sha256": "5268440d46c4fd34c4377bbf1ae8c90d3da0f1ed324e244bd08f9cd2e1d2b9af",
+   "size": [
+    567,
+    800
+   ]
+  },
+  {
+   "seed": 101,
+   "corpus": "corpus",
+   "key": "Konzert__1986_J. Brahms - Ein deutsches Requiem.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Konzert/1986_J. Brahms - Ein deutsches Requiem.jpg",
+   "image_sha256": "ef273079d83a57b527a729ae0664a54f91d65073b18b09b1aff781d9136ce794",
+   "size": [
+    567,
+    800
+   ]
+  },
+  {
+   "seed": 102,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1945_Moderne Malerei seit 1945 aus der Sammlung Dotremont - Kunst.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1945_Moderne Malerei seit 1945 aus der Sammlung Dotremont - Kunst.jpg",
+   "image_sha256": "db710adfbda4088d3f1899c8e68d0efd0a047d4cb28ee24d544a071e80ea691f",
+   "size": [
+    566,
+    800
+   ]
+  },
+  {
+   "seed": 103,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1950_Kreis 48 - Kunsthalle Basel.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1950_Kreis 48 - Kunsthalle Basel.jpg",
+   "image_sha256": "8e646b0e3f11980e8f858c04785c33a9c05bca3a773153467b0da5291f31d0a3",
+   "size": [
+    575,
+    800
+   ]
+  },
+  {
+   "seed": 104,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1950_Kunsthalle Basel - Kreis 48.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1950_Kunsthalle Basel - Kreis 48.jpg",
+   "image_sha256": "6d9ddaf839d12210a9c39bb51bc6853934abe77e8c13ac0862eb22fc81bc07f9",
+   "size": [
+    565,
+    800
+   ]
+  },
+  {
+   "seed": 105,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1955_Henry Moore Bildhauer - Oskar Schlemmer Maler - Kunsthalle B.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1955_Henry Moore Bildhauer - Oskar Schlemmer Maler - Kunsthalle B.jpg",
+   "image_sha256": "441499ce94a09a5090edee6c6ff2b80ca8a1d6234943dcab4cf761725f4be7a7",
+   "size": [
+    568,
+    800
+   ]
+  },
+  {
+   "seed": 106,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1955_Kunsthalle Basel - 9 Berner Künstler - Kreis 48 - (...).jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1955_Kunsthalle Basel - 9 Berner Künstler - Kreis 48 - (...).jpg",
+   "image_sha256": "09036eedecc27aa2fe7a6b8640026cc3296badbf9916d7618184696bf927b2f5",
+   "size": [
+    563,
+    800
+   ]
+  },
+  {
+   "seed": 107,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1956_Kunsthalle Basel - Jackson Pollock 1912-1956 - Die neue amer.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1956_Kunsthalle Basel - Jackson Pollock 1912-1956 - Die neue amer.jpg",
+   "image_sha256": "979183d5d6574807c3468573c49ec647a7926b09db1cafd7e5d2b7453515e16a",
+   "size": [
+    566,
+    800
+   ]
+  },
+  {
+   "seed": 108,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1957_Basler Privatbesitz - Kunsthalle Basel - 4. Juli - 29. Septe.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1957_Basler Privatbesitz - Kunsthalle Basel - 4. Juli - 29. Septe.jpg",
+   "image_sha256": "c37efda99d5886bf2162ad7a7d5ccd86281924c07c7f55cdf20243cdf0201542",
+   "size": [
+    566,
+    800
+   ]
+  },
+  {
+   "seed": 109,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1957_Felix Vallotton und Kunst des Ostens - Kunsthalle Basel.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1957_Felix Vallotton und Kunst des Ostens - Kunsthalle Basel.jpg",
+   "image_sha256": "7e7c64a8b3eb5a266ed3291a109cf747ac4d0baab05ffc7542610ec99b041ba2",
+   "size": [
+    571,
+    800
+   ]
+  },
+  {
+   "seed": 110,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1957_Heinrich Müller - Marguerite Ammann - Walter Möschlin - Kuns.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1957_Heinrich Müller - Marguerite Ammann - Walter Möschlin - Kuns.jpg",
+   "image_sha256": "36689cc5fa987e9376779529cca5b8a3cd04ea69d8a4039b48f0ff8fc55bccb7",
+   "size": [
+    565,
+    800
+   ]
+  },
+  {
+   "seed": 111,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1957_Karl Flaig - Walter Eglin - Kunsthalle Basel.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1957_Karl Flaig - Walter Eglin - Kunsthalle Basel.jpg",
+   "image_sha256": "365ce733f9574c1c9d04946e6224caeedfaab13143814a5e844e100d8624dff2",
+   "size": [
+    561,
+    800
+   ]
+  },
+  {
+   "seed": 112,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1957_Karl Geiser - Kunsthalle Basel.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1957_Karl Geiser - Kunsthalle Basel.jpg",
+   "image_sha256": "618f0cb6fe4db883d52a67a07c57b54e8702479f2e023d7102fc754a5f69fbc8",
+   "size": [
+    525,
+    743
+   ]
+  },
+  {
+   "seed": 113,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1957_Kunsthalle Basel - Fernand Léger - Alexander Calder.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1957_Kunsthalle Basel - Fernand Léger - Alexander Calder.jpg",
+   "image_sha256": "88181fa0b2c5889fd78245cb48796b4a7fa87d0494d33b1c19a1a3ea6ada0bce",
+   "size": [
+    575,
+    798
+   ]
+  },
+  {
+   "seed": 114,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1958_AHP - Alfred Heinrich Pellegrini - Kunsthalle Basel - 25. Ok.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1958_AHP - Alfred Heinrich Pellegrini - Kunsthalle Basel - 25. Ok.jpg",
+   "image_sha256": "b2223c37be8f68aea486317b8d5a472eb1505fc0c6da10d931089d563cf7008f",
+   "size": [
+    566,
+    800
+   ]
+  },
+  {
+   "seed": 115,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1958_Kunsthalle Basel - Jacques Lipchitz.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1958_Kunsthalle Basel - Jacques Lipchitz.jpg",
+   "image_sha256": "225176ee27fbb6d52a73cd098f111b420dc0d0a1f34eaa60188c5c2c1259e270",
+   "size": [
+    566,
+    800
+   ]
+  },
+  {
+   "seed": 116,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1958_Kunsthalle Basel - Sammlung Cavellini - Moderne italienische.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1958_Kunsthalle Basel - Sammlung Cavellini - Moderne italienische.jpg",
+   "image_sha256": "858434391eef795cb659cad352f8c5a7bb5021e3ff01760b28912c787482d65e",
+   "size": [
+    567,
+    800
+   ]
+  },
+  {
+   "seed": 117,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1958_Robert Jacobsen - Serge Poliakoff - Kunsthalle Basel.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1958_Robert Jacobsen - Serge Poliakoff - Kunsthalle Basel.jpg",
+   "image_sha256": "9936de2d9330ce63eee7c6e65bd2a3816355547f6e72d4eb7d3bedcc8376d1ed",
+   "size": [
+    567,
+    800
+   ]
+  },
+  {
+   "seed": 118,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1959_Aeschbacher - Bill - Müller - Linck - 4 Bildhauer - Kunsthal.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1959_Aeschbacher - Bill - Müller - Linck - 4 Bildhauer - Kunsthal.jpg",
+   "image_sha256": "aadbae30a46c5044aca2754e71284e9ec53269393f80628a85c4d7d1cac1675a",
+   "size": [
+    563,
+    800
+   ]
+  },
+  {
+   "seed": 119,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1959_Kunsthalle Basel - 11.6. bis 12.7. - Deutsche Künstler der G.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1959_Kunsthalle Basel - 11.6. bis 12.7. - Deutsche Künstler der G.jpg",
+   "image_sha256": "da9f8906811b658f6a08cf37a9799239a1391201220cebb3643e47cbaeb51fa2",
+   "size": [
+    561,
+    800
+   ]
+  },
+  {
+   "seed": 120,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1959_Kunsthalle Basel - Appel - Mathieu - Moreni - Riopelle - 24..jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1959_Kunsthalle Basel - Appel - Mathieu - Moreni - Riopelle - 24..jpg",
+   "image_sha256": "c97613f061b1ea42df3b7e28d6cf7824888cc79f97da22319002f175c72a40ba",
+   "size": [
+    564,
+    800
+   ]
+  },
+  {
+   "seed": 121,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1959_Kunsthalle Basel - Hans Fischer - Ernst Georg Rüegg.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1959_Kunsthalle Basel - Hans Fischer - Ernst Georg Rüegg.jpg",
+   "image_sha256": "d879e37dbe16a031dbb364af85d4c0b787678864b1762ab6adc4ca145edfd9c4",
+   "size": [
+    563,
+    800
+   ]
+  },
+  {
+   "seed": 122,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1959_Kunsthalle Basel - Junge spanische Maler.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1959_Kunsthalle Basel - Junge spanische Maler.jpg",
+   "image_sha256": "8913b380a4663d23bc3c33b088f8c2c5d9e40defe0d1d1af9b2dca261f1439ef",
+   "size": [
+    567,
+    800
+   ]
+  },
+  {
+   "seed": 123,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1959_Kunsthalle Basel - Niklaus Stoecklin - Karl Aegerter.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1959_Kunsthalle Basel - Niklaus Stoecklin - Karl Aegerter.jpg",
+   "image_sha256": "d125a737b240d51a879fa5c79a478197d291a9014ffb79c5fcd0abbc8d70ba42",
+   "size": [
+    561,
+    800
+   ]
+  },
+  {
+   "seed": 124,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1959_Max Gubler - Irène Zurkinden - Kunsthalle Basel - 24.Okrt. -.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1959_Max Gubler - Irène Zurkinden - Kunsthalle Basel - 24.Okrt. -.jpg",
+   "image_sha256": "8bf6c958de9c9373f7d60cc8c19632c9440c0e5a8f98b4fc2fab9eef446c60d4",
+   "size": [
+    563,
+    800
+   ]
+  },
+  {
+   "seed": 125,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1960_Junge holländische Bildhauer - Kunsthalle Basel.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1960_Junge holländische Bildhauer - Kunsthalle Basel.jpg",
+   "image_sha256": "159fdafc88cc8a37f2f1b28501760d827a7b1df75cabeb37b0b3fa6c61cada10",
+   "size": [
+    567,
+    795
+   ]
+  },
+  {
+   "seed": 126,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1960_Kunsthalle Basel - 23. Januar - 21. Februar 1960 - Theo Eble.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1960_Kunsthalle Basel - 23. Januar - 21. Februar 1960 - Theo Eble.jpg",
+   "image_sha256": "a1401a7cb6cf38bfab5f04dd2c582781cf86e437d61993d040af8292a88eaab9",
+   "size": [
+    567,
+    800
+   ]
+  },
+  {
+   "seed": 127,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1960_Kunsthalle Basel - Willi Baumeister - Ernst Wlhelm Nay.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1960_Kunsthalle Basel - Willi Baumeister - Ernst Wlhelm Nay.jpg",
+   "image_sha256": "f2636b0d0447b95dcc2297852b3bb901aa57fa7971932ea23cc4964d45a73064",
+   "size": [
+    567,
+    800
+   ]
+  },
+  {
+   "seed": 128,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1961_Gedächtnis Ausstellungen Paul Burckhardt - Emil Schill - Aus.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1961_Gedächtnis Ausstellungen Paul Burckhardt - Emil Schill - Aus.jpg",
+   "image_sha256": "452da16b37c0209fbbbde7385cd5857f4d7521fccba9b20a685164bccf71c140",
+   "size": [
+    566,
+    800
+   ]
+  },
+  {
+   "seed": 129,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1961_Kunsthalle Basel - Maurice Estève Malerei - Berto Lardera - .jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1961_Kunsthalle Basel - Maurice Estève Malerei - Berto Lardera - .jpg",
+   "image_sha256": "7fc5ab77112a382178d59a8a313b33be6159ffcc8fb64ba9956ceee3dcbe9c04",
+   "size": [
+    566,
+    800
+   ]
+  },
+  {
+   "seed": 130,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1961_René Auberjonois - Ernest Bolens - Kunsthalle Basel.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1961_René Auberjonois - Ernest Bolens - Kunsthalle Basel.jpg",
+   "image_sha256": "3f48d044d88c962870e3bbbf614f342b45f756b05c14bf1bc2da2431dfd3e63d",
+   "size": [
+    568,
+    800
+   ]
+  },
+  {
+   "seed": 131,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1961_René Auberjonois - Ernest Bolens - Kunsthalle Basel_2.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1961_René Auberjonois - Ernest Bolens - Kunsthalle Basel_2.jpg",
+   "image_sha256": "b85df38b1dc146112126b17afc60fb58dafea9005c97e958472f6fe0c76c70bd",
+   "size": [
+    565,
+    800
+   ]
+  },
+  {
+   "seed": 132,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1962_28. Juli - 16. Sept. - Die Kunst Neu-Guineas - Kunsthalle Ba.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1962_28. Juli - 16. Sept. - Die Kunst Neu-Guineas - Kunsthalle Ba.jpg",
+   "image_sha256": "0d4b461635ba453cc58d1abde6a76eec8e664734e11c16f059268c193f182255",
+   "size": [
+    566,
+    800
+   ]
+  },
+  {
+   "seed": 133,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1962_Ernst Morgenthaler Gedächtnisausstellung - Kunsthalle Basel.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1962_Ernst Morgenthaler Gedächtnisausstellung - Kunsthalle Basel.jpg",
+   "image_sha256": "133301128a1e748474c4b84f1fd1201e7cb55751792e1ca5c6c09bcfe7e84486",
+   "size": [
+    567,
+    800
+   ]
+  },
+  {
+   "seed": 134,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1962_Kunsthalle Basel - Hans Arp.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1962_Kunsthalle Basel - Hans Arp.jpg",
+   "image_sha256": "39c6b198cc3ae572a54bb5c20b2247c6c2b6a93c5dc1a90f86d1dd8391d57c1f",
+   "size": [
+    566,
+    800
+   ]
+  },
+  {
+   "seed": 135,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1962_Kunsthalle Basel - Rothko - Chillida.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1962_Kunsthalle Basel - Rothko - Chillida.jpg",
+   "image_sha256": "49f0cbb92f43227d184b635f9e1fa1333d5a9a313dbbdc87d9a684b8a76800c7",
+   "size": [
+    564,
+    800
+   ]
+  },
+  {
+   "seed": 136,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1963_Kreis 48 - Ernst Messerli - Werner Witschi - (...) Kunsthall.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1963_Kreis 48 - Ernst Messerli - Werner Witschi - (...) Kunsthall.jpg",
+   "image_sha256": "e9c4229d9e6533667bd57e781b22200de8bc1e9c06cf15df8418f7265112d496",
+   "size": [
+    566,
+    800
+   ]
+  },
+  {
+   "seed": 137,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1963_R. Adams - 7 junge englische Maler - Kunsthalle Basel.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1963_R. Adams - 7 junge englische Maler - Kunsthalle Basel.jpg",
+   "image_sha256": "45a35826d114474389d954756dd8c4c3d829662248ead549a1b5dadcf3dbe201",
+   "size": [
+    566,
+    800
+   ]
+  },
+  {
+   "seed": 138,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1964_Christoph Iselin - Jacques Düblin - Walter Schneider - Karl .jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1964_Christoph Iselin - Jacques Düblin - Walter Schneider - Karl .jpg",
+   "image_sha256": "b190e0067929af514ae76f34734b77cae134fbd77e61180dc6f7712510d86fcf",
+   "size": [
+    554,
+    780
+   ]
+  },
+  {
+   "seed": 139,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1964_Franz Kline - Alfred Jensen - Kunsthalle Basel.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1964_Franz Kline - Alfred Jensen - Kunsthalle Basel.jpg",
+   "image_sha256": "78df8974325a870493c0d6a9f2095dc2cf3fd46935ebdcadcaf599b7a128fa5a",
+   "size": [
+    565,
+    800
+   ]
+  },
+  {
+   "seed": 140,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1964_Walter Bodmer - Otto Tschumi - Teruko Yokoi - Kunsthalle Bas.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1964_Walter Bodmer - Otto Tschumi - Teruko Yokoi - Kunsthalle Bas.jpg",
+   "image_sha256": "43313b7a3659e8d4a98d827be59655565185d313a1420f970367150e6365aded",
+   "size": [
+    568,
+    800
+   ]
+  },
+  {
+   "seed": 141,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1966_Kunsthalle Basel - David Smith Skulpturen - Horst Janssen Ze.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1966_Kunsthalle Basel - David Smith Skulpturen - Horst Janssen Ze.jpg",
+   "image_sha256": "b8bd9db23d31e3bc9df539906e1307d4a5d001ba3b85ded619cd69ad0b97c8db",
+   "size": [
+    563,
+    800
+   ]
+  },
+  {
+   "seed": 142,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1966_Kunsthalle Basel - Graham Sutherland - El Lissitzky.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1966_Kunsthalle Basel - Graham Sutherland - El Lissitzky.jpg",
+   "image_sha256": "0919280fb94ce7a8a20f549792ed75201d12d5105e1b2ee24ca88ef8c53a1602",
+   "size": [
+    566,
+    800
+   ]
+  },
+  {
+   "seed": 143,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1966_Kunsthalle Basel - Junge Berliner Künstler.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1966_Kunsthalle Basel - Junge Berliner Künstler.jpg",
+   "image_sha256": "474e212f859d42a51cc80c6a5404cb58c907a2f8a701737cc8de74bbff5bc74a",
+   "size": [
+    565,
+    800
+   ]
+  },
+  {
+   "seed": 144,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1966_Lüscher Pedretti - Kunsthalle Basel - Gedenkausstelllung Jea.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1966_Lüscher Pedretti - Kunsthalle Basel - Gedenkausstelllung Jea.jpg",
+   "image_sha256": "854f987efb10ab505d482c7a08bb438f2b887d690694e63c7cb77a97c83f9d0f",
+   "size": [
+    563,
+    800
+   ]
+  },
+  {
+   "seed": 145,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1966_Wilfredo Lam Malerei - Vic Gentils Bildhauerei - Kunsthalle .jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1966_Wilfredo Lam Malerei - Vic Gentils Bildhauerei - Kunsthalle .jpg",
+   "image_sha256": "e90d9f77056cfad3db57dbd9c6c81c1e68e7c54a60382a1514994caa38e33706",
+   "size": [
+    562,
+    800
+   ]
+  },
+  {
+   "seed": 146,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1967_E.L. Kirchner und Rot-Blau - Kunsthalle Basel - 2. Sept. - 1.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1967_E.L. Kirchner und Rot-Blau - Kunsthalle Basel - 2. Sept. - 1.jpg",
+   "image_sha256": "06f8883189487e6211e307ea7034310ae3affe1ca40b885feefb8aa9579589bc",
+   "size": [
+    563,
+    800
+   ]
+  },
+  {
+   "seed": 147,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1967_Phillip Martin - Ennio Morlotti - Hans R. Schiess - Kunsthal.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1967_Phillip Martin - Ennio Morlotti - Hans R. Schiess - Kunsthal.jpg",
+   "image_sha256": "ef81980507271c7e2ef36e81817cdee0c095174a33ea64ff580a688c154fc2da",
+   "size": [
+    558,
+    800
+   ]
+  },
+  {
+   "seed": 148,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1968_Kunsthalle Basel - Albers & Slevogt.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1968_Kunsthalle Basel - Albers & Slevogt.jpg",
+   "image_sha256": "b3454bc0806643aad07ebb346e5355cfd7dd34ec412f01be3829cbcf92dd33dd",
+   "size": [
+    563,
+    800
+   ]
+  },
+  {
+   "seed": 149,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1968_Kunsthalle Basel - Klee.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1968_Kunsthalle Basel - Klee.jpg",
+   "image_sha256": "572aa92d57c820559d66dd15081bf9020e17f7abf260b296ee8ce3d8083966e2",
+   "size": [
+    567,
+    800
+   ]
+  },
+  {
+   "seed": 150,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1968_Sam Francis - Kunsthalle Basel.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1968_Sam Francis - Kunsthalle Basel.jpg",
+   "image_sha256": "98c12247cda982682dbe0919c9618a08a1dbf017c8ed90293f71da3a60fc7900",
+   "size": [
+    566,
+    800
+   ]
+  },
+  {
+   "seed": 151,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__1969_Walter J. Moeschlin - Gedächtnisausstellung - Kunsthalle Bas.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/1969_Walter J. Moeschlin - Gedächtnisausstellung - Kunsthalle Bas.jpg",
+   "image_sha256": "71f83b195a8b174575c00a2457860066f85793701b992eea66b2b2419c92ee92",
+   "size": [
+    567,
+    800
+   ]
+  },
+  {
+   "seed": 152,
+   "corpus": "corpus",
+   "key": "Kunsthalle_Basel__2000_Nigeria - 2000 Jahre Plastik & Sammlung Sonja Henle - Niels .jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunsthalle_Basel/2000_Nigeria - 2000 Jahre Plastik & Sammlung Sonja Henle - Niels .jpg",
+   "image_sha256": "27729752e28c09e2a32cf99fc9d3774950d6f8d027add8c84f66d4aeb90582e6",
+   "size": [
+    563,
+    800
+   ]
+  },
+  {
+   "seed": 153,
+   "corpus": "corpus",
+   "key": "Kunstkredit__1984_Kunstkredit 1984-1985 - Wettbewerbe, Aufträge, Ankäufe, Küns.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunstkredit/1984_Kunstkredit 1984-1985 - Wettbewerbe, Aufträge, Ankäufe, Küns.jpg",
+   "image_sha256": "62cf15387a9e1976134e7b7646a55fb08e1f035ee74cacdb5568facc76321a84",
+   "size": [
+    566,
+    800
+   ]
+  },
+  {
+   "seed": 154,
+   "corpus": "corpus",
+   "key": "Kunstkredit__1985_Ausstellung - Eidgenössisches Stipendium für angewandte Kuns.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunstkredit/1985_Ausstellung - Eidgenössisches Stipendium für angewandte Kuns.jpg",
+   "image_sha256": "7f92e64ffc7d323def5b2730ddea473b943ff3b30153dc45f699720d096131b7",
+   "size": [
+    564,
+    800
+   ]
+  },
+  {
+   "seed": 155,
+   "corpus": "corpus",
+   "key": "Kunstkredit__1985_Staatlicher Kunstkredit Basel-Stadt.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunstkredit/1985_Staatlicher Kunstkredit Basel-Stadt.jpg",
+   "image_sha256": "671890c872e5ae4154ab1ddf6c014c0806e9c59e3134ac14d5753855de26722d",
+   "size": [
+    565,
+    798
+   ]
+  },
+  {
+   "seed": 156,
+   "corpus": "corpus",
+   "key": "Kunstkredit__1986_Ausstellung - Eidgenössisches Stipendium für angewandte Kuns.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Kunstkredit/1986_Ausstellung - Eidgenössisches Stipendium für angewandte Kuns.jpg",
+   "image_sha256": "8be4a503263f517e2d5313b1235a87d6e317b106491ee60f24e1de3d836cb435",
+   "size": [
+    567,
+    800
+   ]
+  },
+  {
+   "seed": 157,
+   "corpus": "corpus",
+   "key": "Mustermesse_Basel__1954_Die gute Form - SWB-Sonderschau - Veranstaltet vom Schweizer.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Mustermesse_Basel/1954_Die gute Form - SWB-Sonderschau - Veranstaltet vom Schweizer.jpg",
+   "image_sha256": "19c41e81f04396646ed33a9fcdfc8f2becd617dfadccf90389f95f05d2645667",
+   "size": [
+    566,
+    800
+   ]
+  },
+  {
+   "seed": 158,
+   "corpus": "corpus",
+   "key": "Mustermesse_Basel__1957_Die Schweiz zur Römerzeit - Mustermesse Baslerhalle.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Mustermesse_Basel/1957_Die Schweiz zur Römerzeit - Mustermesse Baslerhalle.jpg",
+   "image_sha256": "bd43fd6129129f0e5f64fc7af85dcaddbefe737bbe0c1a80cdea0b5e19444b38",
+   "size": [
+    567,
+    800
+   ]
+  },
+  {
+   "seed": 159,
+   "corpus": "corpus",
+   "key": "Sonstige__1957_La Suisse à l'époque romaine.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Sonstige/1957_La Suisse à l'époque romaine.jpg",
+   "image_sha256": "029a0fca88fd983eacf25972bd3cc66ed7cd6d8b1d3a8789ec87245842b4e5c7",
+   "size": [
+    567,
+    800
+   ]
+  },
+  {
+   "seed": 160,
+   "corpus": "corpus",
+   "key": "Sonstige__1962_Herman Miller Collection - Möbel unserer Zeit - Verkauf ab 9.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Sonstige/1962_Herman Miller Collection - Möbel unserer Zeit - Verkauf ab 9.jpg",
+   "image_sha256": "eb2d1f99b0ffc88b0c93498dbae6a7834287484668f6c866512ed41fe09e76de",
+   "size": [
+    560,
+    794
+   ]
+  },
+  {
+   "seed": 161,
+   "corpus": "corpus",
+   "key": "Sonstige__1968_GM.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Sonstige/1968_GM.jpg",
+   "image_sha256": "e7f864cfcdb6e23d23e2a404fb47eb0976b82a532be861c6e0a0c3a6dacadc90",
+   "size": [
+    564,
+    800
+   ]
+  },
+  {
+   "seed": 162,
+   "corpus": "corpus",
+   "key": "Sonstige__1970_Brot für Brüder - Voraussetzungen schaffen für den Aufbau in.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Sonstige/1970_Brot für Brüder - Voraussetzungen schaffen für den Aufbau in.jpg",
+   "image_sha256": "13de67449e20e874d09a2ca365bf972fb889f28a60a2b611b79c5883a18b4715",
+   "size": [
+    564,
+    800
+   ]
+  },
+  {
+   "seed": 163,
+   "corpus": "corpus",
+   "key": "Sonstige__1983_30 Jahre Plakatkunst - Einfluss und Ausstrahlung der Fachkla.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Sonstige/1983_30 Jahre Plakatkunst - Einfluss und Ausstrahlung der Fachkla.jpg",
+   "image_sha256": "3fef54594c47f1b64b493c349a7c5bd491152a6dc09ab275660dc39a51451b4e",
+   "size": [
+    566,
+    800
+   ]
+  },
+  {
+   "seed": 164,
+   "corpus": "corpus",
+   "key": "Stadttheater_Basel__1949_Goethe - Iphigenie auf Tauris - Stadt Theater Basel.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Stadttheater_Basel/1949_Goethe - Iphigenie auf Tauris - Stadt Theater Basel.jpg",
+   "image_sha256": "1d7f74ee56d23b80953ccf01f9c65c679a12b431956fa287ad18012a0aabf85d",
+   "size": [
+    571,
+    800
+   ]
+  },
+  {
+   "seed": 165,
+   "corpus": "corpus",
+   "key": "Stadttheater_Basel__1954_Stadt Theater Basel - Die Abonnentenzahl steigt - Spielzeitb.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Stadttheater_Basel/1954_Stadt Theater Basel - Die Abonnentenzahl steigt - Spielzeitb.jpg",
+   "image_sha256": "887b98ac0bab36629d61e5e241903c38973a50c8b7e3cc5344d2e0868a82c10f",
+   "size": [
+    564,
+    800
+   ]
+  },
+  {
+   "seed": 166,
+   "corpus": "corpus",
+   "key": "Stadttheater_Basel__1955_Ohr + Auge - Wir eröffnen am 16. September - Stadt Theater B.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Stadttheater_Basel/1955_Ohr + Auge - Wir eröffnen am 16. September - Stadt Theater B.jpg",
+   "image_sha256": "792f39bb0f791bf8eb5f3594fa2bd16e4e0c23d4c07a8a73aea7cf5ebfb9002f",
+   "size": [
+    568,
+    800
+   ]
+  },
+  {
+   "seed": 167,
+   "corpus": "corpus",
+   "key": "Stadttheater_Basel__1958_125 Jahre Stadt Theater Basel.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Stadttheater_Basel/1958_125 Jahre Stadt Theater Basel.jpg",
+   "image_sha256": "4e001e46a23ffce5bee56471629e0f558566f81e5cea324b11cca99e7b70b272",
+   "size": [
+    565,
+    800
+   ]
+  },
+  {
+   "seed": 168,
+   "corpus": "corpus",
+   "key": "Stadttheater_Basel__1958_Stadt Theater Basel - Saison-Beginn 19. September 1958 - Sin.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Stadttheater_Basel/1958_Stadt Theater Basel - Saison-Beginn 19. September 1958 - Sin.jpg",
+   "image_sha256": "5acf05da1c8ea7b05388bf3be74b13560a9e5a041127462abeee63e23a559d2b",
+   "size": [
+    562,
+    800
+   ]
+  },
+  {
+   "seed": 169,
+   "corpus": "corpus",
+   "key": "Stadttheater_Basel__1959_Stadttheater Basel - Halbe Saison - Halbes Abonnement - Halb.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Stadttheater_Basel/1959_Stadttheater Basel - Halbe Saison - Halbes Abonnement - Halb.jpg",
+   "image_sha256": "2e8cc0ad8529f15db361bd0fd0f528845d3fb4390a82d47246e14fca5b866958",
+   "size": [
+    566,
+    800
+   ]
+  },
+  {
+   "seed": 170,
+   "corpus": "corpus",
+   "key": "Stadttheater_Basel__1960_Stadttheater Basel - Während der Saison 1960-61 finden Sie a.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Stadttheater_Basel/1960_Stadttheater Basel - Während der Saison 1960-61 finden Sie a.jpg",
+   "image_sha256": "bd0b8cda82407c4f36f90996e811aee1e4c6ad5285f03112d285f30085d70c8f",
+   "size": [
+    566,
+    800
+   ]
+  },
+  {
+   "seed": 171,
+   "corpus": "corpus",
+   "key": "Stadttheater_Basel__1961_Stadttheater Basel - Beginn der Spielzeit 1961-62.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Stadttheater_Basel/1961_Stadttheater Basel - Beginn der Spielzeit 1961-62.jpg",
+   "image_sha256": "04244968e9cd679a6337f8dfd80df6c0d7d5eae4c6be757ab407a5fdb6c07b74",
+   "size": [
+    560,
+    800
+   ]
+  },
+  {
+   "seed": 172,
+   "corpus": "corpus",
+   "key": "Stadttheater_Basel__1962_Stadttheater Basel.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Stadttheater_Basel/1962_Stadttheater Basel.jpg",
+   "image_sha256": "0851c6cfd6afa9a3be59c0f1332e22098480dbee0fc765ead46318f775be48b4",
+   "size": [
+    567,
+    800
+   ]
+  },
+  {
+   "seed": 173,
+   "corpus": "corpus",
+   "key": "Stadttheater_Basel__1963_Stadttheater Basel - 63-64.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Stadttheater_Basel/1963_Stadttheater Basel - 63-64.jpg",
+   "image_sha256": "0f1260cad3dfa6132c7559d4cb2f768c89a8c5a578c0783d561889b17038edd6",
+   "size": [
+    564,
+    800
+   ]
+  },
+  {
+   "seed": 174,
+   "corpus": "corpus",
+   "key": "Stadttheater_Basel__1964_Stadttheater Basel.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Stadttheater_Basel/1964_Stadttheater Basel.jpg",
+   "image_sha256": "c2cdb38169dee0fc93e448adab14063f297b55e23d21a3cb84e3b66242671573",
+   "size": [
+    565,
+    800
+   ]
+  },
+  {
+   "seed": 175,
+   "corpus": "corpus",
+   "key": "Stadttheater_Basel__1965_Stadttheater Basel - 1965 66.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Stadttheater_Basel/1965_Stadttheater Basel - 1965 66.jpg",
+   "image_sha256": "d859a10c097e9d761f6cfb7521dffb87f808621a8c0fd5c7f8d47a34d56b2e2e",
+   "size": [
+    565,
+    800
+   ]
+  },
+  {
+   "seed": 176,
+   "corpus": "corpus",
+   "key": "Stadttheater_Basel__1966_1966-67 - Stadttheater Basel.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Stadttheater_Basel/1966_1966-67 - Stadttheater Basel.jpg",
+   "image_sha256": "98425b78683cab74c8b0fc3196c6c80cec3947da18c268745e7cd145ad400261",
+   "size": [
+    548,
+    768
+   ]
+  },
+  {
+   "seed": 177,
+   "corpus": "corpus",
+   "key": "Stadttheater_Basel__1967_Stadttheater Basel.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Stadttheater_Basel/1967_Stadttheater Basel.jpg",
+   "image_sha256": "abed34388f4399201f2d86b3658497709b732f95b31a572004033e7b678793c1",
+   "size": [
+    566,
+    800
+   ]
+  },
+  {
+   "seed": 178,
+   "corpus": "corpus",
+   "key": "Theater_Tanz__1968_Basler Theater - 1968-9.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Theater_Tanz/1968_Basler Theater - 1968-9.jpg",
+   "image_sha256": "7371b2c2766d97b6f4973981873cbebe65c874b37860db65724d64912da041e8",
+   "size": [
+    567,
+    800
+   ]
+  },
+  {
+   "seed": 179,
+   "corpus": "corpus",
+   "key": "Tonhalle_Zuerich__1989_Basler Gesangverein - Zürcher Bach Chor - Basler Sinfonieorc.jpg",
+   "image": "~/Documents/연구2/호프만정리/corpus/코어/Tonhalle_Zuerich/1989_Basler Gesangverein - Zürcher Bach Chor - Basler Sinfonieorc.jpg",
+   "image_sha256": "287b2617cbd836c7eb6eab4266f91b6f05c82f685efb7f9939f641bf29651938",
+   "size": [
+    567,
+    800
+   ]
+  },
+  {
+   "seed": 180,
+   "corpus": "rose",
+   "key": "Ausstellung__1950_Zürcher Künstler im Helmhaus.jpg",
+   "image": "~/Documents/연구2/로제정리/corpus/코어/Ausstellung/1950_Zürcher Künstler im Helmhaus.jpg",
+   "image_sha256": "0ce20441d36ebd7f85a22b965baf444f26aad471c4e76349fa8b02e06eb4f542",
+   "size": [
+    572,
+    800
+   ]
+  },
+  {
+   "seed": 181,
+   "corpus": "rose",
+   "key": "Ausstellung__1958_Kunstmuseum Winterthur - Ungegenständliche Malerei in der Sc.jpg",
+   "image": "~/Documents/연구2/로제정리/corpus/코어/Ausstellung/1958_Kunstmuseum Winterthur - Ungegenständliche Malerei in der Sc.jpg",
+   "image_sha256": "5433fd56f4fb28daabfbe3a314f74dc28c0a4f53cebca87d0346210a3ce76be1",
+   "size": [
+    568,
+    800
+   ]
+  },
+  {
+   "seed": 182,
+   "corpus": "rose",
+   "key": "Ausstellung__1962_Ausstellung Musikinstrumente - Kunstgewerbemusem Zürich.jpg",
+   "image": "~/Documents/연구2/로제정리/corpus/코어/Ausstellung/1962_Ausstellung Musikinstrumente - Kunstgewerbemusem Zürich.jpg",
+   "image_sha256": "1e9a2cad96097a4ec3e2020db262f365d4d4d929f10ebd837c21542cd7bdf459",
+   "size": [
+    570,
+    800
+   ]
+  },
+  {
+   "seed": 183,
+   "corpus": "rose",
+   "key": "Ausstellung__1962_Richard P. Lohse - Max Truninger - Kunsthaus Zürich.jpg",
+   "image": "~/Documents/연구2/로제정리/corpus/코어/Ausstellung/1962_Richard P. Lohse - Max Truninger - Kunsthaus Zürich.jpg",
+   "image_sha256": "8a3d24f86c84f82a9fa0ebd459c52c5d306714b9e56168878e522739fb289f9d",
+   "size": [
+    565,
+    800
+   ]
+  },
+  {
+   "seed": 184,
+   "corpus": "rose",
+   "key": "Ausstellung__1964_Zürcher Künstler im Helmhaus.jpg",
+   "image": "~/Documents/연구2/로제정리/corpus/코어/Ausstellung/1964_Zürcher Künstler im Helmhaus.jpg",
+   "image_sha256": "80197e2731531021de8e8d37013bf2d8fe4c32a6ebca4494b13e217c4c5d3b87",
+   "size": [
+    563,
+    800
+   ]
+  },
+  {
+   "seed": 185,
+   "corpus": "rose",
+   "key": "Ausstellung__1970_Lohse - Kunsthalle Bern.jpg",
+   "image": "~/Documents/연구2/로제정리/corpus/코어/Ausstellung/1970_Lohse - Kunsthalle Bern.jpg",
+   "image_sha256": "25b2dfb0c3c80837379a30972108c2742c33b9afb1b976a75c7bcbeef32908fa",
+   "size": [
+    565,
+    800
+   ]
+  },
+  {
+   "seed": 186,
+   "corpus": "rose",
+   "key": "Ausstellung__1976_Richard Paul Lohse - Modulare und serielle Ordnungen - Kunst.jpg",
+   "image": "~/Documents/연구2/로제정리/corpus/코어/Ausstellung/1976_Richard Paul Lohse - Modulare und serielle Ordnungen - Kunst.jpg",
+   "image_sha256": "5341509ac9210c445858a0231252b2e7a3f3cdfcfae356b21284b70bf358ab42",
+   "size": [
+    565,
+    800
+   ]
+  },
+  {
+   "seed": 187,
+   "corpus": "rose",
+   "key": "Ausstellung__1977_Museum zu Allerheiligen Schaffhausen - Zwischen Improvisatio.jpg",
+   "image": "~/Documents/연구2/로제정리/corpus/코어/Ausstellung/1977_Museum zu Allerheiligen Schaffhausen - Zwischen Improvisatio.jpg",
+   "image_sha256": "d6bc5893a4ce5900b0836d781520758dd25aedde1f638f50522a5736935b236d",
+   "size": [
+    566,
+    800
+   ]
+  },
+  {
+   "seed": 188,
+   "corpus": "rose",
+   "key": "Ausstellung__1985_Richard Paul Lohse - Kunstmuseum Luzern.jpg",
+   "image": "~/Documents/연구2/로제정리/corpus/코어/Ausstellung/1985_Richard Paul Lohse - Kunstmuseum Luzern.jpg",
+   "image_sha256": "5db9a088a717c82c973eb6e8a6436c9a1accf1d5cb060736039265d63823c43b",
+   "size": [
+    567,
+    800
+   ]
+  },
+  {
+   "seed": 189,
+   "corpus": "rose",
+   "key": "Gewerbemuseum_etc__1950_100 Jahre Eisenbeton - Kunstgewerbemuseum Zürich.jpg",
+   "image": "~/Documents/연구2/로제정리/corpus/코어/Gewerbemuseum_etc/1950_100 Jahre Eisenbeton - Kunstgewerbemuseum Zürich.jpg",
+   "image_sha256": "95980abc7d6a1a20e70a983ac40a56a152dba9efe93575e52e1290808d70de98",
+   "size": [
+    570,
+    800
+   ]
+  },
+  {
+   "seed": 190,
+   "corpus": "rose",
+   "key": "Gewerbemuseum_etc__1952_Kartographie in der Schweiz - 100 Jahre Kümmerly + Frey - Au.jpg",
+   "image": "~/Documents/연구2/로제정리/corpus/코어/Gewerbemuseum_etc/1952_Kartographie in der Schweiz - 100 Jahre Kümmerly + Frey - Au.jpg",
+   "image_sha256": "11b5236f5a17bec4d5958c36dc3ee5d272477f4c2d5150cfb77dc7b796e09c47",
+   "size": [
+    566,
+    800
+   ]
+  },
+  {
+   "seed": 191,
+   "corpus": "rose",
+   "key": "Gewerbemuseum_etc__1958_Kunststoffe - Gewerbemuseum Winterthur.jpg",
+   "image": "~/Documents/연구2/로제정리/corpus/코어/Gewerbemuseum_etc/1958_Kunststoffe - Gewerbemuseum Winterthur.jpg",
+   "image_sha256": "20f00310b112d54e5b573ce280f5bfde407402581ac356476218a2767c668403",
+   "size": [
+    563,
+    800
+   ]
+  },
+  {
+   "seed": 192,
+   "corpus": "rose",
+   "key": "Juni_Festwochen__1958_Fünftes Junifestkonzert der Tonhalle-Gesellschaft Zürich.jpg",
+   "image": "~/Documents/연구2/로제정리/corpus/코어/Juni_Festwochen/1958_Fünftes Junifestkonzert der Tonhalle-Gesellschaft Zürich.jpg",
+   "image_sha256": "7dfce86fee337be59858f7b60de36781beeb58d8f3dcbcfd97605bd05da6b900",
+   "size": [
+    565,
+    800
+   ]
+  },
+  {
+   "seed": 193,
+   "corpus": "rose",
+   "key": "Juni_Festwochen__1958_Juni-Festwochen - June Festival - Festival de Juin - Zürich .jpg",
+   "image": "~/Documents/연구2/로제정리/corpus/코어/Juni_Festwochen/1958_Juni-Festwochen - June Festival - Festival de Juin - Zürich .jpg",
+   "image_sha256": "69de2a3b26022217bb838fab3e3e68dc8548900faed063bf8e960d57fbca8593",
+   "size": [
+    564,
+    800
+   ]
+  },
+  {
+   "seed": 194,
+   "corpus": "rose",
+   "key": "Juni_Festwochen__1958_Stadttheater Zürich - Junifestwochen Zürich 1958.jpg",
+   "image": "~/Documents/연구2/로제정리/corpus/코어/Juni_Festwochen/1958_Stadttheater Zürich - Junifestwochen Zürich 1958.jpg",
+   "image_sha256": "c84e8ea67d86fea964577ddda46d59a471640694cc333339b1e713c5ab3ebe59",
+   "size": [
+    564,
+    800
+   ]
+  },
+  {
+   "seed": 195,
+   "corpus": "rose",
+   "key": "Sonstige__1962_Montag 14-18 h (...).jpg",
+   "image": "~/Documents/연구2/로제정리/corpus/코어/Sonstige/1962_Montag 14-18 h (...).jpg",
+   "image_sha256": "40d15e0060ad39923a57717e0703a4cc4d920e5a950b496aa59294dbae593123",
+   "size": [
+    564,
+    800
+   ]
+  },
+  {
+   "seed": 196,
+   "corpus": "ruder",
+   "key": "Ausstellung__1959_Aegyptische Kinder weben Bildteppiche - Helmhaus Zürich.jpg",
+   "image": "~/Documents/연구2/루더정리/corpus/코어/Ausstellung/1959_Aegyptische Kinder weben Bildteppiche - Helmhaus Zürich.jpg",
+   "image_sha256": "349fb61de2bf2214a898f751702e4db27cbb843f4c3b93f02571cca88f4f6642",
+   "size": [
+    566,
+    800
+   ]
+  },
+  {
+   "seed": 197,
+   "corpus": "ruder",
+   "key": "Gewerbemuseum_Basel__1954_Ausstellung Gewerbemuseum Basel - Lucien Clergue - Photos 19.jpg",
+   "image": "~/Documents/연구2/루더정리/corpus/코어/Gewerbemuseum_Basel/1954_Ausstellung Gewerbemuseum Basel - Lucien Clergue - Photos 19.jpg",
+   "image_sha256": "0046c7b6d6e005f2fa130d7114e8ec5972e5848229b6b869317de177cdca3585",
+   "size": [
+    565,
+    800
+   ]
+  },
+  {
+   "seed": 198,
+   "corpus": "ruder",
+   "key": "Gewerbemuseum_Basel__1955_Glaskunst aus Murano - Gewerbemuseum Basel.jpg",
+   "image": "~/Documents/연구2/루더정리/corpus/코어/Gewerbemuseum_Basel/1955_Glaskunst aus Murano - Gewerbemuseum Basel.jpg",
+   "image_sha256": "e76a359a6d35d2c3eab57aa81ad10e6d3b6a6e5cc0558c13d0bb95795dc44f3e",
+   "size": [
+    562,
+    800
+   ]
+  },
+  {
+   "seed": 199,
+   "corpus": "ruder",
+   "key": "Gewerbemuseum_Basel__1956_Verborgene Schätze des Gewerbemuseums - Gewerbemuseum Basel.jpg",
+   "image": "~/Documents/연구2/루더정리/corpus/코어/Gewerbemuseum_Basel/1956_Verborgene Schätze des Gewerbemuseums - Gewerbemuseum Basel.jpg",
+   "image_sha256": "eef7b20063605c3bb38ee5706b056c0ee473b4f999e70da1073adfb1f14463d6",
+   "size": [
+    563,
+    800
+   ]
+  },
+  {
+   "seed": 200,
+   "corpus": "ruder",
+   "key": "Gewerbemuseum_Basel__1957_Sammlung Richard Doetsch-Benziger - Bücher, Ostasiatische Kl.jpg",
+   "image": "~/Documents/연구2/루더정리/corpus/코어/Gewerbemuseum_Basel/1957_Sammlung Richard Doetsch-Benziger - Bücher, Ostasiatische Kl.jpg",
+   "image_sha256": "dc7aed4edc1f7c8788b7b3d91deccf6348be8f2eccac237ad7020250a6815e8f",
+   "size": [
+    561,
+    800
+   ]
+  },
+  {
+   "seed": 201,
+   "corpus": "ruder",
+   "key": "Gewerbemuseum_Basel__1958_Die Zeitung - Gewerbemuseum Basel.jpg",
+   "image": "~/Documents/연구2/루더정리/corpus/코어/Gewerbemuseum_Basel/1958_Die Zeitung - Gewerbemuseum Basel.jpg",
+   "image_sha256": "f4232fc0787521d8a9dcfd41ad4d8a522090c65181732edfd8c8a5e3b5fdd91b",
+   "size": [
+    570,
+    800
+   ]
+  },
+  {
+   "seed": 202,
+   "corpus": "ruder",
+   "key": "Gewerbemuseum_Basel__1958_Werkstoff Holz - Ausstellung im Gewerbemuseum Basel.jpg",
+   "image": "~/Documents/연구2/루더정리/corpus/코어/Gewerbemuseum_Basel/1958_Werkstoff Holz - Ausstellung im Gewerbemuseum Basel.jpg",
+   "image_sha256": "080d82652a5dace16115961648977301c0ed25d30dd51c03e78ac51c70ad923f",
+   "size": [
+    567,
+    800
+   ]
+  },
+  {
+   "seed": 203,
+   "corpus": "ruder",
+   "key": "Gewerbemuseum_Basel__1959_Ausstellung Gewerbemuseum Basel - Das Kinderbilderbuch.jpg",
+   "image": "~/Documents/연구2/루더정리/corpus/코어/Gewerbemuseum_Basel/1959_Ausstellung Gewerbemuseum Basel - Das Kinderbilderbuch.jpg",
+   "image_sha256": "5cd7915b9454e9589b24fef7318f4bc3e264d1014278a976fe8ba3e89f2fb615",
+   "size": [
+    567,
+    800
+   ]
+  },
+  {
+   "seed": 204,
+   "corpus": "ruder",
+   "key": "Gewerbemuseum_Basel__1960_Johannes Froben und der Basler Buchdruck des 16. Jahrhundert.jpg",
+   "image": "~/Documents/연구2/루더정리/corpus/코어/Gewerbemuseum_Basel/1960_Johannes Froben und der Basler Buchdruck des 16. Jahrhundert.jpg",
+   "image_sha256": "bf9232e8dd1ec45809d7742caf64f9f2f23403b93299fb633c26f1535ac379c7",
+   "size": [
+    567,
+    800
+   ]
+  },
+  {
+   "seed": 205,
+   "corpus": "ruder",
+   "key": "Gewerbemuseum_Basel__1960_ungegenständliche Photographie - Gewerbemuseum Basel.jpg",
+   "image": "~/Documents/연구2/루더정리/corpus/코어/Gewerbemuseum_Basel/1960_ungegenständliche Photographie - Gewerbemuseum Basel.jpg",
+   "image_sha256": "cf7710abf07486022be0eb2e369238f047527f97ea8060932ff5d1d3213b86be",
+   "size": [
+    560,
+    800
+   ]
+  },
+  {
+   "seed": 206,
+   "corpus": "ruder",
+   "key": "Gewerbemuseum_Basel__1962_Dänisches Silber und Handwerk - Gewerbemuseum Basel.jpg",
+   "image": "~/Documents/연구2/루더정리/corpus/코어/Gewerbemuseum_Basel/1962_Dänisches Silber und Handwerk - Gewerbemuseum Basel.jpg",
+   "image_sha256": "b74dae1d46cd9532d13327c17254260694eb8dfdbba4c765454eb42bea617459",
+   "size": [
+    560,
+    800
+   ]
+  },
+  {
+   "seed": 207,
+   "corpus": "ruder",
+   "key": "Gewerbemuseum_Basel__1962_Neue Wirtshausschilder - Gewerbemuseum Basel.jpg",
+   "image": "~/Documents/연구2/루더정리/corpus/코어/Gewerbemuseum_Basel/1962_Neue Wirtshausschilder - Gewerbemuseum Basel.jpg",
+   "image_sha256": "e2275625b92d299a815d733d895addfd354b55a6e6b58d00906cfcfb01b7c4f2",
+   "size": [
+    563,
+    800
+   ]
+  },
+  {
+   "seed": 208,
+   "corpus": "ruder",
+   "key": "Gewerbemuseum_Basel__1963_Berlin - die grösste Stadt Deutschlands - Ausstellung Gewerb.jpg",
+   "image": "~/Documents/연구2/루더정리/corpus/코어/Gewerbemuseum_Basel/1963_Berlin - die grösste Stadt Deutschlands - Ausstellung Gewerb.jpg",
+   "image_sha256": "bbbe0efb2656a50e804bb285be55ba1244c320ecd45edf417bea9a2100d22448",
+   "size": [
+    569,
+    800
+   ]
+  },
+  {
+   "seed": 209,
+   "corpus": "ruder",
+   "key": "Gewerbemuseum_Basel__1967_Gewerbemuseum Basel - Kymatik - Schwingungen experimentell s.jpg",
+   "image": "~/Documents/연구2/루더정리/corpus/코어/Gewerbemuseum_Basel/1967_Gewerbemuseum Basel - Kymatik - Schwingungen experimentell s.jpg",
+   "image_sha256": "878de88b27482a82225d5710731e0b19f01feec4d0dcfcd7c84cd6dd2ebe95a9",
+   "size": [
+    564,
+    800
+   ]
+  },
+  {
+   "seed": 210,
+   "corpus": "ruder",
+   "key": "Gewerbemuseum_Basel__1970_Seit langem bewährt - Klassische Produkte moderner Formgebun.jpg",
+   "image": "~/Documents/연구2/루더정리/corpus/코어/Gewerbemuseum_Basel/1970_Seit langem bewährt - Klassische Produkte moderner Formgebun.jpg",
+   "image_sha256": "48c61807941524514220468afad9c274e9d7dc67df8c9696ad6e5770c41f5a66",
+   "size": [
+    562,
+    800
+   ]
+  },
+  {
+   "seed": 211,
+   "corpus": "ruder",
+   "key": "Gewerbemuseum_etc__1954_Die gute Form - Kunstgewerbemuseum Zürich.jpg",
+   "image": "~/Documents/연구2/루더정리/corpus/코어/Gewerbemuseum_etc/1954_Die gute Form - Kunstgewerbemuseum Zürich.jpg",
+   "image_sha256": "c7705e5b368b173e29a43de5acd2a43749eec46d058d6014f5d749fd80a04079",
+   "size": [
+    563,
+    800
+   ]
+  },
+  {
+   "seed": 212,
+   "corpus": "ruder",
+   "key": "Kunsthalle_Basel__1955_Charles Hindenlang - Louis Weber - Kunsthalle Basel.jpg",
+   "image": "~/Documents/연구2/루더정리/corpus/코어/Kunsthalle_Basel/1955_Charles Hindenlang - Louis Weber - Kunsthalle Basel.jpg",
+   "image_sha256": "81681baaf7d50876897fadda7c8c8abd84b4c90854e3549fabb4304e21ac50b7",
+   "size": [
+    567,
+    800
+   ]
+  },
+  {
+   "seed": 213,
+   "corpus": "ruder",
+   "key": "Kunsthalle_Basel__1956_Japanische Kalligraphie und westliche Zeichen - Kunsthalle B.jpg",
+   "image": "~/Documents/연구2/루더정리/corpus/코어/Kunsthalle_Basel/1956_Japanische Kalligraphie und westliche Zeichen - Kunsthalle B.jpg",
+   "image_sha256": "d1b01bbd33faa6474239c402f3d87daa3b727362fe0ef0c88ed26a475488697b",
+   "size": [
+    566,
+    800
+   ]
+  },
+  {
+   "seed": 214,
+   "corpus": "ruder",
+   "key": "Kunsthalle_Basel__1956_Kunsthalle Basel - Bauchant - Bombois - Séraphine - Vivin - .jpg",
+   "image": "~/Documents/연구2/루더정리/corpus/코어/Kunsthalle_Basel/1956_Kunsthalle Basel - Bauchant - Bombois - Séraphine - Vivin - .jpg",
+   "image_sha256": "cb25b3fd41f58e00d3ddaf68a423a7b2326c4f89c5dceb6bdb06a1070a0702f1",
+   "size": [
+    566,
+    800
+   ]
+  },
+  {
+   "seed": 215,
+   "corpus": "ruder",
+   "key": "Kunsthalle_Basel__1956_Kunsthalle Basel - Max Beckmann.jpg",
+   "image": "~/Documents/연구2/루더정리/corpus/코어/Kunsthalle_Basel/1956_Kunsthalle Basel - Max Beckmann.jpg",
+   "image_sha256": "163f6ed14e59f11d94332e9d52c76c51cbd772d852124ecfdda176c017c180f7",
+   "size": [
+    568,
+    800
+   ]
+  },
+  {
+   "seed": 216,
+   "corpus": "ruder",
+   "key": "Kunsthalle_Basel__1957_10 Zürcher Maler - Kunsthalle Basel.jpg",
+   "image": "~/Documents/연구2/루더정리/corpus/코어/Kunsthalle_Basel/1957_10 Zürcher Maler - Kunsthalle Basel.jpg",
+   "image_sha256": "01d1d3e6543a4f6b575af2b22d0676a79099a64eff524579c42c6a87a2607fe8",
+   "size": [
+    564,
+    800
+   ]
+  },
+  {
+   "seed": 217,
+   "corpus": "ruder",
+   "key": "Kunsthalle_Basel__1957_Joan Miró - Kunsthalle Basel.jpg",
+   "image": "~/Documents/연구2/루더정리/corpus/코어/Kunsthalle_Basel/1957_Joan Miró - Kunsthalle Basel.jpg",
+   "image_sha256": "a8a9d9c56312ad9a0c7b312348dbc6acf7ce2c40845e6692fa1bd0b743d838e0",
+   "size": [
+    565,
+    800
+   ]
+  },
+  {
+   "seed": 218,
+   "corpus": "ruder",
+   "key": "Kunsthalle_Basel__1965_Gustav Stettler - Maler - Hans Josephson - Bildhauer - Kunst.jpg",
+   "image": "~/Documents/연구2/루더정리/corpus/코어/Kunsthalle_Basel/1965_Gustav Stettler - Maler - Hans Josephson - Bildhauer - Kunst.jpg",
+   "image_sha256": "7034de7ac46d5c53403264192c7a5f71dfd46854a64ce4b12cfac491d5bb357d",
+   "size": [
+    565,
+    800
+   ]
+  },
+  {
+   "seed": 219,
+   "corpus": "ruder",
+   "key": "Kunsthalle_Basel__1965_Sektion Basel der Gesellschaft Schweizer Maler Bildhauer und.jpg",
+   "image": "~/Documents/연구2/루더정리/corpus/코어/Kunsthalle_Basel/1965_Sektion Basel der Gesellschaft Schweizer Maler Bildhauer und.jpg",
+   "image_sha256": "40f3669eccf9f537a1efd0a1599aa01ac2c996a0c2f28d0534869fd7b1a34839",
+   "size": [
+    563,
+    800
+   ]
+  },
+  {
+   "seed": 220,
+   "corpus": "ruder",
+   "key": "Mustermesse_Basel__1954_Die gute Form - Gewerbemuseum Winterthur - Ausstellung der a.jpg",
+   "image": "~/Documents/연구2/루더정리/corpus/코어/Mustermesse_Basel/1954_Die gute Form - Gewerbemuseum Winterthur - Ausstellung der a.jpg",
+   "image_sha256": "0e2d891d25f9d6c8e90f6b82ba6f4dd731049447bea8a9e535ab775760a82ce2",
+   "size": [
+    568,
+    800
+   ]
+  },
+  {
+   "seed": 221,
+   "corpus": "ruder",
+   "key": "Sonstige__1956_Goldschmuck der Völkerwanderungszeit.jpg",
+   "image": "~/Documents/연구2/루더정리/corpus/코어/Sonstige/1956_Goldschmuck der Völkerwanderungszeit.jpg",
+   "image_sha256": "8b032723593f5ddda914e88d564396d84f17dd19f251d78b47bbfa3e342c74a9",
+   "size": [
+    567,
+    800
+   ]
+  },
+  {
+   "seed": 222,
+   "corpus": "ruder",
+   "key": "Sonstige__1964_Moderne französische Knüpfteppiche.jpg",
+   "image": "~/Documents/연구2/루더정리/corpus/코어/Sonstige/1964_Moderne französische Knüpfteppiche.jpg",
+   "image_sha256": "d03281232823a17f389df9d04b2c7773fda6a25f376a64c4af2b92447ee7f7c6",
+   "size": [
+    570,
+    800
+   ]
+  }
+ ]
+}

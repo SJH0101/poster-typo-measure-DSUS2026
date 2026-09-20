@@ -1,0 +1,1066 @@
+{
+ "what": "탐색용 · 논문 수치 아님",
+ "문턱": 0.75,
+ "목록": [
+  {
+   "번호": 1,
+   "order": 1,
+   "판": "1948_Deine Wohnung - Dein Nachbar - Deine Heimat - Ausstellung im.jpg",
+   "종류": "한 단",
+   "줄": 2,
+   "상자": [
+    76.0,
+    621.0,
+    262.0,
+    639.0
+   ],
+   "자른_x": [
+    199.5
+   ],
+   "자른_위치_상자폭몫": [
+    0.664
+   ],
+   "줄_글": "Ausste Helmhaus",
+   "조각_글": [
+    "Ausste",
+    ""
+   ],
+   "줄_글_눈으로": "Ausstellung im | Helmhaus"
+  },
+  {
+   "번호": 2,
+   "order": 1,
+   "판": "1948_Deine Wohnung - Dein Nachbar - Deine Heimat - Ausstellung im.jpg",
+   "종류": "한 단",
+   "줄": 18,
+   "상자": [
+    296.0,
+    612.0,
+    502.0,
+    640.0
+   ],
+   "자른_x": [
+    346.0,
+    383.0
+   ],
+   "자른_위치_상자폭몫": [
+    0.243,
+    0.422
+   ],
+   "줄_글": "vom  28.Junl bis 31. Juli 1948",
+   "조각_글": [
+    "vom 26",
+    "",
+    "bis 31. Juli 1948"
+   ],
+   "줄_글_눈으로": "vom 28. | Juni | bis 31. Juli 1948"
+  },
+  {
+   "번호": 3,
+   "order": 6,
+   "판": "1965_Opernhaus Zürich - Eröffnung der Spielzeit 1965-66 - Die ver.jpg",
+   "종류": "한 단",
+   "줄": 36,
+   "상자": [
+    404.0,
+    718.0,
+    532.0,
+    730.0
+   ],
+   "자른_x": [
+    434.0
+   ],
+   "자른_위치_상자폭몫": [
+    0.234
+   ],
+   "줄_글": "",
+   "조각_글": [
+    "",
+    ""
+   ],
+   "줄_글_눈으로": "Max | Röthlisberger"
+  },
+  {
+   "번호": 4,
+   "order": 16,
+   "판": "1960_Kunstgewerbemuseum Zürich - Ausstellung - Der Film.jpg",
+   "종류": "한 단",
+   "줄": 2,
+   "상자": [
+    159.0,
+    43.0,
+    363.0,
+    79.0
+   ],
+   "자른_x": [
+    284.0
+   ],
+   "자른_위치_상자폭몫": [
+    0.613
+   ],
+   "줄_글": "Kunsthewve emuselion Zuticn Jues ehung",
+   "조각_글": [
+    "Kunsthewe ennu Jues ehung",
+    "elion Zutich"
+   ],
+   "줄_글_눈으로": "Kunstgewerbemu|seum Zürich (+ 아랫줄 Ausstellung)"
+  },
+  {
+   "번호": 5,
+   "order": 20,
+   "판": "1994_Zürcher Szenen von Edi Baur - Ausstellung im Stadthaus Züric.jpg",
+   "종류": "한 단",
+   "줄": 0,
+   "상자": [
+    7.0,
+    347.0,
+    559.0,
+    387.0
+   ],
+   "자른_x": [
+    129.5,
+    290.5
+   ],
+   "자른_위치_상자폭몫": [
+    0.222,
+    0.514
+   ],
+   "줄_글": "Zürcher Szenen von Edi Baur",
+   "조각_글": [
+    "Zürche",
+    "Pr Szenel",
+    "1 von Edi Baur"
+   ],
+   "줄_글_눈으로": "Zürch|er Szenen | von Edi Baur"
+  },
+  {
+   "번호": 6,
+   "order": 21,
+   "판": "1966_Opernhaus Zürich - Don Carlos - Oper von Giuseppe Verdi - 5..jpg",
+   "종류": "한 단",
+   "줄": 1,
+   "상자": [
+    40.0,
+    303.0,
+    465.0,
+    325.0
+   ],
+   "자른_x": [
+    306.0
+   ],
+   "자른_위치_상자폭몫": [
+    0.626
+   ],
+   "줄_글": "1aesiiniallnHisiinn",
+   "조각_글": [
+    "1ae rs liialnHirii",
+    "n"
+   ],
+   "줄_글_눈으로": "Neuinszenierung, Samstag, | 5. 2. 1966, 20 Uhr"
+  },
+  {
+   "번호": 7,
+   "order": 22,
+   "판": "1957_Juni-Festwochen Zürich 1957 - Tonhalle Grosser Saal - 4. Jun.jpg",
+   "종류": "한 단",
+   "줄": 0,
+   "상자": [
+    83.0,
+    235.0,
+    224.0,
+    254.0
+   ],
+   "자른_x": [
+    114.5
+   ],
+   "자른_위치_상자폭몫": [
+    0.223
+   ],
+   "줄_글": "schuricht",
+   "조각_글": [
+    "",
+    "schuricht"
+   ],
+   "줄_글_눈으로": "carl | schuricht"
+  },
+  {
+   "번호": 8,
+   "order": 41,
+   "판": "1957_Extra-Konzert - Leitung Carl Schuricht - Violine Johanna Mar.jpg",
+   "종류": "한 단",
+   "줄": 6,
+   "상자": [
+    368.0,
+    642.0,
+    460.0,
+    652.0
+   ],
+   "자른_x": [
+    394.0
+   ],
+   "자른_위치_상자폭몫": [
+    0.283
+   ],
+   "줄_글": "",
+   "조각_글": [
+    "",
+    ""
+   ],
+   "줄_글_눈으로": "tonha|lle grosser saal"
+  },
+  {
+   "번호": 9,
+   "order": 41,
+   "판": "1957_Extra-Konzert - Leitung Carl Schuricht - Violine Johanna Mar.jpg",
+   "종류": "한 단",
+   "줄": 9,
+   "상자": [
+    368.0,
+    692.0,
+    460.0,
+    703.0
+   ],
+   "자른_x": [
+    426.5
+   ],
+   "자른_위치_상자폭몫": [
+    0.636
+   ],
+   "줄_글": "",
+   "조각_글": [
+    "",
+    ""
+   ],
+   "줄_글_눈으로": "violinkonzert | in d-dur"
+  },
+  {
+   "번호": 10,
+   "order": 41,
+   "판": "1957_Extra-Konzert - Leitung Carl Schuricht - Violine Johanna Mar.jpg",
+   "종류": "한 단",
+   "줄": 12,
+   "상자": [
+    367.0,
+    707.0,
+    469.0,
+    718.0
+   ],
+   "자른_x": [
+    428.0
+   ],
+   "자른_위치_상자폭몫": [
+    0.598
+   ],
+   "줄_글": "",
+   "조각_글": [
+    "",
+    ""
+   ],
+   "줄_글_눈으로": "achte sinfonie | in c-moll"
+  },
+  {
+   "번호": 11,
+   "order": 41,
+   "판": "1957_Extra-Konzert - Leitung Carl Schuricht - Violine Johanna Mar.jpg",
+   "종류": "한 단",
+   "줄": 13,
+   "상자": [
+    369.0,
+    730.0,
+    417.0,
+    740.0
+   ],
+   "자른_x": [
+    392.5
+   ],
+   "자른_위치_상자폭몫": [
+    0.49
+   ],
+   "줄_글": "",
+   "조각_글": [
+    "",
+    ""
+   ],
+   "줄_글_눈으로": "vorv|erkauf"
+  },
+  {
+   "번호": 12,
+   "order": 41,
+   "판": "1957_Extra-Konzert - Leitung Carl Schuricht - Violine Johanna Mar.jpg",
+   "종류": "한 단",
+   "줄": 14,
+   "상자": [
+    368.0,
+    743.0,
+    479.0,
+    754.0
+   ],
+   "자른_x": [
+    400.0,
+    427.5
+   ],
+   "자른_위치_상자폭몫": [
+    0.288,
+    0.536
+   ],
+   "줄_글": "",
+   "조각_글": [
+    "",
+    "",
+    ""
+   ],
+   "줄_글_눈으로": "tonhalle | hug | jecklin kuoni"
+  },
+  {
+   "번호": 13,
+   "order": 41,
+   "판": "1957_Extra-Konzert - Leitung Carl Schuricht - Violine Johanna Mar.jpg",
+   "종류": "한 단",
+   "줄": 15,
+   "상자": [
+    368.0,
+    757.0,
+    458.0,
+    768.0
+   ],
+   "자른_x": [
+    379.5,
+    431.0
+   ],
+   "자른_위치_상자폭몫": [
+    0.128,
+    0.7
+   ],
+   "줄_글": "",
+   "조각_글": [
+    "",
+    "",
+    ""
+   ],
+   "줄_글_눈으로": "k|arten fr. 3.50 – | 10.50"
+  },
+  {
+   "번호": 14,
+   "order": 42,
+   "판": "1957_Musica Viva - Thyl Claes - Tonhalle Grosser Saal.jpg",
+   "종류": "한 단",
+   "줄": 19,
+   "상자": [
+    381.0,
+    624.0,
+    532.0,
+    639.0
+   ],
+   "자른_x": [
+    441.0
+   ],
+   "자른_위치_상자폭몫": [
+    0.397
+   ],
+   "줄_글": "Lonhalle. crosser s3a",
+   "조각_글": [
+    "Lonhalle",
+    "crosser"
+   ],
+   "줄_글_눈으로": "tonhalle | grosser saal"
+  },
+  {
+   "번호": 15,
+   "order": 43,
+   "판": "1965_Internationale Juni-Festwochen Zürich 1965 - Konzerte der To.jpg",
+   "종류": "한 단",
+   "줄": 6,
+   "상자": [
+    22.0,
+    205.0,
+    431.0,
+    223.0
+   ],
+   "자른_x": [
+    118.5
+   ],
+   "자른_위치_상자폭몫": [
+    0.236
+   ],
+   "줄_글": "2konzert-donnerstac den10.juni2015uhr",
+   "조각_글": [
+    "2konzert",
+    "donnerstac den10.juni2015uhr"
+   ],
+   "줄_글_눈으로": "2. konzert | donnerstag, den 10. juni, 20.15 uhr"
+  },
+  {
+   "번호": 16,
+   "order": 43,
+   "판": "1965_Internationale Juni-Festwochen Zürich 1965 - Konzerte der To.jpg",
+   "종류": "한 단",
+   "줄": 9,
+   "상자": [
+    21.0,
+    263.0,
+    558.0,
+    281.0
+   ],
+   "자른_x": [
+    96.0,
+    360.0
+   ],
+   "자른_위치_상자폭몫": [
+    0.14,
+    0.631
+   ],
+   "줄_글": "violinkonzert Ora 7welte sinfonie",
+   "조각_글": [
+    "avora",
+    "violinkonzert",
+    "Nelte sinfonie"
+   ],
+   "줄_글_눈으로": "dvorak | violinkonzert a-moll, brahms | zweite sinfonie d-dur"
+  },
+  {
+   "번호": 17,
+   "order": 43,
+   "판": "1965_Internationale Juni-Festwochen Zürich 1965 - Konzerte der To.jpg",
+   "종류": "한 단",
+   "줄": 14,
+   "상자": [
+    21.0,
+    395.0,
+    403.0,
+    414.0
+   ],
+   "자른_x": [
+    119.5,
+    173.0,
+    224.0,
+    273.0
+   ],
+   "자른_위치_상자폭몫": [
+    0.258,
+    0.398,
+    0.531,
+    0.66
+   ],
+   "줄_글": "konzert-dienstaa den 22 iuni 20.15uhr",
+   "조각_글": [
+    "konzert",
+    "diens",
+    "tag",
+    "2n22",
+    "iuni 20.15 uhr"
+   ],
+   "줄_글_눈으로": "4. konzert | dienst|ag, d|en 22. | juni, 20.15 uhr"
+  },
+  {
+   "번호": 18,
+   "order": 43,
+   "판": "1965_Internationale Juni-Festwochen Zürich 1965 - Konzerte der To.jpg",
+   "종류": "한 단",
+   "줄": 16,
+   "상자": [
+    21.0,
+    434.0,
+    557.0,
+    453.0
+   ],
+   "자른_x": [
+    103.0,
+    137.0,
+    174.5,
+    220.0,
+    258.0,
+    280.0,
+    315.5
+   ],
+   "자른_위치_상자폭몫": [
+    0.153,
+    0.216,
+    0.286,
+    0.371,
+    0.442,
+    0.483,
+    0.549
+   ],
+   "줄_글": "webern sechs orchesterslückeliszt klavierkonzerta",
+   "조각_글": [
+    "webern",
+    "",
+    "hs",
+    "rche",
+    "",
+    "",
+    "ICKG",
+    "klavierkonzerta-du"
+   ],
+   "줄_글_눈으로": "webern | sechs | orche|ster|stücke, | liszt | klavierkonzert a-dur (자른 곳 7)"
+  },
+  {
+   "번호": 19,
+   "order": 43,
+   "판": "1965_Internationale Juni-Festwochen Zürich 1965 - Konzerte der To.jpg",
+   "종류": "한 단",
+   "줄": 17,
+   "상자": [
+    21.0,
+    455.0,
+    379.0,
+    472.0
+   ],
+   "자른_x": [
+    123.5,
+    151.0,
+    211.5,
+    297.5
+   ],
+   "자른_위치_상자폭몫": [
+    0.286,
+    0.363,
+    0.532,
+    0.772
+   ],
+   "줄_글": "sintonieinemo",
+   "조각_글": [
+    "tschaikov",
+    "",
+    "",
+    "sinfonie",
+    "ine-mo"
+   ],
+   "줄_글_눈으로": "tschaikowsky | fünfte | sinfonie | in e-moll"
+  },
+  {
+   "번호": 20,
+   "order": 43,
+   "판": "1965_Internationale Juni-Festwochen Zürich 1965 - Konzerte der To.jpg",
+   "종류": "한 단",
+   "줄": 27,
+   "상자": [
+    21.0,
+    689.0,
+    385.0,
+    707.0
+   ],
+   "자른_x": [
+    233.0,
+    314.5
+   ],
+   "자른_위치_상자폭몫": [
+    0.582,
+    0.806
+   ],
+   "줄_글": "tonha Goo",
+   "조각_글": [
+    "tonha",
+    "bucke",
+    ""
+   ],
+   "줄_글_눈으로": "tonhalle-quartett, ursu|la buckel | sopran"
+  },
+  {
+   "번호": 21,
+   "order": 43,
+   "판": "1965_Internationale Juni-Festwochen Zürich 1965 - Konzerte der To.jpg",
+   "종류": "한 단",
+   "줄": 28,
+   "상자": [
+    21.0,
+    709.0,
+    442.0,
+    727.0
+   ],
+   "자른_x": [
+    171.5,
+    224.0
+   ],
+   "자른_위치_상자폭몫": [
+    0.357,
+    0.482
+   ],
+   "줄_글": "flote Iron",
+   "조각_글": [
+    "",
+    "flöte",
+    "Klavie"
+   ],
+   "줄_글_눈으로": "ursula burkhard | flöte, | simon burkhard klavier"
+  },
+  {
+   "번호": 22,
+   "order": 43,
+   "판": "1965_Internationale Juni-Festwochen Zürich 1965 - Konzerte der To.jpg",
+   "종류": "한 단",
+   "줄": 29,
+   "상자": [
+    20.0,
+    729.0,
+    519.0,
+    747.0
+   ],
+   "자른_x": [
+    60.5,
+    88.0,
+    169.0,
+    190.5,
+    229.0,
+    254.0,
+    290.0
+   ],
+   "자른_위치_상자폭몫": [
+    0.081,
+    0.136,
+    0.299,
+    0.342,
+    0.419,
+    0.469,
+    0.541
+   ],
+   "줄_글": "herbs",
+   "조각_글": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "herb"
+   ],
+   "줄_글_눈으로": "willy | bu|rkhard: z|weites | st|reichquartett, herbst-kantate (자른 곳 7)"
+  },
+  {
+   "번호": 23,
+   "order": 43,
+   "판": "1965_Internationale Juni-Festwochen Zürich 1965 - Konzerte der To.jpg",
+   "종류": "한 단",
+   "줄": 30,
+   "상자": [
+    21.0,
+    749.0,
+    394.0,
+    766.0
+   ],
+   "자른_x": [
+    74.0,
+    107.5,
+    169.0
+   ],
+   "자른_위치_상자폭몫": [
+    0.142,
+    0.232,
+    0.397
+   ],
+   "줄_글": "",
+   "조각_글": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "줄_글_눈으로": "neun | mo|rgenstern-lieder, | lyrische musik"
+  },
+  {
+   "번호": 24,
+   "order": 48,
+   "판": "1950_Kunstgewerbemuseum - Die gute Form - Wanderausstellung der S.jpg",
+   "종류": "한 단",
+   "줄": 6,
+   "상자": [
+    454.0,
+    477.0,
+    527.0,
+    488.0
+   ],
+   "자른_x": [
+    489.5
+   ],
+   "자른_위치_상자폭몫": [
+    0.486
+   ],
+   "줄_글": "",
+   "조각_글": [
+    "",
+    ""
+   ],
+   "줄_글_눈으로": "3. Juni | bis 20. August"
+  },
+  {
+   "번호": 25,
+   "order": 48,
+   "판": "1950_Kunstgewerbemuseum - Die gute Form - Wanderausstellung der S.jpg",
+   "종류": "한 단",
+   "줄": 11,
+   "상자": [
+    453.0,
+    601.0,
+    561.0,
+    611.0
+   ],
+   "자른_x": [
+    497.0,
+    533.0
+   ],
+   "자른_위치_상자폭몫": [
+    0.407,
+    0.741
+   ],
+   "줄_글": "",
+   "조각_글": [
+    "",
+    "",
+    ""
+   ],
+   "줄_글_눈으로": "Theaterplätze, | Freibäder, | Spitäler"
+  },
+  {
+   "번호": 26,
+   "order": 48,
+   "판": "1950_Kunstgewerbemuseum - Die gute Form - Wanderausstellung der S.jpg",
+   "종류": "한 단",
+   "줄": 17,
+   "상자": [
+    453.0,
+    652.0,
+    550.0,
+    663.0
+   ],
+   "자른_x": [
+    486.0
+   ],
+   "자른_위치_상자폭몫": [
+    0.34
+   ],
+   "줄_글": "",
+   "조각_글": [
+    "",
+    ""
+   ],
+   "줄_글_눈으로": "Tex|tilien und Mode / Gold|schmiedearbeiten, u. a. m."
+  },
+  {
+   "번호": 27,
+   "order": 2,
+   "판": "1956_Juni-Festwochen Zürich 1956 - 1. Juni-Festkonzert - Leitung .jpg",
+   "종류": "두 단",
+   "줄": 0,
+   "상자": [
+    80.0,
+    63.0,
+    208.0,
+    73.0
+   ],
+   "자른_x": [
+    153.5
+   ],
+   "자른_위치_상자폭몫": [
+    0.574
+   ],
+   "줄_글": "",
+   "조각_글": [
+    "",
+    ""
+   ],
+   "줄_글_눈으로": "juni-festwochen | zürich 1956"
+  },
+  {
+   "번호": 28,
+   "order": 5,
+   "판": "1957_Werner Bischof - Das fotografische Werk - Kunstgewerbemuseum.jpg",
+   "종류": "두 단",
+   "줄": 7,
+   "상자": [
+    300.0,
+    753.0,
+    565.0,
+    771.0
+   ],
+   "자른_x": [
+    426.0
+   ],
+   "자른_위치_상자폭몫": [
+    0.475
+   ],
+   "줄_글": "Dienstag-Freitag 10-12 14-18 20-22",
+   "조각_글": [
+    "Dienstag-Freitag",
+    "10-12 14-18 20-22"
+   ],
+   "줄_글_눈으로": "Dienstag-Freitag | 10-12 14-18 20-22"
+  },
+  {
+   "번호": 29,
+   "order": 10,
+   "판": "1962_Musica Viva - Hans Rosbaud - Anton Fietz (...) - 2. Musica V.jpg",
+   "종류": "두 단",
+   "줄": 1,
+   "상자": [
+    143.0,
+    276.0,
+    401.0,
+    306.0
+   ],
+   "자른_x": [
+    245.0
+   ],
+   "자른_위치_상자폭몫": [
+    0.395
+   ],
+   "줄_글": "hans rosbaud",
+   "조각_글": [
+    "hans",
+    "rosbaud"
+   ],
+   "줄_글_눈으로": "hans | rosbaud"
+  },
+  {
+   "번호": 30,
+   "order": 10,
+   "판": "1962_Musica Viva - Hans Rosbaud - Anton Fietz (...) - 2. Musica V.jpg",
+   "종류": "두 단",
+   "줄": 2,
+   "상자": [
+    143.0,
+    309.0,
+    339.0,
+    343.0
+   ],
+   "자른_x": [
+    249.0
+   ],
+   "자른_위치_상자폭몫": [
+    0.541
+   ],
+   "줄_글": "anton fietz",
+   "조각_글": [
+    "anton",
+    "fietz"
+   ],
+   "줄_글_눈으로": "anton | fietz"
+  },
+  {
+   "번호": 31,
+   "order": 10,
+   "판": "1962_Musica Viva - Hans Rosbaud - Anton Fietz (...) - 2. Musica V.jpg",
+   "종류": "두 단",
+   "줄": 3,
+   "상자": [
+    143.0,
+    343.0,
+    420.0,
+    376.0
+   ],
+   "자른_x": [
+    259.5
+   ],
+   "자른_위치_상자폭몫": [
+    0.421
+   ],
+   "줄_글": "marcel mihalovici",
+   "조각_글": [
+    "marcel",
+    "mihalovici"
+   ],
+   "줄_글_눈으로": "marcel | mihalovici"
+  },
+  {
+   "번호": 32,
+   "order": 10,
+   "판": "1962_Musica Viva - Hans Rosbaud - Anton Fietz (...) - 2. Musica V.jpg",
+   "종류": "두 단",
+   "줄": 4,
+   "상자": [
+    143.0,
+    381.0,
+    440.0,
+    413.0
+   ],
+   "자른_x": [
+    236.0
+   ],
+   "자른_위치_상자폭몫": [
+    0.313
+   ],
+   "줄_글": "igor strawinsky",
+   "조각_글": [
+    "igor",
+    "strawinsky"
+   ],
+   "줄_글_눈으로": "igor | strawinsky"
+  },
+  {
+   "번호": 33,
+   "order": 19,
+   "판": "1958_Tonhalle-Quartett - Zürcher Bläser-Quintett - Strawinsky - S.jpg",
+   "종류": "없음",
+   "줄": 11,
+   "상자": [
+    10.0,
+    740.0,
+    172.0,
+    750.0
+   ],
+   "자른_x": [
+    80.0
+   ],
+   "자른_위치_상자폭몫": [
+    0.432
+   ],
+   "줄_글": "",
+   "조각_글": [
+    "",
+    ""
+   ],
+   "줄_글_눈으로": "arthur honegger | drittes streichquartett"
+  },
+  {
+   "번호": 34,
+   "order": 22,
+   "판": "1957_Juni-Festwochen Zürich 1957 - Tonhalle Grosser Saal - 4. Jun.jpg",
+   "종류": "두 단",
+   "줄": 1,
+   "상자": [
+    73.0,
+    261.0,
+    193.0,
+    280.0
+   ],
+   "자른_x": [
+    114.0
+   ],
+   "자른_위치_상자폭몫": [
+    0.342
+   ],
+   "줄_글": "stader",
+   "조각_글": [
+    "",
+    "stader"
+   ],
+   "줄_글_눈으로": "maria | stader"
+  },
+  {
+   "번호": 35,
+   "order": 22,
+   "판": "1957_Juni-Festwochen Zürich 1957 - Tonhalle Grosser Saal - 4. Jun.jpg",
+   "종류": "두 단",
+   "줄": 4,
+   "상자": [
+    81.0,
+    338.0,
+    210.0,
+    356.0
+   ],
+   "자른_x": [
+    112.5
+   ],
+   "자른_위치_상자폭몫": [
+    0.244
+   ],
+   "줄_글": "vonrohr",
+   "조각_글": [
+    "",
+    "vonrohr"
+   ],
+   "줄_글_눈으로": "otto | von rohr"
+  },
+  {
+   "번호": 36,
+   "order": 27,
+   "판": "1959_Musica viva - Erich Schmid Leitung - Adolf Neumeier Schlagze.jpg",
+   "종류": "두 단",
+   "줄": 2,
+   "상자": [
+    6.0,
+    699.0,
+    356.0,
+    725.0
+   ],
+   "자른_x": [
+    172.0
+   ],
+   "자른_위치_상자폭몫": [
+    0.474
+   ],
+   "줄_글": "eiltsQu llle eal Hial Hule",
+   "조각_글": [
+    "eiltsQu llle",
+    "Aotrael Hiils Iula4"
+   ],
+   "줄_글_눈으로": "erich schmid | darius milhaud"
+  },
+  {
+   "번호": 37,
+   "order": 27,
+   "판": "1959_Musica viva - Erich Schmid Leitung - Adolf Neumeier Schlagze.jpg",
+   "종류": "두 단",
+   "줄": 3,
+   "상자": [
+    5.0,
+    717.0,
+    356.0,
+    755.0
+   ],
+   "자른_x": [
+    182.5
+   ],
+   "자른_위치_상자폭몫": [
+    0.506
+   ],
+   "줄_글": "Pia irneirianiar aniainlin",
+   "조각_글": [
+    "Pia irneirianiar",
+    "Alcianilii"
+   ],
+   "줄_글_눈으로": "adolf neumeier | paul hindemith"
+  },
+  {
+   "번호": 38,
+   "order": 27,
+   "판": "1959_Musica viva - Erich Schmid Leitung - Adolf Neumeier Schlagze.jpg",
+   "종류": "두 단",
+   "줄": 4,
+   "상자": [
+    6.0,
+    748.0,
+    358.0,
+    776.0
+   ],
+   "자른_x": [
+    177.5
+   ],
+   "자른_위치_상자폭몫": [
+    0.487
+   ],
+   "줄_글": "Htoi am2ara7i Anegheus01setHueesane e",
+   "조각_글": [
+    "Htoi am2ara7i",
+    "Aeoe 8isist Hueeainei h"
+   ],
+   "줄_글_눈으로": "georg kertesz | rolf liebermann"
+  },
+  {
+   "번호": 39,
+   "order": 38,
+   "판": "1958_Henry van de Velde - Kunstgewerbemuseum Zürich - 6. Juni - 3.jpg",
+   "종류": "기타",
+   "줄": 2,
+   "상자": [
+    255.0,
+    764.0,
+    412.0,
+    775.0
+   ],
+   "자른_x": [
+    308.5
+   ],
+   "자른_위치_상자폭몫": [
+    0.341
+   ],
+   "줄_글": "",
+   "조각_글": [
+    "",
+    ""
+   ],
+   "줄_글_눈으로": "Ausstellung: | Persönlichkeit und Werk"
+  }
+ ],
+ "줄_글_주의": "«줄_글» 은 EasyOCR(de·en) 결과로 대부분 비거나 깨졌다. «줄_글_눈으로» 는 확인용 그림을 보고 받아 적은 것이며 | 가 잘린 자리다"
+}

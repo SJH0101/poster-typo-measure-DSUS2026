@@ -1,0 +1,11839 @@
+{
+ "schema": "typo-guides-consensus/1",
+ "무엇": "두 라벨러 합의 참조 — 보조, 주 결과 아님 (사전등록 «합의 참조»)",
+ "사전등록": "docs/brockmann_stage2_preregister.json",
+ "사전등록_sha256": "fbb6b4303e2fe19dc61a1410b7942cbf02d333a7e2bc9f0822764d5fbed6646d",
+ "라벨러_파일": {
+  "라벨러A": {
+   "파일": "labels/guides/guides_labelerA_20260917-2016.json",
+   "sha256": "65dfc0cbb9e8b239a439dc4cb7559cd9ce8bbfd9e6f69ef182042e276619641a"
+  },
+  "라벨러B": {
+   "파일": "labels/guides/guides_labelerB_20260916-0201.json",
+   "sha256": "a40ca052041244170c310a5577199feef369a659a9b106d3885391b93f102aaf"
+  }
+ },
+ "적는_법": "«두 라벨러가 함께 그은 블록 · 선에 대한 일치도» 로만 적는다",
+ "posters": [
+  {
+   "order": 1,
+   "folder": "Ausstellung",
+   "file": "1948_Deine Wohnung - Dein Nachbar - Deine Heimat - Ausstellung im.jpg",
+   "sha256": "21c4a83e739c9563887eecc69165ad44c434f8d7cd1f96376c58a6bf10e2648e",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      172,
+      27,
+      266,
+      82
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 82,
+       "cap": 27,
+       "asc": "no_glyph",
+       "xh": 42
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "box": [
+      293,
+      28,
+      450,
+      99
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 82,
+       "cap": 28,
+       "asc": 28,
+       "xh": 42
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "box": [
+      32,
+      102,
+      267,
+      158
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 158,
+       "cap": 103,
+       "asc": 103,
+       "xh": 118
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "box": [
+      308,
+      153,
+      534,
+      209
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 209,
+       "cap": 154,
+       "asc": null,
+       "xh": 169
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "box": [
+      78,
+      624,
+      259,
+      639
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 638,
+       "cap": 624,
+       "asc": 624,
+       "xh": 627
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "box": [
+      298,
+      624,
+      500,
+      638
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 638,
+       "cap": 624,
+       "asc": 624,
+       "xh": 627
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "box": [
+      136,
+      654,
+      183,
+      748
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 662,
+       "cap": 655,
+       "asc": 655,
+       "xh": 656
+      },
+      {
+       "base": 676,
+       "cap": 669,
+       "asc": 669,
+       "xh": 670
+      },
+      {
+       "base": 690,
+       "cap": 683,
+       "asc": 683,
+       "xh": 684
+      },
+      {
+       "base": 704,
+       "cap": 697,
+       "asc": 697,
+       "xh": 698
+      },
+      {
+       "base": 718,
+       "cap": 711,
+       "asc": 711,
+       "xh": 712
+      },
+      {
+       "base": 732,
+       "cap": 725,
+       "asc": 725,
+       "xh": 726
+      },
+      {
+       "base": 746,
+       "cap": 739,
+       "asc": 739,
+       "xh": 741
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "box": [
+      198,
+      654,
+      256,
+      662
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 662,
+       "cap": 654,
+       "asc": 654,
+       "xh": 656
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "box": [
+      198,
+      683,
+      232,
+      690
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 690,
+       "cap": 683,
+       "asc": 683,
+       "xh": 684
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "box": [
+      199,
+      710,
+      242,
+      748
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 718,
+       "cap": 710,
+       "asc": 710,
+       "xh": 712
+      },
+      {
+       "base": 732,
+       "cap": "no_glyph",
+       "asc": 725,
+       "xh": 726
+      },
+      {
+       "base": 746,
+       "cap": null,
+       "asc": 738,
+       "xh": 740
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "order": 2,
+   "folder": "Juni_Festwochen",
+   "file": "1956_Juni-Festwochen Zürich 1956 - 1. Juni-Festkonzert - Leitung .jpg",
+   "sha256": "50b1904b5d84d9cd0b94c9d527cab5cc665c31e8ae940991016bb05961b101a6",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      82,
+      65,
+      147,
+      74
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 72,
+       "cap": null,
+       "asc": 65,
+       "xh": 67
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "box": [
+      158,
+      65,
+      207,
+      72
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 72,
+       "cap": "no_glyph",
+       "asc": 65,
+       "xh": 67
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "box": [
+      82,
+      478,
+      220,
+      618
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 501,
+       "cap": "no_glyph",
+       "asc": 478,
+       "xh": 484
+      },
+      {
+       "base": 540,
+       "cap": "no_glyph",
+       "asc": 518,
+       "xh": 523
+      },
+      {
+       "base": 578,
+       "cap": "no_glyph",
+       "asc": 556,
+       "xh": 562
+      },
+      {
+       "base": 618,
+       "cap": "no_glyph",
+       "asc": 596,
+       "xh": 602
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "box": [
+      5,
+      493,
+      33,
+      502
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 500,
+       "cap": "no_glyph",
+       "asc": 494,
+       "xh": null
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "box": [
+      5,
+      532,
+      31,
+      540
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 540,
+       "cap": "no_glyph",
+       "asc": 533,
+       "xh": 535
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "box": [
+      60,
+      494,
+      77,
+      501
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 500,
+       "cap": "no_glyph",
+       "asc": "no_glyph",
+       "xh": 496
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "box": [
+      48,
+      532,
+      76,
+      540
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 540,
+       "cap": "no_glyph",
+       "asc": 532,
+       "xh": 534
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "box": [
+      5,
+      664,
+      78,
+      674
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 672,
+       "cap": "no_glyph",
+       "asc": 665,
+       "xh": 667
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "box": [
+      82,
+      665,
+      216,
+      752
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 672,
+       "cap": "no_glyph",
+       "asc": 665,
+       "xh": 667
+      },
+      {
+       "base": 684,
+       "cap": "no_glyph",
+       "asc": 676,
+       "xh": 678
+      },
+      {
+       "base": 695,
+       "cap": "no_glyph",
+       "asc": 688,
+       "xh": 690
+      },
+      {
+       "base": 706,
+       "cap": "no_glyph",
+       "asc": 699,
+       "xh": 701
+      },
+      {
+       "base": 718,
+       "cap": "no_glyph",
+       "asc": 710,
+       "xh": 712
+      },
+      {
+       "base": 728,
+       "cap": "no_glyph",
+       "asc": 722,
+       "xh": 724
+      },
+      {
+       "base": 740,
+       "cap": "no_glyph",
+       "asc": 733,
+       "xh": 735
+      },
+      {
+       "base": 752,
+       "cap": "no_glyph",
+       "asc": 744,
+       "xh": 746
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "box": [
+      5,
+      699,
+      48,
+      718
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 706,
+       "cap": "no_glyph",
+       "asc": 699,
+       "xh": 701
+      },
+      {
+       "base": 718,
+       "cap": "no_glyph",
+       "asc": 710,
+       "xh": 712
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "order": 3,
+   "folder": "Juni_Festwochen",
+   "file": "1956_Juni-Festwochen Zürich 1956 - 3. Juni-Festkonzert - Leitung .jpg",
+   "sha256": "83ee7bc1d97b3126267304a986cc4265484a6721f27cd30780423ebd56a002d7",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      84,
+      64,
+      149,
+      73
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 72,
+       "cap": null,
+       "asc": 64,
+       "xh": 66
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "box": [
+      162,
+      64,
+      210,
+      72
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 72,
+       "cap": "no_glyph",
+       "asc": 64,
+       "xh": 66
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "box": [
+      8,
+      407,
+      35,
+      416
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 414,
+       "cap": "no_glyph",
+       "asc": 407,
+       "xh": 409
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "box": [
+      8,
+      444,
+      38,
+      451
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 449,
+       "cap": "no_glyph",
+       "asc": "no_glyph",
+       "xh": 444
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "box": [
+      8,
+      476,
+      27,
+      484
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 484,
+       "cap": "no_glyph",
+       "asc": 476,
+       "xh": 478
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "box": [
+      59,
+      407,
+      78,
+      414
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 414,
+       "cap": "no_glyph",
+       "asc": 407,
+       "xh": 409
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "box": [
+      62,
+      442,
+      78,
+      449
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 449,
+       "cap": "no_glyph",
+       "asc": 442,
+       "xh": 444
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "box": [
+      52,
+      476,
+      78,
+      485
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 483,
+       "cap": "no_glyph",
+       "asc": 476,
+       "xh": 478
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "box": [
+      85,
+      392,
+      254,
+      624
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 414,
+       "cap": "no_glyph",
+       "asc": 392,
+       "xh": 398
+      },
+      {
+       "base": 449,
+       "cap": "no_glyph",
+       "asc": 426,
+       "xh": 432
+      },
+      {
+       "base": 483,
+       "cap": "no_glyph",
+       "asc": 460,
+       "xh": 466
+      },
+      {
+       "base": 517,
+       "cap": "no_glyph",
+       "asc": 494,
+       "xh": 500
+      },
+      {
+       "base": 551,
+       "cap": "no_glyph",
+       "asc": null,
+       "xh": 535
+      },
+      {
+       "base": 585,
+       "cap": "no_glyph",
+       "asc": null,
+       "xh": 569
+      },
+      {
+       "base": 619,
+       "cap": "no_glyph",
+       "asc": 596,
+       "xh": 603
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "box": [
+      8,
+      644,
+      80,
+      653
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 651,
+       "cap": "no_glyph",
+       "asc": 644,
+       "xh": 646
+      }
+     ]
+    },
+    {
+     "no": 11,
+     "box": [
+      8,
+      678,
+      59,
+      721
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 685,
+       "cap": "no_glyph",
+       "asc": 678,
+       "xh": 680
+      },
+      {
+       "base": 697,
+       "cap": "no_glyph",
+       "asc": 690,
+       "xh": 692
+      },
+      {
+       "base": 708,
+       "cap": "no_glyph",
+       "asc": 701,
+       "xh": 703
+      },
+      {
+       "base": 720,
+       "cap": "no_glyph",
+       "asc": 712,
+       "xh": 714
+      }
+     ]
+    },
+    {
+     "no": 12,
+     "box": [
+      84,
+      644,
+      221,
+      754
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 651,
+       "cap": "no_glyph",
+       "asc": 644,
+       "xh": 646
+      },
+      {
+       "base": 663,
+       "cap": "no_glyph",
+       "asc": 656,
+       "xh": 658
+      },
+      {
+       "base": 674,
+       "cap": "no_glyph",
+       "asc": 667,
+       "xh": 668
+      },
+      {
+       "base": 686,
+       "cap": "no_glyph",
+       "asc": 678,
+       "xh": 680
+      },
+      {
+       "base": 696,
+       "cap": "no_glyph",
+       "asc": 690,
+       "xh": 692
+      },
+      {
+       "base": 708,
+       "cap": null,
+       "asc": 701,
+       "xh": 703
+      },
+      {
+       "base": 719,
+       "cap": "no_glyph",
+       "asc": 712,
+       "xh": 714
+      },
+      {
+       "base": 731,
+       "cap": "no_glyph",
+       "asc": 724,
+       "xh": 726
+      },
+      {
+       "base": 742,
+       "cap": "no_glyph",
+       "asc": 735,
+       "xh": 737
+      },
+      {
+       "base": 754,
+       "cap": "no_glyph",
+       "asc": 746,
+       "xh": 748
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "order": 4,
+   "folder": "Musica_Viva",
+   "file": "1957_Musica Viva - 16. Volkskonzert - 26.März 1957 - Tonhalle Gro.jpg",
+   "sha256": "ab5700d0e939157574dc13d50fd6af94015aaae0f77f1a9cb3b07b3f38bc468f",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      63,
+      24,
+      140,
+      36
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 36,
+       "cap": "no_glyph",
+       "asc": "no_glyph",
+       "xh": 28
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "box": [
+      62,
+      75,
+      170,
+      205
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 87,
+       "cap": "no_glyph",
+       "asc": 75,
+       "xh": 78
+      },
+      {
+       "base": 104,
+       "cap": "no_glyph",
+       "asc": 92,
+       "xh": 95
+      },
+      {
+       "base": 120,
+       "cap": "no_glyph",
+       "asc": 108,
+       "xh": 112
+      },
+      {
+       "base": 138,
+       "cap": "no_glyph",
+       "asc": 126,
+       "xh": 128
+      },
+      {
+       "base": 154,
+       "cap": "no_glyph",
+       "asc": null,
+       "xh": 146
+      },
+      {
+       "base": 172,
+       "cap": "no_glyph",
+       "asc": 160,
+       "xh": 162
+      },
+      {
+       "base": 188,
+       "cap": "no_glyph",
+       "asc": 176,
+       "xh": 179
+      },
+      {
+       "base": 205,
+       "cap": "no_glyph",
+       "asc": 193,
+       "xh": 196
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "box": [
+      189,
+      25,
+      290,
+      138
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 36,
+       "cap": "no_glyph",
+       "asc": 25,
+       "xh": 28
+      },
+      {
+       "base": 54,
+       "cap": "no_glyph",
+       "asc": 41,
+       "xh": 45
+      },
+      {
+       "base": 70,
+       "cap": "no_glyph",
+       "asc": 58,
+       "xh": 62
+      },
+      {
+       "base": 87,
+       "cap": "no_glyph",
+       "asc": 75,
+       "xh": 78
+      },
+      {
+       "base": 104,
+       "cap": "no_glyph",
+       "asc": 92,
+       "xh": 95
+      },
+      {
+       "base": 121,
+       "cap": "no_glyph",
+       "asc": 109,
+       "xh": 112
+      },
+      {
+       "base": 138,
+       "cap": "no_glyph",
+       "asc": 126,
+       "xh": 129
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "box": [
+      188,
+      176,
+      316,
+      208
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 188,
+       "cap": "no_glyph",
+       "asc": "no_glyph",
+       "xh": 180
+      },
+      {
+       "base": 205,
+       "cap": "no_glyph",
+       "asc": 193,
+       "xh": 196
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "box": [
+      347,
+      24,
+      480,
+      104
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 36,
+       "cap": "no_glyph",
+       "asc": 24,
+       "xh": 27
+      },
+      {
+       "base": 53,
+       "cap": "no_glyph",
+       "asc": 41,
+       "xh": 44
+      },
+      {
+       "base": 70,
+       "cap": "no_glyph",
+       "asc": 58,
+       "xh": 61
+      },
+      {
+       "base": 87,
+       "cap": "no_glyph",
+       "asc": 75,
+       "xh": 78
+      },
+      {
+       "base": 104,
+       "cap": "no_glyph",
+       "asc": 92,
+       "xh": 95
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "box": [
+      348,
+      141,
+      556,
+      205
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 168,
+       "cap": "no_glyph",
+       "asc": 141,
+       "xh": 148
+      },
+      {
+       "base": 205,
+       "cap": "no_glyph",
+       "asc": "no_glyph",
+       "xh": 185
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "order": 5,
+   "folder": "Ausstellung",
+   "file": "1957_Werner Bischof - Das fotografische Werk - Kunstgewerbemuseum.jpg",
+   "sha256": "19ba2e38c8003f8525f62d7b2b60dafbbf664ad0f7bf00856233d808148e31b8",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      10,
+      460,
+      257,
+      490
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 490,
+       "cap": 462,
+       "asc": 462,
+       "xh": 469
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "box": [
+      13,
+      618,
+      177,
+      633
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 630,
+       "cap": 618,
+       "asc": 618,
+       "xh": 622
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "box": [
+      302,
+      617,
+      514,
+      633
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 630,
+       "cap": 618,
+       "asc": 618,
+       "xh": 621
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "box": [
+      300,
+      696,
+      548,
+      711
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 708,
+       "cap": 696,
+       "asc": 696,
+       "xh": 699
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "box": [
+      303,
+      737,
+      427,
+      792
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 749,
+       "cap": 737,
+       "asc": null,
+       "xh": 740
+      },
+      {
+       "base": 769,
+       "cap": 757,
+       "asc": null,
+       "xh": 760
+      },
+      {
+       "base": 789,
+       "cap": 777,
+       "asc": null,
+       "xh": 780
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "box": [
+      432,
+      736,
+      562,
+      788
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 748,
+       "cap": "no_glyph",
+       "asc": "no_glyph",
+       "xh": "no_glyph"
+      },
+      {
+       "base": 768,
+       "cap": "no_glyph",
+       "asc": "no_glyph",
+       "xh": "no_glyph"
+      },
+      {
+       "base": 788,
+       "cap": "no_glyph",
+       "asc": "no_glyph",
+       "xh": "no_glyph"
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "box": [
+      0.0,
+      665.0,
+      566.0,
+      800.0
+     ],
+     "flag": "lettering",
+     "base_mark": null,
+     "lines": []
+    },
+    {
+     "no": 8,
+     "box": [
+      0.0,
+      665.0,
+      566.0,
+      800.0
+     ],
+     "flag": "lettering",
+     "base_mark": null,
+     "lines": []
+    }
+   ]
+  },
+  {
+   "order": 6,
+   "folder": "Opernhaus",
+   "file": "1965_Opernhaus Zürich - Eröffnung der Spielzeit 1965-66 - Die ver.jpg",
+   "sha256": "952e91b2fe8f189d5f46d6aaeca44c693bfe799fbef6817c93d7c92005aab799",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      82,
+      45,
+      507,
+      94
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 90,
+       "cap": 45,
+       "asc": 45,
+       "xh": 58
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "box": [
+      83,
+      101,
+      303,
+      116
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 113,
+       "cap": 101,
+       "asc": 101,
+       "xh": 104
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "box": [
+      83,
+      250,
+      538,
+      295
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 295,
+       "cap": 250,
+       "asc": 250,
+       "xh": 263
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "box": [
+      83,
+      303,
+      349,
+      316
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 315,
+       "cap": 303,
+       "asc": 303,
+       "xh": 306
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "box": [
+      83,
+      326,
+      198,
+      369
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 338,
+       "cap": 326,
+       "asc": null,
+       "xh": 329
+      },
+      {
+       "base": 352,
+       "cap": 340,
+       "asc": 340,
+       "xh": 344
+      },
+      {
+       "base": 366,
+       "cap": 355,
+       "asc": "no_glyph",
+       "xh": 358
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "box": [
+      236,
+      326,
+      386,
+      383
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 338,
+       "cap": 326,
+       "asc": 326,
+       "xh": 330
+      },
+      {
+       "base": 352,
+       "cap": null,
+       "asc": null,
+       "xh": 344
+      },
+      {
+       "base": 366,
+       "cap": 355,
+       "asc": 355,
+       "xh": 358
+      },
+      {
+       "base": 381,
+       "cap": 369,
+       "asc": 369,
+       "xh": 372
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "box": [
+      406,
+      326,
+      538,
+      381
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 339,
+       "cap": 326,
+       "asc": 326,
+       "xh": 330
+      },
+      {
+       "base": 352,
+       "cap": 341,
+       "asc": 341,
+       "xh": 344
+      },
+      {
+       "base": 367,
+       "cap": 355,
+       "asc": 355,
+       "xh": 358
+      },
+      {
+       "base": 381,
+       "cap": 369,
+       "asc": 369,
+       "xh": 372
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "box": [
+      83,
+      409,
+      446,
+      515
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 454,
+       "cap": 409,
+       "asc": 409,
+       "xh": 422
+      },
+      {
+       "base": 507,
+       "cap": 463,
+       "asc": 463,
+       "xh": 476
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "box": [
+      82,
+      518,
+      338,
+      532
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 530,
+       "cap": 518,
+       "asc": 518,
+       "xh": 521
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "box": [
+      83,
+      540,
+      185,
+      583
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 552,
+       "cap": 540,
+       "asc": 540,
+       "xh": 544
+      },
+      {
+       "base": 566,
+       "cap": 554,
+       "asc": 554,
+       "xh": 558
+      },
+      {
+       "base": 580,
+       "cap": 568,
+       "asc": 568,
+       "xh": 572
+      }
+     ]
+    },
+    {
+     "no": 11,
+     "box": [
+      236,
+      540,
+      386,
+      580
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 552,
+       "cap": 540,
+       "asc": 540,
+       "xh": 544
+      },
+      {
+       "base": 566,
+       "cap": 555,
+       "asc": null,
+       "xh": 558
+      },
+      {
+       "base": 580,
+       "cap": 568,
+       "asc": 568,
+       "xh": 572
+      }
+     ]
+    },
+    {
+     "no": 12,
+     "box": [
+      406,
+      540,
+      530,
+      583
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 552,
+       "cap": 540,
+       "asc": 540,
+       "xh": 544
+      },
+      {
+       "base": 566,
+       "cap": 554,
+       "asc": 554,
+       "xh": 557
+      },
+      {
+       "base": 580,
+       "cap": 568,
+       "asc": 568,
+       "xh": 572
+      }
+     ]
+    },
+    {
+     "no": 13,
+     "box": [
+      82,
+      614,
+      506,
+      666
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 658,
+       "cap": 614,
+       "asc": 614,
+       "xh": 626
+      }
+     ]
+    },
+    {
+     "no": 14,
+     "box": [
+      82,
+      667,
+      265,
+      682
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 679,
+       "cap": 667,
+       "asc": "no_glyph",
+       "xh": 670
+      }
+     ]
+    },
+    {
+     "no": 15,
+     "box": [
+      82,
+      690,
+      198,
+      731
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 702,
+       "cap": 690,
+       "asc": null,
+       "xh": 693
+      },
+      {
+       "base": 716,
+       "cap": 704,
+       "asc": 704,
+       "xh": 708
+      },
+      {
+       "base": 731,
+       "cap": 719,
+       "asc": 719,
+       "xh": 722
+      }
+     ]
+    },
+    {
+     "no": 16,
+     "box": [
+      236,
+      690,
+      386,
+      730
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 702,
+       "cap": 690,
+       "asc": 690,
+       "xh": 693
+      },
+      {
+       "base": 716,
+       "cap": 704,
+       "asc": null,
+       "xh": 708
+      },
+      {
+       "base": 730,
+       "cap": 718,
+       "asc": 718,
+       "xh": 722
+      }
+     ]
+    },
+    {
+     "no": 17,
+     "box": [
+      405,
+      690,
+      535,
+      733
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 702,
+       "cap": 690,
+       "asc": 690,
+       "xh": 694
+      },
+      {
+       "base": 716,
+       "cap": 704,
+       "asc": "no_glyph",
+       "xh": 708
+      },
+      {
+       "base": 730,
+       "cap": 718,
+       "asc": 718,
+       "xh": 722
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "order": 7,
+   "folder": "Opernhaus",
+   "file": "1964_Opernhaus Zürich - Dornröschen - Musik von Peter Iljitsch Ts.jpg",
+   "sha256": "98475eb3864ff04e0b9481514355cebb2592150016e140efe8e33f455a3f2a88",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      41,
+      103,
+      516,
+      268
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 180,
+       "cap": 104,
+       "asc": 106,
+       "xh": 126
+      },
+      {
+       "base": 268,
+       "cap": 193,
+       "asc": 195,
+       "xh": 214
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "box": [
+      44,
+      302,
+      407,
+      344
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 320,
+       "cap": 303,
+       "asc": 304,
+       "xh": 307
+      },
+      {
+       "base": 340,
+       "cap": 324,
+       "asc": 324,
+       "xh": 328
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "box": [
+      44,
+      460,
+      338,
+      499
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 499,
+       "cap": 460,
+       "asc": 461,
+       "xh": 470
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "box": [
+      44,
+      514,
+      386,
+      577
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 531,
+       "cap": 514,
+       "asc": 514,
+       "xh": 519
+      },
+      {
+       "base": 552,
+       "cap": 536,
+       "asc": 536,
+       "xh": 540
+      },
+      {
+       "base": 573,
+       "cap": 556,
+       "asc": 556,
+       "xh": 561
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "box": [
+      44,
+      590,
+      440,
+      674
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 607,
+       "cap": 590,
+       "asc": 590,
+       "xh": 594
+      },
+      {
+       "base": 628,
+       "cap": 611,
+       "asc": 611,
+       "xh": 616
+      },
+      {
+       "base": 650,
+       "cap": 632,
+       "asc": 632,
+       "xh": 637
+      },
+      {
+       "base": 671,
+       "cap": 654,
+       "asc": 654,
+       "xh": 658
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "order": 8,
+   "folder": "Opernhaus",
+   "file": "1966_Opernhaus Zürich - Der fliegende Holländer - von Richard Wag.jpg",
+   "sha256": "8034955ce3e6e49f7a7951b485f67f2f556a52316447f370467c43f5b8693263",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      41,
+      92,
+      522,
+      257
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 168,
+       "cap": 92,
+       "asc": 93,
+       "xh": 114
+      },
+      {
+       "base": 257,
+       "cap": 183,
+       "asc": 184,
+       "xh": 204
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "box": [
+      42,
+      303,
+      252,
+      333
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 315,
+       "cap": 303,
+       "asc": 303,
+       "xh": 306
+      },
+      {
+       "base": 331,
+       "cap": 319,
+       "asc": null,
+       "xh": 322
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "box": [
+      42,
+      374,
+      108,
+      408
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 408,
+       "cap": 374,
+       "asc": "no_glyph",
+       "xh": 384
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "box": [
+      39,
+      417,
+      320,
+      483
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 473,
+       "cap": "no_glyph",
+       "asc": 418,
+       "xh": 432
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "box": [
+      43,
+      485,
+      446,
+      556
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 556,
+       "cap": 485,
+       "asc": 485,
+       "xh": 502
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "box": [
+      43,
+      575,
+      314,
+      590
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 587,
+       "cap": 575,
+       "asc": 575,
+       "xh": 578
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "box": [
+      43,
+      604,
+      331,
+      663
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 616,
+       "cap": 604,
+       "asc": 604,
+       "xh": 608
+      },
+      {
+       "base": 632,
+       "cap": 620,
+       "asc": null,
+       "xh": 623
+      },
+      {
+       "base": 648,
+       "cap": 635,
+       "asc": 635,
+       "xh": 638
+      },
+      {
+       "base": 663,
+       "cap": 651,
+       "asc": 651,
+       "xh": 654
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "order": 9,
+   "folder": "Volg",
+   "file": "1956_Volg -Traubensaft - naturrein.jpg",
+   "sha256": "e3972e4206a7e083711a39da340b0e58ade1c79bbfffede6f0dcaab7a4d5ad1e",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      250,
+      34,
+      550,
+      133
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": []
+    },
+    {
+     "no": 2,
+     "box": [
+      28,
+      154,
+      326,
+      196
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 196,
+       "cap": 154,
+       "asc": 154,
+       "xh": 166
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "box": [
+      326,
+      456,
+      466,
+      482
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 482,
+       "cap": "no_glyph",
+       "asc": null,
+       "xh": 463
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "box": [
+      32,
+      778,
+      344,
+      786
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 786,
+       "cap": 778,
+       "asc": 778,
+       "xh": 780
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "order": 10,
+   "folder": "Musica_Viva",
+   "file": "1962_Musica Viva - Hans Rosbaud - Anton Fietz (...) - 2. Musica V.jpg",
+   "sha256": "14b2edcbfc32cbf478446b81e70c2a6a2aee4931e1b8aefed6a79351ae10beb4",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      145,
+      277,
+      258,
+      445
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 304,
+       "cap": "no_glyph",
+       "asc": 277,
+       "xh": 285
+      },
+      {
+       "base": 339,
+       "cap": "no_glyph",
+       "asc": null,
+       "xh": 320
+      },
+      {
+       "base": 375,
+       "cap": "no_glyph",
+       "asc": 348,
+       "xh": 355
+      },
+      {
+       "base": 410,
+       "cap": "no_glyph",
+       "asc": "no_glyph",
+       "xh": 390
+      },
+      {
+       "base": 445,
+       "cap": "no_glyph",
+       "asc": 417,
+       "xh": 425
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "box": [
+      270,
+      242,
+      456,
+      450
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 269,
+       "cap": "no_glyph",
+       "asc": "no_glyph",
+       "xh": 249
+      },
+      {
+       "base": 304,
+       "cap": "no_glyph",
+       "asc": 277,
+       "xh": 285
+      },
+      {
+       "base": 339,
+       "cap": "no_glyph",
+       "asc": 312,
+       "xh": 320
+      },
+      {
+       "base": 375,
+       "cap": "no_glyph",
+       "asc": 347,
+       "xh": 355
+      },
+      {
+       "base": 410,
+       "cap": "no_glyph",
+       "asc": 383,
+       "xh": 390
+      },
+      {
+       "base": 445,
+       "cap": "no_glyph",
+       "asc": 418,
+       "xh": 425
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "box": [
+      145,
+      486,
+      258,
+      551
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 493,
+       "cap": "no_glyph",
+       "asc": 486,
+       "xh": 488
+      },
+      {
+       "base": 504,
+       "cap": "no_glyph",
+       "asc": 497,
+       "xh": 499
+      },
+      {
+       "base": 515,
+       "cap": "no_glyph",
+       "asc": 508,
+       "xh": 510
+      },
+      {
+       "base": 526,
+       "cap": "no_glyph",
+       "asc": 520,
+       "xh": 522
+      },
+      {
+       "base": 538,
+       "cap": "no_glyph",
+       "asc": 530,
+       "xh": 532
+      },
+      {
+       "base": 549,
+       "cap": "no_glyph",
+       "asc": 542,
+       "xh": 544
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "box": [
+      272,
+      485,
+      368,
+      596
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 493,
+       "cap": "no_glyph",
+       "asc": 485,
+       "xh": 488
+      },
+      {
+       "base": 504,
+       "cap": "no_glyph",
+       "asc": 497,
+       "xh": 499
+      },
+      {
+       "base": 515,
+       "cap": "no_glyph",
+       "asc": 508,
+       "xh": 510
+      },
+      {
+       "base": 526,
+       "cap": "no_glyph",
+       "asc": 520,
+       "xh": 522
+      },
+      {
+       "base": 537,
+       "cap": "no_glyph",
+       "asc": 530,
+       "xh": 532
+      },
+      {
+       "base": 549,
+       "cap": "no_glyph",
+       "asc": 542,
+       "xh": 544
+      },
+      {
+       "base": 560,
+       "cap": "no_glyph",
+       "asc": 553,
+       "xh": 555
+      },
+      {
+       "base": 572,
+       "cap": "no_glyph",
+       "asc": 564,
+       "xh": 566
+      },
+      {
+       "base": 583,
+       "cap": "no_glyph",
+       "asc": 576,
+       "xh": 578
+      },
+      {
+       "base": 594,
+       "cap": "no_glyph",
+       "asc": 587,
+       "xh": 589
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "box": [
+      398,
+      486,
+      525,
+      549
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 493,
+       "cap": "no_glyph",
+       "asc": 486,
+       "xh": 488
+      },
+      {
+       "base": 504,
+       "cap": "no_glyph",
+       "asc": 497,
+       "xh": 499
+      },
+      {
+       "base": 515,
+       "cap": "no_glyph",
+       "asc": 508,
+       "xh": 510
+      },
+      {
+       "base": 527,
+       "cap": "no_glyph",
+       "asc": 520,
+       "xh": 522
+      },
+      {
+       "base": 538,
+       "cap": "no_glyph",
+       "asc": 531,
+       "xh": 533
+      },
+      {
+       "base": 549,
+       "cap": "no_glyph",
+       "asc": 542,
+       "xh": 544
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "order": 11,
+   "folder": "Opernhaus",
+   "file": "1964_Opernhaus Zürich - Die Schneekönigin - Märchenvorstellung. U.jpg",
+   "sha256": "fdf72d73c34572cdea6d9bfa2a64659a9e9de623d4bb4a422159f8b49dee2b2c",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      40,
+      101,
+      516,
+      266
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 178,
+       "cap": 102,
+       "asc": 104,
+       "xh": 124
+      },
+      {
+       "base": 265,
+       "cap": 190,
+       "asc": 193,
+       "xh": 212
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "box": [
+      42,
+      300,
+      491,
+      314
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 312,
+       "cap": 300,
+       "asc": 300,
+       "xh": 304
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "box": [
+      41,
+      325,
+      409,
+      579
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 395,
+       "cap": 325,
+       "asc": "no_glyph",
+       "xh": null
+      },
+      {
+       "base": 478,
+       "cap": 406,
+       "asc": 407,
+       "xh": 427
+      },
+      {
+       "base": 560,
+       "cap": "no_glyph",
+       "asc": 490,
+       "xh": 510
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "box": [
+      42,
+      583,
+      437,
+      595
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 595,
+       "cap": 583,
+       "asc": 584,
+       "xh": 586
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "box": [
+      42,
+      603,
+      393,
+      674
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 615,
+       "cap": 603,
+       "asc": 603,
+       "xh": 606
+      },
+      {
+       "base": 629,
+       "cap": 617,
+       "asc": null,
+       "xh": 620
+      },
+      {
+       "base": 643,
+       "cap": 631,
+       "asc": 631,
+       "xh": 634
+      },
+      {
+       "base": 657,
+       "cap": 645,
+       "asc": 645,
+       "xh": 648
+      },
+      {
+       "base": 672,
+       "cap": 660,
+       "asc": 660,
+       "xh": 662
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "order": 12,
+   "folder": "Volg",
+   "file": "1957_Volg Traubensaft naturrein - Gesundheit.jpg",
+   "sha256": "5998671128ee87e040ffd7d2ec737ff169e592f9fd8364ddb10646ab55015db0",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      2,
+      28,
+      278,
+      128
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": []
+    },
+    {
+     "no": 2,
+     "box": [
+      8,
+      155,
+      279,
+      195
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 194,
+       "cap": 155,
+       "asc": 156,
+       "xh": 166
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "box": [
+      10,
+      209,
+      110,
+      230
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 230,
+       "cap": "no_glyph",
+       "asc": null,
+       "xh": 215
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "box": [
+      150,
+      721,
+      280,
+      742
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 742,
+       "cap": 721,
+       "asc": 721,
+       "xh": 727
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "box": [
+      466.0,
+      610.0,
+      562.0,
+      689.0
+     ],
+     "flag": "lettering",
+     "base_mark": null,
+     "lines": []
+    },
+    {
+     "no": 6,
+     "box": [
+      466.0,
+      611.0,
+      562.0,
+      689.0
+     ],
+     "flag": "lettering",
+     "base_mark": null,
+     "lines": []
+    }
+   ]
+  },
+  {
+   "order": 13,
+   "folder": "Juni_Festwochen",
+   "file": "1956_Juni-Festwochen Zürich 1956 - 5. Juni-Festkonzert - Leitung .jpg",
+   "sha256": "e7fe4202ae4add484fc079dde53f9284deeb0574604bcc23b3c902de2f08ad66",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      84,
+      64,
+      149,
+      73
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 72,
+       "cap": null,
+       "asc": 64,
+       "xh": 66
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "box": [
+      162,
+      64,
+      210,
+      72
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 72,
+       "cap": "no_glyph",
+       "asc": 64,
+       "xh": 66
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "box": [
+      24,
+      442,
+      80,
+      449
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 449,
+       "cap": null,
+       "asc": 442,
+       "xh": 444
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "box": [
+      85,
+      392,
+      228,
+      551
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 415,
+       "cap": "no_glyph",
+       "asc": 392,
+       "xh": 398
+      },
+      {
+       "base": 449,
+       "cap": "no_glyph",
+       "asc": 426,
+       "xh": 432
+      },
+      {
+       "base": 483,
+       "cap": "no_glyph",
+       "asc": 460,
+       "xh": 466
+      },
+      {
+       "base": 517,
+       "cap": "no_glyph",
+       "asc": 494,
+       "xh": 501
+      },
+      {
+       "base": 550,
+       "cap": "no_glyph",
+       "asc": 528,
+       "xh": 534
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "box": [
+      8,
+      644,
+      81,
+      652
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 651,
+       "cap": "no_glyph",
+       "asc": 644,
+       "xh": 646
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "box": [
+      8,
+      678,
+      51,
+      708
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 685,
+       "cap": "no_glyph",
+       "asc": 678,
+       "xh": 680
+      },
+      {
+       "base": 696,
+       "cap": "no_glyph",
+       "asc": 690,
+       "xh": 692
+      },
+      {
+       "base": 708,
+       "cap": "no_glyph",
+       "asc": 701,
+       "xh": 703
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "box": [
+      85,
+      644,
+      221,
+      753
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 651,
+       "cap": "no_glyph",
+       "asc": 644,
+       "xh": 646
+      },
+      {
+       "base": 662,
+       "cap": "no_glyph",
+       "asc": 655,
+       "xh": 657
+      },
+      {
+       "base": 673,
+       "cap": "no_glyph",
+       "asc": 666,
+       "xh": 668
+      },
+      {
+       "base": 684,
+       "cap": "no_glyph",
+       "asc": 678,
+       "xh": 680
+      },
+      {
+       "base": 696,
+       "cap": "no_glyph",
+       "asc": 689,
+       "xh": 691
+      },
+      {
+       "base": 708,
+       "cap": "no_glyph",
+       "asc": 700,
+       "xh": 702
+      },
+      {
+       "base": 720,
+       "cap": "no_glyph",
+       "asc": "no_glyph",
+       "xh": 714
+      },
+      {
+       "base": 730,
+       "cap": "no_glyph",
+       "asc": 723,
+       "xh": 725
+      },
+      {
+       "base": 742,
+       "cap": "no_glyph",
+       "asc": 734,
+       "xh": 736
+      },
+      {
+       "base": 753,
+       "cap": "no_glyph",
+       "asc": 746,
+       "xh": 748
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "order": 14,
+   "folder": "Juni_Festwochen",
+   "file": "1959_Juni-Festwochen Zürich 1959 - Abschiedskonzerte von Dr. Volk.jpg",
+   "sha256": "153f19d11fab90f70e45c2091356533dbdc75929a6533359e8c4b82a1d92e9c2",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      21,
+      724,
+      146,
+      746
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 734,
+       "cap": "no_glyph",
+       "asc": 724,
+       "xh": 727
+      },
+      {
+       "base": 746,
+       "cap": "no_glyph",
+       "asc": "no_glyph",
+       "xh": "no_glyph"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "box": [
+      22,
+      758,
+      152,
+      792
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 768,
+       "cap": "no_glyph",
+       "asc": 758,
+       "xh": 761
+      },
+      {
+       "base": 779,
+       "cap": "no_glyph",
+       "asc": 770,
+       "xh": 772
+      },
+      {
+       "base": 790,
+       "cap": "no_glyph",
+       "asc": 781,
+       "xh": 784
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "box": [
+      158,
+      724,
+      274,
+      756
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 734,
+       "cap": "no_glyph",
+       "asc": 724,
+       "xh": 726
+      },
+      {
+       "base": 745,
+       "cap": "no_glyph",
+       "asc": "no_glyph",
+       "xh": 738
+      },
+      {
+       "base": 756,
+       "cap": "no_glyph",
+       "asc": 747,
+       "xh": 749
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "box": [
+      159,
+      768,
+      290,
+      789
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 778,
+       "cap": "no_glyph",
+       "asc": 768,
+       "xh": 771
+      },
+      {
+       "base": 789,
+       "cap": "no_glyph",
+       "asc": 780,
+       "xh": 782
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "box": [
+      295,
+      723,
+      421,
+      790
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 733,
+       "cap": "no_glyph",
+       "asc": 723,
+       "xh": 726
+      },
+      {
+       "base": 744,
+       "cap": "no_glyph",
+       "asc": "no_glyph",
+       "xh": 737
+      },
+      {
+       "base": 755,
+       "cap": "no_glyph",
+       "asc": 746,
+       "xh": 748
+      },
+      {
+       "base": 766,
+       "cap": "no_glyph",
+       "asc": 757,
+       "xh": 759
+      },
+      {
+       "base": 777,
+       "cap": "no_glyph",
+       "asc": 768,
+       "xh": 770
+      },
+      {
+       "base": 788,
+       "cap": "no_glyph",
+       "asc": 779,
+       "xh": 781
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "box": [
+      430,
+      720,
+      558,
+      787
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 732,
+       "cap": "no_glyph",
+       "asc": 721,
+       "xh": 724
+      },
+      {
+       "base": 742,
+       "cap": "no_glyph",
+       "asc": 733,
+       "xh": 735
+      },
+      {
+       "base": 754,
+       "cap": "no_glyph",
+       "asc": 744,
+       "xh": 746
+      },
+      {
+       "base": 764,
+       "cap": "no_glyph",
+       "asc": 755,
+       "xh": 758
+      },
+      {
+       "base": 776,
+       "cap": "no_glyph",
+       "asc": 766,
+       "xh": 768
+      },
+      {
+       "base": 787,
+       "cap": "no_glyph",
+       "asc": 777,
+       "xh": 780
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "order": 15,
+   "folder": "Sonstige",
+   "file": "1900_Josef Müller-Brockmann - Affiches-projets - Impressions 1900.jpg",
+   "sha256": "2006a2c6ba0a7fd5e0b25415b848eb19bca3edf38204498cd91eee9f733dea4c",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      90,
+      592,
+      526,
+      628
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 622,
+       "cap": "no_glyph",
+       "asc": 592,
+       "xh": 600
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "box": [
+      94,
+      697,
+      230,
+      715
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 712,
+       "cap": "no_glyph",
+       "asc": 697,
+       "xh": 701
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "box": [
+      327,
+      656,
+      418,
+      680
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 665,
+       "cap": "no_glyph",
+       "asc": "no_glyph",
+       "xh": 659
+      },
+      {
+       "base": 680,
+       "cap": "no_glyph",
+       "asc": 672,
+       "xh": 674
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "box": [
+      441,
+      657,
+      516,
+      680
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 665,
+       "cap": "no_glyph",
+       "asc": null,
+       "xh": 659
+      },
+      {
+       "base": 680,
+       "cap": "no_glyph",
+       "asc": 672,
+       "xh": 674
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "box": [
+      328,
+      697,
+      431,
+      715
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 712,
+       "cap": "no_glyph",
+       "asc": "no_glyph",
+       "xh": 701
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "box": [
+      442,
+      697,
+      527,
+      712
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 712,
+       "cap": "no_glyph",
+       "asc": "no_glyph",
+       "xh": "no_glyph"
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "box": [
+      327,
+      729,
+      415,
+      754
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 738,
+       "cap": "no_glyph",
+       "asc": 729,
+       "xh": 732
+      },
+      {
+       "base": 752,
+       "cap": "no_glyph",
+       "asc": "no_glyph",
+       "xh": "no_glyph"
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "box": [
+      442,
+      730,
+      499,
+      738
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 738,
+       "cap": 730,
+       "asc": "no_glyph",
+       "xh": 732
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "order": 16,
+   "folder": "Ausstellung",
+   "file": "1960_Kunstgewerbemuseum Zürich - Ausstellung - Der Film.jpg",
+   "sha256": "1cde6aae79c938a5846073650215d565b7088cff127db0e36cb77f04393dab94",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      160,
+      48,
+      360,
+      78
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 60,
+       "cap": 48,
+       "asc": 48,
+       "xh": 51
+      },
+      {
+       "base": 75,
+       "cap": 63,
+       "asc": 63,
+       "xh": 66
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "box": [
+      160,
+      696,
+      335,
+      711
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 708,
+       "cap": 696,
+       "asc": 696,
+       "xh": 700
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "box": [
+      160,
+      726,
+      392,
+      771
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 738,
+       "cap": 726,
+       "asc": 726,
+       "xh": 730
+      },
+      {
+       "base": 753,
+       "cap": 742,
+       "asc": 742,
+       "xh": 745
+      },
+      {
+       "base": 768,
+       "cap": 757,
+       "asc": 757,
+       "xh": 760
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "box": [
+      0.0,
+      479.0,
+      553.0,
+      642.0
+     ],
+     "flag": "lettering",
+     "base_mark": null,
+     "lines": []
+    },
+    {
+     "no": 5,
+     "box": [
+      0.0,
+      480.0,
+      552.0,
+      645.0
+     ],
+     "flag": "lettering",
+     "base_mark": null,
+     "lines": []
+    }
+   ]
+  },
+  {
+   "order": 17,
+   "folder": "Tonhalle_Konzert",
+   "file": "1952_Tonhalle Zürich Grosser Saal - 10. Abonnementskonzert der To.jpg",
+   "sha256": "d237d18a4538561e738b7acf40af760fba1270579788f8042a854e132006dcce",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      246,
+      371,
+      306,
+      419
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 383,
+       "cap": 372,
+       "asc": 372,
+       "xh": 374
+      },
+      {
+       "base": 400,
+       "cap": 388,
+       "asc": 389,
+       "xh": 391
+      },
+      {
+       "base": 417,
+       "cap": 406,
+       "asc": 406,
+       "xh": 408
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "box": [
+      274,
+      432,
+      306,
+      446
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 444,
+       "cap": 433,
+       "asc": 433,
+       "xh": 435
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "box": [
+      174,
+      451,
+      306,
+      480
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 480,
+       "cap": 451,
+       "asc": 451,
+       "xh": 458
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "box": [
+      272,
+      493,
+      306,
+      505
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 505,
+       "cap": 494,
+       "asc": 494,
+       "xh": 496
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "box": [
+      162,
+      511,
+      306,
+      539
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 539,
+       "cap": 511,
+       "asc": 511,
+       "xh": 518
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "box": [
+      198,
+      593,
+      306,
+      602
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 600,
+       "cap": 593,
+       "asc": 593,
+       "xh": 594
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "box": [
+      340,
+      371,
+      558,
+      417
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 383,
+       "cap": 371,
+       "asc": 371,
+       "xh": 374
+      },
+      {
+       "base": 400,
+       "cap": 388,
+       "asc": 388,
+       "xh": 391
+      },
+      {
+       "base": 417,
+       "cap": 405,
+       "asc": 405,
+       "xh": 408
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "box": [
+      340,
+      451,
+      500,
+      479
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 479,
+       "cap": 451,
+       "asc": 451,
+       "xh": 458
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "box": [
+      340,
+      493,
+      520,
+      540
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 504,
+       "cap": 494,
+       "asc": 494,
+       "xh": 496
+      },
+      {
+       "base": 522,
+       "cap": 510,
+       "asc": 510,
+       "xh": 513
+      },
+      {
+       "base": 538,
+       "cap": 528,
+       "asc": 528,
+       "xh": 530
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "box": [
+      340,
+      572,
+      490,
+      601
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 584,
+       "cap": 572,
+       "asc": 572,
+       "xh": 576
+      },
+      {
+       "base": 600,
+       "cap": 588,
+       "asc": 588,
+       "xh": 591
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "order": 18,
+   "folder": "Tonhalle_Konzert",
+   "file": "1955_Ferenc Fricsay - Leitung - Arthur Rubinstein - Solist - Tonh.jpg",
+   "sha256": "0e913796ea0797737db45c8c86d9be58c7399e3f55907dcfe8d9ac44108d14f1",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      53,
+      465,
+      270,
+      541
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 486,
+       "cap": "no_glyph",
+       "asc": 465,
+       "xh": 471
+      },
+      {
+       "base": 513,
+       "cap": "no_glyph",
+       "asc": 492,
+       "xh": 498
+      },
+      {
+       "base": 541,
+       "cap": "no_glyph",
+       "asc": 520,
+       "xh": 526
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "box": [
+      261,
+      477,
+      288,
+      486
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 484,
+       "cap": "no_glyph",
+       "asc": 477,
+       "xh": 479
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "box": [
+      261,
+      506,
+      283,
+      513
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 513,
+       "cap": "no_glyph",
+       "asc": 506,
+       "xh": 508
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "box": [
+      6,
+      606,
+      49,
+      649
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 614,
+       "cap": "no_glyph",
+       "asc": 606,
+       "xh": 608
+      },
+      {
+       "base": 624,
+       "cap": "no_glyph",
+       "asc": 617,
+       "xh": 619
+      },
+      {
+       "base": 636,
+       "cap": "no_glyph",
+       "asc": 628,
+       "xh": 630
+      },
+      {
+       "base": 647,
+       "cap": "no_glyph",
+       "asc": 640,
+       "xh": 642
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "box": [
+      54,
+      572,
+      236,
+      672
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 580,
+       "cap": "no_glyph",
+       "asc": 572,
+       "xh": 574
+      },
+      {
+       "base": 591,
+       "cap": "no_glyph",
+       "asc": 584,
+       "xh": 586
+      },
+      {
+       "base": 602,
+       "cap": "no_glyph",
+       "asc": 595,
+       "xh": 597
+      },
+      {
+       "base": 614,
+       "cap": "no_glyph",
+       "asc": 606,
+       "xh": 608
+      },
+      {
+       "base": 625,
+       "cap": "no_glyph",
+       "asc": 618,
+       "xh": 620
+      },
+      {
+       "base": 636,
+       "cap": "no_glyph",
+       "asc": 629,
+       "xh": 631
+      },
+      {
+       "base": 648,
+       "cap": "no_glyph",
+       "asc": 641,
+       "xh": 643
+      },
+      {
+       "base": 659,
+       "cap": "no_glyph",
+       "asc": 652,
+       "xh": 654
+      },
+      {
+       "base": 670,
+       "cap": "no_glyph",
+       "asc": 664,
+       "xh": 666
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "order": 19,
+   "folder": "Musica_Viva",
+   "file": "1958_Tonhalle-Quartett - Zürcher Bläser-Quintett - Strawinsky - S.jpg",
+   "sha256": "142c01bf248f01ca7bc34667b223ea1e81da9f8e188dc7d003b54472b831cac3",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      12,
+      463,
+      211,
+      637
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 485,
+       "cap": "no_glyph",
+       "asc": 463,
+       "xh": 469
+      },
+      {
+       "base": 514,
+       "cap": "no_glyph",
+       "asc": 492,
+       "xh": 499
+      },
+      {
+       "base": 544,
+       "cap": "no_glyph",
+       "asc": 522,
+       "xh": 528
+      },
+      {
+       "base": 573,
+       "cap": "no_glyph",
+       "asc": 552,
+       "xh": 558
+      },
+      {
+       "base": 603,
+       "cap": "no_glyph",
+       "asc": 581,
+       "xh": 587
+      },
+      {
+       "base": 632,
+       "cap": "no_glyph",
+       "asc": 611,
+       "xh": 617
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "box": [
+      12,
+      678,
+      58,
+      686
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 686,
+       "cap": "no_glyph",
+       "asc": "no_glyph",
+       "xh": 680
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "box": [
+      11,
+      697,
+      157,
+      714
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 704,
+       "cap": "no_glyph",
+       "asc": 697,
+       "xh": 699
+      },
+      {
+       "base": 714,
+       "cap": "no_glyph",
+       "asc": 707,
+       "xh": 709
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "box": [
+      11,
+      760,
+      192,
+      778
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 768,
+       "cap": "no_glyph",
+       "asc": 760,
+       "xh": 762
+      },
+      {
+       "base": 778,
+       "cap": "no_glyph",
+       "asc": 770,
+       "xh": 772
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "order": 20,
+   "folder": "Ausstellung",
+   "file": "1994_Zürcher Szenen von Edi Baur - Ausstellung im Stadthaus Züric.jpg",
+   "sha256": "0b93d4e967ced4999a81dbb8e63e7517a6ecf9ccdbedbc9e92c1cd8d3c46d1fe",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      13,
+      352,
+      556,
+      384
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 383,
+       "cap": 353,
+       "asc": 353,
+       "xh": 361
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "box": [
+      12,
+      398,
+      303,
+      418
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 414,
+       "cap": 399,
+       "asc": 399,
+       "xh": 403
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "box": [
+      198,
+      592,
+      360,
+      602
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 601,
+       "cap": 592,
+       "asc": 592,
+       "xh": 595
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "box": [
+      198,
+      621,
+      344,
+      646
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 630,
+       "cap": 622,
+       "asc": 622,
+       "xh": 624
+      },
+      {
+       "base": 643,
+       "cap": 634,
+       "asc": 634,
+       "xh": 636
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "box": [
+      199,
+      659,
+      250,
+      669
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 669,
+       "cap": 659,
+       "asc": 659,
+       "xh": 662
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "box": [
+      198,
+      744,
+      347,
+      792
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 753,
+       "cap": 744,
+       "asc": 744,
+       "xh": 746
+      },
+      {
+       "base": 766,
+       "cap": 757,
+       "asc": 757,
+       "xh": 759
+      },
+      {
+       "base": 778,
+       "cap": 770,
+       "asc": 770,
+       "xh": 772
+      },
+      {
+       "base": 792,
+       "cap": 782,
+       "asc": 782,
+       "xh": 784
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "order": 21,
+   "folder": "Opernhaus",
+   "file": "1966_Opernhaus Zürich - Don Carlos - Oper von Giuseppe Verdi - 5..jpg",
+   "sha256": "8440b94a24c4dc1428af6bdf96b8e674f818f34f59f6255a7a809d8674ae63e3",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      40,
+      98,
+      518,
+      264
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 174,
+       "cap": 98,
+       "asc": 101,
+       "xh": 122
+      },
+      {
+       "base": 262,
+       "cap": 188,
+       "asc": 190,
+       "xh": 209
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "box": [
+      42,
+      304,
+      463,
+      344
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 320,
+       "cap": 304,
+       "asc": null,
+       "xh": 308
+      },
+      {
+       "base": 342,
+       "cap": 326,
+       "asc": 326,
+       "xh": 330
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "box": [
+      42,
+      372,
+      499,
+      448
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 446,
+       "cap": 374,
+       "asc": 374,
+       "xh": 393
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "box": [
+      42,
+      460,
+      277,
+      480
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 477,
+       "cap": 460,
+       "asc": 460,
+       "xh": 465
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "box": [
+      42,
+      497,
+      423,
+      577
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 514,
+       "cap": 497,
+       "asc": 497,
+       "xh": 502
+      },
+      {
+       "base": 535,
+       "cap": 518,
+       "asc": 518,
+       "xh": 523
+      },
+      {
+       "base": 556,
+       "cap": 539,
+       "asc": 539,
+       "xh": 544
+      },
+      {
+       "base": 577,
+       "cap": 560,
+       "asc": 560,
+       "xh": 565
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "order": 22,
+   "folder": "Juni_Festwochen",
+   "file": "1957_Juni-Festwochen Zürich 1957 - Tonhalle Grosser Saal - 4. Jun.jpg",
+   "sha256": "88feecccbb2378263be1c977eec159f6ff8ba2d8475b6f6f157ec903708065fa",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      55,
+      246,
+      106,
+      356
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 256,
+       "cap": "no_glyph",
+       "asc": 246,
+       "xh": 248
+      },
+      {
+       "base": 280,
+       "cap": "no_glyph",
+       "asc": "no_glyph",
+       "xh": 274
+      },
+      {
+       "base": 306,
+       "cap": "no_glyph",
+       "asc": 296,
+       "xh": 299
+      },
+      {
+       "base": 331,
+       "cap": "no_glyph",
+       "asc": 321,
+       "xh": 324
+      },
+      {
+       "base": 356,
+       "cap": "no_glyph",
+       "asc": null,
+       "xh": 349
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "box": [
+      120,
+      237,
+      288,
+      408
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 256,
+       "cap": "no_glyph",
+       "asc": 237,
+       "xh": 242
+      },
+      {
+       "base": 281,
+       "cap": "no_glyph",
+       "asc": 263,
+       "xh": 267
+      },
+      {
+       "base": 306,
+       "cap": "no_glyph",
+       "asc": 289,
+       "xh": 293
+      },
+      {
+       "base": 332,
+       "cap": "no_glyph",
+       "asc": 313,
+       "xh": 318
+      },
+      {
+       "base": 357,
+       "cap": "no_glyph",
+       "asc": 339,
+       "xh": 344
+      },
+      {
+       "base": 383,
+       "cap": "no_glyph",
+       "asc": 364,
+       "xh": 369
+      },
+      {
+       "base": 408,
+       "cap": "no_glyph",
+       "asc": 390,
+       "xh": 395
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "box": [
+      121,
+      481,
+      245,
+      505
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 491,
+       "cap": "no_glyph",
+       "asc": 481,
+       "xh": 484
+      },
+      {
+       "base": 505,
+       "cap": "no_glyph",
+       "asc": "no_glyph",
+       "xh": "no_glyph"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "box": [
+      10,
+      598,
+      104,
+      609
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 608,
+       "cap": "no_glyph",
+       "asc": 598,
+       "xh": 601
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "box": [
+      120,
+      528,
+      268,
+      737
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 537,
+       "cap": "no_glyph",
+       "asc": 528,
+       "xh": 530
+      },
+      {
+       "base": 552,
+       "cap": "no_glyph",
+       "asc": 542,
+       "xh": 545
+      },
+      {
+       "base": 566,
+       "cap": "no_glyph",
+       "asc": 556,
+       "xh": 559
+      },
+      {
+       "base": 580,
+       "cap": "no_glyph",
+       "asc": "no_glyph",
+       "xh": "no_glyph"
+      },
+      {
+       "base": 594,
+       "cap": "no_glyph",
+       "asc": 584,
+       "xh": 587
+      },
+      {
+       "base": 608,
+       "cap": "no_glyph",
+       "asc": 598,
+       "xh": 601
+      },
+      {
+       "base": 622,
+       "cap": "no_glyph",
+       "asc": 612,
+       "xh": 615
+      },
+      {
+       "base": 636,
+       "cap": "no_glyph",
+       "asc": 626,
+       "xh": 629
+      },
+      {
+       "base": 650,
+       "cap": "no_glyph",
+       "asc": 640,
+       "xh": 643
+      },
+      {
+       "base": 664,
+       "cap": "no_glyph",
+       "asc": 654,
+       "xh": 657
+      },
+      {
+       "base": 678,
+       "cap": "no_glyph",
+       "asc": 668,
+       "xh": 671
+      },
+      {
+       "base": 693,
+       "cap": "no_glyph",
+       "asc": 683,
+       "xh": 686
+      },
+      {
+       "base": 707,
+       "cap": "no_glyph",
+       "asc": 696,
+       "xh": 700
+      },
+      {
+       "base": 721,
+       "cap": "no_glyph",
+       "asc": 712,
+       "xh": 714
+      },
+      {
+       "base": 735,
+       "cap": "no_glyph",
+       "asc": "no_glyph",
+       "xh": 728
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "box": [
+      120,
+      750,
+      266,
+      789
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 760,
+       "cap": "no_glyph",
+       "asc": 750,
+       "xh": 753
+      },
+      {
+       "base": 775,
+       "cap": "no_glyph",
+       "asc": 765,
+       "xh": 768
+      },
+      {
+       "base": 789,
+       "cap": "no_glyph",
+       "asc": 779,
+       "xh": 782
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "order": 23,
+   "folder": "Tonhalle_Konzert",
+   "file": "1955_Beethoven - Tonhalle - Grosser Saal.jpg",
+   "sha256": "c91328035669682af9b3acc2dd7bc0c9828d2ab8f5a1cec5a9d31d76e4ef328c",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      30,
+      509,
+      147,
+      528
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 528,
+       "cap": "no_glyph",
+       "asc": 509,
+       "xh": 515
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "box": [
+      115,
+      576,
+      147,
+      582
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 582,
+       "cap": "no_glyph",
+       "asc": 576,
+       "xh": 577
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "box": [
+      152,
+      576,
+      278,
+      623
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 582,
+       "cap": "no_glyph",
+       "asc": 576,
+       "xh": 577
+      },
+      {
+       "base": 592,
+       "cap": "no_glyph",
+       "asc": 585,
+       "xh": 587
+      },
+      {
+       "base": 602,
+       "cap": null,
+       "asc": 595,
+       "xh": 597
+      },
+      {
+       "base": 612,
+       "cap": "no_glyph",
+       "asc": 605,
+       "xh": 607
+      },
+      {
+       "base": 622,
+       "cap": "no_glyph",
+       "asc": 615,
+       "xh": 617
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "box": [
+      120,
+      630,
+      147,
+      647
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 636,
+       "cap": "no_glyph",
+       "asc": 630,
+       "xh": 632
+      },
+      {
+       "base": 646,
+       "cap": "no_glyph",
+       "asc": 640,
+       "xh": 642
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "box": [
+      153,
+      630,
+      247,
+      648
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 636,
+       "cap": "no_glyph",
+       "asc": 630,
+       "xh": 632
+      },
+      {
+       "base": 646,
+       "cap": "no_glyph",
+       "asc": 640,
+       "xh": 642
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "box": [
+      104,
+      656,
+      147,
+      662
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 662,
+       "cap": "no_glyph",
+       "asc": 656,
+       "xh": 657
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "box": [
+      153,
+      654,
+      284,
+      682
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 662,
+       "cap": "no_glyph",
+       "asc": 654,
+       "xh": 656
+      },
+      {
+       "base": 671,
+       "cap": "no_glyph",
+       "asc": 664,
+       "xh": 666
+      },
+      {
+       "base": 681,
+       "cap": "no_glyph",
+       "asc": 674,
+       "xh": 676
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "box": [
+      104,
+      689,
+      147,
+      696
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 696,
+       "cap": "no_glyph",
+       "asc": 689,
+       "xh": 691
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "box": [
+      153,
+      689,
+      264,
+      716
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 696,
+       "cap": "no_glyph",
+       "asc": 689,
+       "xh": 691
+      },
+      {
+       "base": 706,
+       "cap": "no_glyph",
+       "asc": 699,
+       "xh": 701
+      },
+      {
+       "base": 716,
+       "cap": "no_glyph",
+       "asc": 709,
+       "xh": 711
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "order": 24,
+   "folder": "Juni_Festwochen",
+   "file": "1953_Juni-Festwochen Zürich 1953 - Tonhalle Grosser Saal - George.jpg",
+   "sha256": "7a112de21a855fd7ef9256f8bedd626453d45b322a5154e79d5afa67d782ee26",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      321,
+      125,
+      508,
+      150
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 134,
+       "cap": 125,
+       "asc": 125,
+       "xh": 127
+      },
+      {
+       "base": 148,
+       "cap": 139,
+       "asc": 139,
+       "xh": 142
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "box": [
+      323,
+      269,
+      364,
+      280
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 278,
+       "cap": 269,
+       "asc": "no_glyph",
+       "xh": 272
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "box": [
+      322,
+      286,
+      502,
+      328
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 320,
+       "cap": 286,
+       "asc": 286,
+       "xh": 295
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "box": [
+      322,
+      326,
+      353,
+      335
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 335,
+       "cap": 326,
+       "asc": 326,
+       "xh": 328
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "box": [
+      322,
+      343,
+      543,
+      376
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 376,
+       "cap": 343,
+       "asc": 343,
+       "xh": 351
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "box": [
+      322,
+      382,
+      359,
+      391
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 391,
+       "cap": 382,
+       "asc": 382,
+       "xh": 385
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "box": [
+      322,
+      399,
+      484,
+      408
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 408,
+       "cap": 399,
+       "asc": 399,
+       "xh": 402
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "box": [
+      322,
+      416,
+      528,
+      450
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 449,
+       "cap": 416,
+       "asc": 416,
+       "xh": 424
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "box": [
+      322,
+      456,
+      478,
+      467
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 464,
+       "cap": 456,
+       "asc": 456,
+       "xh": 458
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "box": [
+      322,
+      472,
+      498,
+      506
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 506,
+       "cap": 472,
+       "asc": "no_glyph",
+       "xh": 481
+      }
+     ]
+    },
+    {
+     "no": 11,
+     "box": [
+      322,
+      512,
+      505,
+      522
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 521,
+       "cap": 512,
+       "asc": 512,
+       "xh": 515
+      }
+     ]
+    },
+    {
+     "no": 12,
+     "box": [
+      322,
+      530,
+      500,
+      563
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 563,
+       "cap": 530,
+       "asc": 530,
+       "xh": 538
+      }
+     ]
+    },
+    {
+     "no": 13,
+     "box": [
+      323,
+      568,
+      493,
+      580
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 578,
+       "cap": 568,
+       "asc": 568,
+       "xh": 571
+      }
+     ]
+    },
+    {
+     "no": 14,
+     "box": [
+      322,
+      585,
+      510,
+      592
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 591,
+       "cap": 585,
+       "asc": 585,
+       "xh": 587
+      }
+     ]
+    },
+    {
+     "no": 15,
+     "box": [
+      323,
+      664,
+      531,
+      701
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 673,
+       "cap": 664,
+       "asc": 664,
+       "xh": 666
+      },
+      {
+       "base": 687,
+       "cap": 678,
+       "asc": 678,
+       "xh": 680
+      },
+      {
+       "base": 701,
+       "cap": 692,
+       "asc": 692,
+       "xh": 694
+      }
+     ]
+    },
+    {
+     "no": 16,
+     "box": [
+      33,
+      325,
+      197,
+      334
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 334,
+       "cap": 325,
+       "asc": 325,
+       "xh": 328
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "order": 25,
+   "folder": "Juni_Festwochen",
+   "file": "1971_Junifestwochen Zürich 1971 - 1. Junifestkonzert - Tonhalle -.jpg",
+   "sha256": "091855192fde8dda0275519431dd0568a67811ff7cb599d2853cba3cffab6902",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      88,
+      236,
+      114,
+      246
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 246,
+       "cap": "no_glyph",
+       "asc": 236,
+       "xh": 239
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "box": [
+      76,
+      265,
+      114,
+      276
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 274,
+       "cap": "no_glyph",
+       "asc": 265,
+       "xh": 268
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "box": [
+      128,
+      228,
+      272,
+      335
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 246,
+       "cap": "no_glyph",
+       "asc": 228,
+       "xh": 232
+      },
+      {
+       "base": 275,
+       "cap": "no_glyph",
+       "asc": 256,
+       "xh": 261
+      },
+      {
+       "base": 303,
+       "cap": "no_glyph",
+       "asc": 284,
+       "xh": 289
+      },
+      {
+       "base": 332,
+       "cap": "no_glyph",
+       "asc": 312,
+       "xh": 318
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "box": [
+      129,
+      480,
+      255,
+      504
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 490,
+       "cap": "no_glyph",
+       "asc": 480,
+       "xh": 483
+      },
+      {
+       "base": 504,
+       "cap": "no_glyph",
+       "asc": "no_glyph",
+       "xh": "no_glyph"
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "box": [
+      128,
+      523,
+      263,
+      790
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 533,
+       "cap": "no_glyph",
+       "asc": 523,
+       "xh": 526
+      },
+      {
+       "base": 548,
+       "cap": "no_glyph",
+       "asc": 538,
+       "xh": 541
+      },
+      {
+       "base": 563,
+       "cap": "no_glyph",
+       "asc": 553,
+       "xh": 556
+      },
+      {
+       "base": 578,
+       "cap": "no_glyph",
+       "asc": 568,
+       "xh": 570
+      },
+      {
+       "base": 592,
+       "cap": "no_glyph",
+       "asc": 583,
+       "xh": 586
+      },
+      {
+       "base": 608,
+       "cap": "no_glyph",
+       "asc": 598,
+       "xh": 600
+      },
+      {
+       "base": 622,
+       "cap": "no_glyph",
+       "asc": 613,
+       "xh": 615
+      },
+      {
+       "base": 637,
+       "cap": "no_glyph",
+       "asc": 628,
+       "xh": 630
+      },
+      {
+       "base": 652,
+       "cap": "no_glyph",
+       "asc": 643,
+       "xh": 645
+      },
+      {
+       "base": 667,
+       "cap": "no_glyph",
+       "asc": 658,
+       "xh": 660
+      },
+      {
+       "base": 682,
+       "cap": "no_glyph",
+       "asc": 673,
+       "xh": 675
+      },
+      {
+       "base": 697,
+       "cap": "no_glyph",
+       "asc": 688,
+       "xh": 690
+      },
+      {
+       "base": 712,
+       "cap": "no_glyph",
+       "asc": 703,
+       "xh": 705
+      },
+      {
+       "base": 727,
+       "cap": "no_glyph",
+       "asc": 717,
+       "xh": 720
+      },
+      {
+       "base": 742,
+       "cap": "no_glyph",
+       "asc": 732,
+       "xh": 735
+      },
+      {
+       "base": 757,
+       "cap": "no_glyph",
+       "asc": 747,
+       "xh": 750
+      },
+      {
+       "base": 772,
+       "cap": "no_glyph",
+       "asc": 762,
+       "xh": 765
+      },
+      {
+       "base": 787,
+       "cap": "no_glyph",
+       "asc": 777,
+       "xh": 780
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "box": [
+      20,
+      598,
+      112,
+      610
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 607,
+       "cap": "no_glyph",
+       "asc": 598,
+       "xh": 600
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "order": 26,
+   "folder": "Tonhalle_Konzert",
+   "file": "1954_Extrakonzert - Tonhalle Grosser Saal - Solistin Clara Haskil.jpg",
+   "sha256": "43b9084ae3537cd07ca9958bc205ce80df9811eb02604c11d119ba3e0d08e48a",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      7,
+      432,
+      182,
+      482
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 440,
+       "cap": 432,
+       "asc": 432,
+       "xh": 434
+      },
+      {
+       "base": 454,
+       "cap": 447,
+       "asc": 447,
+       "xh": 449
+      },
+      {
+       "base": 468,
+       "cap": 461,
+       "asc": 461,
+       "xh": 463
+      },
+      {
+       "base": 482,
+       "cap": 475,
+       "asc": 475,
+       "xh": 477
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "box": [
+      6,
+      531,
+      36,
+      540
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 538,
+       "cap": 531,
+       "asc": 531,
+       "xh": 533
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "box": [
+      7,
+      553,
+      204,
+      576
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 576,
+       "cap": 553,
+       "asc": 553,
+       "xh": 558
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "box": [
+      6,
+      610,
+      161,
+      690
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 616,
+       "cap": 610,
+       "asc": 610,
+       "xh": 612
+      },
+      {
+       "base": 631,
+       "cap": 624,
+       "asc": 624,
+       "xh": 626
+      },
+      {
+       "base": 645,
+       "cap": 638,
+       "asc": 638,
+       "xh": 640
+      },
+      {
+       "base": 660,
+       "cap": 653,
+       "asc": 653,
+       "xh": 655
+      },
+      {
+       "base": 674,
+       "cap": 667,
+       "asc": 667,
+       "xh": 669
+      },
+      {
+       "base": 689,
+       "cap": 682,
+       "asc": 682,
+       "xh": 684
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "box": [
+      6,
+      741,
+      186,
+      778
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 748,
+       "cap": 741,
+       "asc": 741,
+       "xh": 743
+      },
+      {
+       "base": 763,
+       "cap": 756,
+       "asc": 756,
+       "xh": 758
+      },
+      {
+       "base": 778,
+       "cap": 770,
+       "asc": 770,
+       "xh": 772
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "box": [
+      340,
+      531,
+      368,
+      538
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 538,
+       "cap": 531,
+       "asc": 531,
+       "xh": 533
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "box": [
+      339,
+      552,
+      524,
+      576
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 576,
+       "cap": 553,
+       "asc": 552,
+       "xh": 558
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "order": 27,
+   "folder": "Musica_Viva",
+   "file": "1959_Musica viva - Erich Schmid Leitung - Adolf Neumeier Schlagze.jpg",
+   "sha256": "b364214483ffd840911a1360eed11c6358dc63019fa205eb8a96e80cd9d6f8c0",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      8,
+      655,
+      126,
+      672
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 672,
+       "cap": "no_glyph",
+       "asc": "no_glyph",
+       "xh": 659
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "box": [
+      8,
+      704,
+      162,
+      774
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 722,
+       "cap": "no_glyph",
+       "asc": 704,
+       "xh": 709
+      },
+      {
+       "base": 746,
+       "cap": "no_glyph",
+       "asc": 729,
+       "xh": 734
+      },
+      {
+       "base": 771,
+       "cap": "no_glyph",
+       "asc": 754,
+       "xh": 758
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "box": [
+      204,
+      680,
+      380,
+      771
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 697,
+       "cap": "no_glyph",
+       "asc": 680,
+       "xh": 684
+      },
+      {
+       "base": 722,
+       "cap": "no_glyph",
+       "asc": 704,
+       "xh": 709
+      },
+      {
+       "base": 746,
+       "cap": "no_glyph",
+       "asc": 728,
+       "xh": 733
+      },
+      {
+       "base": 771,
+       "cap": "no_glyph",
+       "asc": 753,
+       "xh": 758
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "order": 28,
+   "folder": "Musica_Viva",
+   "file": "1957_Musica Viva - Grosser Saal Tonhalle - Leitung Erich Schmid.jpg",
+   "sha256": "a5904f3b6b7be9473f388e6ea6f5e2630855b0dcd229c55878b21fc12d825f0d",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      6,
+      20,
+      86,
+      32
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 32,
+       "cap": "no_glyph",
+       "asc": "no_glyph",
+       "xh": 24
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "box": [
+      6,
+      54,
+      134,
+      136
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 67,
+       "cap": "no_glyph",
+       "asc": 55,
+       "xh": 58
+      },
+      {
+       "base": 84,
+       "cap": "no_glyph",
+       "asc": 72,
+       "xh": 75
+      },
+      {
+       "base": 101,
+       "cap": "no_glyph",
+       "asc": 89,
+       "xh": 92
+      },
+      {
+       "base": 118,
+       "cap": "no_glyph",
+       "asc": 106,
+       "xh": 109
+      },
+      {
+       "base": 136,
+       "cap": "no_glyph",
+       "asc": null,
+       "xh": "no_glyph"
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "box": [
+      6,
+      158,
+      135,
+      190
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 170,
+       "cap": "no_glyph",
+       "asc": 158,
+       "xh": 161
+      },
+      {
+       "base": 187,
+       "cap": "no_glyph",
+       "asc": 175,
+       "xh": 178
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "box": [
+      144,
+      20,
+      267,
+      172
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 32,
+       "cap": "no_glyph",
+       "asc": 20,
+       "xh": 23
+      },
+      {
+       "base": 49,
+       "cap": "no_glyph",
+       "asc": 37,
+       "xh": 40
+      },
+      {
+       "base": 66,
+       "cap": "no_glyph",
+       "asc": 54,
+       "xh": 57
+      },
+      {
+       "base": 84,
+       "cap": "no_glyph",
+       "asc": 72,
+       "xh": 74
+      },
+      {
+       "base": 101,
+       "cap": "no_glyph",
+       "asc": 89,
+       "xh": 92
+      },
+      {
+       "base": 118,
+       "cap": "no_glyph",
+       "asc": 106,
+       "xh": 109
+      },
+      {
+       "base": 135,
+       "cap": "no_glyph",
+       "asc": "no_glyph",
+       "xh": 126
+      },
+      {
+       "base": 152,
+       "cap": "no_glyph",
+       "asc": 140,
+       "xh": 144
+      },
+      {
+       "base": 170,
+       "cap": "no_glyph",
+       "asc": 158,
+       "xh": 161
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "box": [
+      281,
+      19,
+      411,
+      220
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 31,
+       "cap": "no_glyph",
+       "asc": 19,
+       "xh": 22
+      },
+      {
+       "base": 48,
+       "cap": "no_glyph",
+       "asc": 36,
+       "xh": 40
+      },
+      {
+       "base": 66,
+       "cap": "no_glyph",
+       "asc": null,
+       "xh": 57
+      },
+      {
+       "base": 83,
+       "cap": "no_glyph",
+       "asc": 71,
+       "xh": 74
+      },
+      {
+       "base": 100,
+       "cap": "no_glyph",
+       "asc": 88,
+       "xh": 91
+      },
+      {
+       "base": 117,
+       "cap": "no_glyph",
+       "asc": 105,
+       "xh": 108
+      },
+      {
+       "base": 134,
+       "cap": "no_glyph",
+       "asc": 123,
+       "xh": 126
+      },
+      {
+       "base": 152,
+       "cap": "no_glyph",
+       "asc": 140,
+       "xh": 143
+      },
+      {
+       "base": 169,
+       "cap": "no_glyph",
+       "asc": 156,
+       "xh": 160
+      },
+      {
+       "base": 186,
+       "cap": "no_glyph",
+       "asc": 174,
+       "xh": 177
+      },
+      {
+       "base": 203,
+       "cap": "no_glyph",
+       "asc": 191,
+       "xh": 194
+      },
+      {
+       "base": 220,
+       "cap": "no_glyph",
+       "asc": 208,
+       "xh": 211
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "box": [
+      420,
+      18,
+      555,
+      134
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 30,
+       "cap": "no_glyph",
+       "asc": 18,
+       "xh": 21
+      },
+      {
+       "base": 47,
+       "cap": "no_glyph",
+       "asc": 35,
+       "xh": 38
+      },
+      {
+       "base": 64,
+       "cap": "no_glyph",
+       "asc": 52,
+       "xh": 56
+      },
+      {
+       "base": 82,
+       "cap": "no_glyph",
+       "asc": 69,
+       "xh": 72
+      },
+      {
+       "base": 99,
+       "cap": "no_glyph",
+       "asc": 87,
+       "xh": 90
+      },
+      {
+       "base": 116,
+       "cap": "no_glyph",
+       "asc": 104,
+       "xh": 108
+      },
+      {
+       "base": 133,
+       "cap": "no_glyph",
+       "asc": 121,
+       "xh": 125
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "order": 29,
+   "folder": "Juni_Festwochen",
+   "file": "1959_Juni-Festwochen Zürich 1959 - Tonhalle Grosser Saal - Leitun.jpg",
+   "sha256": "a640e848df85423803d3285ee31bc7387f23f09b439d8d45c12cd74774514278",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      15,
+      710,
+      140,
+      731
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 720,
+       "cap": "no_glyph",
+       "asc": 710,
+       "xh": 712
+      },
+      {
+       "base": 731,
+       "cap": "no_glyph",
+       "asc": "no_glyph",
+       "xh": "no_glyph"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "box": [
+      16,
+      755,
+      132,
+      788
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 765,
+       "cap": "no_glyph",
+       "asc": 755,
+       "xh": 758
+      },
+      {
+       "base": 776,
+       "cap": "no_glyph",
+       "asc": 767,
+       "xh": 769
+      },
+      {
+       "base": 788,
+       "cap": "no_glyph",
+       "asc": 778,
+       "xh": 780
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "box": [
+      153,
+      710,
+      283,
+      790
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 720,
+       "cap": "no_glyph",
+       "asc": 710,
+       "xh": 712
+      },
+      {
+       "base": 731,
+       "cap": "no_glyph",
+       "asc": 722,
+       "xh": 724
+      },
+      {
+       "base": 742,
+       "cap": "no_glyph",
+       "asc": 733,
+       "xh": 735
+      },
+      {
+       "base": 754,
+       "cap": "no_glyph",
+       "asc": 744,
+       "xh": 746
+      },
+      {
+       "base": 765,
+       "cap": "no_glyph",
+       "asc": 756,
+       "xh": 758
+      },
+      {
+       "base": 776,
+       "cap": "no_glyph",
+       "asc": 767,
+       "xh": 769
+      },
+      {
+       "base": 788,
+       "cap": "no_glyph",
+       "asc": 778,
+       "xh": 780
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "box": [
+      290,
+      710,
+      417,
+      790
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 719,
+       "cap": "no_glyph",
+       "asc": 710,
+       "xh": 712
+      },
+      {
+       "base": 731,
+       "cap": "no_glyph",
+       "asc": 721,
+       "xh": 724
+      },
+      {
+       "base": 742,
+       "cap": "no_glyph",
+       "asc": null,
+       "xh": 735
+      },
+      {
+       "base": 753,
+       "cap": "no_glyph",
+       "asc": 744,
+       "xh": 746
+      },
+      {
+       "base": 765,
+       "cap": "no_glyph",
+       "asc": 755,
+       "xh": 758
+      },
+      {
+       "base": 776,
+       "cap": "no_glyph",
+       "asc": 766,
+       "xh": 769
+      },
+      {
+       "base": 788,
+       "cap": "no_glyph",
+       "asc": 778,
+       "xh": 781
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "box": [
+      427,
+      709,
+      558,
+      744
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 719,
+       "cap": "no_glyph",
+       "asc": 710,
+       "xh": 712
+      },
+      {
+       "base": 730,
+       "cap": "no_glyph",
+       "asc": 721,
+       "xh": 724
+      },
+      {
+       "base": 742,
+       "cap": "no_glyph",
+       "asc": 732,
+       "xh": 735
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "box": [
+      427,
+      754,
+      553,
+      789
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 764,
+       "cap": "no_glyph",
+       "asc": 754,
+       "xh": 758
+      },
+      {
+       "base": 776,
+       "cap": "no_glyph",
+       "asc": 766,
+       "xh": 769
+      },
+      {
+       "base": 787,
+       "cap": "no_glyph",
+       "asc": 777,
+       "xh": 780
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "order": 30,
+   "folder": "Musica_Viva",
+   "file": "1956_Strawinsky - Musica viva - Dienstag, 16. Okt. 1956 - 1. Extr.jpg",
+   "sha256": "eb5579287eab24ecde17f1e1d32abfb47472a1fc38239a44aa3f77b82b719649",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      97,
+      171,
+      268,
+      204
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 198,
+       "cap": "no_glyph",
+       "asc": 171,
+       "xh": 178
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "box": [
+      96,
+      293,
+      154,
+      300
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 300,
+       "cap": "no_glyph",
+       "asc": 293,
+       "xh": 295
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "box": [
+      96,
+      342,
+      157,
+      351
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 349,
+       "cap": "no_glyph",
+       "asc": 342,
+       "xh": 344
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "box": [
+      172,
+      275,
+      268,
+      320
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 282,
+       "cap": "no_glyph",
+       "asc": 275,
+       "xh": 277
+      },
+      {
+       "base": 291,
+       "cap": "no_glyph",
+       "asc": 284,
+       "xh": 286
+      },
+      {
+       "base": 300,
+       "cap": "no_glyph",
+       "asc": 293,
+       "xh": 295
+      },
+      {
+       "base": 309,
+       "cap": "no_glyph",
+       "asc": 302,
+       "xh": 304
+      },
+      {
+       "base": 318,
+       "cap": "no_glyph",
+       "asc": 311,
+       "xh": 313
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "box": [
+      172,
+      326,
+      234,
+      335
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 334,
+       "cap": null,
+       "asc": 326,
+       "xh": 328
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "box": [
+      172,
+      342,
+      256,
+      377
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 349,
+       "cap": "no_glyph",
+       "asc": 342,
+       "xh": 344
+      },
+      {
+       "base": 358,
+       "cap": "no_glyph",
+       "asc": 351,
+       "xh": 353
+      },
+      {
+       "base": 367,
+       "cap": "no_glyph",
+       "asc": 360,
+       "xh": 362
+      },
+      {
+       "base": 376,
+       "cap": "no_glyph",
+       "asc": 369,
+       "xh": 370
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "box": [
+      374,
+      171,
+      557,
+      199
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 199,
+       "cap": "no_glyph",
+       "asc": "no_glyph",
+       "xh": 179
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "box": [
+      373,
+      360,
+      547,
+      378
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 367,
+       "cap": "no_glyph",
+       "asc": 360,
+       "xh": 362
+      },
+      {
+       "base": 376,
+       "cap": "no_glyph",
+       "asc": 369,
+       "xh": 371
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "order": 31,
+   "folder": "Verkehr",
+   "file": "1953_Schützt das Kind!.jpg",
+   "sha256": "5863fb87fa649b1b18a541ab4127af6db9a171813fe4773907be659699c73379",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      83,
+      17,
+      344,
+      33
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 32,
+       "cap": 17,
+       "asc": 17,
+       "xh": 21
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "box": [
+      11,
+      108,
+      312,
+      136
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 136,
+       "cap": 108,
+       "asc": 108,
+       "xh": 116
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "order": 32,
+   "folder": "Juni_Festwochen",
+   "file": "1953_Tonhalle Grosser Saal - Juni-Festwochen Zürich 1953 - Tonhal.jpg",
+   "sha256": "81ceef31d4fcc59b4ab3adbb2a134489d421b6da25f516e354940d6bc5f04136",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      32,
+      282,
+      197,
+      292
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 291,
+       "cap": 282,
+       "asc": 282,
+       "xh": 284
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "box": [
+      325,
+      217,
+      366,
+      229
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 226,
+       "cap": 217,
+       "asc": null,
+       "xh": 220
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "box": [
+      324,
+      234,
+      484,
+      268
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 267,
+       "cap": 234,
+       "asc": 234,
+       "xh": 242
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "box": [
+      324,
+      279,
+      356,
+      288
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 288,
+       "cap": 279,
+       "asc": 279,
+       "xh": 282
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "box": [
+      324,
+      296,
+      547,
+      330
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 330,
+       "cap": 296,
+       "asc": null,
+       "xh": 304
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "box": [
+      324,
+      336,
+      384,
+      345
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 345,
+       "cap": 336,
+       "asc": 336,
+       "xh": 338
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "box": [
+      324,
+      358,
+      488,
+      368
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 368,
+       "cap": 358,
+       "asc": 358,
+       "xh": 360
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "box": [
+      323,
+      387,
+      500,
+      420
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 420,
+       "cap": 387,
+       "asc": null,
+       "xh": 394
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "box": [
+      325,
+      426,
+      475,
+      437
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 435,
+       "cap": 426,
+       "asc": 426,
+       "xh": 428
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "box": [
+      325,
+      449,
+      507,
+      482
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 482,
+       "cap": 449,
+       "asc": 449,
+       "xh": 457
+      }
+     ]
+    },
+    {
+     "no": 11,
+     "box": [
+      324,
+      488,
+      488,
+      498
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 497,
+       "cap": 488,
+       "asc": 488,
+       "xh": 491
+      }
+     ]
+    },
+    {
+     "no": 12,
+     "box": [
+      324,
+      511,
+      472,
+      544
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 544,
+       "cap": 511,
+       "asc": null,
+       "xh": 519
+      }
+     ]
+    },
+    {
+     "no": 13,
+     "box": [
+      323,
+      550,
+      510,
+      560
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 559,
+       "cap": 550,
+       "asc": 550,
+       "xh": 553
+      }
+     ]
+    },
+    {
+     "no": 14,
+     "box": [
+      324,
+      640,
+      531,
+      682
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 649,
+       "cap": 640,
+       "asc": 640,
+       "xh": 643
+      },
+      {
+       "base": 665,
+       "cap": 656,
+       "asc": 656,
+       "xh": 658
+      },
+      {
+       "base": 680,
+       "cap": 672,
+       "asc": 672,
+       "xh": 674
+      }
+     ]
+    },
+    {
+     "no": 15,
+     "box": [
+      320,
+      85,
+      500,
+      112
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 94,
+       "cap": 85,
+       "asc": 85,
+       "xh": 87
+      },
+      {
+       "base": 109,
+       "cap": 100,
+       "asc": 100,
+       "xh": 103
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "order": 33,
+   "folder": "Juni_Festwochen",
+   "file": "1960_Viertes Juni-Festkonzert 1960 der Tonhalle-Gesellschaft - Fr.jpg",
+   "sha256": "5a2c7034b44eb434ac3cf544628aebd630e0d51979d5a07c0727284f92a8a963",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      68,
+      596,
+      254,
+      712
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 618,
+       "cap": "no_glyph",
+       "asc": 596,
+       "xh": 602
+      },
+      {
+       "base": 648,
+       "cap": "no_glyph",
+       "asc": 626,
+       "xh": 632
+      },
+      {
+       "base": 678,
+       "cap": "no_glyph",
+       "asc": 656,
+       "xh": 662
+      },
+      {
+       "base": 708,
+       "cap": "no_glyph",
+       "asc": null,
+       "xh": 692
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "box": [
+      275,
+      596,
+      510,
+      635
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 606,
+       "cap": "no_glyph",
+       "asc": 596,
+       "xh": 599
+      },
+      {
+       "base": 620,
+       "cap": "no_glyph",
+       "asc": 610,
+       "xh": 613
+      },
+      {
+       "base": 634,
+       "cap": "no_glyph",
+       "asc": 624,
+       "xh": 627
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "box": [
+      275,
+      653,
+      500,
+      736
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 662,
+       "cap": "no_glyph",
+       "asc": 653,
+       "xh": 655
+      },
+      {
+       "base": 676,
+       "cap": "no_glyph",
+       "asc": 667,
+       "xh": 670
+      },
+      {
+       "base": 691,
+       "cap": "no_glyph",
+       "asc": 681,
+       "xh": 684
+      },
+      {
+       "base": 704,
+       "cap": "no_glyph",
+       "asc": 695,
+       "xh": 697
+      },
+      {
+       "base": 719,
+       "cap": "no_glyph",
+       "asc": 709,
+       "xh": 712
+      },
+      {
+       "base": 733,
+       "cap": "no_glyph",
+       "asc": 724,
+       "xh": 726
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "box": [
+      276,
+      752,
+      517,
+      778
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 762,
+       "cap": "no_glyph",
+       "asc": 752,
+       "xh": 755
+      },
+      {
+       "base": 776,
+       "cap": "no_glyph",
+       "asc": 766,
+       "xh": 769
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "order": 34,
+   "folder": "Opernhaus",
+   "file": "1966_Opernhaus Zürich - Ballettabend - Don Quijote - Lessons in l.jpg",
+   "sha256": "7ce66fc70ad21e3f2e9c46634734615efb407a38508531bccaaabce71189b021",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      39,
+      99,
+      520,
+      264
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 176,
+       "cap": 99,
+       "asc": 102,
+       "xh": 123
+      },
+      {
+       "base": 264,
+       "cap": 189,
+       "asc": 192,
+       "xh": 211
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "box": [
+      42,
+      305,
+      196,
+      327
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 326,
+       "cap": 305,
+       "asc": 305,
+       "xh": 311
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "box": [
+      42,
+      339,
+      93,
+      351
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 349,
+       "cap": 339,
+       "asc": null,
+       "xh": 342
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "box": [
+      146,
+      339,
+      279,
+      350
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 349,
+       "cap": 339,
+       "asc": 339,
+       "xh": 342
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "box": [
+      42,
+      368,
+      185,
+      394
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 390,
+       "cap": 368,
+       "asc": null,
+       "xh": 374
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "box": [
+      42,
+      402,
+      133,
+      414
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 412,
+       "cap": 402,
+       "asc": "no_glyph",
+       "xh": 405
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "box": [
+      146,
+      402,
+      287,
+      436
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 412,
+       "cap": 402,
+       "asc": 402,
+       "xh": 405
+      },
+      {
+       "base": 423,
+       "cap": 414,
+       "asc": 414,
+       "xh": 416
+      },
+      {
+       "base": 435,
+       "cap": 425,
+       "asc": 425,
+       "xh": 428
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "box": [
+      350,
+      402,
+      471,
+      470
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 412,
+       "cap": 403,
+       "asc": 403,
+       "xh": 405
+      },
+      {
+       "base": 423,
+       "cap": 414,
+       "asc": 414,
+       "xh": 416
+      },
+      {
+       "base": 434,
+       "cap": 425,
+       "asc": 425,
+       "xh": 428
+      },
+      {
+       "base": 446,
+       "cap": 436,
+       "asc": 436,
+       "xh": 439
+      },
+      {
+       "base": 457,
+       "cap": 448,
+       "asc": 448,
+       "xh": 450
+      },
+      {
+       "base": 468,
+       "cap": 459,
+       "asc": 459,
+       "xh": 462
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "box": [
+      42,
+      468,
+      228,
+      490
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 490,
+       "cap": 468,
+       "asc": 468,
+       "xh": 474
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "box": [
+      42,
+      502,
+      114,
+      526
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 511,
+       "cap": 502,
+       "asc": 502,
+       "xh": 504
+      },
+      {
+       "base": 523,
+       "cap": 513,
+       "asc": 513,
+       "xh": 516
+      }
+     ]
+    },
+    {
+     "no": 11,
+     "box": [
+      146,
+      502,
+      286,
+      525
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 512,
+       "cap": 502,
+       "asc": 502,
+       "xh": 505
+      },
+      {
+       "base": 523,
+       "cap": 514,
+       "asc": 514,
+       "xh": 516
+      }
+     ]
+    },
+    {
+     "no": 12,
+     "box": [
+      42,
+      567,
+      247,
+      589
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 588,
+       "cap": 567,
+       "asc": 567,
+       "xh": 573
+      }
+     ]
+    },
+    {
+     "no": 13,
+     "box": [
+      42,
+      601,
+      129,
+      624
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 611,
+       "cap": 601,
+       "asc": 601,
+       "xh": 604
+      },
+      {
+       "base": 622,
+       "cap": 612,
+       "asc": 612,
+       "xh": 615
+      }
+     ]
+    },
+    {
+     "no": 14,
+     "box": [
+      146,
+      601,
+      336,
+      669
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 611,
+       "cap": 601,
+       "asc": 601,
+       "xh": 604
+      },
+      {
+       "base": 622,
+       "cap": 612,
+       "asc": 612,
+       "xh": 615
+      },
+      {
+       "base": 633,
+       "cap": 624,
+       "asc": 624,
+       "xh": 626
+      },
+      {
+       "base": 644,
+       "cap": 635,
+       "asc": 635,
+       "xh": 638
+      },
+      {
+       "base": 656,
+       "cap": "no_glyph",
+       "asc": 646,
+       "xh": 648
+      },
+      {
+       "base": 667,
+       "cap": 658,
+       "asc": 658,
+       "xh": 660
+      }
+     ]
+    },
+    {
+     "no": 15,
+     "box": [
+      350,
+      502,
+      471,
+      570
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 511,
+       "cap": 502,
+       "asc": 502,
+       "xh": 504
+      },
+      {
+       "base": 522,
+       "cap": 513,
+       "asc": 513,
+       "xh": 516
+      },
+      {
+       "base": 534,
+       "cap": 524,
+       "asc": 524,
+       "xh": 527
+      },
+      {
+       "base": 545,
+       "cap": 536,
+       "asc": 536,
+       "xh": 538
+      },
+      {
+       "base": 556,
+       "cap": 547,
+       "asc": 547,
+       "xh": 549
+      },
+      {
+       "base": 568,
+       "cap": 558,
+       "asc": 558,
+       "xh": 561
+      }
+     ]
+    },
+    {
+     "no": 16,
+     "box": [
+      350,
+      601,
+      472,
+      669
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 611,
+       "cap": 601,
+       "asc": 601,
+       "xh": 604
+      },
+      {
+       "base": 622,
+       "cap": 612,
+       "asc": 612,
+       "xh": 615
+      },
+      {
+       "base": 633,
+       "cap": 624,
+       "asc": 624,
+       "xh": 626
+      },
+      {
+       "base": 644,
+       "cap": 635,
+       "asc": 635,
+       "xh": 638
+      },
+      {
+       "base": 656,
+       "cap": 646,
+       "asc": 646,
+       "xh": 649
+      },
+      {
+       "base": 667,
+       "cap": 658,
+       "asc": 658,
+       "xh": 660
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "order": 35,
+   "folder": "Opernhaus",
+   "file": "1965_Opernhaus Zürich - Der Opernball - von Richard Heuberger - 3.jpg",
+   "sha256": "0821c37f6b48ebe1969e25d659e50715a0a030a6d96a7b66f6bdd7d0f3820bb8",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      39,
+      101,
+      518,
+      266
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 178,
+       "cap": 101,
+       "asc": 104,
+       "xh": 124
+      },
+      {
+       "base": 265,
+       "cap": 191,
+       "asc": 193,
+       "xh": 212
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "box": [
+      42,
+      304,
+      314,
+      333
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 316,
+       "cap": 304,
+       "asc": 304,
+       "xh": 306
+      },
+      {
+       "base": 331,
+       "cap": 319,
+       "asc": "no_glyph",
+       "xh": 322
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "box": [
+      39,
+      384,
+      459,
+      565
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 456,
+       "cap": 384,
+       "asc": "no_glyph",
+       "xh": 402
+      },
+      {
+       "base": 544,
+       "cap": 472,
+       "asc": 472,
+       "xh": 492
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "box": [
+      43,
+      578,
+      268,
+      592
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 590,
+       "cap": 578,
+       "asc": 578,
+       "xh": 581
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "box": [
+      43,
+      602,
+      323,
+      680
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 615,
+       "cap": 602,
+       "asc": 602,
+       "xh": 606
+      },
+      {
+       "base": 630,
+       "cap": 618,
+       "asc": 618,
+       "xh": 622
+      },
+      {
+       "base": 646,
+       "cap": 634,
+       "asc": 634,
+       "xh": 636
+      },
+      {
+       "base": 661,
+       "cap": 649,
+       "asc": 649,
+       "xh": 652
+      },
+      {
+       "base": 677,
+       "cap": 664,
+       "asc": 664,
+       "xh": 668
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "order": 36,
+   "folder": "Verkehr",
+   "file": "1958_Projet constitutionnel sur le routier réseau Oui.jpg",
+   "sha256": "8e07ce9ae89ea2404873fdc3cb3056c6035127f361ae10a370a9770f9244a009",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      308,
+      659,
+      554,
+      794
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 791,
+       "cap": "no_glyph",
+       "asc": "no_glyph",
+       "xh": 689
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "box": [
+      11,
+      689,
+      296,
+      792
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 713,
+       "cap": 689,
+       "asc": null,
+       "xh": 696
+      },
+      {
+       "base": 752,
+       "cap": "no_glyph",
+       "asc": 729,
+       "xh": 736
+      },
+      {
+       "base": 791,
+       "cap": "no_glyph",
+       "asc": null,
+       "xh": 774
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "order": 37,
+   "folder": "Juni_Festwochen",
+   "file": "1956_Juni-Festwochen Zürich 1956 - 2. Juni-Festkonzert - Leitung .jpg",
+   "sha256": "1ddd6d15b56b7f82092bd0cd3feacd3599351b962bfb83a6bd2ce6d0856ed70d",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      84,
+      64,
+      151,
+      72
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 71,
+       "cap": "no_glyph",
+       "asc": 64,
+       "xh": 66
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "box": [
+      164,
+      64,
+      212,
+      71
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 71,
+       "cap": "no_glyph",
+       "asc": 64,
+       "xh": 66
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "box": [
+      8,
+      448,
+      36,
+      456
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 454,
+       "cap": "no_glyph",
+       "asc": 448,
+       "xh": 450
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "box": [
+      51,
+      448,
+      79,
+      455
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 454,
+       "cap": "no_glyph",
+       "asc": null,
+       "xh": 450
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "box": [
+      9,
+      480,
+      36,
+      488
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 488,
+       "cap": "no_glyph",
+       "asc": 480,
+       "xh": 482
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "box": [
+      48,
+      480,
+      79,
+      488
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 488,
+       "cap": "no_glyph",
+       "asc": null,
+       "xh": 482
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "box": [
+      9,
+      644,
+      82,
+      653
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 651,
+       "cap": "no_glyph",
+       "asc": 644,
+       "xh": 646
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "box": [
+      9,
+      678,
+      43,
+      720
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 686,
+       "cap": "no_glyph",
+       "asc": 678,
+       "xh": 680
+      },
+      {
+       "base": 697,
+       "cap": "no_glyph",
+       "asc": null,
+       "xh": 692
+      },
+      {
+       "base": 708,
+       "cap": "no_glyph",
+       "asc": 700,
+       "xh": 703
+      },
+      {
+       "base": 720,
+       "cap": "no_glyph",
+       "asc": 712,
+       "xh": 714
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "box": [
+      86,
+      644,
+      222,
+      753
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 651,
+       "cap": "no_glyph",
+       "asc": 644,
+       "xh": 646
+      },
+      {
+       "base": 662,
+       "cap": "no_glyph",
+       "asc": 655,
+       "xh": 657
+      },
+      {
+       "base": 673,
+       "cap": "no_glyph",
+       "asc": null,
+       "xh": 668
+      },
+      {
+       "base": 685,
+       "cap": "no_glyph",
+       "asc": null,
+       "xh": 680
+      },
+      {
+       "base": 696,
+       "cap": "no_glyph",
+       "asc": 689,
+       "xh": 691
+      },
+      {
+       "base": 708,
+       "cap": "no_glyph",
+       "asc": 701,
+       "xh": 702
+      },
+      {
+       "base": 719,
+       "cap": "no_glyph",
+       "asc": 712,
+       "xh": 714
+      },
+      {
+       "base": 731,
+       "cap": "no_glyph",
+       "asc": 724,
+       "xh": 726
+      },
+      {
+       "base": 742,
+       "cap": "no_glyph",
+       "asc": 735,
+       "xh": 737
+      },
+      {
+       "base": 753,
+       "cap": "no_glyph",
+       "asc": 746,
+       "xh": 748
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "order": 38,
+   "folder": "Ausstellung",
+   "file": "1958_Henry van de Velde - Kunstgewerbemuseum Zürich - 6. Juni - 3.jpg",
+   "sha256": "81e4f55353ebbde830d40eed93da32b7c6121d635d389c68f14dda6263e79831",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      55,
+      767,
+      97,
+      774
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 774,
+       "cap": "no_glyph",
+       "asc": "no_glyph",
+       "xh": "no_glyph"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "box": [
+      256,
+      766,
+      410,
+      774
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 773,
+       "cap": 766,
+       "asc": 766,
+       "xh": 768
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "box": [
+      426,
+      678,
+      547,
+      686
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 685,
+       "cap": 678,
+       "asc": 678,
+       "xh": 680
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "box": [
+      426,
+      696,
+      540,
+      747
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 703,
+       "cap": 696,
+       "asc": 696,
+       "xh": 698
+      },
+      {
+       "base": 711,
+       "cap": 704,
+       "asc": 704,
+       "xh": 706
+      },
+      {
+       "base": 720,
+       "cap": 713,
+       "asc": 713,
+       "xh": 715
+      },
+      {
+       "base": 729,
+       "cap": 722,
+       "asc": 722,
+       "xh": 724
+      },
+      {
+       "base": 738,
+       "cap": 730,
+       "asc": 730,
+       "xh": 732
+      },
+      {
+       "base": 747,
+       "cap": 740,
+       "asc": 740,
+       "xh": 742
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "box": [
+      426,
+      758,
+      540,
+      774
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 765,
+       "cap": 758,
+       "asc": 758,
+       "xh": 760
+      },
+      {
+       "base": 773,
+       "cap": 766,
+       "asc": 766,
+       "xh": 768
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "box": [
+      55,
+      680,
+      410,
+      774
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 753,
+       "cap": 680,
+       "asc": 680,
+       "xh": 698
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "order": 39,
+   "folder": "Opernhaus",
+   "file": "1966_Opernhaus Zürich - Eröffnung der Spielzeit 1966-67 - Tannhäu.jpg",
+   "sha256": "abc13646547875eb194796c12550424e9c52405c06478e6123a4fe37e7a8a355",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      224,
+      86,
+      527,
+      298
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 186,
+       "cap": 142,
+       "asc": 142,
+       "xh": 154
+      },
+      {
+       "base": 242,
+       "cap": 196,
+       "asc": 196,
+       "xh": 209
+      },
+      {
+       "base": 298,
+       "cap": "no_glyph",
+       "asc": "no_glyph",
+       "xh": "no_glyph"
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "box": [
+      216,
+      426,
+      501,
+      472
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 471,
+       "cap": null,
+       "asc": 426,
+       "xh": 438
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "box": [
+      36,
+      488,
+      194,
+      524
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 501,
+       "cap": 488,
+       "asc": 488,
+       "xh": 492
+      },
+      {
+       "base": 516,
+       "cap": 504,
+       "asc": 504,
+       "xh": 507
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "box": [
+      224,
+      488,
+      528,
+      574
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 501,
+       "cap": 488,
+       "asc": 488,
+       "xh": 492
+      },
+      {
+       "base": 515,
+       "cap": 503,
+       "asc": 503,
+       "xh": 506
+      },
+      {
+       "base": 530,
+       "cap": 518,
+       "asc": 518,
+       "xh": 521
+      },
+      {
+       "base": 544,
+       "cap": 533,
+       "asc": 533,
+       "xh": 536
+      },
+      {
+       "base": 560,
+       "cap": 548,
+       "asc": 548,
+       "xh": 550
+      },
+      {
+       "base": 574,
+       "cap": 562,
+       "asc": 562,
+       "xh": 565
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "box": [
+      224,
+      606,
+      528,
+      652
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 651,
+       "cap": 606,
+       "asc": 606,
+       "xh": 618
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "box": [
+      36,
+      669,
+      193,
+      714
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 682,
+       "cap": 669,
+       "asc": 669,
+       "xh": 673
+      },
+      {
+       "base": 697,
+       "cap": 685,
+       "asc": 685,
+       "xh": 688
+      },
+      {
+       "base": 712,
+       "cap": 699,
+       "asc": 699,
+       "xh": 702
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "box": [
+      223,
+      669,
+      528,
+      744
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 682,
+       "cap": 669,
+       "asc": 669,
+       "xh": 673
+      },
+      {
+       "base": 697,
+       "cap": 684,
+       "asc": 684,
+       "xh": 688
+      },
+      {
+       "base": 711,
+       "cap": 699,
+       "asc": 699,
+       "xh": 702
+      },
+      {
+       "base": 726,
+       "cap": 714,
+       "asc": 714,
+       "xh": 716
+      },
+      {
+       "base": 740,
+       "cap": 728,
+       "asc": 728,
+       "xh": 731
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "order": 40,
+   "folder": "Musica_Viva",
+   "file": "1960_Musica viva - Donnerstag, 10. März 1960 - Tonhalle Grosser S.jpg",
+   "sha256": "eff1d80ca9b455f3d9e34366fc548743c8773bd16b36879af047cbf515325e8b",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      14,
+      366,
+      158,
+      388
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 388,
+       "cap": "no_glyph",
+       "asc": "no_glyph",
+       "xh": 372
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "box": [
+      280,
+      7,
+      542,
+      164
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 29,
+       "cap": "no_glyph",
+       "asc": 7,
+       "xh": 13
+      },
+      {
+       "base": 56,
+       "cap": "no_glyph",
+       "asc": 34,
+       "xh": 41
+      },
+      {
+       "base": 83,
+       "cap": "no_glyph",
+       "asc": 62,
+       "xh": 68
+      },
+      {
+       "base": 110,
+       "cap": "no_glyph",
+       "asc": 88,
+       "xh": 94
+      },
+      {
+       "base": 137,
+       "cap": "no_glyph",
+       "asc": 115,
+       "xh": 121
+      },
+      {
+       "base": 164,
+       "cap": "no_glyph",
+       "asc": 142,
+       "xh": 148
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "box": [
+      280,
+      174,
+      487,
+      360
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 196,
+       "cap": "no_glyph",
+       "asc": 175,
+       "xh": 180
+      },
+      {
+       "base": 223,
+       "cap": "no_glyph",
+       "asc": 201,
+       "xh": 207
+      },
+      {
+       "base": 250,
+       "cap": "no_glyph",
+       "asc": 228,
+       "xh": 234
+      },
+      {
+       "base": 276,
+       "cap": "no_glyph",
+       "asc": 255,
+       "xh": 261
+      },
+      {
+       "base": 303,
+       "cap": "no_glyph",
+       "asc": 281,
+       "xh": 287
+      },
+      {
+       "base": 330,
+       "cap": "no_glyph",
+       "asc": "no_glyph",
+       "xh": 314
+      },
+      {
+       "base": 356,
+       "cap": "no_glyph",
+       "asc": "no_glyph",
+       "xh": 340
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "box": [
+      280,
+      366,
+      552,
+      681
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 388,
+       "cap": "no_glyph",
+       "asc": 366,
+       "xh": 372
+      },
+      {
+       "base": 414,
+       "cap": "no_glyph",
+       "asc": 393,
+       "xh": 399
+      },
+      {
+       "base": 441,
+       "cap": "no_glyph",
+       "asc": 420,
+       "xh": 426
+      },
+      {
+       "base": 468,
+       "cap": "no_glyph",
+       "asc": 446,
+       "xh": 452
+      },
+      {
+       "base": 494,
+       "cap": "no_glyph",
+       "asc": 472,
+       "xh": 478
+      },
+      {
+       "base": 520,
+       "cap": "no_glyph",
+       "asc": 499,
+       "xh": 505
+      },
+      {
+       "base": 547,
+       "cap": "no_glyph",
+       "asc": 526,
+       "xh": 531
+      },
+      {
+       "base": 574,
+       "cap": "no_glyph",
+       "asc": 552,
+       "xh": 558
+      },
+      {
+       "base": 600,
+       "cap": "no_glyph",
+       "asc": 578,
+       "xh": 585
+      },
+      {
+       "base": 627,
+       "cap": "no_glyph",
+       "asc": 606,
+       "xh": 611
+      },
+      {
+       "base": 654,
+       "cap": "no_glyph",
+       "asc": 632,
+       "xh": 638
+      },
+      {
+       "base": 680,
+       "cap": "no_glyph",
+       "asc": 659,
+       "xh": 665
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "box": [
+      281,
+      691,
+      546,
+      798
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 713,
+       "cap": "no_glyph",
+       "asc": 691,
+       "xh": 697
+      },
+      {
+       "base": 740,
+       "cap": "no_glyph",
+       "asc": 718,
+       "xh": 724
+      },
+      {
+       "base": 767,
+       "cap": "no_glyph",
+       "asc": 745,
+       "xh": 751
+      },
+      {
+       "base": 794,
+       "cap": "no_glyph",
+       "asc": 772,
+       "xh": 778
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "order": 41,
+   "folder": "Tonhalle_Konzert",
+   "file": "1957_Extra-Konzert - Leitung Carl Schuricht - Violine Johanna Mar.jpg",
+   "sha256": "199d4d9298e2fb083e921ca7106cffbedb0f487e844ca08079c7a0e5e21919b2",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      39,
+      492,
+      200,
+      513
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 512,
+       "cap": "no_glyph",
+       "asc": 493,
+       "xh": 498
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "box": [
+      370,
+      492,
+      554,
+      597
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 512,
+       "cap": "no_glyph",
+       "asc": 492,
+       "xh": 498
+      },
+      {
+       "base": 540,
+       "cap": "no_glyph",
+       "asc": 520,
+       "xh": 526
+      },
+      {
+       "base": 568,
+       "cap": "no_glyph",
+       "asc": 548,
+       "xh": 554
+      },
+      {
+       "base": 596,
+       "cap": "no_glyph",
+       "asc": 577,
+       "xh": 583
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "box": [
+      326,
+      504,
+      354,
+      514
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 512,
+       "cap": "no_glyph",
+       "asc": 504,
+       "xh": 506
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "box": [
+      328,
+      532,
+      354,
+      540
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 540,
+       "cap": "no_glyph",
+       "asc": 532,
+       "xh": 534
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "box": [
+      309,
+      696,
+      354,
+      717
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 703,
+       "cap": "no_glyph",
+       "asc": 696,
+       "xh": 698
+      },
+      {
+       "base": 717,
+       "cap": "no_glyph",
+       "asc": 710,
+       "xh": 712
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "box": [
+      371,
+      644,
+      506,
+      682
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 652,
+       "cap": "no_glyph",
+       "asc": 644,
+       "xh": 646
+      },
+      {
+       "base": 665,
+       "cap": "no_glyph",
+       "asc": 658,
+       "xh": 660
+      },
+      {
+       "base": 680,
+       "cap": "no_glyph",
+       "asc": 672,
+       "xh": 675
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "box": [
+      371,
+      696,
+      467,
+      718
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 703,
+       "cap": "no_glyph",
+       "asc": 696,
+       "xh": 698
+      },
+      {
+       "base": 717,
+       "cap": "no_glyph",
+       "asc": 710,
+       "xh": 712
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "box": [
+      371,
+      732,
+      478,
+      768
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 740,
+       "cap": "no_glyph",
+       "asc": 732,
+       "xh": 735
+      },
+      {
+       "base": 753,
+       "cap": "no_glyph",
+       "asc": 744,
+       "xh": 748
+      },
+      {
+       "base": 768,
+       "cap": "no_glyph",
+       "asc": 760,
+       "xh": 763
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "order": 42,
+   "folder": "Musica_Viva",
+   "file": "1957_Musica Viva - Thyl Claes - Tonhalle Grosser Saal.jpg",
+   "sha256": "a1468ebfae573477dba484b737bbdb8057eb98f50c34c57e67a074ddb9dbdfd9",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      12,
+      578,
+      92,
+      590
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 590,
+       "cap": "no_glyph",
+       "asc": "no_glyph",
+       "xh": 581
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "box": [
+      10,
+      626,
+      171,
+      786
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 638,
+       "cap": "no_glyph",
+       "asc": null,
+       "xh": 629
+      },
+      {
+       "base": 656,
+       "cap": "no_glyph",
+       "asc": 644,
+       "xh": 648
+      },
+      {
+       "base": 675,
+       "cap": "no_glyph",
+       "asc": 663,
+       "xh": 666
+      },
+      {
+       "base": 693,
+       "cap": "no_glyph",
+       "asc": 681,
+       "xh": 684
+      },
+      {
+       "base": 712,
+       "cap": "no_glyph",
+       "asc": 700,
+       "xh": 703
+      },
+      {
+       "base": 730,
+       "cap": "no_glyph",
+       "asc": 718,
+       "xh": 721
+      },
+      {
+       "base": 748,
+       "cap": "no_glyph",
+       "asc": 736,
+       "xh": 740
+      },
+      {
+       "base": 767,
+       "cap": "no_glyph",
+       "asc": 755,
+       "xh": 758
+      },
+      {
+       "base": 785,
+       "cap": "no_glyph",
+       "asc": 773,
+       "xh": 776
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "box": [
+      192,
+      626,
+      372,
+      788
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 638,
+       "cap": "no_glyph",
+       "asc": 626,
+       "xh": 628
+      },
+      {
+       "base": 656,
+       "cap": "no_glyph",
+       "asc": 644,
+       "xh": 648
+      },
+      {
+       "base": 674,
+       "cap": "no_glyph",
+       "asc": 662,
+       "xh": 666
+      },
+      {
+       "base": 693,
+       "cap": "no_glyph",
+       "asc": 680,
+       "xh": 684
+      },
+      {
+       "base": 712,
+       "cap": "no_glyph",
+       "asc": 699,
+       "xh": 702
+      },
+      {
+       "base": 730,
+       "cap": "no_glyph",
+       "asc": 718,
+       "xh": 721
+      },
+      {
+       "base": 748,
+       "cap": "no_glyph",
+       "asc": 736,
+       "xh": 739
+      },
+      {
+       "base": 767,
+       "cap": "no_glyph",
+       "asc": 754,
+       "xh": 758
+      },
+      {
+       "base": 785,
+       "cap": "no_glyph",
+       "asc": 773,
+       "xh": 776
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "box": [
+      382,
+      626,
+      529,
+      675
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 638,
+       "cap": "no_glyph",
+       "asc": 626,
+       "xh": 629
+      },
+      {
+       "base": 656,
+       "cap": "no_glyph",
+       "asc": 645,
+       "xh": 648
+      },
+      {
+       "base": 675,
+       "cap": "no_glyph",
+       "asc": 664,
+       "xh": 666
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "box": [
+      382,
+      700,
+      554,
+      788
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 712,
+       "cap": "no_glyph",
+       "asc": 701,
+       "xh": 704
+      },
+      {
+       "base": 731,
+       "cap": "no_glyph",
+       "asc": 720,
+       "xh": 722
+      },
+      {
+       "base": 749,
+       "cap": "no_glyph",
+       "asc": 738,
+       "xh": 741
+      },
+      {
+       "base": 768,
+       "cap": "no_glyph",
+       "asc": 756,
+       "xh": 759
+      },
+      {
+       "base": 785,
+       "cap": "no_glyph",
+       "asc": 774,
+       "xh": 776
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "box": [
+      176.0,
+      367.0,
+      550.0,
+      536.0
+     ],
+     "flag": "lettering",
+     "base_mark": null,
+     "lines": []
+    }
+   ]
+  },
+  {
+   "order": 43,
+   "folder": "Juni_Festwochen",
+   "file": "1965_Internationale Juni-Festwochen Zürich 1965 - Konzerte der To.jpg",
+   "sha256": "e78f22144d6960c8b613ccc3f64807a97f5d46dc7f37adeabff8117ec02e790d",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      22,
+      20,
+      415,
+      60
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 38,
+       "cap": "no_glyph",
+       "asc": 21,
+       "xh": 26
+      },
+      {
+       "base": 58,
+       "cap": "no_glyph",
+       "asc": 41,
+       "xh": 46
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "box": [
+      22,
+      108,
+      541,
+      189
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 126,
+       "cap": "no_glyph",
+       "asc": 109,
+       "xh": 114
+      },
+      {
+       "base": 145,
+       "cap": "no_glyph",
+       "asc": 129,
+       "xh": 133
+      },
+      {
+       "base": 165,
+       "cap": "no_glyph",
+       "asc": 149,
+       "xh": 154
+      },
+      {
+       "base": 184,
+       "cap": "no_glyph",
+       "asc": 169,
+       "xh": 173
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "box": [
+      22,
+      204,
+      557,
+      284
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 222,
+       "cap": "no_glyph",
+       "asc": 205,
+       "xh": 210
+      },
+      {
+       "base": 242,
+       "cap": "no_glyph",
+       "asc": 225,
+       "xh": 229
+      },
+      {
+       "base": 262,
+       "cap": "no_glyph",
+       "asc": 245,
+       "xh": 249
+      },
+      {
+       "base": 281,
+       "cap": "no_glyph",
+       "asc": 265,
+       "xh": 269
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "box": [
+      22,
+      300,
+      428,
+      378
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 318,
+       "cap": "no_glyph",
+       "asc": 301,
+       "xh": 305
+      },
+      {
+       "base": 338,
+       "cap": "no_glyph",
+       "asc": 321,
+       "xh": 325
+      },
+      {
+       "base": 358,
+       "cap": "no_glyph",
+       "asc": 341,
+       "xh": 345
+      },
+      {
+       "base": 377,
+       "cap": "no_glyph",
+       "asc": 361,
+       "xh": 365
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "box": [
+      22,
+      396,
+      556,
+      476
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 413,
+       "cap": "no_glyph",
+       "asc": 396,
+       "xh": 401
+      },
+      {
+       "base": 432,
+       "cap": "no_glyph",
+       "asc": 416,
+       "xh": 421
+      },
+      {
+       "base": 453,
+       "cap": "no_glyph",
+       "asc": 436,
+       "xh": 440
+      },
+      {
+       "base": 472,
+       "cap": "no_glyph",
+       "asc": 456,
+       "xh": 460
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "box": [
+      23,
+      492,
+      532,
+      609
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 509,
+       "cap": "no_glyph",
+       "asc": 492,
+       "xh": 498
+      },
+      {
+       "base": 529,
+       "cap": "no_glyph",
+       "asc": 512,
+       "xh": 517
+      },
+      {
+       "base": 549,
+       "cap": "no_glyph",
+       "asc": 532,
+       "xh": 537
+      },
+      {
+       "base": 569,
+       "cap": "no_glyph",
+       "asc": 552,
+       "xh": 557
+      },
+      {
+       "base": 589,
+       "cap": "no_glyph",
+       "asc": 572,
+       "xh": 577
+      },
+      {
+       "base": 609,
+       "cap": "no_glyph",
+       "asc": 592,
+       "xh": 597
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "box": [
+      22,
+      630,
+      519,
+      770
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 646,
+       "cap": "no_glyph",
+       "asc": 630,
+       "xh": 634
+      },
+      {
+       "base": 667,
+       "cap": "no_glyph",
+       "asc": 650,
+       "xh": 654
+      },
+      {
+       "base": 687,
+       "cap": "no_glyph",
+       "asc": 670,
+       "xh": 674
+      },
+      {
+       "base": 706,
+       "cap": "no_glyph",
+       "asc": 690,
+       "xh": 694
+      },
+      {
+       "base": 726,
+       "cap": "no_glyph",
+       "asc": null,
+       "xh": 714
+      },
+      {
+       "base": 746,
+       "cap": "no_glyph",
+       "asc": 730,
+       "xh": 734
+      },
+      {
+       "base": 766,
+       "cap": "no_glyph",
+       "asc": 750,
+       "xh": 754
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "order": 44,
+   "folder": "Opernhaus",
+   "file": "1964_Opernhaus Zürich - Die vier Grobiane - Komische Oper von Erm.jpg",
+   "sha256": "1f8283f7a938b1e4cdc69007609c9cb3118b6be72291ddb7d0a5c5c0f84434ff",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      40,
+      102,
+      517,
+      266
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 178,
+       "cap": 102,
+       "asc": 104,
+       "xh": 126
+      },
+      {
+       "base": 266,
+       "cap": 192,
+       "asc": 194,
+       "xh": 213
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "box": [
+      43,
+      306,
+      156,
+      321
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 318,
+       "cap": 307,
+       "asc": "no_glyph",
+       "xh": 309
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "box": [
+      40,
+      420,
+      419,
+      576
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 492,
+       "cap": 422,
+       "asc": "no_glyph",
+       "xh": 439
+      },
+      {
+       "base": 576,
+       "cap": 504,
+       "asc": 504,
+       "xh": 523
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "box": [
+      42,
+      592,
+      326,
+      608
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 605,
+       "cap": 593,
+       "asc": 593,
+       "xh": 596
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "box": [
+      41,
+      614,
+      163,
+      658
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 626,
+       "cap": 614,
+       "asc": 614,
+       "xh": 617
+      },
+      {
+       "base": 642,
+       "cap": 629,
+       "asc": 629,
+       "xh": 632
+      },
+      {
+       "base": 657,
+       "cap": 645,
+       "asc": 645,
+       "xh": 648
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "box": [
+      178,
+      614,
+      346,
+      658
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 626,
+       "cap": 614,
+       "asc": 614,
+       "xh": 617
+      },
+      {
+       "base": 642,
+       "cap": 629,
+       "asc": null,
+       "xh": 632
+      },
+      {
+       "base": 657,
+       "cap": 645,
+       "asc": 645,
+       "xh": 648
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "box": [
+      358,
+      614,
+      482,
+      660
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 626,
+       "cap": 614,
+       "asc": 614,
+       "xh": 617
+      },
+      {
+       "base": 642,
+       "cap": 630,
+       "asc": 630,
+       "xh": 632
+      },
+      {
+       "base": 657,
+       "cap": 645,
+       "asc": 645,
+       "xh": 648
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "order": 45,
+   "folder": "Ausstellung",
+   "file": "1958_The Family of Man - -Wir Menschen- - Kunsthalle Bern - Foto-.jpg",
+   "sha256": "7860e980dd9e9ea847287c653813788fac94be598399ffa496cb33934e438b5b",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      8,
+      39,
+      472,
+      98
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 88,
+       "cap": "no_glyph",
+       "asc": 40,
+       "xh": 54
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "box": [
+      358,
+      213,
+      424,
+      221
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 221,
+       "cap": "no_glyph",
+       "asc": 213,
+       "xh": 216
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "box": [
+      9,
+      719,
+      73,
+      727
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 727,
+       "cap": "no_glyph",
+       "asc": 719,
+       "xh": 721
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "box": [
+      267,
+      719,
+      333,
+      728
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 726,
+       "cap": "no_glyph",
+       "asc": 719,
+       "xh": 721
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "box": [
+      358,
+      719,
+      514,
+      777
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 726,
+       "cap": "no_glyph",
+       "asc": 719,
+       "xh": 721
+      },
+      {
+       "base": 738,
+       "cap": "no_glyph",
+       "asc": 731,
+       "xh": 733
+      },
+      {
+       "base": 750,
+       "cap": "no_glyph",
+       "asc": 743,
+       "xh": 745
+      },
+      {
+       "base": 762,
+       "cap": "no_glyph",
+       "asc": 755,
+       "xh": 757
+      },
+      {
+       "base": 775,
+       "cap": "no_glyph",
+       "asc": 768,
+       "xh": 770
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "order": 46,
+   "folder": "Opernhaus",
+   "file": "1965_Opernhaus Zürich - Orpheus in der Unterwelt - Operette von J.jpg",
+   "sha256": "28f4446404b7c83ec456076921868937afbd03ed062f47585c080f254d36a9b2",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      39,
+      90,
+      524,
+      257
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 167,
+       "cap": 91,
+       "asc": 92,
+       "xh": 114
+      },
+      {
+       "base": null,
+       "cap": 182,
+       "asc": 182,
+       "xh": 202
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "box": [
+      40,
+      304,
+      440,
+      554
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 378,
+       "cap": 304,
+       "asc": 304,
+       "xh": 324
+      },
+      {
+       "base": 461,
+       "cap": "no_glyph",
+       "asc": 394,
+       "xh": 408
+      },
+      {
+       "base": null,
+       "cap": 478,
+       "asc": 479,
+       "xh": 500
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "box": [
+      43,
+      568,
+      268,
+      584
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 581,
+       "cap": 568,
+       "asc": 568,
+       "xh": 572
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "box": [
+      44,
+      589,
+      158,
+      604
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 601,
+       "cap": 589,
+       "asc": null,
+       "xh": 592
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "box": [
+      42,
+      610,
+      154,
+      654
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 623,
+       "cap": 610,
+       "asc": 610,
+       "xh": 613
+      },
+      {
+       "base": 638,
+       "cap": 626,
+       "asc": 626,
+       "xh": 630
+      },
+      {
+       "base": 654,
+       "cap": 642,
+       "asc": 642,
+       "xh": 645
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "box": [
+      169,
+      610,
+      340,
+      672
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 622,
+       "cap": 610,
+       "asc": 610,
+       "xh": 613
+      },
+      {
+       "base": 638,
+       "cap": 626,
+       "asc": 626,
+       "xh": 629
+      },
+      {
+       "base": 654,
+       "cap": 641,
+       "asc": 641,
+       "xh": 644
+      },
+      {
+       "base": 670,
+       "cap": 657,
+       "asc": 657,
+       "xh": 660
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "box": [
+      352,
+      610,
+      479,
+      672
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 623,
+       "cap": 610,
+       "asc": 610,
+       "xh": 614
+      },
+      {
+       "base": 639,
+       "cap": 626,
+       "asc": 626,
+       "xh": 630
+      },
+      {
+       "base": 655,
+       "cap": 642,
+       "asc": 642,
+       "xh": 646
+      },
+      {
+       "base": 671,
+       "cap": 658,
+       "asc": 658,
+       "xh": 662
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "order": 47,
+   "folder": "Juni_Festwochen",
+   "file": "1956_Juni-Festwochen Zürich 1956 - 4. Juni-Festkonzert - Leitung .jpg",
+   "sha256": "db6d966861d7221cc63176112b9bbf27595edcd4d18147b416559e42f6ccb884",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      82,
+      64,
+      148,
+      72
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 71,
+       "cap": "no_glyph",
+       "asc": 64,
+       "xh": 66
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "box": [
+      161,
+      64,
+      209,
+      71
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 71,
+       "cap": "no_glyph",
+       "asc": null,
+       "xh": 66
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "box": [
+      6,
+      406,
+      34,
+      415
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 413,
+       "cap": "no_glyph",
+       "asc": 406,
+       "xh": 408
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "box": [
+      47,
+      406,
+      78,
+      414
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 413,
+       "cap": "no_glyph",
+       "asc": 406,
+       "xh": 408
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "box": [
+      83,
+      391,
+      223,
+      550
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 414,
+       "cap": "no_glyph",
+       "asc": 392,
+       "xh": 398
+      },
+      {
+       "base": 448,
+       "cap": "no_glyph",
+       "asc": null,
+       "xh": 431
+      },
+      {
+       "base": 482,
+       "cap": "no_glyph",
+       "asc": null,
+       "xh": 466
+      },
+      {
+       "base": 516,
+       "cap": "no_glyph",
+       "asc": 494,
+       "xh": 500
+      },
+      {
+       "base": 550,
+       "cap": "no_glyph",
+       "asc": 528,
+       "xh": 534
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "box": [
+      6,
+      632,
+      79,
+      640
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 638,
+       "cap": "no_glyph",
+       "asc": 632,
+       "xh": 634
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "box": [
+      6,
+      665,
+      50,
+      696
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 673,
+       "cap": "no_glyph",
+       "asc": 665,
+       "xh": 667
+      },
+      {
+       "base": 684,
+       "cap": "no_glyph",
+       "asc": 678,
+       "xh": 679
+      },
+      {
+       "base": 696,
+       "cap": "no_glyph",
+       "asc": 688,
+       "xh": 690
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "box": [
+      6,
+      712,
+      26,
+      718
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 718,
+       "cap": "no_glyph",
+       "asc": 712,
+       "xh": 713
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "box": [
+      83,
+      632,
+      220,
+      752
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 638,
+       "cap": "no_glyph",
+       "asc": 632,
+       "xh": 633
+      },
+      {
+       "base": 650,
+       "cap": "no_glyph",
+       "asc": 643,
+       "xh": 645
+      },
+      {
+       "base": 661,
+       "cap": "no_glyph",
+       "asc": 654,
+       "xh": 656
+      },
+      {
+       "base": 672,
+       "cap": "no_glyph",
+       "asc": 665,
+       "xh": 667
+      },
+      {
+       "base": 684,
+       "cap": "no_glyph",
+       "asc": 677,
+       "xh": 679
+      },
+      {
+       "base": 695,
+       "cap": "no_glyph",
+       "asc": 688,
+       "xh": 690
+      },
+      {
+       "base": 706,
+       "cap": "no_glyph",
+       "asc": 699,
+       "xh": 701
+      },
+      {
+       "base": 718,
+       "cap": "no_glyph",
+       "asc": 711,
+       "xh": 713
+      },
+      {
+       "base": 730,
+       "cap": "no_glyph",
+       "asc": 722,
+       "xh": 724
+      },
+      {
+       "base": 741,
+       "cap": "no_glyph",
+       "asc": 734,
+       "xh": 736
+      },
+      {
+       "base": 752,
+       "cap": "no_glyph",
+       "asc": 745,
+       "xh": 747
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "order": 48,
+   "folder": "Juni_Festwochen",
+   "file": "1950_Kunstgewerbemuseum - Die gute Form - Wanderausstellung der S.jpg",
+   "sha256": "895520f1f3a10af5ed851ea3898d551484495737bea368d590abe6508f9f2121",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      83,
+      474,
+      278,
+      486
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 486,
+       "cap": 475,
+       "asc": 475,
+       "xh": 479
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "box": [
+      456,
+      480,
+      526,
+      488
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 487,
+       "cap": 480,
+       "asc": 480,
+       "xh": 482
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "box": [
+      28,
+      542,
+      302,
+      602
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 568,
+       "cap": 542,
+       "asc": "no_glyph",
+       "xh": "no_glyph"
+      },
+      {
+       "base": 602,
+       "cap": 577,
+       "asc": "no_glyph",
+       "xh": "no_glyph"
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "box": [
+      82,
+      656,
+      172,
+      671
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 667,
+       "cap": 656,
+       "asc": null,
+       "xh": 660
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "box": [
+      82,
+      680,
+      270,
+      688
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 686,
+       "cap": 680,
+       "asc": 680,
+       "xh": 682
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "box": [
+      80,
+      694,
+      302,
+      710
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 700,
+       "cap": 694,
+       "asc": 694,
+       "xh": 696
+      },
+      {
+       "base": 708,
+       "cap": 702,
+       "asc": 702,
+       "xh": 704
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "box": [
+      341,
+      542,
+      550,
+      584
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 553,
+       "cap": 543,
+       "asc": "no_glyph",
+       "xh": "no_glyph"
+      },
+      {
+       "base": 568,
+       "cap": 557,
+       "asc": 557,
+       "xh": 561
+      },
+      {
+       "base": 584,
+       "cap": 573,
+       "asc": 573,
+       "xh": 578
+      }
+     ]
+    },
+    {
+     "no": 8,
+     "box": [
+      341,
+      602,
+      430,
+      646
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 609,
+       "cap": 602,
+       "asc": 602,
+       "xh": 605
+      },
+      {
+       "base": 618,
+       "cap": 612,
+       "asc": 612,
+       "xh": 614
+      },
+      {
+       "base": 626,
+       "cap": 620,
+       "asc": 620,
+       "xh": 623
+      },
+      {
+       "base": 635,
+       "cap": 629,
+       "asc": 629,
+       "xh": 631
+      },
+      {
+       "base": 644,
+       "cap": 637,
+       "asc": 637,
+       "xh": 640
+      }
+     ]
+    },
+    {
+     "no": 9,
+     "box": [
+      454,
+      602,
+      560,
+      612
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 609,
+       "cap": 603,
+       "asc": 603,
+       "xh": 605
+      }
+     ]
+    },
+    {
+     "no": 10,
+     "box": [
+      454,
+      637,
+      550,
+      661
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 644,
+       "cap": 638,
+       "asc": 638,
+       "xh": 640
+      },
+      {
+       "base": 652,
+       "cap": 646,
+       "asc": 646,
+       "xh": 648
+      },
+      {
+       "base": 660,
+       "cap": 654,
+       "asc": 654,
+       "xh": 656
+      }
+     ]
+    },
+    {
+     "no": 11,
+     "box": [
+      341,
+      662,
+      428,
+      680
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 669,
+       "cap": 663,
+       "asc": 663,
+       "xh": 665
+      },
+      {
+       "base": 678,
+       "cap": 672,
+       "asc": 672,
+       "xh": 674
+      }
+     ]
+    },
+    {
+     "no": 12,
+     "box": [
+      340,
+      723,
+      538,
+      767
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 729,
+       "cap": 723,
+       "asc": 723,
+       "xh": 725
+      },
+      {
+       "base": 738,
+       "cap": 732,
+       "asc": 732,
+       "xh": 734
+      },
+      {
+       "base": 747,
+       "cap": 741,
+       "asc": 741,
+       "xh": 743
+      },
+      {
+       "base": 756,
+       "cap": 750,
+       "asc": 750,
+       "xh": 752
+      },
+      {
+       "base": 765,
+       "cap": 759,
+       "asc": 759,
+       "xh": 761
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "order": 49,
+   "folder": "Musica_Viva",
+   "file": "1959_Musica Viva - Kleiner Tonhallesaal - Matthias Hauer - Werner.jpg",
+   "sha256": "0bdcc183390b41cc30328ff27a4b752c6a9bb387d14dfcb5f5ced45aada04b6d",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      16,
+      28,
+      159,
+      50
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 50,
+       "cap": "no_glyph",
+       "asc": "no_glyph",
+       "xh": 34
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "box": [
+      16,
+      600,
+      284,
+      755
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 621,
+       "cap": "no_glyph",
+       "asc": 600,
+       "xh": 605
+      },
+      {
+       "base": 654,
+       "cap": "no_glyph",
+       "asc": 632,
+       "xh": 638
+      },
+      {
+       "base": 686,
+       "cap": "no_glyph",
+       "asc": 664,
+       "xh": 670
+      },
+      {
+       "base": 719,
+       "cap": "no_glyph",
+       "asc": 696,
+       "xh": 703
+      },
+      {
+       "base": 751,
+       "cap": "no_glyph",
+       "asc": 729,
+       "xh": 736
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "box": [
+      388,
+      598,
+      554,
+      754
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 606,
+       "cap": "no_glyph",
+       "asc": 599,
+       "xh": 601
+      },
+      {
+       "base": 615,
+       "cap": "no_glyph",
+       "asc": 608,
+       "xh": 610
+      },
+      {
+       "base": 624,
+       "cap": "no_glyph",
+       "asc": 617,
+       "xh": 619
+      },
+      {
+       "base": 633,
+       "cap": "no_glyph",
+       "asc": 626,
+       "xh": 628
+      },
+      {
+       "base": 642,
+       "cap": "no_glyph",
+       "asc": 635,
+       "xh": 637
+      },
+      {
+       "base": 651,
+       "cap": "no_glyph",
+       "asc": 644,
+       "xh": 646
+      },
+      {
+       "base": 660,
+       "cap": "no_glyph",
+       "asc": 654,
+       "xh": 656
+      },
+      {
+       "base": 670,
+       "cap": "no_glyph",
+       "asc": 663,
+       "xh": 665
+      },
+      {
+       "base": 679,
+       "cap": "no_glyph",
+       "asc": 672,
+       "xh": 674
+      },
+      {
+       "base": 688,
+       "cap": "no_glyph",
+       "asc": 681,
+       "xh": 683
+      },
+      {
+       "base": 697,
+       "cap": "no_glyph",
+       "asc": 690,
+       "xh": 692
+      },
+      {
+       "base": 706,
+       "cap": "no_glyph",
+       "asc": 700,
+       "xh": 702
+      },
+      {
+       "base": 716,
+       "cap": "no_glyph",
+       "asc": 709,
+       "xh": 711
+      },
+      {
+       "base": 725,
+       "cap": "no_glyph",
+       "asc": 718,
+       "xh": 720
+      },
+      {
+       "base": 734,
+       "cap": "no_glyph",
+       "asc": 727,
+       "xh": 729
+      },
+      {
+       "base": 743,
+       "cap": "no_glyph",
+       "asc": 736,
+       "xh": 738
+      },
+      {
+       "base": 752,
+       "cap": "no_glyph",
+       "asc": 746,
+       "xh": 748
+      }
+     ]
+    },
+    {
+     "no": 4,
+     "box": [
+      301,
+      598,
+      379,
+      606
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 606,
+       "cap": "no_glyph",
+       "asc": 598,
+       "xh": 600
+      }
+     ]
+    },
+    {
+     "no": 5,
+     "box": [
+      300,
+      653,
+      361,
+      660
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 660,
+       "cap": "no_glyph",
+       "asc": 654,
+       "xh": 656
+      }
+     ]
+    },
+    {
+     "no": 6,
+     "box": [
+      300,
+      672,
+      378,
+      699
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 679,
+       "cap": "no_glyph",
+       "asc": 672,
+       "xh": 674
+      },
+      {
+       "base": 688,
+       "cap": "no_glyph",
+       "asc": 681,
+       "xh": 683
+      },
+      {
+       "base": 697,
+       "cap": "no_glyph",
+       "asc": 690,
+       "xh": 692
+      }
+     ]
+    },
+    {
+     "no": 7,
+     "box": [
+      300,
+      708,
+      362,
+      717
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 715,
+       "cap": "no_glyph",
+       "asc": 708,
+       "xh": 710
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "order": 50,
+   "folder": "Verkehr",
+   "file": "1958_Radfahrer - Achtung - Achtung - Radfahrer.jpg",
+   "sha256": "47c14fbbc1abf3e35a5fb40a3560bf7c8ce88469541b79bae58932205706e3d6",
+   "blocks": [
+    {
+     "no": 1,
+     "box": [
+      9,
+      14,
+      160,
+      70
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 38,
+       "cap": 15,
+       "asc": 15,
+       "xh": 21
+      },
+      {
+       "base": 66,
+       "cap": 43,
+       "asc": 43,
+       "xh": 49
+      }
+     ]
+    },
+    {
+     "no": 2,
+     "box": [
+      9,
+      80,
+      144,
+      132
+     ],
+     "flag": null,
+     "base_mark": null,
+     "lines": [
+      {
+       "base": 103,
+       "cap": 80,
+       "asc": 80,
+       "xh": 86
+      },
+      {
+       "base": 131,
+       "cap": 108,
+       "asc": 108,
+       "xh": 114
+      }
+     ]
+    },
+    {
+     "no": 3,
+     "box": [
+      427.0,
+      740.0,
+      493.0,
+      766.0
+     ],
+     "flag": "lettering",
+     "base_mark": null,
+     "lines": []
+    }
+   ]
+  }
+ ],
+ "불일치": {
+  "1": [
+   {
+    "종류": "칸",
+    "블록": [
+     4,
+     4
+    ],
+    "글줄": [
+     1,
+     1
+    ],
+    "선": "어센더선",
+    "값": [
+     "no_glyph",
+     153
+    ]
+   },
+   {
+    "종류": "칸",
+    "블록": [
+     10,
+     9
+    ],
+    "글줄": [
+     3,
+     3
+    ],
+    "선": "캡선",
+    "값": [
+     "no_glyph",
+     738
+    ]
+   }
+  ],
+  "2": [
+   {
+    "종류": "칸",
+    "블록": [
+     1,
+     1
+    ],
+    "글줄": [
+     1,
+     1
+    ],
+    "선": "캡선",
+    "값": [
+     65,
+     "no_glyph"
+    ]
+   },
+   {
+    "종류": "칸",
+    "블록": [
+     4,
+     3
+    ],
+    "글줄": [
+     1,
+     1
+    ],
+    "선": "x높이선",
+    "값": [
+     496,
+     494
+    ]
+   }
+  ],
+  "3": [
+   {
+    "종류": "칸",
+    "블록": [
+     1,
+     1
+    ],
+    "글줄": [
+     1,
+     1
+    ],
+    "선": "캡선",
+    "값": [
+     "no_glyph",
+     64
+    ]
+   },
+   {
+    "종류": "칸",
+    "블록": [
+     9,
+     12
+    ],
+    "글줄": [
+     5,
+     5
+    ],
+    "선": "어센더선",
+    "값": [
+     529,
+     "no_glyph"
+    ]
+   },
+   {
+    "종류": "칸",
+    "블록": [
+     9,
+     12
+    ],
+    "글줄": [
+     6,
+     6
+    ],
+    "선": "어센더선",
+    "값": [
+     563,
+     "no_glyph"
+    ]
+   },
+   {
+    "종류": "칸",
+    "블록": [
+     12,
+     11
+    ],
+    "글줄": [
+     6,
+     6
+    ],
+    "선": "캡선",
+    "값": [
+     "no_glyph",
+     701
+    ]
+   }
+  ],
+  "4": [
+   {
+    "종류": "칸",
+    "블록": [
+     2,
+     2
+    ],
+    "글줄": [
+     5,
+     5
+    ],
+    "선": "어센더선",
+    "값": [
+     "no_glyph",
+     142
+    ]
+   }
+  ],
+  "5": [
+   {
+    "종류": "칸",
+    "블록": [
+     6,
+     5
+    ],
+    "글줄": [
+     1,
+     1
+    ],
+    "선": "어센더선",
+    "값": [
+     737,
+     "no_glyph"
+    ]
+   },
+   {
+    "종류": "칸",
+    "블록": [
+     6,
+     5
+    ],
+    "글줄": [
+     2,
+     2
+    ],
+    "선": "어센더선",
+    "값": [
+     757,
+     "no_glyph"
+    ]
+   },
+   {
+    "종류": "칸",
+    "블록": [
+     6,
+     5
+    ],
+    "글줄": [
+     3,
+     3
+    ],
+    "선": "어센더선",
+    "값": [
+     777,
+     "no_glyph"
+    ]
+   }
+  ],
+  "6": [
+   {
+    "종류": "칸",
+    "블록": [
+     5,
+     5
+    ],
+    "글줄": [
+     1,
+     1
+    ],
+    "선": "어센더선",
+    "값": [
+     326,
+     "no_glyph"
+    ]
+   },
+   {
+    "종류": "칸",
+    "블록": [
+     6,
+     6
+    ],
+    "글줄": [
+     2,
+     2
+    ],
+    "선": "캡선",
+    "값": [
+     341,
+     "no_glyph"
+    ]
+   },
+   {
+    "종류": "칸",
+    "블록": [
+     6,
+     6
+    ],
+    "글줄": [
+     2,
+     2
+    ],
+    "선": "어센더선",
+    "값": [
+     "no_glyph",
+     341
+    ]
+   },
+   {
+    "종류": "칸",
+    "블록": [
+     11,
+     11
+    ],
+    "글줄": [
+     2,
+     2
+    ],
+    "선": "어센더선",
+    "값": [
+     "no_glyph",
+     555
+    ]
+   },
+   {
+    "종류": "칸",
+    "블록": [
+     15,
+     15
+    ],
+    "글줄": [
+     1,
+     1
+    ],
+    "선": "어센더선",
+    "값": [
+     690,
+     "no_glyph"
+    ]
+   },
+   {
+    "종류": "칸",
+    "블록": [
+     16,
+     16
+    ],
+    "글줄": [
+     2,
+     2
+    ],
+    "선": "어센더선",
+    "값": [
+     "no_glyph",
+     704
+    ]
+   }
+  ],
+  "7": [],
+  "8": [
+   {
+    "종류": "칸",
+    "블록": [
+     2,
+     2
+    ],
+    "글줄": [
+     2,
+     2
+    ],
+    "선": "어센더선",
+    "값": [
+     319,
+     "no_glyph"
+    ]
+   },
+   {
+    "종류": "칸",
+    "블록": [
+     7,
+     7
+    ],
+    "글줄": [
+     2,
+     2
+    ],
+    "선": "어센더선",
+    "값": [
+     "no_glyph",
+     619
+    ]
+   }
+  ],
+  "9": [
+   {
+    "종류": "짝 없는 글줄",
+    "라벨러": "라벨러A",
+    "블록": 1,
+    "글줄": 1
+   },
+   {
+    "종류": "짝 없는 글줄",
+    "라벨러": "라벨러B",
+    "블록": 1,
+    "글줄": 1
+   },
+   {
+    "종류": "칸",
+    "블록": [
+     3,
+     3
+    ],
+    "글줄": [
+     1,
+     1
+    ],
+    "선": "어센더선",
+    "값": [
+     457,
+     "no_glyph"
+    ]
+   }
+  ],
+  "10": [
+   {
+    "종류": "칸",
+    "블록": [
+     1,
+     1
+    ],
+    "글줄": [
+     2,
+     2
+    ],
+    "선": "어센더선",
+    "값": [
+     313,
+     "no_glyph"
+    ]
+   }
+  ],
+  "11": [
+   {
+    "종류": "칸",
+    "블록": [
+     3,
+     3
+    ],
+    "글줄": [
+     1,
+     1
+    ],
+    "선": "x높이선",
+    "값": [
+     341,
+     344
+    ]
+   },
+   {
+    "종류": "칸",
+    "블록": [
+     5,
+     5
+    ],
+    "글줄": [
+     2,
+     2
+    ],
+    "선": "어센더선",
+    "값": [
+     "no_glyph",
+     617
+    ]
+   }
+  ],
+  "12": [
+   {
+    "종류": "짝 없는 글줄",
+    "라벨러": "라벨러A",
+    "블록": 1,
+    "글줄": 1
+   },
+   {
+    "종류": "짝 없는 글줄",
+    "라벨러": "라벨러B",
+    "블록": 1,
+    "글줄": 1
+   },
+   {
+    "종류": "칸",
+    "블록": [
+     3,
+     3
+    ],
+    "글줄": [
+     1,
+     1
+    ],
+    "선": "어센더선",
+    "값": [
+     209,
+     "no_glyph"
+    ]
+   }
+  ],
+  "13": [
+   {
+    "종류": "칸",
+    "블록": [
+     1,
+     1
+    ],
+    "글줄": [
+     1,
+     1
+    ],
+    "선": "캡선",
+    "값": [
+     "no_glyph",
+     64
+    ]
+   },
+   {
+    "종류": "칸",
+    "블록": [
+     6,
+     4
+    ],
+    "글줄": [
+     1,
+     1
+    ],
+    "선": "캡선",
+    "값": [
+     "no_glyph",
+     "illegible"
+    ]
+   },
+   {
+    "종류": "짝 없는 블록",
+    "라벨러": "라벨러A",
+    "블록": 3
+   },
+   {
+    "종류": "짝 없는 블록",
+    "라벨러": "라벨러A",
+    "블록": 4
+   },
+   {
+    "종류": "짝 없는 블록",
+    "라벨러": "라벨러A",
+    "블록": 5
+   },
+   {
+    "종류": "짝 없는 블록",
+    "라벨러": "라벨러B",
+    "블록": 3
+   }
+  ],
+  "14": [],
+  "15": [
+   {
+    "종류": "칸",
+    "블록": [
+     4,
+     6
+    ],
+    "글줄": [
+     1,
+     1
+    ],
+    "선": "어센더선",
+    "값": [
+     "no_glyph",
+     657
+    ]
+   }
+  ],
+  "16": [],
+  "17": [],
+  "18": [],
+  "19": [
+   {
+    "종류": "짝 없는 블록",
+    "라벨러": "라벨러A",
+    "블록": 4
+   },
+   {
+    "종류": "짝 없는 블록",
+    "라벨러": "라벨러A",
+    "블록": 5
+   },
+   {
+    "종류": "짝 없는 블록",
+    "라벨러": "라벨러A",
+    "블록": 6
+   },
+   {
+    "종류": "짝 없는 블록",
+    "라벨러": "라벨러A",
+    "블록": 7
+   },
+   {
+    "종류": "짝 없는 블록",
+    "라벨러": "라벨러B",
+    "블록": 4
+   }
+  ],
+  "20": [],
+  "21": [
+   {
+    "종류": "칸",
+    "블록": [
+     2,
+     2
+    ],
+    "글줄": [
+     1,
+     1
+    ],
+    "선": "어센더선",
+    "값": [
+     304,
+     "no_glyph"
+    ]
+   }
+  ],
+  "22": [
+   {
+    "종류": "칸",
+    "블록": [
+     1,
+     1
+    ],
+    "글줄": [
+     5,
+     5
+    ],
+    "선": "어센더선",
+    "값": [
+     347,
+     "no_glyph"
+    ]
+   }
+  ],
+  "23": [
+   {
+    "종류": "칸",
+    "블록": [
+     3,
+     3
+    ],
+    "글줄": [
+     3,
+     3
+    ],
+    "선": "캡선",
+    "값": [
+     "no_glyph",
+     595
+    ]
+   }
+  ],
+  "24": [],
+  "25": [],
+  "26": [],
+  "27": [
+   {
+    "종류": "짝 없는 블록",
+    "라벨러": "라벨러A",
+    "블록": 4
+   },
+   {
+    "종류": "짝 없는 블록",
+    "라벨러": "라벨러A",
+    "블록": 5
+   },
+   {
+    "종류": "짝 없는 블록",
+    "라벨러": "라벨러A",
+    "블록": 6
+   },
+   {
+    "종류": "짝 없는 블록",
+    "라벨러": "라벨러A",
+    "블록": 7
+   }
+  ],
+  "28": [
+   {
+    "종류": "칸",
+    "블록": [
+     2,
+     2
+    ],
+    "글줄": [
+     5,
+     5
+    ],
+    "선": "어센더선",
+    "값": [
+     124,
+     "no_glyph"
+    ]
+   },
+   {
+    "종류": "칸",
+    "블록": [
+     5,
+     5
+    ],
+    "글줄": [
+     3,
+     3
+    ],
+    "선": "어센더선",
+    "값": [
+     54,
+     "no_glyph"
+    ]
+   }
+  ],
+  "29": [
+   {
+    "종류": "칸",
+    "블록": [
+     4,
+     4
+    ],
+    "글줄": [
+     3,
+     3
+    ],
+    "선": "어센더선",
+    "값": [
+     733,
+     "no_glyph"
+    ]
+   }
+  ],
+  "30": [
+   {
+    "종류": "칸",
+    "블록": [
+     6,
+     7
+    ],
+    "글줄": [
+     1,
+     1
+    ],
+    "선": "캡선",
+    "값": [
+     "no_glyph",
+     326
+    ]
+   },
+   {
+    "종류": "짝 없는 블록",
+    "라벨러": "라벨러A",
+    "블록": 3
+   },
+   {
+    "종류": "짝 없는 블록",
+    "라벨러": "라벨러B",
+    "블록": 4
+   }
+  ],
+  "31": [],
+  "32": [
+   {
+    "종류": "칸",
+    "블록": [
+     2,
+     3
+    ],
+    "글줄": [
+     1,
+     1
+    ],
+    "선": "어센더선",
+    "값": [
+     "illegible",
+     "no_glyph"
+    ]
+   },
+   {
+    "종류": "칸",
+    "블록": [
+     5,
+     6
+    ],
+    "글줄": [
+     1,
+     1
+    ],
+    "선": "어센더선",
+    "값": [
+     "no_glyph",
+     296
+    ]
+   },
+   {
+    "종류": "칸",
+    "블록": [
+     8,
+     9
+    ],
+    "글줄": [
+     1,
+     1
+    ],
+    "선": "어센더선",
+    "값": [
+     "illegible",
+     387
+    ]
+   },
+   {
+    "종류": "칸",
+    "블록": [
+     12,
+     13
+    ],
+    "글줄": [
+     1,
+     1
+    ],
+    "선": "어센더선",
+    "값": [
+     "illegible",
+     "no_glyph"
+    ]
+   }
+  ],
+  "33": [
+   {
+    "종류": "칸",
+    "블록": [
+     1,
+     1
+    ],
+    "글줄": [
+     4,
+     4
+    ],
+    "선": "어센더선",
+    "값": [
+     "no_glyph",
+     686
+    ]
+   }
+  ],
+  "34": [
+   {
+    "종류": "칸",
+    "블록": [
+     3,
+     3
+    ],
+    "글줄": [
+     1,
+     1
+    ],
+    "선": "어센더선",
+    "값": [
+     339,
+     "no_glyph"
+    ]
+   },
+   {
+    "종류": "칸",
+    "블록": [
+     5,
+     5
+    ],
+    "글줄": [
+     1,
+     1
+    ],
+    "선": "어센더선",
+    "값": [
+     368,
+     "no_glyph"
+    ]
+   }
+  ],
+  "35": [],
+  "36": [
+   {
+    "종류": "칸",
+    "블록": [
+     2,
+     1
+    ],
+    "글줄": [
+     1,
+     1
+    ],
+    "선": "어센더선",
+    "값": [
+     689,
+     "no_glyph"
+    ]
+   },
+   {
+    "종류": "칸",
+    "블록": [
+     2,
+     1
+    ],
+    "글줄": [
+     3,
+     3
+    ],
+    "선": "어센더선",
+    "값": [
+     768,
+     "no_glyph"
+    ]
+   }
+  ],
+  "37": [
+   {
+    "종류": "칸",
+    "블록": [
+     4,
+     4
+    ],
+    "글줄": [
+     1,
+     1
+    ],
+    "선": "어센더선",
+    "값": [
+     448,
+     "no_glyph"
+    ]
+   },
+   {
+    "종류": "칸",
+    "블록": [
+     6,
+     7
+    ],
+    "글줄": [
+     1,
+     1
+    ],
+    "선": "어센더선",
+    "값": [
+     480,
+     "no_glyph"
+    ]
+   },
+   {
+    "종류": "칸",
+    "블록": [
+     9,
+     14
+    ],
+    "글줄": [
+     2,
+     2
+    ],
+    "선": "어센더선",
+    "값": [
+     690,
+     "no_glyph"
+    ]
+   },
+   {
+    "종류": "칸",
+    "블록": [
+     10,
+     15
+    ],
+    "글줄": [
+     3,
+     3
+    ],
+    "선": "어센더선",
+    "값": [
+     666,
+     "no_glyph"
+    ]
+   },
+   {
+    "종류": "칸",
+    "블록": [
+     10,
+     15
+    ],
+    "글줄": [
+     4,
+     4
+    ],
+    "선": "어센더선",
+    "값": [
+     678,
+     "no_glyph"
+    ]
+   },
+   {
+    "종류": "짝 없는 블록",
+    "라벨러": "라벨러A",
+    "블록": 7
+   },
+   {
+    "종류": "짝 없는 블록",
+    "라벨러": "라벨러B",
+    "블록": 5
+   },
+   {
+    "종류": "짝 없는 블록",
+    "라벨러": "라벨러B",
+    "블록": 8
+   },
+   {
+    "종류": "짝 없는 블록",
+    "라벨러": "라벨러B",
+    "블록": 9
+   },
+   {
+    "종류": "짝 없는 블록",
+    "라벨러": "라벨러B",
+    "블록": 10
+   },
+   {
+    "종류": "짝 없는 블록",
+    "라벨러": "라벨러B",
+    "블록": 11
+   },
+   {
+    "종류": "짝 없는 블록",
+    "라벨러": "라벨러B",
+    "블록": 12
+   }
+  ],
+  "38": [],
+  "39": [
+   {
+    "종류": "짝 없는 글줄",
+    "라벨러": "라벨러A",
+    "블록": 1,
+    "글줄": 1
+   },
+   {
+    "종류": "짝 없는 글줄",
+    "라벨러": "라벨러A",
+    "블록": 1,
+    "글줄": 2
+   },
+   {
+    "종류": "칸",
+    "블록": [
+     2,
+     3
+    ],
+    "글줄": [
+     1,
+     1
+    ],
+    "선": "캡선",
+    "값": [
+     426,
+     "no_glyph"
+    ]
+   },
+   {
+    "종류": "짝 없는 글줄",
+    "라벨러": "라벨러A",
+    "블록": 3,
+    "글줄": 3
+   },
+   {
+    "종류": "짝 없는 블록",
+    "라벨러": "라벨러B",
+    "블록": 1
+   },
+   {
+    "종류": "짝 없는 블록",
+    "라벨러": "라벨러B",
+    "블록": 5
+   }
+  ],
+  "40": [],
+  "41": [],
+  "42": [
+   {
+    "종류": "칸",
+    "블록": [
+     3,
+     2
+    ],
+    "글줄": [
+     1,
+     1
+    ],
+    "선": "어센더선",
+    "값": [
+     626,
+     "no_glyph"
+    ]
+   }
+  ],
+  "43": [
+   {
+    "종류": "칸",
+    "블록": [
+     7,
+     7
+    ],
+    "글줄": [
+     5,
+     5
+    ],
+    "선": "어센더선",
+    "값": [
+     711,
+     709
+    ]
+   }
+  ],
+  "44": [
+   {
+    "종류": "칸",
+    "블록": [
+     6,
+     6
+    ],
+    "글줄": [
+     2,
+     2
+    ],
+    "선": "어센더선",
+    "값": [
+     "no_glyph",
+     629
+    ]
+   }
+  ],
+  "45": [],
+  "46": [
+   {
+    "종류": "칸",
+    "블록": [
+     1,
+     1
+    ],
+    "글줄": [
+     2,
+     2
+    ],
+    "선": "베이스라인",
+    "값": [
+     257,
+     255
+    ]
+   },
+   {
+    "종류": "칸",
+    "블록": [
+     2,
+     2
+    ],
+    "글줄": [
+     3,
+     3
+    ],
+    "선": "베이스라인",
+    "값": [
+     554,
+     552
+    ]
+   },
+   {
+    "종류": "칸",
+    "블록": [
+     4,
+     4
+    ],
+    "글줄": [
+     1,
+     1
+    ],
+    "선": "어센더선",
+    "값": [
+     "no_glyph",
+     589
+    ]
+   }
+  ],
+  "47": [
+   {
+    "종류": "칸",
+    "블록": [
+     2,
+     2
+    ],
+    "글줄": [
+     1,
+     1
+    ],
+    "선": "어센더선",
+    "값": [
+     68,
+     64
+    ]
+   },
+   {
+    "종류": "칸",
+    "블록": [
+     5,
+     9
+    ],
+    "글줄": [
+     2,
+     2
+    ],
+    "선": "어센더선",
+    "값": [
+     425,
+     "no_glyph"
+    ]
+   },
+   {
+    "종류": "칸",
+    "블록": [
+     5,
+     9
+    ],
+    "글줄": [
+     3,
+     3
+    ],
+    "선": "어센더선",
+    "값": [
+     460,
+     "no_glyph"
+    ]
+   }
+  ],
+  "48": [
+   {
+    "종류": "칸",
+    "블록": [
+     4,
+     5
+    ],
+    "글줄": [
+     1,
+     1
+    ],
+    "선": "어센더선",
+    "값": [
+     658,
+     "no_glyph"
+    ]
+   }
+  ],
+  "49": [],
+  "50": []
+ },
+ "불일치_수": {
+  "칸": 60,
+  "짝 없는 글줄": 7,
+  "짝 없는 블록": 24
+ }
+}

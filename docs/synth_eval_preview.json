@@ -1,0 +1,155 @@
+{
+ "무엇": "4장 평가 세트 (seed 8001~8050 × 13셀 = 650장, constants_preregister 수정 5) — 사람 확인용 미리보기 목록. 셀마다 seed 8001 · 8050",
+ "규칙": "CLAUDE.md 규칙 9 — 사람 확인 전에는 Surya 검출을 하지 않는다. 측정 · 채점은 상수 동결 전까지 하지 않는다 (수정 5)",
+ "manifest": "docs/synth_eval_manifest.json",
+ "생성": {
+  "생성기": "eval/synth_gen.py",
+  "commit": "ea75ce6",
+  "PYTHONHASHSEED": "설정 안 함",
+  "date": "2026-09-18"
+ },
+ "미리보기_시트": "scratchpad sweep/preview_eval/sheet_{1_res,2_pol_jpeg,3_xh,4_rule}.png (원본 해상도)",
+ "사람_확인": {
+  "기록_시각": "2026-09-18 02:36 KST (확인 결과 메시지를 받은 때)",
+  "확인한_판": 26,
+  "본_것": "평가 세트 (seed 8001~8050, 650장) 미리보기 26장 — scratchpad sweep/preview_eval 시트 4장, 원본 해상도",
+  "결과": "승인",
+  "참고": [
+   "rule 두 셀의 블록 안 줄 맞닿음 (기존 한계)",
+   "rule_random 블록 안 간격이 경계처럼 보임 — 과분할 해석 시 한계 (기존 한계, constants_preregister 수정 2 보충)",
+   "xh_18 아래쪽이 판 끝 가까이 (기존 한계, constants_preregister 수정 2)"
+  ]
+ },
+ "목록": [
+  {
+   "cell": "base",
+   "seed": 8001,
+   "image": "~/.typo-mcp/synth_eval/base/8001.jpg"
+  },
+  {
+   "cell": "base",
+   "seed": 8050,
+   "image": "~/.typo-mcp/synth_eval/base/8050.jpg"
+  },
+  {
+   "cell": "res_1600",
+   "seed": 8001,
+   "image": "~/.typo-mcp/synth_eval/res_1600/8001.jpg"
+  },
+  {
+   "cell": "res_1600",
+   "seed": 8050,
+   "image": "~/.typo-mcp/synth_eval/res_1600/8050.jpg"
+  },
+  {
+   "cell": "res_400",
+   "seed": 8001,
+   "image": "~/.typo-mcp/synth_eval/res_400/8001.jpg"
+  },
+  {
+   "cell": "res_400",
+   "seed": 8050,
+   "image": "~/.typo-mcp/synth_eval/res_400/8050.jpg"
+  },
+  {
+   "cell": "pol_colored",
+   "seed": 8001,
+   "image": "~/.typo-mcp/synth_eval/pol_colored/8001.jpg"
+  },
+  {
+   "cell": "pol_colored",
+   "seed": 8050,
+   "image": "~/.typo-mcp/synth_eval/pol_colored/8050.jpg"
+  },
+  {
+   "cell": "pol_dark",
+   "seed": 8001,
+   "image": "~/.typo-mcp/synth_eval/pol_dark/8001.jpg"
+  },
+  {
+   "cell": "pol_dark",
+   "seed": 8050,
+   "image": "~/.typo-mcp/synth_eval/pol_dark/8050.jpg"
+  },
+  {
+   "cell": "xh_3",
+   "seed": 8001,
+   "image": "~/.typo-mcp/synth_eval/xh_3/8001.jpg"
+  },
+  {
+   "cell": "xh_3",
+   "seed": 8050,
+   "image": "~/.typo-mcp/synth_eval/xh_3/8050.jpg"
+  },
+  {
+   "cell": "xh_5",
+   "seed": 8001,
+   "image": "~/.typo-mcp/synth_eval/xh_5/8001.jpg"
+  },
+  {
+   "cell": "xh_5",
+   "seed": 8050,
+   "image": "~/.typo-mcp/synth_eval/xh_5/8050.jpg"
+  },
+  {
+   "cell": "xh_12",
+   "seed": 8001,
+   "image": "~/.typo-mcp/synth_eval/xh_12/8001.jpg"
+  },
+  {
+   "cell": "xh_12",
+   "seed": 8050,
+   "image": "~/.typo-mcp/synth_eval/xh_12/8050.jpg"
+  },
+  {
+   "cell": "xh_18",
+   "seed": 8001,
+   "image": "~/.typo-mcp/synth_eval/xh_18/8001.jpg"
+  },
+  {
+   "cell": "xh_18",
+   "seed": 8050,
+   "image": "~/.typo-mcp/synth_eval/xh_18/8050.jpg"
+  },
+  {
+   "cell": "jpeg_95",
+   "seed": 8001,
+   "image": "~/.typo-mcp/synth_eval/jpeg_95/8001.jpg"
+  },
+  {
+   "cell": "jpeg_95",
+   "seed": 8050,
+   "image": "~/.typo-mcp/synth_eval/jpeg_95/8050.jpg"
+  },
+  {
+   "cell": "jpeg_45",
+   "seed": 8001,
+   "image": "~/.typo-mcp/synth_eval/jpeg_45/8001.jpg"
+  },
+  {
+   "cell": "jpeg_45",
+   "seed": 8050,
+   "image": "~/.typo-mcp/synth_eval/jpeg_45/8050.jpg"
+  },
+  {
+   "cell": "rule_independent",
+   "seed": 8001,
+   "image": "~/.typo-mcp/synth_eval/rule_independent/8001.jpg"
+  },
+  {
+   "cell": "rule_independent",
+   "seed": 8050,
+   "image": "~/.typo-mcp/synth_eval/rule_independent/8050.jpg"
+  },
+  {
+   "cell": "rule_random",
+   "seed": 8001,
+   "image": "~/.typo-mcp/synth_eval/rule_random/8001.jpg"
+  },
+  {
+   "cell": "rule_random",
+   "seed": 8050,
+   "image": "~/.typo-mcp/synth_eval/rule_random/8050.jpg"
+  }
+ ]
+}

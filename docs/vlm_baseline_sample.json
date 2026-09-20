@@ -1,0 +1,156 @@
+{
+ "what": "탐색용 · 논문 수치 아님",
+ "고른_방식": "합의 라벨 기준 현행 미검출 0 · 글줄 5 이상인 판 19장에서 순서대로 고르게 10장",
+ "판": [
+  {
+   "order": 4,
+   "key": "Musica_Viva__1957_Musica Viva - 16. Volkskonzert - 26.März 1957 - Tonhalle Gro.jpg",
+   "image": "Musica_Viva/1957_Musica Viva - 16. Volkskonzert - 26.März 1957 - Tonhalle Gro.jpg",
+   "seed": 104,
+   "글줄": 25,
+   "미검출": 0,
+   "size": [
+    566,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Musica_Viva/1957_Musica Viva - 16. Volkskonzert - 26.März 1957 - Tonhalle Gro.jpg",
+   "som": "~/.typo-mcp/vlm_baseline/som/04_som.png",
+   "file": "1957_Musica Viva - 16. Volkskonzert - 26.März 1957 - Tonhalle Gro.jpg"
+  },
+  {
+   "order": 11,
+   "key": "Opernhaus__1964_Opernhaus Zürich - Die Schneekönigin - Märchenvorstellung. U.jpg",
+   "image": "Opernhaus/1964_Opernhaus Zürich - Die Schneekönigin - Märchenvorstellung. U.jpg",
+   "seed": 111,
+   "글줄": 12,
+   "미검출": 0,
+   "size": [
+    566,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Opernhaus/1964_Opernhaus Zürich - Die Schneekönigin - Märchenvorstellung. U.jpg",
+   "som": "~/.typo-mcp/vlm_baseline/som/11_som.png",
+   "file": "1964_Opernhaus Zürich - Die Schneekönigin - Märchenvorstellung. U.jpg"
+  },
+  {
+   "order": 19,
+   "key": "Musica_Viva__1958_Tonhalle-Quartett - Zürcher Bläser-Quintett - Strawinsky - S.jpg",
+   "image": "Musica_Viva/1958_Tonhalle-Quartett - Zürcher Bläser-Quintett - Strawinsky - S.jpg",
+   "seed": 119,
+   "글줄": 11,
+   "미검출": 0,
+   "size": [
+    564,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Musica_Viva/1958_Tonhalle-Quartett - Zürcher Bläser-Quintett - Strawinsky - S.jpg",
+   "som": "~/.typo-mcp/vlm_baseline/som/19_som.png",
+   "file": "1958_Tonhalle-Quartett - Zürcher Bläser-Quintett - Strawinsky - S.jpg"
+  },
+  {
+   "order": 21,
+   "key": "Opernhaus__1966_Opernhaus Zürich - Don Carlos - Oper von Giuseppe Verdi - 5..jpg",
+   "image": "Opernhaus/1966_Opernhaus Zürich - Don Carlos - Oper von Giuseppe Verdi - 5..jpg",
+   "seed": 121,
+   "글줄": 10,
+   "미검출": 0,
+   "size": [
+    566,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Opernhaus/1966_Opernhaus Zürich - Don Carlos - Oper von Giuseppe Verdi - 5..jpg",
+   "som": "~/.typo-mcp/vlm_baseline/som/21_som.png",
+   "file": "1966_Opernhaus Zürich - Don Carlos - Oper von Giuseppe Verdi - 5..jpg"
+  },
+  {
+   "order": 26,
+   "key": "Tonhalle_Konzert__1954_Extrakonzert - Tonhalle Grosser Saal - Solistin Clara Haskil.jpg",
+   "image": "Tonhalle_Konzert/1954_Extrakonzert - Tonhalle Grosser Saal - Solistin Clara Haskil.jpg",
+   "seed": 126,
+   "글줄": 17,
+   "미검출": 0,
+   "size": [
+    565,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Tonhalle_Konzert/1954_Extrakonzert - Tonhalle Grosser Saal - Solistin Clara Haskil.jpg",
+   "som": "~/.typo-mcp/vlm_baseline/som/26_som.png",
+   "file": "1954_Extrakonzert - Tonhalle Grosser Saal - Solistin Clara Haskil.jpg"
+  },
+  {
+   "order": 30,
+   "key": "Musica_Viva__1956_Strawinsky - Musica viva - Dienstag, 16. Okt. 1956 - 1. Extr.jpg",
+   "image": "Musica_Viva/1956_Strawinsky - Musica viva - Dienstag, 16. Okt. 1956 - 1. Extr.jpg",
+   "seed": 130,
+   "글줄": 16,
+   "미검출": 0,
+   "size": [
+    567,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Musica_Viva/1956_Strawinsky - Musica viva - Dienstag, 16. Okt. 1956 - 1. Extr.jpg",
+   "som": "~/.typo-mcp/vlm_baseline/som/30_som.png",
+   "file": "1956_Strawinsky - Musica viva - Dienstag, 16. Okt. 1956 - 1. Extr.jpg"
+  },
+  {
+   "order": 33,
+   "key": "Juni_Festwochen__1960_Viertes Juni-Festkonzert 1960 der Tonhalle-Gesellschaft - Fr.jpg",
+   "image": "Juni_Festwochen/1960_Viertes Juni-Festkonzert 1960 der Tonhalle-Gesellschaft - Fr.jpg",
+   "seed": 133,
+   "글줄": 15,
+   "미검출": 0,
+   "size": [
+    563,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Juni_Festwochen/1960_Viertes Juni-Festkonzert 1960 der Tonhalle-Gesellschaft - Fr.jpg",
+   "som": "~/.typo-mcp/vlm_baseline/som/33_som.png",
+   "file": "1960_Viertes Juni-Festkonzert 1960 der Tonhalle-Gesellschaft - Fr.jpg"
+  },
+  {
+   "order": 38,
+   "key": "Ausstellung__1958_Henry van de Velde - Kunstgewerbemuseum Zürich - 6. Juni - 3.jpg",
+   "image": "Ausstellung/1958_Henry van de Velde - Kunstgewerbemuseum Zürich - 6. Juni - 3.jpg",
+   "seed": 138,
+   "글줄": 12,
+   "미검출": 0,
+   "size": [
+    566,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Ausstellung/1958_Henry van de Velde - Kunstgewerbemuseum Zürich - 6. Juni - 3.jpg",
+   "som": "~/.typo-mcp/vlm_baseline/som/38_som.png",
+   "file": "1958_Henry van de Velde - Kunstgewerbemuseum Zürich - 6. Juni - 3.jpg"
+  },
+  {
+   "order": 42,
+   "key": "Musica_Viva__1957_Musica Viva - Thyl Claes - Tonhalle Grosser Saal.jpg",
+   "image": "Musica_Viva/1957_Musica Viva - Thyl Claes - Tonhalle Grosser Saal.jpg",
+   "seed": 142,
+   "글줄": 27,
+   "미검출": 0,
+   "size": [
+    568,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Musica_Viva/1957_Musica Viva - Thyl Claes - Tonhalle Grosser Saal.jpg",
+   "som": "~/.typo-mcp/vlm_baseline/som/42_som.png",
+   "file": "1957_Musica Viva - Thyl Claes - Tonhalle Grosser Saal.jpg"
+  },
+  {
+   "order": 49,
+   "key": "Musica_Viva__1959_Musica Viva - Kleiner Tonhallesaal - Matthias Hauer - Werner.jpg",
+   "image": "Musica_Viva/1959_Musica Viva - Kleiner Tonhallesaal - Matthias Hauer - Werner.jpg",
+   "seed": 149,
+   "글줄": 29,
+   "미검출": 0,
+   "size": [
+    563,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Musica_Viva/1959_Musica Viva - Kleiner Tonhallesaal - Matthias Hauer - Werner.jpg",
+   "som": "~/.typo-mcp/vlm_baseline/som/49_som.png",
+   "file": "1959_Musica Viva - Kleiner Tonhallesaal - Matthias Hauer - Werner.jpg"
+  }
+ ]
+}

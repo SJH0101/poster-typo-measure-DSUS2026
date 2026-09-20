@@ -1,0 +1,430 @@
+{
+ "what": "탐색용 · 논문 수치 아님",
+ "층": [
+  "columns",
+  "xh"
+ ],
+ "판": 30,
+ "목록": [
+  {
+   "seed": 3007,
+   "file": "3007.jpg",
+   "columns": 1,
+   "xh": 12,
+   "n_blocks": 4,
+   "size": [
+    566,
+    800
+   ],
+   "줄": 23,
+   "image": "~/.typo-mcp/clean/3007.jpg",
+   "som": "~/.typo-mcp/clean/som/3007_som.png"
+  },
+  {
+   "seed": 3019,
+   "file": "3019.jpg",
+   "columns": 1,
+   "xh": 5,
+   "n_blocks": 11,
+   "size": [
+    566,
+    800
+   ],
+   "줄": 61,
+   "image": "~/.typo-mcp/clean/3019.jpg",
+   "som": "~/.typo-mcp/clean/som/3019_som.png"
+  },
+  {
+   "seed": 3024,
+   "file": "3024.jpg",
+   "columns": 3,
+   "xh": 8,
+   "n_blocks": 21,
+   "size": [
+    566,
+    800
+   ],
+   "줄": 121,
+   "image": "~/.typo-mcp/clean/3024.jpg",
+   "som": "~/.typo-mcp/clean/som/3024_som.png"
+  },
+  {
+   "seed": 3029,
+   "file": "3029.jpg",
+   "columns": 2,
+   "xh": 5,
+   "n_blocks": 22,
+   "size": [
+    566,
+    800
+   ],
+   "줄": 128,
+   "image": "~/.typo-mcp/clean/3029.jpg",
+   "som": "~/.typo-mcp/clean/som/3029_som.png"
+  },
+  {
+   "seed": 3031,
+   "file": "3031.jpg",
+   "columns": 1,
+   "xh": 8,
+   "n_blocks": 6,
+   "size": [
+    566,
+    800
+   ],
+   "줄": 39,
+   "image": "~/.typo-mcp/clean/3031.jpg",
+   "som": "~/.typo-mcp/clean/som/3031_som.png"
+  },
+  {
+   "seed": 3036,
+   "file": "3036.jpg",
+   "columns": 3,
+   "xh": 12,
+   "n_blocks": 14,
+   "size": [
+    566,
+    800
+   ],
+   "줄": 78,
+   "image": "~/.typo-mcp/clean/3036.jpg",
+   "som": "~/.typo-mcp/clean/som/3036_som.png"
+  },
+  {
+   "seed": 3037,
+   "file": "3037.jpg",
+   "columns": 1,
+   "xh": 5,
+   "n_blocks": 11,
+   "size": [
+    566,
+    800
+   ],
+   "줄": 56,
+   "image": "~/.typo-mcp/clean/3037.jpg",
+   "som": "~/.typo-mcp/clean/som/3037_som.png"
+  },
+  {
+   "seed": 3039,
+   "file": "3039.jpg",
+   "columns": 3,
+   "xh": 5,
+   "n_blocks": 35,
+   "size": [
+    566,
+    800
+   ],
+   "줄": 194,
+   "image": "~/.typo-mcp/clean/3039.jpg",
+   "som": "~/.typo-mcp/clean/som/3039_som.png"
+  },
+  {
+   "seed": 3047,
+   "file": "3047.jpg",
+   "columns": 2,
+   "xh": 5,
+   "n_blocks": 24,
+   "size": [
+    566,
+    800
+   ],
+   "줄": 127,
+   "image": "~/.typo-mcp/clean/3047.jpg",
+   "som": "~/.typo-mcp/clean/som/3047_som.png"
+  },
+  {
+   "seed": 3054,
+   "file": "3054.jpg",
+   "columns": 3,
+   "xh": 12,
+   "n_blocks": 14,
+   "size": [
+    566,
+    800
+   ],
+   "줄": 73,
+   "image": "~/.typo-mcp/clean/3054.jpg",
+   "som": "~/.typo-mcp/clean/som/3054_som.png"
+  },
+  {
+   "seed": 3079,
+   "file": "3079.jpg",
+   "columns": 1,
+   "xh": 12,
+   "n_blocks": 4,
+   "size": [
+    566,
+    800
+   ],
+   "줄": 25,
+   "image": "~/.typo-mcp/clean/3079.jpg",
+   "som": "~/.typo-mcp/clean/som/3079_som.png"
+  },
+  {
+   "seed": 3085,
+   "file": "3085.jpg",
+   "columns": 1,
+   "xh": 8,
+   "n_blocks": 7,
+   "size": [
+    566,
+    800
+   ],
+   "줄": 37,
+   "image": "~/.typo-mcp/clean/3085.jpg",
+   "som": "~/.typo-mcp/clean/som/3085_som.png"
+  },
+  {
+   "seed": 3093,
+   "file": "3093.jpg",
+   "columns": 3,
+   "xh": 5,
+   "n_blocks": 34,
+   "size": [
+    566,
+    800
+   ],
+   "줄": 193,
+   "image": "~/.typo-mcp/clean/3093.jpg",
+   "som": "~/.typo-mcp/clean/som/3093_som.png"
+  },
+  {
+   "seed": 3101,
+   "file": "3101.jpg",
+   "columns": 2,
+   "xh": 5,
+   "n_blocks": 24,
+   "size": [
+    566,
+    800
+   ],
+   "줄": 129,
+   "image": "~/.typo-mcp/clean/3101.jpg",
+   "som": "~/.typo-mcp/clean/som/3101_som.png"
+  },
+  {
+   "seed": 3105,
+   "file": "3105.jpg",
+   "columns": 3,
+   "xh": 8,
+   "n_blocks": 23,
+   "size": [
+    566,
+    800
+   ],
+   "줄": 113,
+   "image": "~/.typo-mcp/clean/3105.jpg",
+   "som": "~/.typo-mcp/clean/som/3105_som.png"
+  },
+  {
+   "seed": 3114,
+   "file": "3114.jpg",
+   "columns": 3,
+   "xh": 8,
+   "n_blocks": 19,
+   "size": [
+    566,
+    800
+   ],
+   "줄": 111,
+   "image": "~/.typo-mcp/clean/3114.jpg",
+   "som": "~/.typo-mcp/clean/som/3114_som.png"
+  },
+  {
+   "seed": 3122,
+   "file": "3122.jpg",
+   "columns": 2,
+   "xh": 8,
+   "n_blocks": 14,
+   "size": [
+    566,
+    800
+   ],
+   "줄": 77,
+   "image": "~/.typo-mcp/clean/3122.jpg",
+   "som": "~/.typo-mcp/clean/som/3122_som.png"
+  },
+  {
+   "seed": 3125,
+   "file": "3125.jpg",
+   "columns": 2,
+   "xh": 12,
+   "n_blocks": 9,
+   "size": [
+    566,
+    800
+   ],
+   "줄": 48,
+   "image": "~/.typo-mcp/clean/3125.jpg",
+   "som": "~/.typo-mcp/clean/som/3125_som.png"
+  },
+  {
+   "seed": 3131,
+   "file": "3131.jpg",
+   "columns": 2,
+   "xh": 8,
+   "n_blocks": 14,
+   "size": [
+    566,
+    800
+   ],
+   "줄": 75,
+   "image": "~/.typo-mcp/clean/3131.jpg",
+   "som": "~/.typo-mcp/clean/som/3131_som.png"
+  },
+  {
+   "seed": 3134,
+   "file": "3134.jpg",
+   "columns": 2,
+   "xh": 12,
+   "n_blocks": 9,
+   "size": [
+    566,
+    800
+   ],
+   "줄": 49,
+   "image": "~/.typo-mcp/clean/3134.jpg",
+   "som": "~/.typo-mcp/clean/som/3134_som.png"
+  },
+  {
+   "seed": 3136,
+   "file": "3136.jpg",
+   "columns": 1,
+   "xh": 5,
+   "n_blocks": 12,
+   "size": [
+    566,
+    800
+   ],
+   "줄": 62,
+   "image": "~/.typo-mcp/clean/3136.jpg",
+   "som": "~/.typo-mcp/clean/som/3136_som.png"
+  },
+  {
+   "seed": 3138,
+   "file": "3138.jpg",
+   "columns": 3,
+   "xh": 5,
+   "n_blocks": 38,
+   "size": [
+    566,
+    800
+   ],
+   "줄": 187,
+   "image": "~/.typo-mcp/clean/3138.jpg",
+   "som": "~/.typo-mcp/clean/som/3138_som.png"
+  },
+  {
+   "seed": 3167,
+   "file": "3167.jpg",
+   "columns": 2,
+   "xh": 8,
+   "n_blocks": 13,
+   "size": [
+    566,
+    800
+   ],
+   "줄": 82,
+   "image": "~/.typo-mcp/clean/3167.jpg",
+   "som": "~/.typo-mcp/clean/som/3167_som.png"
+  },
+  {
+   "seed": 3189,
+   "file": "3189.jpg",
+   "columns": 3,
+   "xh": 12,
+   "n_blocks": 14,
+   "size": [
+    566,
+    800
+   ],
+   "줄": 75,
+   "image": "~/.typo-mcp/clean/3189.jpg",
+   "som": "~/.typo-mcp/clean/som/3189_som.png"
+  },
+  {
+   "seed": 3232,
+   "file": "3232.jpg",
+   "columns": 1,
+   "xh": 12,
+   "n_blocks": 4,
+   "size": [
+    566,
+    800
+   ],
+   "줄": 24,
+   "image": "~/.typo-mcp/clean/3232.jpg",
+   "som": "~/.typo-mcp/clean/som/3232_som.png"
+  },
+  {
+   "seed": 3556,
+   "file": "3556.jpg",
+   "columns": 1,
+   "xh": 12,
+   "n_blocks": 5,
+   "size": [
+    566,
+    800
+   ],
+   "줄": 27,
+   "image": "~/.typo-mcp/clean/3556.jpg",
+   "som": "~/.typo-mcp/clean/som/3556_som.png"
+  },
+  {
+   "seed": 3557,
+   "file": "3557.jpg",
+   "columns": 2,
+   "xh": 12,
+   "n_blocks": 9,
+   "size": [
+    566,
+    800
+   ],
+   "줄": 49,
+   "image": "~/.typo-mcp/clean/3557.jpg",
+   "som": "~/.typo-mcp/clean/som/3557_som.png"
+  },
+  {
+   "seed": 3562,
+   "file": "3562.jpg",
+   "columns": 1,
+   "xh": 8,
+   "n_blocks": 9,
+   "size": [
+    566,
+    800
+   ],
+   "줄": 39,
+   "image": "~/.typo-mcp/clean/3562.jpg",
+   "som": "~/.typo-mcp/clean/som/3562_som.png"
+  },
+  {
+   "seed": 3566,
+   "file": "3566.jpg",
+   "columns": 2,
+   "xh": 12,
+   "n_blocks": 9,
+   "size": [
+    566,
+    800
+   ],
+   "줄": 48,
+   "image": "~/.typo-mcp/clean/3566.jpg",
+   "som": "~/.typo-mcp/clean/som/3566_som.png"
+  },
+  {
+   "seed": 3571,
+   "file": "3571.jpg",
+   "columns": 1,
+   "xh": 8,
+   "n_blocks": 7,
+   "size": [
+    566,
+    800
+   ],
+   "줄": 38,
+   "image": "~/.typo-mcp/clean/3571.jpg",
+   "som": "~/.typo-mcp/clean/som/3571_som.png"
+  }
+ ]
+}

@@ -1,0 +1,177 @@
+{
+ "무엇": "4장 합성 세트 (seed 1~30 · 13셀) 재생성 — 사람 확인용 미리보기 목록. 셀마다 seed 1 · 30, 왼쪽 옛 세트 · 오른쪽 새 세트",
+ "규칙": "CLAUDE.md 규칙 9 — 사람 확인 전에는 Surya 검출 · 채점을 하지 않는다",
+ "manifest": "docs/synth_manifest.json",
+ "생성": {
+  "생성기": "eval/synth_gen.py",
+  "commit": "e596789",
+  "사전등록": "docs/constants_preregister.json 수정 2 · 2 보충 · 수정 3",
+  "PYTHONHASHSEED": "설정 안 함",
+  "date": "2026-09-18"
+ },
+ "옛_세트": {
+  "파일": "~/.typo-mcp/synth_pre_amend2 (manifest 사본 manifest_c1d23b4.json)",
+  "옛_측정_캐시": "~/.typo-mcp/synth_pre_amend2/caches/synth-*.json (옮김 — 새 세트 채점이 옛 캐시를 다시 쓰지 않게)",
+  "주의": "docs/synth_result.json 은 옛 세트의 결과다. 새 세트는 사람 확인 뒤 검출 · 채점한다"
+ },
+ "미리보기_그림": "scratchpad synth4/preview/{셀}.png (13장, 원본 해상도)",
+ "사람_확인": null,
+ "목록": [
+  {
+   "cell": "base",
+   "seed": 1,
+   "새": "~/.typo-mcp/synth/base/001.jpg",
+   "옛": "~/.typo-mcp/synth_pre_amend2/base/001.jpg"
+  },
+  {
+   "cell": "base",
+   "seed": 30,
+   "새": "~/.typo-mcp/synth/base/030.jpg",
+   "옛": "~/.typo-mcp/synth_pre_amend2/base/030.jpg"
+  },
+  {
+   "cell": "res_1600",
+   "seed": 1,
+   "새": "~/.typo-mcp/synth/res_1600/001.jpg",
+   "옛": "~/.typo-mcp/synth_pre_amend2/res_1600/001.jpg"
+  },
+  {
+   "cell": "res_1600",
+   "seed": 30,
+   "새": "~/.typo-mcp/synth/res_1600/030.jpg",
+   "옛": "~/.typo-mcp/synth_pre_amend2/res_1600/030.jpg"
+  },
+  {
+   "cell": "res_400",
+   "seed": 1,
+   "새": "~/.typo-mcp/synth/res_400/001.jpg",
+   "옛": "~/.typo-mcp/synth_pre_amend2/res_400/001.jpg"
+  },
+  {
+   "cell": "res_400",
+   "seed": 30,
+   "새": "~/.typo-mcp/synth/res_400/030.jpg",
+   "옛": "~/.typo-mcp/synth_pre_amend2/res_400/030.jpg"
+  },
+  {
+   "cell": "pol_colored",
+   "seed": 1,
+   "새": "~/.typo-mcp/synth/pol_colored/001.jpg",
+   "옛": "~/.typo-mcp/synth_pre_amend2/pol_colored/001.jpg"
+  },
+  {
+   "cell": "pol_colored",
+   "seed": 30,
+   "새": "~/.typo-mcp/synth/pol_colored/030.jpg",
+   "옛": "~/.typo-mcp/synth_pre_amend2/pol_colored/030.jpg"
+  },
+  {
+   "cell": "pol_dark",
+   "seed": 1,
+   "새": "~/.typo-mcp/synth/pol_dark/001.jpg",
+   "옛": "~/.typo-mcp/synth_pre_amend2/pol_dark/001.jpg"
+  },
+  {
+   "cell": "pol_dark",
+   "seed": 30,
+   "새": "~/.typo-mcp/synth/pol_dark/030.jpg",
+   "옛": "~/.typo-mcp/synth_pre_amend2/pol_dark/030.jpg"
+  },
+  {
+   "cell": "xh_3",
+   "seed": 1,
+   "새": "~/.typo-mcp/synth/xh_3/001.jpg",
+   "옛": "~/.typo-mcp/synth_pre_amend2/xh_3/001.jpg"
+  },
+  {
+   "cell": "xh_3",
+   "seed": 30,
+   "새": "~/.typo-mcp/synth/xh_3/030.jpg",
+   "옛": "~/.typo-mcp/synth_pre_amend2/xh_3/030.jpg"
+  },
+  {
+   "cell": "xh_5",
+   "seed": 1,
+   "새": "~/.typo-mcp/synth/xh_5/001.jpg",
+   "옛": "~/.typo-mcp/synth_pre_amend2/xh_5/001.jpg"
+  },
+  {
+   "cell": "xh_5",
+   "seed": 30,
+   "새": "~/.typo-mcp/synth/xh_5/030.jpg",
+   "옛": "~/.typo-mcp/synth_pre_amend2/xh_5/030.jpg"
+  },
+  {
+   "cell": "xh_12",
+   "seed": 1,
+   "새": "~/.typo-mcp/synth/xh_12/001.jpg",
+   "옛": "~/.typo-mcp/synth_pre_amend2/xh_12/001.jpg"
+  },
+  {
+   "cell": "xh_12",
+   "seed": 30,
+   "새": "~/.typo-mcp/synth/xh_12/030.jpg",
+   "옛": "~/.typo-mcp/synth_pre_amend2/xh_12/030.jpg"
+  },
+  {
+   "cell": "xh_18",
+   "seed": 1,
+   "새": "~/.typo-mcp/synth/xh_18/001.jpg",
+   "옛": "~/.typo-mcp/synth_pre_amend2/xh_18/001.jpg"
+  },
+  {
+   "cell": "xh_18",
+   "seed": 30,
+   "새": "~/.typo-mcp/synth/xh_18/030.jpg",
+   "옛": "~/.typo-mcp/synth_pre_amend2/xh_18/030.jpg"
+  },
+  {
+   "cell": "jpeg_95",
+   "seed": 1,
+   "새": "~/.typo-mcp/synth/jpeg_95/001.jpg",
+   "옛": "~/.typo-mcp/synth_pre_amend2/jpeg_95/001.jpg"
+  },
+  {
+   "cell": "jpeg_95",
+   "seed": 30,
+   "새": "~/.typo-mcp/synth/jpeg_95/030.jpg",
+   "옛": "~/.typo-mcp/synth_pre_amend2/jpeg_95/030.jpg"
+  },
+  {
+   "cell": "jpeg_45",
+   "seed": 1,
+   "새": "~/.typo-mcp/synth/jpeg_45/001.jpg",
+   "옛": "~/.typo-mcp/synth_pre_amend2/jpeg_45/001.jpg"
+  },
+  {
+   "cell": "jpeg_45",
+   "seed": 30,
+   "새": "~/.typo-mcp/synth/jpeg_45/030.jpg",
+   "옛": "~/.typo-mcp/synth_pre_amend2/jpeg_45/030.jpg"
+  },
+  {
+   "cell": "rule_independent",
+   "seed": 1,
+   "새": "~/.typo-mcp/synth/rule_independent/001.jpg",
+   "옛": "~/.typo-mcp/synth_pre_amend2/rule_independent/001.jpg"
+  },
+  {
+   "cell": "rule_independent",
+   "seed": 30,
+   "새": "~/.typo-mcp/synth/rule_independent/030.jpg",
+   "옛": "~/.typo-mcp/synth_pre_amend2/rule_independent/030.jpg"
+  },
+  {
+   "cell": "rule_random",
+   "seed": 1,
+   "새": "~/.typo-mcp/synth/rule_random/001.jpg",
+   "옛": "~/.typo-mcp/synth_pre_amend2/rule_random/001.jpg"
+  },
+  {
+   "cell": "rule_random",
+   "seed": 30,
+   "새": "~/.typo-mcp/synth/rule_random/030.jpg",
+   "옛": "~/.typo-mcp/synth_pre_amend2/rule_random/030.jpg"
+  }
+ ]
+}

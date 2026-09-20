@@ -1,0 +1,297 @@
+{
+ "설명": "지금 쓰는 참조 데이터와 결과 파일 경로. 새 참조가 오면 여기만 바꾸고 python eval/run_all.py eval/refs.json 을 돌린다. 경로는 저장소 루트 기준이거나 ~ 로 시작한다. 여기 적힌 참조는 모두 임시 자료이며 제대로 된 자료의 조건은 docs/VALIDATION_NEEDS.md 에 있다. detector_notes 는 지금 VLM pass1 파일에 딸린 기록이라 VLM 파일을 바꾸면 지운다",
+ "image_roots": null,
+ "human_boxes": {
+  "csv": "~/Downloads/boxes_labelerA-2.csv",
+  "date": "2026-08-21",
+  "tool": "~/Documents/poster/labeler/타이포덩어리-상자긋기.html",
+  "out": "boxes/human_v2.json"
+ },
+ "detectors": {
+  "EasyOCR": [
+   "boxes/easyocr_run1.json",
+   "boxes/easyocr_run2.json"
+  ],
+  "Surya": [
+   "boxes/surya_run1.json",
+   "boxes/surya_run2.json"
+  ],
+  "VLM": [
+   "boxes/vlm_pass1.json",
+   "boxes/vlm_pass2.json"
+  ]
+ },
+ "surya_lines": "boxes/surya_lines.json",
+ "detector_prereg": "docs/detector_preregister.json",
+ "detector_notes": {
+  "VLM_pass1_에이전트_자기보고": "164개라고 보고했으나 파일에는 127개 — 파일 값을 썼다"
+ },
+ "detector_out": "docs/detector_compare.json",
+ "oracle_prereg": "docs/oracle_preregister.json",
+ "oracle_out": "docs/oracle_upper.json",
+ "idml": {
+  "dir": "~/Downloads/아카이브",
+  "map": "eval/idml_map.json",
+  "posters_dir": "~/Documents/연구2/브로크만 정리/corpus/코어",
+  "out": "docs/idml_explore.json"
+ },
+ "hand_lines": {
+  "lines": "~/Downloads/lines_20260818-2048.csv",
+  "blocks": "~/Downloads/blocks_20260818-2048.csv",
+  "note": "place_text leave-one-out 용 손 찍기 (1958 Musica viva · 1958 Végh-Quartett · 1956 Hartmann). eval/loo_place_text.py 가 읽는다"
+ },
+ "loo_place_text": {
+  "cache": "~/.typo-mcp/brockmann.json",
+  "posters": [
+   "1958_Musica viva - Dienstag, den 7. Januar 1958",
+   "1958_Végh-Quartett - Musica Viva"
+  ],
+  "out": "docs/loo_place_text.json"
+ },
+ "series_check": {
+  "cache": "~/.typo-mcp/brockmann.json",
+  "series": "Musica_Viva",
+  "others": {
+   "로제": "~/.typo-mcp/rose.json",
+   "루더": "~/.typo-mcp/ruder.json",
+   "호프만": "~/.typo-mcp/corpus.json"
+  },
+  "hand_posters": [
+   "1958_Musica viva - Dienstag, den 7. Januar 1958",
+   "1958_Végh-Quartett - Musica Viva"
+  ],
+  "prereg": "docs/series_check_preregister.json",
+  "out": "docs/series_check.json",
+  "diag_out": "docs/series_check_diag.json"
+ },
+ "synth_tune": {
+  "dir": "~/.typo-mcp/synth_sweep",
+  "manifest": "docs/synth_sweep_manifest.json",
+  "lines": "~/.typo-mcp/synth_sweep_lines",
+  "prereg": "docs/synth_preregister.json",
+  "fonts": {
+   "helvetica": "/System/Library/Fonts/Helvetica.ttc"
+  },
+  "cache_dir": "~/.typo-mcp/synth_tune_cache",
+  "note": "조정 세트 (합성 스윕 공용 세트 seed 7201~7230). 상수 스윕 (constants_ink_sweep · constants_sweep4) 만 읽는다. 4장 채점은 하지 않는다 (constants_preregister 수정 12)"
+ },
+ "synth_eval": {
+  "dir": "~/.typo-mcp/synth_eval",
+  "manifest": "docs/synth_eval_manifest.json",
+  "lines": "~/.typo-mcp/synth_eval_lines",
+  "prereg": "docs/synth_preregister.json",
+  "fonts": {
+   "helvetica": "/System/Library/Fonts/Helvetica.ttc"
+  },
+  "cache_dir": "~/.typo-mcp/synth_eval_cache",
+  "out": "docs/synth_result.json",
+  "note": "평가 세트 (seed 8001~8050, 650장). 4장 채점은 이 세트만 읽는다 (constants_preregister 수정 5 · 12). 상수 동결 뒤 한 번 돌린다"
+ },
+ "synth_b": {
+  "dir": "~/.typo-mcp/synth_b",
+  "manifest": "docs/synth_b_manifest.json",
+  "preview": "docs/synth_b_preview.json",
+  "note": "(b) 빛 기준 렌더 강건성 조건 — 평가 세트와 같은 seed · 셀, 렌더만 선형광 (eval/render_linear.py). 판정 없음, (a) 옆에 나란히 보고 (수정 1 의 3 · 수정 12 의 3)",
+  "prereg": "docs/synth_preregister.json",
+  "fonts": {
+   "helvetica": "/System/Library/Fonts/Helvetica.ttc"
+  },
+  "lines": "~/.typo-mcp/synth_b_lines",
+  "cache_dir": "~/.typo-mcp/synth_b_cache",
+  "out": "docs/synth_b_result.json"
+ },
+ "group": {
+  "폐기": {
+   "날짜": "2026-09-14",
+   "상태": "폐기 — 쓰지 않는다",
+   "경위": "docs/GROUP_SET_ANATOMY.md 8절",
+   "대신": "깨끗한 세트 docs/clean_preregister.json"
+  },
+  "dir": "~/.typo-mcp/group",
+  "manifest": "docs/group_manifest.json",
+  "lines": "~/.typo-mcp/group-lines.json",
+  "som_dir": "~/.typo-mcp/group/som",
+  "vlm": [
+   "boxes/group_vlm_pass1.json",
+   "boxes/group_vlm_pass2.json"
+  ],
+  "prereg": "docs/group_preregister.json",
+  "out": "docs/group_result.json",
+  "note": "묶기 비교. eval/group_gen.py 가 만들고 eval/group_score.py detect → som → (VLM 서브에이전트, eval/group_vlm_merge.py 로 합침) → score. VLM 묶음은 다시 만들 수 없으므로 boxes/ 에 둔다. notes 는 실행 경위이며 score 의 --note 로 결과에 실린다",
+  "notes": [
+   "사용량 한도(HTTP 429): 8개 서브에이전트 가운데 5개가 한도에 걸려 끝났다. 그 가운데 4개(pass1_b2 · pass1_b3 · pass2_b1 · pass2_b2)는 끝나기 전에 출력 파일을 다 썼고 검증을 통과했다. pass1_b4 만 파일이 없었다",
+   "pass1_b4 는 새 서브에이전트로 다시 돌렸다. 그사이 부모 세션 모델이 claude-opus-5 로 바뀌어, 한 패스 안에 모델이 섞이지 않도록 model=fable 을 명시했다. 8묶음 모두 claude-fable-5-1 (자기 보고)",
+   "출력 검증: 240묶음-장(120장 × 2패스) 모두 줄 번호가 정확히 한 번씩 — 다시 요청한 장 0. 열어 본 파일은 묶음마다 지시문 · 목록 · 이미지 30장 = 32개, 그 밖 0 (자기 보고)"
+  ],
+  "diag_out": "docs/group_diag.json",
+  "c_pad_rule": "fixed"
+ },
+ "measure_pad": {
+  "dir": "~/.typo-mcp/measure_pad",
+  "manifest": "docs/measure_pad_manifest.json",
+  "lines": "~/.typo-mcp/measure_pad-lines.json",
+  "prereg": "docs/measure_pad_preregister.json",
+  "out": "docs/measure_pad_result.json",
+  "note": "줄 단위 재기 pad 규칙 검증 (seed 2001~2060). eval/group_gen.py 로 만들고 eval/group_score.py detect 로 줄을 짚은 뒤 eval/measure_pad_check.py"
+ },
+ "clean": {
+  "dir": "~/.typo-mcp/clean",
+  "manifest": "docs/clean_manifest.json",
+  "prereg": "docs/clean_preregister.json",
+  "check_out": "docs/clean_check.json",
+  "review_dir": "~/.typo-mcp/clean/review",
+  "human_check": [
+   {
+    "차수": 1,
+    "누가": "준혁",
+    "언제": "2026-09-14",
+    "본_것": "표본 9장 중 5장 — 검토판 3001 · 3003 · 3115, SoM 3003 · 3115",
+    "문제": "없음. 겹침 · 문구 반복 · 딱지 문제 없음, 표본 판 자체에 문제 없음. 줄 글의 낱말 나열은 받아들임"
+   },
+   {
+    "차수": 2,
+    "누가": "준혁",
+    "언제": "2026-09-14",
+    "본_것": "수정 2 추가 판 표본 2장 — 3232 · 3241 (둘 다 1단 · 12px) 검토판과 SoM",
+    "문제": "없음"
+   },
+   {
+    "차수": 3,
+    "누가": "준혁",
+    "언제": "2026-09-14",
+    "본_것": "수정 3 추가 판 표본 2장 — 3544 (1단 · 8px) · 3539 (2단 · 12px) 검토판과 SoM",
+    "문제": "없음"
+   }
+  ],
+  "lines": "~/.typo-mcp/clean-lines.json",
+  "som_dir": "~/.typo-mcp/clean/som",
+  "vlm": [
+   "boxes/clean_vlm_pass1.json",
+   "boxes/clean_vlm_pass2.json"
+  ],
+  "out": "docs/clean_result.json",
+  "c_pad_rule": "neighbor_half",
+  "note": "깨끗한 세트 (사전등록 4c06aa4 · 수정 1 4a763c8 · 수정 2 e502d98 · 수정 3 0952c15). eval/clean_gen.py 로 만들고 eval/clean_check.py 로 생성 검증 · 표본, eval/clean_som_samples.py 로 표본 SoM (표본 판에만 Surya). 사람 확인(human_check: {by, at, n, issues}) 전에는 평가 세트 검출 · VLM · 채점을 하지 않는다. 검출은 --order columns",
+  "vlm_prompt": "docs/clean_vlm_prompt.md",
+  "lines_order": "columns",
+  "som_samples_out": "~/.typo-mcp/clean/review/som_samples.json",
+  "new_from_seed": 3539,
+  "new_samples": 2,
+  "new_strata": "1:8,2:12",
+  "vlm_raw": "~/.typo-mcp/clean/vlm_raw",
+  "vlm_batches": {
+   "max_posters": 10,
+   "max_labels": 700
+  },
+  "vlm_run_log": "~/.typo-mcp/clean/vlm_raw/run_log.json",
+  "c_diag_prereg": "docs/clean_c_diag_preregister.json",
+  "c_diag_out": "docs/clean_c_diag.json",
+  "a_sweep_prereg": "docs/clean_a_sweep_preregister.json",
+  "a_sweep_out": "docs/clean_a_sweep.json",
+  "score_notes": [
+   "2026-09-14 사람 확인 1~3차 (준혁) 뒤 280장 전체 Surya 검출 (--order columns) · SoM · VLM · 채점",
+   "Surya: 280장 모두 찾은 단 수 = 정답 단 수. 줄 수 = 정답 줄 수인 판 221장, 59장은 1~9줄 적다",
+   "SoM: 못 읽는 딱지 2 (3010 한 장), 글자 가림 0. 그림 규칙은 사전등록대로 고정, 고치지 않았다",
+   "VLM: Claude Code 서브에이전트 general-purpose, Agent 도구 model=opus, 자기 보고 claude-opus-5 (68묶음 모두). 34묶음 (판 5~10 · 딱지 ≤ 700, eval/clean_vlm_batches.py) × 2패스, 한 묶음씩 순서대로, 패스 1 이 모두 끝난 뒤 패스 2 (패스 1 06:57 끝 · 패스 2 06:57 시작 · 08:53 끝)",
+   "VLM 중단 · 재실행: 0. 번호 검증을 어긴 장 0 (두 패스). 목록 밖 파일 열람 0. 실행 기록 136줄은 boxes/clean_vlm_pass1.json · pass2.json 의 run_log",
+   "VLM 에이전트가 같은 이미지를 배율 그대로 두 번 연 묶음: 패스 1 b08 (3056 · 3057), 패스 2 b02 (3011 · 3012) · b24 (3181 · 3182 · 3183)",
+   "패스 2 b17 에이전트는 작은 글자 판(3127 · 3128 · 3129)에서 애매한 틈을 붙였다고 자기 보고 — 지시문 «애매하면 끊는다» 와 다르다. 결과는 고치지 않았다"
+  ]
+ },
+ "brockmann_group": {
+  "prereg": "docs/brockmann_group_preregister.json",
+  "posters": "docs/labeling/posters_for_labelers.json",
+  "selection": "docs/labeling/selection.json",
+  "work": "~/.typo-mcp/brockmann50",
+  "vlm_prompt": "docs/brockmann_vlm_prompt.md",
+  "vlm_raw": "~/.typo-mcp/brockmann50/vlm_raw",
+  "vlm_batches": {
+   "max_posters": 10,
+   "max_labels": 700
+  },
+  "vlm": [
+   "boxes/brockmann_vlm_pass1.json",
+   "boxes/brockmann_vlm_pass2.json"
+  ],
+  "c_pad_rule": "neighbor_half",
+  "explore_out": "docs/brockmann_group_explore.json",
+  "guides": [
+   "labels/guides/guides_labelerA_20260917-2016.json",
+   "labels/guides/guides_labelerB_20260916-0201.json"
+  ],
+  "score_out": "docs/brockmann_group_result.json",
+  "봉인": "1단계 결과(작업 폴더 · VLM 패스 파일 · explore_out)는 라벨링 제출 전 열지 않는다 — 사용자 결정 2026-09-14",
+  "note": "브로크만 실물 50장 묶기 (사전등록 ba6c620). 1단계 eval/brockmann_group_explore.py prepare · seal · explore. 2단계는 guides 에 두 라벨러 파일을 넣은 뒤 · 2단계 eval/brockmann_stage2_score.py (사전등록 f844621): check → consensus → 봉인 해제 → score. guides 에 두 라벨러 파일을 넣고 봉인_해제 에 {\"시각\", \"커밋\"} 을 적어야 run_all 이 2단계를 돌린다",
+  "stage2_prereg": "docs/brockmann_stage2_preregister.json",
+  "cache": "~/.typo-mcp/brockmann.json",
+  "consensus_out": "docs/brockmann_consensus_refs.json",
+  "stage2_out": "docs/brockmann_stage2_result.json",
+  "봉인_해제": {
+   "시각": "2026-09-18 11:10 KST",
+   "커밋": "9991c28",
+   "조건": "docs/brockmann_stage2_preregister.json 의 봉인 해제 조건 — 라벨 동결 (69be126) · check 통과 · consensus 생성 (f941ecc) · 상수 동결 (수정 14, 9991c28)",
+   "봉인_sha256_확인": {
+    "boxes/brockmann_vlm_pass1.json": "dd3d3c8a… 최초 기록과 같음",
+    "boxes/brockmann_vlm_pass2.json": "a87daf89… 최초 기록과 같음",
+    "docs/brockmann_group_explore.json": "b016a1ca… 현재 유효한 값 (수정 14 의 6) 과 같음",
+    "~/.typo-mcp/brockmann50/lines.json": "444b3518… 그대로"
+   }
+  },
+  "guides_받음": {
+   "guides_라벨러A_20260917-2016.json": {
+    "exported_at": "2026-09-17T11:16:42.615Z",
+    "sha256": "23222431d8160bfdbf2feb432c07e359a88d92542b84678ea4a3bd29a09cfe75"
+   },
+   "guides_라벨러B_20260916-0201.json": {
+    "exported_at": "2026-09-15T17:01:56.619Z",
+    "sha256": "3fa08d48a9af3d8cc9010b0a8dcb326a97268d47b82b3e14816c468322927f4e"
+   },
+   "받은 날": "2026-09-17",
+   "exported_at 출처": "eval/brockmann_stage2_score.py check 보고"
+  }
+ },
+ "constants_ink_threshold": {
+  "dir": "~/.typo-mcp/synth_sweep",
+  "manifest": "docs/synth_sweep_manifest.json",
+  "lines": "~/.typo-mcp/synth_sweep_lines",
+  "prereg": "docs/constants_preregister.json",
+  "out": "docs/constants_ink_threshold.json",
+  "note": "잉크 문턱 합성 스윕 (constants_preregister 순서 1 · 수정 5 해석). 조정 세트 = 합성 스윕 공용 세트. 줄은 eval/group_score.py detect --order columns 로 짚는다"
+ },
+ "constants_definitions": {
+  "prereg": "docs/constants_preregister.json",
+  "font": "/System/Library/Fonts/Helvetica.ttc",
+  "out": "docs/constants_definitions.json",
+  "note": "정의로 정하는 상수 계산 (constants_preregister 순서 2 · 수정 4 의 e = 1). 코드 값은 바꾸지 않는다"
+ },
+ "constants_sweep4": {
+  "dir": "~/.typo-mcp/synth_sweep",
+  "manifest": "docs/synth_sweep_manifest.json",
+  "lines": "~/.typo-mcp/synth_sweep_lines",
+  "prereg": "docs/constants_preregister.json",
+  "out": "docs/constants_sweep4.json",
+  "note": "순서 4 · 병행 상수 합성 스윕 (constants_preregister 수정 4 · 5 · 8). 조정 세트, 한 번에 한 상수. 코드 상수는 바꾸지 않는다"
+ },
+ "보관만": {
+  "seed_1_30": "docs/synth_manifest.json · ~/.typo-mcp/synth — 수정 5 의 (c) 로 보관만, 채점에 쓰지 않는다",
+  "옛_캐시": [
+   "~/.typo-mcp/pre_sweep4",
+   "~/.typo-mcp/synth_pre_amend2",
+   "~/.typo-mcp/synth_sweep_pre_amend2",
+   "~/.typo-mcp/synth_sweep_d07b042_hash4",
+   "~/.typo-mcp/synth_sweep_amend2_hash0",
+   "~/.typo-mcp/synth_sweep_lines_d07b042"
+  ]
+ },
+ "typography_rules": {
+  "caches": {
+   "브로크만": "~/.typo-mcp/brockmann.json",
+   "호프만": "~/.typo-mcp/corpus.json",
+   "로제": "~/.typo-mcp/rose.json",
+   "루더": "~/.typo-mcp/ruder.json"
+  },
+  "consensus": "docs/brockmann_consensus_refs.json",
+  "out": "docs/typography_rules_explore.json",
+  "note": "탐색용 · 논문 수치 아님. eval/explore_typography_rules.py — (가) 파이프라인 측정 · (나) 합의 라벨로 같은 계산을 돌려 나란히 낸다. 사전등록 없이 도는 탐색이며 이 결과로 상수 · 파이프라인을 고치지 않는다"
+ }
+}
