@@ -40,6 +40,12 @@ CURRENT = 0.72
 ORIGINAL_THRESHOLD = ink.threshold
 
 
+def _tilde(q):
+    """기록 경로의 홈을 ~ 로 접는다."""
+    h = os.path.expanduser('~')
+    return '~' + q[len(h):] if q.startswith(h) else q
+
+
 def _sha(p):
     return hashlib.sha256(open(os.path.expanduser(p), 'rb').read()).hexdigest()
 
@@ -162,7 +168,7 @@ def main(argv=None):
     out = dict(
         무엇='잉크 문턱 합성 스윕 — threshold() 창 중앙값 × k, constants_preregister 순서 1. 결과 보고까지만 (코드의 0.72 는 바꾸지 않음)',
         사전등록=a.prereg, 사전등록_sha256=_sha(a.prereg), manifest=a.manifest, manifest_sha256=_sha(a.manifest),
-        줄=dict(폴더=a.lines, manifest_sha256=_sha(os.path.join(LW, 'manifest.json')), lines_sha256=_sha(os.path.join(LW, 'lines.json')),
+        줄=dict(폴더=_tilde(a.lines), manifest_sha256=_sha(os.path.join(LW, 'manifest.json')), lines_sha256=_sha(os.path.join(LW, 'lines.json')),
                provenance=LL.get('provenance'), 순서=LL.get('order')),
         정의=dict(격자=ks, δ=delta, 지표='eval/synth_score.direct_lines 재현율 — 베이스라인 · x높이선 · 상단 잉크선 (필드 «캡선»)',
                 재기='detect_surya.boxes_norm → measure.ground.entry (photo=False), 실행 중 measure.ink.threshold = 창 중앙값 × k',

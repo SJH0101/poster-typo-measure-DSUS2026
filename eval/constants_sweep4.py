@@ -15,6 +15,7 @@ import argparse
 import hashlib
 import json
 import os
+import re
 import sys
 import time
 
@@ -39,6 +40,28 @@ DS_NOW = {k: getattr(DS, k) for k in ('X_OVER', 'MIN_AREA', 'H_RATIO', 'Y_GAP')}
 PAD_NOW = region.PAD
 SAMPLE_MIN = 30          # 수정 9 의 3 — 결정 지표 표본이 이보다 적으면 판정하지 않는다
 KINDS3 = (('베이스라인', '베이스라인'), ('x높이선', 'x높이선'), ('상단 잉크선', '캡선'))
+
+
+def _loc(path, needle, n=1):
+    """file:line 표기를 문자열 검색으로 만든다 — 줄 번호를 손으로 적지 않는다."""
+    for i, line in enumerate(open(os.path.join(ROOT, path), encoding='utf-8'), 1):
+        if needle in line:
+            n -= 1
+            if n == 0:
+                return f'{path}:{i}'
+    return path
+
+
+def _src_num(needle, group=1, path='measure/ink.py'):
+    """코드에서 숫자를 읽는다 (정규식 첫 묶음)."""
+    m = re.search(needle, open(os.path.join(ROOT, path), encoding='utf-8').read())
+    return float(m.group(group)) if m else None
+
+
+def _tilde(q):
+    """기록 경로의 홈을 ~ 로 접는다."""
+    h = os.path.expanduser('~')
+    return '~' + q[len(h):] if q.startswith(h) else q
 
 
 def _sha(p):
@@ -158,34 +181,42 @@ def decide(points, curves, cur, delta):
 def specs():
     """(이름, 위치, 현재 값, 격자, 설치 함수, 지표 갈래)"""
     S = []
-    S.append(dict(이름='lines(… body_h=)', 위치=['measure/ink.py:51'], 현재=4, 격자=[2, 3, 4, 5, 6], 갈래='line',
+    S.append(dict(이름='lines(… body_h=)', 위치=[_loc('measure/ink.py', 'def lines(')],
+                  현재=int(_src_num(r'def lines\(.*body_h=(\d+)')), 격자=[2, 3, 4, 5, 6], 갈래='line',
                   결정=['베이스라인'], 설치=lambda v: install(ink_variant([("def lines(g, th, x0, x1, min_h=2, body_h=4, mask=None):",
                                                                           f"def lines(g, th, x0, x1, min_h=2, body_h={v}, mask=None):")]))))
-    S.append(dict(이름='split_marks() · 되돌림 어깨', 위치=['measure/ink.py:203'], 현재=0.5, 격자=[0.3, 0.4, 0.5, 0.6, 0.7], 갈래='g1',
+    S.append(dict(이름='split_marks() · 되돌림 어깨', 위치=[_loc('measure/ink.py', 'prof >= 0.5 * prof.max()')],
+                  현재=_src_num(r'prof >= ([\d.]+) \* prof\.max\(\)'), 격자=[0.3, 0.4, 0.5, 0.6, 0.7], 갈래='g1',
                   결정=['되돌림_행일치'], 설치=lambda v: install(ink_variant([("xh = s + int(np.argmax(prof >= 0.5 * prof.max()))",
                                                                             f"xh = s + int(np.argmax(prof >= {v} * prof.max()))")], record_g1=True))))
-    S.append(dict(이름='region.PAD', 위치=['measure/region.py:30'], 현재=3, 격자=[1, 2, 3, 4, 5, 6], 갈래='line+block',
+    S.append(dict(이름='region.PAD', 위치=[_loc('measure/region.py', 'PAD = ')], 현재=PAD_NOW, 격자=[1, 2, 3, 4, 5, 6], 갈래='line+block',
                   결정=['베이스라인', '상단 잉크선', '블록'], 설치=lambda v: install(pad=v)))
-    S.append(dict(이름='FRAG_WIDE', 위치=['measure/ink.py:16'], 현재=0.4, 격자=[0.2, 0.3, 0.4, 0.5, 0.6], 갈래='line',
+    S.append(dict(이름='FRAG_WIDE', 위치=[_loc('measure/ink.py', 'FRAG_WIDE = ')], 현재=INK_NOW['FRAG_WIDE'], 격자=[0.2, 0.3, 0.4, 0.5, 0.6], 갈래='line',
                   결정=['베이스라인', 'x높이선', '상단 잉크선'], 설치=lambda v: install(ink_variant([("FRAG_WIDE = 0.40", f"FRAG_WIDE = {v}")]))))
-    S.append(dict(이름='FRAG_COVER', 위치=['measure/ink.py:18'], 현재=0.35, 격자=[0.175, 0.2625, 0.35, 0.4375, 0.525], 갈래='line',
+    S.append(dict(이름='FRAG_COVER', 위치=[_loc('measure/ink.py', 'FRAG_COVER = ')], 현재=INK_NOW['FRAG_COVER'], 격자=[0.175, 0.2625, 0.35, 0.4375, 0.525], 갈래='line',
                   결정=['베이스라인', 'x높이선', '상단 잉크선'], 설치=lambda v: install(ink_variant([("FRAG_COVER = 0.35", f"FRAG_COVER = {v}")]))))
-    S.append(dict(이름='polarity() 꼬리 백분위 (아래 p, 위 100 − p)', 위치=['measure/ink.py:44'], 현재=5, 격자=[2, 4, 5, 6, 8], 갈래='line',
+    S.append(dict(이름='polarity() 꼬리 백분위 (아래 p, 위 100 − p)', 위치=[_loc('measure/ink.py', 'np.percentile(g, (')],
+                  현재=int(_src_num(r'np\.percentile\(g, \((\d+), 50')), 격자=[2, 4, 5, 6, 8], 갈래='line',
                   결정=['베이스라인', 'x높이선', '상단 잉크선'],
                   설치=lambda v: install(ink_variant([("lo, med, hi = np.percentile(g, (5, 50, 95))", f"lo, med, hi = np.percentile(g, ({v}, 50, {100 - v}))")]))))
-    S.append(dict(이름='lines() · peak 백분위', 위치=['measure/ink.py:57'], 현재=90, 격자=[85, 87.5, 90, 92.5, 95], 갈래='line',
+    S.append(dict(이름='lines() · peak 백분위', 위치=[_loc('measure/ink.py', 'peak = np.percentile(')],
+                  현재=_src_num(r'peak = np\.percentile\(ink\[ink > 0\], ([\d.]+)\)'), 격자=[85, 87.5, 90, 92.5, 95], 갈래='line',
                   결정=['베이스라인', 'x높이선', '상단 잉크선'],
                   설치=lambda v: install(ink_variant([("peak = np.percentile(ink[ink > 0], 90)", f"peak = np.percentile(ink[ink > 0], {v})")]))))
-    S.append(dict(이름='lines() · on 백분위', 위치=['measure/ink.py:58'], 현재=5, 격자=[2, 4, 5, 6, 8], 갈래='line',
+    S.append(dict(이름='lines() · on 백분위', 위치=[_loc('measure/ink.py', 'on = ink > max(np.percentile(')],
+                  현재=int(_src_num(r'on = ink > max\(np\.percentile\(ink, (\d+)\)')), 격자=[2, 4, 5, 6, 8], 갈래='line',
                   결정=['베이스라인', 'x높이선', '상단 잉크선'],
                   설치=lambda v: install(ink_variant([("on = ink > max(np.percentile(ink, 5), INK_FRAC * peak)", f"on = ink > max(np.percentile(ink, {v}), INK_FRAC * peak)")]))))
-    for key, cur, grid in (('X_OVER', 0.15, [0.075, 0.1125, 0.15, 0.1875, 0.225]),
-                           ('MIN_AREA', 200, [100, 150, 200, 250, 300])):
-        S.append(dict(이름=f'detect_surya.{key}', 위치=[f'detect_surya.py ({key})'], 현재=cur, 격자=grid, 갈래='block',
+    # «현재» 는 코드에서 읽는다 (DS_NOW) — 박아 두면 상수를 고친 뒤 옛 값 기준으로 판정하게 된다
+    for key, grid in (('X_OVER', [0.075, 0.1125, 0.15, 0.1875, 0.225]),
+                      ('MIN_AREA', [100, 150, 200, 250, 300])):
+        cur = DS_NOW[key]
+        S.append(dict(이름=f'detect_surya.{key}', 위치=[_loc('detect_surya.py', f'{key} = ')], 현재=cur, 격자=grid, 갈래='block',
                       결정=['블록'], 설치=(lambda v, k=key: install(ds={k: v}))))
-    for key, idx, cur, grid in (('H_RATIO', 0, 0.60, [0.6, 0.675, 0.75, 0.825, 0.9]), ('H_RATIO', 1, 1.70, [1.7, 2.55, 3.4, 4.25, 5.1]),
-                                ('Y_GAP', 0, -0.40, [-0.6, -0.5, -0.4, -0.3, -0.2]), ('Y_GAP', 1, 1.60, [0.2, 0.4, 0.6, 0.8, 1.0, 1.2, 1.6])):
-        S.append(dict(이름=f'detect_surya.{key} {"하한" if idx == 0 else "상한"}', 위치=[f'detect_surya.py ({key})'], 현재=cur, 격자=grid, 갈래='block',
+    for key, idx, grid in (('H_RATIO', 0, [0.6, 0.675, 0.75, 0.825, 0.9]), ('H_RATIO', 1, [1.7, 2.55, 3.4, 4.25, 5.1]),
+                           ('Y_GAP', 0, [-0.6, -0.5, -0.4, -0.3, -0.2]), ('Y_GAP', 1, [0.2, 0.4, 0.6, 0.8, 1.0, 1.2, 1.6])):
+        cur = DS_NOW[key][idx]
+        S.append(dict(이름=f'detect_surya.{key} {"하한" if idx == 0 else "상한"}', 위치=[_loc('detect_surya.py', f'{key} = ')], 현재=cur, 격자=grid, 갈래='block',
                       결정=['블록'], 설치=(lambda v, k=key, i=idx: install(ds={k: (tuple(v if j == i else DS_NOW[k][j] for j in (0, 1)))}))))
     return S
 
@@ -308,7 +339,7 @@ def main(argv=None):
         print(sp['이름'], verdict, '· 정밀도 표시', {k: v for k, v in flags.items() if v}, flush=True)
     out = dict(무엇='순서 4 · 병행 상수 합성 스윕 — constants_preregister 수정 4 · 5 · 8. 결과 보고까지만 (코드 상수는 바꾸지 않음)',
                사전등록=a.prereg, 사전등록_sha256=_sha(a.prereg), manifest=a.manifest, manifest_sha256=_sha(a.manifest),
-               줄=dict(폴더=a.lines, lines_sha256=_sha(os.path.join(LW, 'lines.json')), provenance=LL.get('provenance')),
+               줄=dict(폴더=_tilde(a.lines), lines_sha256=_sha(os.path.join(LW, 'lines.json')), provenance=LL.get('provenance')),
                정의=dict(세트='조정 세트 13셀 × seed 7201~7230', δ=delta, 곡선='13셀 단순 평균',
                        재현율='맞음 ÷ 참값 (선: direct_lines 허용 안 짝 ÷ 참값 선, 블록: IoU ≥ 0.5 1:1 ÷ 참값 블록)',
                        정밀도='맞음 ÷ 측정 (선: 측정 선, 블록: 출처 블록)',

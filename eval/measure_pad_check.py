@@ -22,6 +22,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 sys.path.insert(0, ROOT)
 import group_gap as GG        # noqa: E402
+import measure_corpus as MC   # noqa: E402  provenance
 from measure import region    # noqa: E402
 
 
@@ -80,6 +81,7 @@ def main(argv=None):
                         for r, c in d.items()} for x, d in sorted(strata.items())},
         판정=('채택' if acc['P1'] > acc['현재'] else '불채택'),
         판정_규칙='P1 일치율 > 현재 일치율 이면 채택. 낮거나 같으면 불채택 · 깨끗한 세트도 fixed · 재탐색 없음')
+    res['provenance'] = MC.provenance('eval/measure_pad_check.py')
     json.dump(res, open(a.out, 'w'), ensure_ascii=False, indent=1)
     print(json.dumps({k: v for k, v in res.items() if k not in ('줄_provenance',)}, ensure_ascii=False, indent=1))
     print('→', a.out)

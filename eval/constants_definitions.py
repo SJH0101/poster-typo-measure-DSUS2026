@@ -37,6 +37,33 @@ XH_GRID = (3, 5, 8, 12, 18)
 PX = 1000
 
 
+def _loc(path, needle, root=ROOT):
+    """file:line 표기를 문자열 검색으로 만든다."""
+    for i, line in enumerate(open(os.path.join(root, path), encoding='utf-8'), 1):
+        if needle in line:
+            return f'{path}:{i}'
+    return path
+
+
+def _code_now():
+    """코드의 현재 값 — 손으로 적지 않는다."""
+    sys.path.insert(0, ROOT)
+    from measure import ink, region
+    import re as _re
+    src = open(os.path.join(ROOT, 'measure/ink.py'), encoding='utf-8').read()
+    rsrc = open(os.path.join(ROOT, 'measure/region.py'), encoding='utf-8').read()
+    return dict(
+        min_h=int(_re.search(r'def lines\(.*min_h=(\d+)', src).group(1)),
+        최소창=int(_re.search(r'x2 - x1 < (\d+)', rsrc).group(1)),
+        frac=float(_re.search(r'def baseline\(ink, s, e, frac=([\d.]+)\)', src).group(1)),
+        어센더식=f'max(2, ⌊{ink.ASC_RATIO} × x높이_px ÷ 2⌋)',
+        small=ink.MARK_SMALL,
+        틈최소=ink.MARK_GAP_MIN,
+        틈비=ink.MARK_GAP_RATIO,
+        틈비_xh=ink.MARK_GAP_RATIO_XH,
+        PAD=region.PAD)
+
+
 def _sha(p):
     return hashlib.sha256(open(p, 'rb').read()).hexdigest()
 
@@ -79,31 +106,32 @@ def main(argv=None):
     gap_ratio = mk[gap_ch]['아래끝_틈_행'] / PX / xh_em
     min_h = 2
     rows = []
-    rows.append(dict(이름='lines · descender 의 min_h', 위치=['measure/ink.py:44', 'measure/ink.py:142', 'measure/probe.py:30'], 현재=2,
+    NOW = _code_now()
+    rows.append(dict(이름='lines · descender 의 min_h', 위치=[_loc('measure/ink.py', 'def lines('), _loc('measure/ink.py', 'def descender('), _loc('measure/probe.py', 'min_h')], 현재=NOW['min_h'],
                      계산='수정 4 — 정의: 번진 가장자리 1행 + 몸통 1행 = 2 (= e + 1, e = 1)', 계산값=min_h,
-                     판정='유지' if min_h == 2 else '바꿀 값'))
-    rows.append(dict(이름='region.measure() · 최소 창', 위치=['measure/region.py:78'], 현재=4,
-                     계산=f'2 × min_h = 2 × {min_h}', 계산값=2 * min_h, 판정='유지' if 2 * min_h == 4 else '바꿀 값'))
-    rows.append(dict(이름='baseline(… frac=)', 위치=['measure/ink.py:129'], 현재=0.5,
+                     판정='유지' if min_h == NOW['min_h'] else '바꿀 값'))
+    rows.append(dict(이름='region.measure() · 최소 창', 위치=[_loc('measure/region.py', 'x2 - x1 < ')], 현재=NOW['최소창'],
+                     계산=f'2 × min_h = 2 × {min_h}', 계산값=2 * min_h, 판정='유지' if 2 * min_h == NOW['최소창'] else '바꿀 값'))
+    rows.append(dict(이름='baseline(… frac=)', 위치=[_loc('measure/ink.py', 'def baseline(')], 현재=NOW['frac'],
                      계산='frac = 덮임 절반 0.5 (라벨 요청서 6절 «절반 넘게 진하면» 과 같은 약속)', 계산값=0.5, 판정='유지'))
     asc_rows = {}
     for label, em in (('어센더_em 최솟값', min(asc.values())), ('어센더_em 최댓값', max(asc.values()))):
         ratio = (em - xh_em) / xh_em
         asc_rows[label] = dict(어센더_em=em, 비=round(ratio, 5),
                                x높이별={str(x): dict(내림값=math.floor(ratio * x / 2), 문턱=max(E + 1, math.floor(ratio * x / 2))) for x in XH_GRID})
-    rows.append(dict(이름='split_marks() · 어센더 2행', 위치=['measure/ink.py:210'], 현재=2, 식_꼴_변경=True,
+    rows.append(dict(이름='split_marks() · 어센더 2행', 위치=[_loc('measure/ink.py', 'ASC_RATIO')], 현재=NOW['어센더식'], 식_꼴_변경=True,
                      계산=f'문턱 = max(e + 1, ⌊(어센더_em − x높이_em) ÷ x높이_em × x높이_px ÷ 2⌋), e = {E}, x높이_em = {xh_em}, 어센더_em = {asc}',
                      계산값=asc_rows, 판정='바꿀 값 (식으로)'))
-    rows.append(dict(이름='lines() · 발음기호 small', 위치=['measure/ink.py:98'], 현재=0.5,
+    rows.append(dict(이름='lines() · 발음기호 small', 위치=[_loc('measure/ink.py', 'MARK_SMALL = ')], 현재=NOW['small'],
                      계산=f'small = 뜬 덩어리 높이_em ÷ x높이_em 의 최댓값 — {small_ch}: {mk[small_ch]["높이_행"]} ÷ {xh_row}',
-                     계산값=round(small, 4), 판정='유지' if round(small, 4) == 0.5 else '바꿀 값'))
+                     계산값=round(small, 4), 판정='유지' if round(small, 4) == NOW['small'] else '바꿀 값'))
     gmin = {str(x): math.ceil(gap_ratio * x) + E for x in XH_GRID}
-    rows.append(dict(이름='lines() · 발음기호 틈 최소', 위치=['measure/ink.py:101'], 현재=3, 식_꼴_변경=True,
+    rows.append(dict(이름='lines() · 발음기호 틈 최소', 위치=[_loc('measure/ink.py', 'MARK_GAP_MIN = ')], 현재=NOW['틈최소'], 식_꼴_변경=True,
                      계산=f'틈 최소 = ⌈(점 아래끝 − x높이선)_em ÷ x높이_em × x높이_px⌉ + e, e = {E} — {gap_ch}: {mk[gap_ch]["아래끝_틈_행"]} ÷ {xh_row}',
                      계산값=dict(비=round(gap_ratio, 5), x높이별=gmin), 판정='바꿀 값 (식으로)'))
-    rows.append(dict(이름='lines() · 발음기호 틈 비', 위치=['measure/ink.py:101'], 현재=0.6,
+    rows.append(dict(이름='lines() · 발음기호 틈 비', 위치=[_loc('measure/ink.py', 'MARK_GAP_RATIO_XH = ')], 현재=NOW['틈비_xh'],
                      계산=f'틈 비 = (점 아래끝 − x높이선)_em ÷ x높이_em 의 최댓값 — {gap_ch}: {mk[gap_ch]["아래끝_틈_행"]} ÷ {xh_row}',
-                     계산값=round(gap_ratio, 4), 판정='유지' if round(gap_ratio, 4) == 0.6 else '바꿀 값'))
+                     계산값=round(gap_ratio, 4), 판정='유지' if round(gap_ratio, 4) == NOW['틈비_xh'] else '바꿀 값'))
     out = dict(
         무엇='정의로 정하는 상수 — constants_preregister 순서 2 (수정 4 의 e = 1). 계산 결과만, 코드의 값은 바꾸지 않음',
         사전등록=a.prereg, 사전등록_sha256=_sha(a.prereg),

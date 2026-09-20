@@ -22,6 +22,7 @@ ROOT = os.path.dirname(HERE)
 sys.path.insert(0, ROOT); sys.path.insert(0, HERE)
 import detect_surya as DS   # noqa: E402
 import group_score as GS    # noqa: E402
+import measure_corpus as MC  # noqa: E402  provenance
 
 LABEL = '정답을 보고 최적화한 A'
 ORIG = dict(y_hi=DS.Y_GAP[1], h_lo=DS.H_RATIO[0], h_hi=DS.H_RATIO[1], x_over=DS.X_OVER)   # 1.60 · 0.60 · 1.70 · 0.15
@@ -168,6 +169,7 @@ def main(argv=None):
         해석=dict(C와의_차=round(gap, 4), 판정=interp, 규칙='C 보다 0.05 이하로 낮거나 높으면 문턱 문제가 컸다 · 0.20 이상 낮으면 접근 한계가 남는다 · 그 사이 섞임'),
         예측_정오=verdicts,
         조합별=[{k: (round(v, 4) if isinstance(v, float) else v) for k, v in r.items()} for r in rows])
+    res['provenance'] = MC.provenance('eval/clean_a_sweep.py')
     json.dump(res, open(a['out'], 'w'), ensure_ascii=False, indent=1)
     print(f'조합 {len(rows)} · 원래 문턱 재현 {same_orig} → {a["out"]}')
 
