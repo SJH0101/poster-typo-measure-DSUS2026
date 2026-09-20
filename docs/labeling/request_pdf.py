@@ -86,6 +86,8 @@ def main():
     a = ap.parse_args()
     md_path = os.path.abspath(a.md)
     md = inline_images(open(md_path, encoding='utf-8').read(), os.path.dirname(md_path))
+    # commonmark 프리셋이라 GFM 취소선(~~…~~)은 켜지지 않아 글자 그대로 나온다. LABELING_REQUEST.md 의
+    # «사후 정정» 표시가 취소선을 쓰므로, 그 문서의 PDF 를 다시 찍으려면 .enable('strikethrough') 를 더한다.
     body = MarkdownIt('commonmark', {'html': True}).enable('table').render(md)
     title = next((l[2:].strip() for l in md.splitlines() if l.startswith('# ')), '요청서')
     html = f'<!doctype html><html lang="ko"><head><meta charset="utf-8"><title>{title}</title><style>{CSS}</style></head><body>{body}</body></html>'
