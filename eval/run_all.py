@@ -158,7 +158,15 @@ def main(argv=None):
                 run('eval/group_diag.py', '--dir', Gp['dir'], '--manifest', Gp['manifest'],
                     '--lines', Gp['lines'], *vv, '--out', Gp['diag_out'])
 
-    if R.get('clean') and os.path.exists(os.path.join(ROOT, R['clean']['manifest'])):
+    clean_ok = bool(R.get('clean')) and os.path.exists(os.path.join(ROOT, R['clean']['manifest']))
+    if clean_ok and not os.path.isdir(os.path.expanduser(R['clean']['dir'])):
+        # 이미지 · 정답은 저장소 밖(~/.typo-mcp/clean)에 있다. 없으면 이 세트 전체를 건너뛴다
+        # — 생성 검증 · 표본 그리기 · 채점 · C 진단 · A 훑기가 모두 이미지를 연다.
+        print(f"깨끗한 세트 이미지가 없다 ({R['clean']['dir']}) — 생성 검증 · 채점 · A 훑기를 건너뛴다")
+        if a.strict:
+            sys.exit(2)
+        clean_ok = False
+    if clean_ok:
         Cl = R['clean']
         hh = ['--human-check', json.dumps(Cl.get('human_check') or [], ensure_ascii=False)]
         if Cl.get('human_check_pending'):
