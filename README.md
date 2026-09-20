@@ -40,8 +40,11 @@ python -m venv .venv && .venv/bin/pip install -r requirements.txt
 .venv/bin/python eval/synth_score.py --dir ~/.typo-mcp/synth_eval --manifest docs/synth_eval_manifest.json --prereg docs/synth_preregister.json --cache-dir ~/.typo-mcp/synth_eval_cache --out docs/synth_result.json --remeasure
 ```
 
-`--remeasure` 가 Surya 줄 검출부터 다시 돌린다 (650장, 애플 실리콘 노트북에서 10분 남짓). 생략하면
-`--cache-dir` 의 측정 캐시를 그대로 쓴다. 채점 결과 `docs/synth_result.json` 이 논문 표 1 · 2 의 근거다.
+`--remeasure` 가 Surya 줄 검출부터 다시 돌린다. 생략하면 `--cache-dir` 의 측정 캐시를 그대로 쓴다.
+채점 결과 `docs/synth_result.json` 이 논문 표 1 · 2 의 근거다.
+
+**소요 시간** (M4 맥북, 2026-09-20 실측): 합성 단계만 — 650장 생성 47초 + 재검출·채점 3분 29초 ≈ **약 4분**.
+아래 `run_all` 전체는 측정 캐시가 있을 때 **약 17분**이고, 그 가운데 16분이 상수 스윕(`eval/clean_a_sweep.py`)이다.
 
 참조 자료가 모두 있으면 채점·분석 전체를 한 명령으로 다시 돌린다.
 
