@@ -6,7 +6,7 @@
  "manifest": "docs/clean_manifest.json",
  "manifest_sha256": "870cc8859b3f890ca232f2196940cff47cbc4b4fe6d66e1d002120aec7480408",
  "참조결과": "docs/clean_result.json",
- "참조결과_sha256": "b94682c2e79286849e7ab0b623eaad89ad6dadf190325c42cf1b3c6e8d7d61e9",
+ "참조결과_sha256": "2506cd3d8b15ee663f591aaff4bdbe3de4e38f993c5502e7f0a3b94fe5197e5c",
  "group_gap_sha256": "9e2e7169772cffe561937c83cf1ee7fb8ea2caf01fac9cb0bc6e50e09c1cff9d",
  "pad_rule": "neighbor_half",
  "tau": 1,

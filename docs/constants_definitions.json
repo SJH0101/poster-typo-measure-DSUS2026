@@ -1,7 +1,7 @@
 {
  "무엇": "정의로 정하는 상수 — constants_preregister 순서 2 (수정 4 의 e = 1). 계산 결과만, 코드의 값은 바꾸지 않음",
  "사전등록": "docs/constants_preregister.json",
- "사전등록_sha256": "42e3a0fff1c4d0b3567070e2e84f75eccd0ee60893b3d8dc45a8ee6db71db1a4",
+ "사전등록_sha256": "b6e72d6affe5fa19509252fb5fca3c88e49f601ac4edfda09d322e5b9dd97d21",
  "글꼴": {
   "파일": "/System/Library/Fonts/Helvetica.ttc",
   "index": 0,
@@ -152,8 +152,8 @@
   {
    "이름": "lines · descender 의 min_h",
    "위치": [
-    "measure/ink.py:44",
-    "measure/ink.py:142",
+    "measure/ink.py:55",
+    "measure/ink.py:171",
     "measure/probe.py:30"
    ],
    "현재": 2,
@@ -164,7 +164,7 @@
   {
    "이름": "region.measure() · 최소 창",
    "위치": [
-    "measure/region.py:78"
+    "measure/region.py:57"
    ],
    "현재": 4,
    "계산": "2 × min_h = 2 × 2",
@@ -174,7 +174,7 @@
   {
    "이름": "baseline(… frac=)",
    "위치": [
-    "measure/ink.py:129"
+    "measure/ink.py:158"
    ],
    "현재": 0.5,
    "계산": "frac = 덮임 절반 0.5 (라벨 요청서 6절 «절반 넘게 진하면» 과 같은 약속)",
@@ -184,9 +184,9 @@
   {
    "이름": "split_marks() · 어센더 2행",
    "위치": [
-    "measure/ink.py:210"
+    "measure/ink.py:35"
    ],
-   "현재": 2,
+   "현재": "max(2, ⌊0.3748 × x높이_px ÷ 2⌋)",
    "식_꼴_변경": true,
    "계산": "문턱 = max(e + 1, ⌊(어센더_em − x높이_em) ÷ x높이_em × x높이_px ÷ 2⌋), e = 1, x높이_em = 0.523, 어센더_em = {'b': 0.719, 'd': 0.719, 'h': 0.719, 'k': 0.717, 'l': 0.717}",
    "계산값": {
@@ -248,9 +248,9 @@
   {
    "이름": "lines() · 발음기호 small",
    "위치": [
-    "measure/ink.py:98"
+    "measure/ink.py:30"
    ],
-   "현재": 0.5,
+   "현재": 0.284,
    "계산": "small = 뜬 덩어리 높이_em ÷ x높이_em 의 최댓값 — å: 204 ÷ 523",
    "계산값": 0.3901,
    "판정": "바꿀 값"
@@ -258,7 +258,7 @@
   {
    "이름": "lines() · 발음기호 틈 최소",
    "위치": [
-    "measure/ink.py:101"
+    "measure/ink.py:32"
    ],
    "현재": 3,
    "식_꼴_변경": true,
@@ -278,12 +278,12 @@
   {
    "이름": "lines() · 발음기호 틈 비",
    "위치": [
-    "measure/ink.py:101"
+    "measure/ink.py:33"
    ],
-   "현재": 0.6,
+   "현재": 0.1797,
    "계산": "틈 비 = (점 아래끝 − x높이선)_em ÷ x높이_em 의 최댓값 — i: 94 ÷ 523",
    "계산값": 0.1797,
-   "판정": "바꿀 값"
+   "판정": "유지"
   }
  ],
  "provenance": {
@@ -292,8 +292,8 @@
   "grouping": "detect_surya.boxes_norm",
   "measurer": "measure/ground.py",
   "skew": "EasyOCR 상자 기울기 중앙값 · skewed = |각| >= 14°",
-  "commit": "384e9c4",
-  "date": "2026-09-20",
+  "commit": "3e8746c",
+  "date": "2026-09-21",
   "source": "eval/constants_definitions.py",
   "n": 7
  }

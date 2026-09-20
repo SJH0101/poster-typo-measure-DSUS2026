@@ -16,7 +16,7 @@
   "n": 60,
   "synthetic": true
  },
- "commit": "384e9c4",
+ "commit": "3e8746c",
  "장": 60,
  "줄상자": 1811,
  "현재": {
@@ -87,5 +87,16 @@
   }
  },
  "판정": "채택",
- "판정_규칙": "P1 일치율 > 현재 일치율 이면 채택. 낮거나 같으면 불채택 · 깨끗한 세트도 fixed · 재탐색 없음"
+ "판정_규칙": "P1 일치율 > 현재 일치율 이면 채택. 낮거나 같으면 불채택 · 깨끗한 세트도 fixed · 재탐색 없음",
+ "provenance": {
+  "pipeline": "surya+ground",
+  "detector": "surya-ocr 0.22.1",
+  "grouping": "detect_surya.boxes_norm",
+  "measurer": "measure/ground.py",
+  "skew": "EasyOCR 상자 기울기 중앙값 · skewed = |각| >= 14°",
+  "commit": "3e8746c",
+  "date": "2026-09-21",
+  "source": "eval/measure_pad_check.py",
+  "n": null
+ }
 }

@@ -5,15 +5,15 @@
   "lines": "~/Downloads/lines_20260818-2048.csv",
   "blocks": "~/Downloads/blocks_20260818-2048.csv",
   "cache": "~/.typo-mcp/brockmann.json",
-  "cache_sha256": "079fec86640343b06dc5141663e5fc3440d352a303f4e382c1030381c0c298fc",
+  "cache_sha256": "d77fa5d5e9c6bd3f2301a24c6b305d72d713dd73d92c66e508c68cfd61833dc1",
   "cache_provenance": {
    "pipeline": "surya+ground",
    "detector": "surya-ocr 0.22.1",
    "grouping": "detect_surya.boxes_norm",
    "measurer": "measure/ground.py",
    "skew": "EasyOCR 상자 기울기 중앙값 · skewed = |각| >= 14°",
-   "commit": "cb779ea",
-   "date": "2026-09-18",
+   "commit": "8a5b0a1",
+   "date": "2026-09-20",
    "source": "remeasure.py — ~/Documents/연구2/브로크만 정리/corpus/index.csv 코어 123장",
    "n": 123
   },
@@ -22,17 +22,17 @@
  },
  "캐시에_저장된_행간규칙": {
   "median": 1.4,
-  "lo": 1.158,
+  "lo": 1.166,
   "hi": 1.8,
-  "n": 317,
+  "n": 321,
   "verdict": "제약"
  },
  "in_sample_행간규칙": {
   "median": 1.4,
-  "lo": 1.158,
+  "lo": 1.166,
   "hi": 1.8,
-  "cv": 0.198,
-  "n": 317,
+  "cv": 0.193,
+  "n": 321,
   "verdict": "제약"
  },
  "포스터": {
@@ -46,23 +46,23 @@
    "행간규칙": {
     "in_sample": {
      "median": 1.4,
-     "lo": 1.158,
+     "lo": 1.166,
      "hi": 1.8,
-     "cv": 0.198,
-     "n": 317,
+     "cv": 0.193,
+     "n": 321,
      "verdict": "제약"
     },
     "뺀뒤": {
      "median": 1.4,
-     "lo": 1.152,
+     "lo": 1.166,
      "hi": 1.8,
-     "cv": 0.199,
-     "n": 314,
+     "cv": 0.194,
+     "n": 318,
      "verdict": "제약"
     },
     "변화": {
      "median": 0.0,
-     "lo": -0.006,
+     "lo": 0.0,
      "hi": 0.0,
      "n": -3
     }
@@ -276,18 +276,18 @@
    "행간규칙": {
     "in_sample": {
      "median": 1.4,
-     "lo": 1.158,
+     "lo": 1.166,
      "hi": 1.8,
-     "cv": 0.198,
-     "n": 317,
+     "cv": 0.193,
+     "n": 321,
      "verdict": "제약"
     },
     "뺀뒤": {
      "median": 1.4,
-     "lo": 1.158,
+     "lo": 1.166,
      "hi": 1.8,
-     "cv": 0.198,
-     "n": 317,
+     "cv": 0.193,
+     "n": 321,
      "verdict": "제약"
     },
     "변화": {
