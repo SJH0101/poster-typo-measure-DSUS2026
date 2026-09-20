@@ -90,7 +90,7 @@ def items_of(paths):
             for p in paths]
 
 
-def measure_items(items, skew=True, batch=8, log=print, split_lines=False):
+def measure_items(items, skew=True, batch=8, log=print, split_lines=True):
     """[(열쇠, 경로)] → (raw, failed). 찾기는 Surya, 재기는 measure/ground.py.
 
     열쇠를 받는 까닭 — 다시 잴 때 옛 캐시의 열쇠를 그대로 써야 결과를 견줄 수
@@ -120,7 +120,7 @@ def measure_items(items, skew=True, batch=8, log=print, split_lines=False):
         for (k, p), r, im in zip(chunk, res, imgs):
             W, H = im.size
             lines = [[float(v) for v in b.bbox] for b in r.bboxes]
-            if split_lines:                  # 선택 처리 — 기본은 꺼짐 (detect_surya.split_wide_lines)
+            if split_lines:                  # 기본 경로 (사전등록 수정 16) — detect_surya.split_wide_lines
                 lines = DS.split_wide_lines(np.asarray(im.convert('L')).astype(float), lines)[0]
             bx = DS.boxes_norm(lines, (W, H))
             if not bx:

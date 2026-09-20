@@ -825,8 +825,10 @@ def cmd_score(a):
                 or L[k]['sha256'] != pl['sha256']:
             sys.exit(f'목록과 다른 이미지 또는 줄 파일: 순서 {o}')
         tmpl[o] = it['template']
-        lines = L[k]['lines']; size = tuple(L[k]['size'])
+        size = tuple(L[k]['size'])
         gray = np.asarray(Image.open(path).convert('L')).astype(float); Wd = gray.shape[1]
+        # 사전등록 수정 16 — 줄 상자 가르기를 기본 경로로. A · C · VLM 이 모두 갈린 줄을 받는다
+        lines, _parent = DS.split_wide_lines(gray, L[k]['lines'])
         # 방식
         c_asg, cd = GG.group_gap(gray, lines, pad_rule=C_PAD)
         src = cd['source']; gsrc = {}

@@ -119,7 +119,7 @@ def _tilde(p):
     return '~' + p[len(h):] if p.startswith(h) else p
 
 
-def measure_cell(cell, cond, items, cache, remeasure, split_lines=False):
+def measure_cell(cell, cond, items, cache, remeasure, split_lines=True):
     if os.path.exists(cache) and not remeasure:
         d = json.load(open(cache))
         if set(d['raw']) >= {k for k, _ in items}:
@@ -128,8 +128,7 @@ def measure_cell(cell, cond, items, cache, remeasure, split_lines=False):
     prov = MC.provenance(f'eval/synth_score.py — {cell}', len(raw))
     prov.update(synthetic=True, cell=cell, condition=cond, skew='안 잼 (기울기 0° 로 그림)',
                 failed=[(os.path.basename(p), w) for p, w in failed])
-    if split_lines:
-        prov.update(split_lines='detect_surya.split_wide_lines — 선택 처리 (--split-lines)')
+    prov.update(split_lines=('detect_surya.split_wide_lines (사전등록 수정 16, 기본 경로)' if split_lines else '끔 (--no-split-lines)'))
     os.makedirs(os.path.dirname(cache), exist_ok=True)
     json.dump(dict(raw=raw, rules={}, source=f'synth/{cell}', detector='surya', provenance=prov),
               open(cache, 'w'), ensure_ascii=False)
@@ -470,9 +469,9 @@ def main(argv=None):
     ap.add_argument('--out', required=True)
     ap.add_argument('--cells', nargs='*')
     ap.add_argument('--remeasure', action='store_true')
-    ap.add_argument('--split-lines', action='store_true',
-                    help='선택 처리: 줄 상자 가로 빈틈 > 상자 높이면 가른다 (detect_surya.split_wide_lines). '
-                         '기본은 꺼짐. 켜면 캐시를 synth-{셀}-splitlines.json 에 따로 둔다')
+    ap.add_argument('--no-split-lines', dest='split_lines', action='store_false',
+                    help='줄 상자 가르기(detect_surya.split_wide_lines, 사전등록 수정 16 으로 기본 경로)를 끈다. '
+                         '끄면 캐시를 synth-{셀}-nosplit.json 에 따로 둔다')
     a = ap.parse_args(argv)
     D = os.path.expanduser(a.dir)
     M = json.load(open(a.manifest))
@@ -497,7 +496,7 @@ def main(argv=None):
             if _sha(p) != next(it['image_sha256'] for it in M['items'] if it['cell'] == cell and it['seed'] == int(k.split('/')[-1])):
                 sys.exit(f'manifest 와 다른 이미지: {p}')
         cache = os.path.join(os.path.expanduser(a.cache_dir),
-                             f'synth-{cell}-splitlines.json' if a.split_lines else f'synth-{cell}.json')
+                             f'synth-{cell}.json' if a.split_lines else f'synth-{cell}-nosplit.json')
         raw, prov[cell] = measure_cell(cell, cond, items, cache, a.remeasure, split_lines=a.split_lines)
         truths = {k: json.load(open(p[:-4] + '.json')) for k, p in items}
         posters = {k: score_poster(truths[k], raw[k]) for k, _ in items if k in raw}
