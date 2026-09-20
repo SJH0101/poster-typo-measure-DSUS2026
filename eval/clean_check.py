@@ -29,6 +29,12 @@ import clean_gen as CG       # noqa: E402  층별 기대 장수 (수정 2)
 LEVELS = ['c_in', '0.5', '1.0', '1.5', '2.0', '2.5', '3.0', '4.0']
 
 
+def _tilde(p):
+    """기록 경로의 홈을 ~ 로 접는다."""
+    h = os.path.expanduser('~')
+    return '~' + p[len(h):] if p.startswith(h) else p
+
+
 def _sha(p):
     return hashlib.sha256(open(os.path.expanduser(p), 'rb').read()).hexdigest()
 
@@ -237,9 +243,9 @@ def main(argv=None):
         t = truths[s]
         op = os.path.join(os.path.expanduser(a.review_dir), f'{s}_review.png')
         review_image(os.path.join(D, f'{s}.jpg'), t, op)
-        review.append(dict(층=f'{key[0]}단 · x높이 {key[1]}', seed=s, 고른_까닭=why, 이미지=os.path.join(D, f'{s}.jpg'),
+        review.append(dict(층=f'{key[0]}단 · x높이 {key[1]}', seed=s, 고른_까닭=why, 이미지=_tilde(os.path.join(D, f'{s}.jpg')),
                            블록수=len(t['blocks']), 쌍수=len(t['pairs']), 줄수=sum(b['n'] for b in t['blocks']),
-                           검토판=op, 블록=len(t['blocks']),
+                           검토판=_tilde(op), 블록=len(t['blocks']),
                            쌍=[dict(위=p['upper'], 아래=p['lower'], 여유=p['level'], 잉크틈_px=round(p['ink_gap_px'], 2),
                                    배치거리_px=p['placed_distance_px'], 위_마지막_베이스라인=u_base)
                               for p, u_base in ((p, next(b for b in t['blocks'] if b['id'] == p['upper'])['lines'][-1]['baseline_y'])

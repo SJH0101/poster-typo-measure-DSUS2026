@@ -1,14 +1,14 @@
-# 재는 쪽 (measure/) 과 규칙 (rules.py) 은 이것만으로 돈다.
+# 논문 재현에 필요한 것만 둔다.
+
+# 재는 쪽 (measure/) · 규칙 (rules.py) · 채점 (eval/)
 numpy>=1.24
 scipy>=1.10
 Pillow>=10.0
 
-# 비교 대상 (baseline/) — 스스로 훑어 찾는 자동 검출을 쓸 때만 필요하다.
-# measure_corpus 도구와 snapshot.py 가 이것을 쓴다. 짚어서 재는 경로
-# (measure_boxes) 는 받지 않아도 돈다.
-easyocr>=1.7
+# 줄 검출 — 파이프라인의 «찾기». eval/synth_score.py --remeasure · measure_corpus.py 가 부른다.
+# 논문 수치는 0.22.1 로 냈다 (docs/synth_result.json 의 측정 provenance).
+surya-ocr==0.22.1
 
-# 색 (color/photo.py) — TYPO_MCP_PHOTO=1 로 사진 판정을 켤 때만.
-# 켜지 않으면 서버 동작이 달라지지 않는다. torch 는 easyocr 가 끌고 온다.
-# torchvision>=0.17
-# transformers>=4.40
+# 기울기 판정 (measure_corpus.measure_items skew=True) 과 검출기 비교 (detector_compare.py).
+# 합성 실험은 skew=False 라 이것 없이도 돈다.
+easyocr>=1.7

@@ -1,7 +1,7 @@
-# 타이포그래피 계측 — 판단과 계측을 나눈 파이프라인
+# 타이포그래피 계측 — 논문 재현 저장소
 
-> **초안.** 논문 공개용으로 정리 중인 브랜치(`paper-release`)다. 실물 포스터 이미지의 이용 조건과
-> VLM 응답의 공개 여부가 아직 확정되지 않았다.
+> 이 저장소는 **논문의 수치를 다시 내기 위한 것**이다. 파이프라인 코드 · 합성 포스터 생성기 ·
+> 채점 스크립트 · 사전등록 · 사람 정답 라벨 · 결과 JSON 을 담는다. 실물 포스터 이미지는 들어 있지 않다.
 
 포스터 인쇄물에서 조판을 **재는** 도구와, 그 도구가 무엇을 얼마나 되찾는지 확인한 실험이다.
 파이프라인은 «어디를 잴지 짚는 일»(줄 검출 · 블록 묶기)과 «그 안을 재는 일»(베이스라인 · x높이선 ·
@@ -26,6 +26,8 @@ macOS · Python 3.11 기준이다. 합성 포스터는 시스템 Helvetica(`/Sys
 python -m venv .venv && .venv/bin/pip install -r requirements.txt
 ```
 
+줄 검출은 `surya-ocr` 이 한다 (논문 수치는 0.22.1). 합성 실험만 다시 낼 때는 `easyocr` 없이도 돈다.
+
 ## 실행 — 합성 생성 → 측정 → 채점
 
 합성 실험은 저장소 안의 것만으로 처음부터 다시 만들 수 있다. 이미지는 저장소 밖에 쓴다.
@@ -47,8 +49,10 @@ python -m venv .venv && .venv/bin/pip install -r requirements.txt
 .venv/bin/python eval/run_all.py eval/refs.json
 ```
 
-경로는 코드에 박지 않고 `eval/refs.json` 한 곳에 둔다. 실물 포스터 이미지와 사람 라벨은 저장소에
-들어 있지 않으므로(아래) 그 단계는 자료를 갖춘 사람만 돌릴 수 있다.
+경로는 코드에 박지 않고 `eval/refs.json` 한 곳에 둔다. 실물 포스터 이미지는 저장소에 들어 있지
+않으므로(아래) 그 단계는 자료를 갖춘 사람만 돌릴 수 있다. 자료가 없으면 `run_all` 은 그 단계를
+건너뛴다 — 사람 상자 원본 CSV 가 없으면 이미 커밋된 `boxes/human_v2.json` 을 쓰고, 검출기 상자
+파일이 모자라면 검출기 비교·오라클 묶기 단계를 건너뛴다. `--strict` 를 주면 예전처럼 그 자리에서 멈춘다.
 
 ## 폴더
 
@@ -56,7 +60,7 @@ python -m venv .venv && .venv/bin/pip install -r requirements.txt
 |---|---|
 | `measure/` | 재는 쪽 — 잉크 문턱 · 글줄 · 베이스라인 · x높이선 · 상단 잉크선 · 블록 측정 |
 | `color/` | 바탕·글자 색과 사진 영역 측정 |
-| `tools/` | MCP 서버가 여는 도구 (규칙 보기 · 배치 · 검사) |
+| `tools/` | 레이아웃 검사 모듈 (`eval/series_check.py` 가 부른다) |
 | `eval/` | 합성 생성기 · 채점 · 사전등록 실험 스크립트 · `run_all.py` · `refs.json` |
 | `docs/` | 사전등록 · 결과 JSON · 실험 기록 · 코퍼스 색인 |
 | `docs/labeling/` | 라벨 대상 선정 · 가이드 긋기 도구 만들기 · 요청서 자료 |
@@ -67,7 +71,7 @@ python -m venv .venv && .venv/bin/pip install -r requirements.txt
 | `baseline/` · `viewer/` | 옛 검출 경로와 보기 도구 (참고용) |
 
 핵심 코드: `detect_surya.py`(줄 → 블록 묶기) · `measure_corpus.py`(코퍼스 측정) · `remeasure.py`
-(네 코퍼스 다시 재기) · `rules.py`(분포에서 규칙 뽑기) · `server.py`(MCP 서버).
+(네 코퍼스 다시 재기) · `rules.py`(분포에서 규칙 뽑기).
 
 ## 자료 출처와 라이선스
 

@@ -42,6 +42,8 @@ def main(argv=None):
     ap = argparse.ArgumentParser(description='새 참조로 채점·분석을 전부 다시 돌린다')
     ap.add_argument('refs', help='참조 경로 목록 JSON (eval/refs.json)')
     ap.add_argument('--redetect', action='store_true', help='EasyOCR · Surya · Surya 줄을 다시 짚는다')
+    ap.add_argument('--strict', action='store_true',
+                    help='상자 파일이 모자라면 멈춘다 (예전 동작)')
     ap.add_argument('--skip-idml', action='store_true')
     a = ap.parse_args(argv)
     R = json.load(open(a.refs))
@@ -51,8 +53,12 @@ def main(argv=None):
         roots += ['--image-root', r]
 
     hb = R['human_boxes']
-    run('detector_compare.py', 'human', '--csv', hb['csv'], '--date', hb['date'],
-        '--tool', hb['tool'], '--out', hb['out'], *roots)
+    if os.path.exists(os.path.expanduser(hb['csv'])):
+        run('detector_compare.py', 'human', '--csv', hb['csv'], '--date', hb['date'],
+            '--tool', hb['tool'], '--out', hb['out'], *roots)
+    else:
+        # 사람 상자 원본 CSV 는 저장소 밖에 있다. 없으면 이미 커밋된 결과(hb['out'])를 그대로 쓴다.
+        print(f"사람 상자 CSV 가 없다 ({hb['csv']}) — 이미 있는 {hb['out']} 을 쓴다")
     ref = hb['out']
     want = posters_of(ref)
 
@@ -79,7 +85,11 @@ def main(argv=None):
                   '사람 상자를 본 적 없는 새 세션에서 만든 뒤 detector_compare.py vlm 으로 옮겨라.')
         if any(name != 'VLM' for name, _ in short.values()) and not a.redetect:
             print('EasyOCR · Surya 는 --redetect 로 다시 짚는다.')
-        sys.exit(2)
+        # 검출기 비교는 논문 표에 들어가지 않는다. 상자 파일이 모자라면 이 단계만 건너뛰고 나머지를 돌린다
+        # (자료를 갖춘 사람은 --strict 로 예전처럼 멈추게 할 수 있다).
+        if a.strict:
+            sys.exit(2)
+        print('상자 파일이 모자라 검출기 비교 · 오라클 묶기 단계를 건너뛴다.')
 
     srcs = []
     for name, fs in det.items():
@@ -87,11 +97,12 @@ def main(argv=None):
     notes = []
     for k, v in (R.get('detector_notes') or {}).items():
         notes += ['--note', f'{k}={v}']
-    run('detector_score.py', '--ref', ref, *srcs, '--prereg', R['detector_prereg'],
-        '--out', R['detector_out'], *notes, *roots)
+    if not short:
+        run('detector_score.py', '--ref', ref, *srcs, '--prereg', R['detector_prereg'],
+            '--out', R['detector_out'], *notes, *roots)
 
-    run('oracle_group.py', '--ref', ref, '--lines', R['surya_lines'], '--group', det['Surya'][0],
-        '--vlm', det['VLM'][0], '--prereg', R['oracle_prereg'], '--out', R['oracle_out'], *roots)
+        run('oracle_group.py', '--ref', ref, '--lines', R['surya_lines'], '--group', det['Surya'][0],
+            '--vlm', det['VLM'][0], '--prereg', R['oracle_prereg'], '--out', R['oracle_out'], *roots)
 
     if R.get('loo_place_text') and R.get('hand_lines'):
         P, H = R['loo_place_text'], R['hand_lines']
@@ -183,7 +194,12 @@ def main(argv=None):
                 '--prereg', Bg['prereg'], '--out', Bg['explore_out'], '--c-pad-rule', Bg['c_pad_rule'])
         else:
             print('브로크만 1단계 줄 파일 또는 VLM 패스 파일이 없다 — 건너뛴다')
-        if Bg.get('guides') and Bg.get('봉인_해제'):
+        vlm_ok = all(os.path.exists(os.path.join(ROOT, v)) for v in Bg['vlm'])
+        if Bg.get('guides') and Bg.get('봉인_해제') and not vlm_ok:
+            print('브로크만 VLM 패스 파일이 없다 — 2단계 채점을 건너뛴다 (boxes/VLM_RESPONSES.md)')
+            if a.strict:
+                sys.exit(2)
+        elif Bg.get('guides') and Bg.get('봉인_해제'):
             gd = ['--guides', *Bg['guides']]
             run('eval/brockmann_stage2_score.py', 'consensus', *gd, '--posters', Bg['posters'],
                 '--prereg', Bg['stage2_prereg'], '--out', Bg['consensus_out'])
