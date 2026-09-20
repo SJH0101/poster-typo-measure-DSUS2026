@@ -15,4 +15,11 @@
 
 ## 브로크만 1단계 VLM 패스 (새 봉인, 갈린 줄)
 
-(아래 표는 새 패스를 받은 뒤 채운다)
+2026-09-21 에 받았다. 사전등록 수정 16 의 갈린 줄(910개)로 SoM 을 다시 그리고, 사람 상자를 본 적 없는
+새 세션 다섯 개씩(묶음 10장)에 같은 지시문(`docs/brockmann_vlm_prompt.md`) · 같은 모델(claude-opus-5)로
+받았다. **이 두 파일은 봉인이다 — 2단계 채점 밖에서는 열지 않는다.**
+
+| 파일 | 크기 (bytes) | sha256 |
+|---|---|---|
+| `boxes/brockmann_vlm_split_pass1.json` | 29192 | `041a3ff981d6228aecd3a982360122bec8b8bc01e3dae0136a91ffab2b779100` |
+| `boxes/brockmann_vlm_split_pass2.json` | 28855 | `85854cba15b0158c0cf6b47ec70027eea8b9b1dc29e1b40d1d52b8584a739c02` |

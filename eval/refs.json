@@ -210,8 +210,8 @@
    "max_labels": 700
   },
   "vlm": [
-   "boxes/brockmann_vlm_pass1.json",
-   "boxes/brockmann_vlm_pass2.json"
+   "boxes/brockmann_vlm_split_pass1.json",
+   "boxes/brockmann_vlm_split_pass2.json"
   ],
   "c_pad_rule": "neighbor_half",
   "explore_out": "docs/brockmann_group_explore.json",
@@ -248,7 +248,13 @@
    },
    "받은 날": "2026-09-17",
    "exported_at 출처": "eval/brockmann_stage2_score.py check 보고"
-  }
+  },
+  "줄_갈림": "~/.typo-mcp/brockmann50_split/lines.json (사전등록 수정 16 — detect_surya.split_wide_lines 를 건 줄. 채점은 work 의 원본 줄에 같은 처리를 걸어 같은 값을 만든다)",
+  "vlm_옛_봉인": [
+   "boxes/brockmann_vlm_pass1.json",
+   "boxes/brockmann_vlm_pass2.json"
+  ],
+  "som_갈림": "~/.typo-mcp/brockmann50_split/som"
  },
  "constants_ink_threshold": {
   "dir": "~/.typo-mcp/synth_sweep",
