@@ -9,7 +9,7 @@
 """
 import json, os, sys
 import numpy as np
-sys.path.insert(0,'~/Documents/poster/files')
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import surface, docs_build
 
 rows=[]
@@ -46,4 +46,4 @@ print(f"\nC÷A  {np.median(C)/np.median(A):.3f}")
 print(f"C가 더 가까운 블록  {w}/{n}  (동점 {t})   부호검정 z = {z:.2f}")
 json.dump(dict(블록=len(rows), A=float(np.median(A)), B=float(np.median(B)), C=float(np.median(C)),
                비=float(np.median(C)/np.median(A)), 이긴블록=w, 전체=n, z=float(z)),
-          open('/private/tmp/claude-501/-Users-junhyeoksong-Documents-poster-files/1001d578-0384-4369-8e61-ae37a78e5516/scratchpad/loo2.json','w'), ensure_ascii=False)
+          open(sys.argv[1] if len(sys.argv) > 1 else 'loo_block_out.json', 'w'), ensure_ascii=False)
