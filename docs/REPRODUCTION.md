@@ -1,4 +1,4 @@
-# 재현 확인 기록 (2026-09-20)
+# 재현 확인 기록 (2026-09-21)
 
 이 저장소를 GitHub 에서 clone 하고, Python 3.11 새 가상환경에 `requirements.txt` 만 깔아
 `python eval/run_all.py eval/refs.json` 을 완주시킨 기록이다. 측정 캐시(`~/.typo-mcp/`)와 실물
@@ -10,7 +10,7 @@
 |---|---|
 | 기계 | Apple Silicon 맥북 (M4) |
 | 파이썬 | 3.11.15 — **3.10 이상이 필요하다** (`surya-ocr` 요구). 시스템 `python3` 가 3.9 면 설치가 실패한다 |
-| 설치 | `pip install -r requirements.txt` 2분 10초 (surya-ocr 0.22.1 · torch 2.14.0 · numpy 2.4.6 · scipy 1.17.1 · Pillow 10.4.0 · easyocr 1.7.2), 가상환경 1.2 GB |
+| 설치 | `requirements.txt` (surya-ocr 0.22.1 · torch 2.14.0 · numpy 2.4.6 · scipy 1.17.1 · Pillow 10.4.0 · easyocr 1.7.2), 가상환경 1.2 GB. 내려받은 것이 없을 때 2분 10초, 받아 둔 것이 있으면 19초 |
 
 ## 소요 시간
 
@@ -18,37 +18,46 @@
 |---|---|
 | 합성 650장 생성 (`eval/synth_gen.py`) | 47초 |
 | 합성 재검출 · 채점 (`eval/synth_score.py --remeasure`) | 3분 29초 |
-| `run_all` 전체 (측정 캐시가 있을 때) | **24분 37초** |
-| — 그 가운데 `eval/clean_a_sweep.py` | 14분 58초 |
-| — `eval/constants_sweep4.py` | 5분 33초 |
-| — `eval/constants_ink_sweep.py` | 1분 36초 |
-| — `idml_explore.py score` | 1분 8초 |
-| — 나머지 단계 합 | 1분 20초 |
+| `run_all` 전체 (측정 캐시가 있을 때) | **28분 24초** (2026-09-21, 커밋 `a134a31`) |
+| — 그 가운데 `eval/clean_a_sweep.py` | 약 15분 |
+| — `eval/constants_sweep4.py` | 약 5분 30초 |
+| — `eval/constants_ink_sweep.py` | 약 1분 40초 |
+| — `idml_explore.py score` | 약 1분 |
+| — 브로크만 1 · 2단계 (`brockmann_group_explore` · `brockmann_stage2_score`) | 약 3분 |
+| — 나머지 단계 합 | 약 1분 20초 |
+
+앞선 측정(2026-09-20, 24분 37초)보다 긴 까닭은 브로크만 1 · 2단계가 그때는 VLM 패스 파일이
+없어 건너뛰었고 지금은 도는 것이다. 단계별 시간은 그때 잰 값이고 전체만 다시 쟀다.
 
 ## 자료가 없어 건너뛴 단계
 
 | 단계 | 까닭 |
 |---|---|
 | 사람 상자 만들기 | 원본 CSV 가 저장소 밖에 있다 — 커밋된 `boxes/human_v2.json` 을 쓴다 |
-| 검출기 비교 · 오라클 묶기 | VLM 상자 파일이 저장소에 없다 (`boxes/VLM_RESPONSES.md`) |
-| 브로크만 1 · 2단계 | 같은 까닭 (VLM 패스 파일) |
+| 검출기 비교 · 오라클 묶기 | 검출기 상자 파일이 저장소에 없다 (`boxes/VLM_RESPONSES.md`) |
 
-`--strict` 를 주면 건너뛰지 않고 그 자리에서 멈춘다.
+깨끗한 세트 이미지(`~/.typo-mcp/clean`)가 없으면 그 세트의 생성 검증 · 채점 · C 진단 · A 훑기도
+건너뛴다. `--strict` 를 주면 건너뛰지 않고 그 자리에서 멈춘다 (종료 코드 2).
 
 ## 결과 대조
 
-`run_all` 을 지금 코드로 완주시킨 값을 커밋해 두었다 (커밋 «결과 재산출 — split_columns 반영 후 재산출»).
-그 뒤 clone 해서 다시 완주시키면 **모든 결과 파일이 그대로 나온다 — 다른 칸 0**.
+clone 에서 완주시킨 뒤 `git status` 로 견줬다. **바뀐 값은 없다 — 다른 칸 0.**
 
 | 결과 파일 | 값이 바뀐 자리 |
 |---|---|
 | `synth_result.json` · `synth_b_result.json` (표 1 · 2) | 0 |
 | `clean_result.json` · `clean_check.json` · `clean_c_diag.json` · `clean_a_sweep.json` | 0 |
+| `brockmann_stage2_result.json` · `brockmann_consensus_refs.json` · `brockmann_group_explore.json` | 0 |
 | `loo_place_text.json` · `measure_pad_result.json` · `constants_definitions.json` | 0 |
 | `series_check.json` · `series_check_diag.json` | 0 |
 | `constants_ink_threshold.json` · `constants_sweep4.json` | 0 |
+| `typography_rules_explore.json` · `typography_rules2_explore.json` (탐색용) | 0 |
 
-기록 필드(`*_sha256` · `commit` · 경로)는 자료를 다시 만들면 바뀌므로 위 셈에서 뺐다.
+`git status` 에 뜬 파일은 다섯이었고(`clean_a_sweep` · `constants_definitions` ·
+`constants_ink_threshold` · `constants_sweep4` · `measure_pad_result`), 달라진 줄은 모두
+`provenance.commit` 하나뿐이다 (`3e8746c` → `a134a31`). 기록 필드(`*_sha256` · `commit` ·
+경로)는 자료를 다시 만들면 바뀌므로 위 셈에서 뺐다. 결과 JSON 106개를 기록 필드만 뺀 채
+칸 단위로 견준 값도 **다른 칸 0** 이다.
 
 ### 이전 값과의 차이 (2026-09-20 재산출)
 

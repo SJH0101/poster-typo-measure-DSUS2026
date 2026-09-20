@@ -250,9 +250,10 @@ def main(argv=None):
     if R.get('typography_rules'):
         Tr = R['typography_rules']      # 탐색용 — 조판 규칙 뽑기 (파이프라인 측정 · 합의 라벨)
         if all(os.path.exists(os.path.expanduser(v)) for v in Tr['caches'].values()):
-            run('eval/explore_typography_rules.py',
-                *sum((['--cache', f'{k}={v}'] for k, v in Tr['caches'].items()), []),
-                '--consensus', Tr['consensus'], '--out', Tr['out'])
+            cc = sum((['--cache', f'{k}={v}'] for k, v in Tr['caches'].items()), [])
+            run('eval/explore_typography_rules.py', *cc, '--consensus', Tr['consensus'], '--out', Tr['out'])
+            if Tr.get('out2'):          # 2차 — 항목마다 무작위 대조 둘
+                run('eval/explore_typography_rules2.py', *cc, '--consensus', Tr['consensus'], '--out', Tr['out2'])
         else:
             print('조판 규칙 뽑기 — 캐시가 없다. 건너뛴다')
 

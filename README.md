@@ -44,7 +44,7 @@ python -m venv .venv && .venv/bin/pip install -r requirements.txt
 채점 결과 `docs/synth_result.json` 이 논문 표 1 · 2 의 근거다.
 
 **소요 시간** (M4 맥북, 2026-09-21 실측): 합성 단계만 — 650장 생성 47초 + 재검출·채점 3분 29초 ≈ **약 4분**.
-아래 `run_all` 전체는 측정 캐시가 있을 때 **약 27분**이고, 그 가운데 15분이 `eval/clean_a_sweep.py`,
+아래 `run_all` 전체는 측정 캐시가 있을 때 **약 28분**이고, 그 가운데 15분이 `eval/clean_a_sweep.py`,
 5분 30초가 `eval/constants_sweep4.py` 다. 자세한 기록은 `docs/REPRODUCTION.md`.
 
 참조 자료가 모두 있으면 채점·분석 전체를 한 명령으로 다시 돌린다.

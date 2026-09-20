@@ -298,6 +298,7 @@
   },
   "consensus": "docs/brockmann_consensus_refs.json",
   "out": "docs/typography_rules_explore.json",
-  "note": "탐색용 · 논문 수치 아님. eval/explore_typography_rules.py — (가) 파이프라인 측정 · (나) 합의 라벨로 같은 계산을 돌려 나란히 낸다. 사전등록 없이 도는 탐색이며 이 결과로 상수 · 파이프라인을 고치지 않는다"
+  "out2": "docs/typography_rules2_explore.json",
+  "note": "탐색용 · 논문 수치 아님. eval/explore_typography_rules.py — (가) 파이프라인 측정 · (나) 합의 라벨로 같은 계산을 돌려 나란히 낸다. 사전등록 없이 도는 탐색이며 이 결과로 상수 · 파이프라인을 고치지 않는다. 2차(out2, eval/explore_typography_rules2.py)는 항목마다 무작위 대조 (i) 균등 · (ii) 구조만 흔들기 를 함께 낸다"
  }
 }
