@@ -27,7 +27,7 @@ def main(argv=None):
     from surya.detection import DetectionPredictor
     det = DetectionPredictor()
     samples = [x for x in C['표본'] if (not a.only_new) or x['고른_까닭'].startswith('추가 생성 판')]
-    imgs = [Image.open(x['이미지']).convert('RGB') for x in samples]
+    imgs = [Image.open(os.path.expanduser(x['이미지'])).convert('RGB') for x in samples]
     res = det(imgs)
     rows = []
     for x, r, im in zip(samples, res, imgs):
