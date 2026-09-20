@@ -3,7 +3,7 @@
  "사전등록": "docs/synth_preregister.json",
  "사전등록_sha256": "459a4a0f3e541ca1ac7aef96cbb13949146ee4f66df1d389faae1e044ba0c068",
  "manifest": "docs/synth_b_manifest.json",
- "manifest_sha256": "d6e37e0378e8f6076fca0dc9b91687c25073062800c1c11989560dcf0dcc4305",
+ "manifest_sha256": "76ab5a26598771e7f1b21219f205d8cc85494c1fdb7cc8a58799948eccb928c0",
  "manifest_provenance": {
   "generator": "eval/synth_gen.py",
   "commit": "207b4ff",

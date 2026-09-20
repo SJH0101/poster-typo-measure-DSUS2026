@@ -3,7 +3,7 @@
  "사전등록": "docs/clean_preregister.json",
  "사전등록_sha256": "053473707c9d89f0fd36a66b4006d259ee3d5392ff7b41440e1530afad5ad1d8",
  "manifest": "docs/clean_manifest.json",
- "manifest_sha256": "99ebcbe194a88daf633d48b79df1901eab420ad12c0eb96cb419a0631c9bccfe",
+ "manifest_sha256": "870cc8859b3f890ca232f2196940cff47cbc4b4fe6d66e1d002120aec7480408",
  "줄_provenance": {
   "pipeline": "surya+ground",
   "detector": "surya-ocr 0.22.1",
@@ -59,7 +59,7 @@
     "pass1_b33.json: 두 단 판(3539~3602)마다 줄 사이가 조금만 더 벌어진 자리가 한두 곳씩 있다(대략 안쪽 간격의 1.5~2배). 애매하면 끊는다는 규칙대로 모두 끊었다. 3566 의 16-17 은 이웃 틈과 거의 같아서 붙였다.",
     "pass1_b34.json: 모든 장에 줄 간격보다 조금만 넓은(두 배 안팎) 틈이 한두 곳씩 있었다: 3611 15/16, 3620 39/40, 3629 38/39, 3638 22/23, 3540 38/39. 애매하면 끊는다는 규칙대로 모두 끊었다. 3540 38/39 가 가장 약한 경우다."
    ],
-   "sha256": "33cf5d7b77e67cf33e66984119e15c0f61b74678a17f78cdfe11d069a588166d",
+   "sha256": "20a7e5f9f33d16f94d931f63e78bb78493ac42f80c7f882b813e1d5972b1b4a2",
    "n_posters": 280
   },
   {
@@ -103,7 +103,7 @@
     "pass2_b33.json: Clear splits were gaps of about 2.5x the inner gap or more. Seven pages (3539, 3548, 3557, 3566, 3584, 3593, 3602) each have one gap only modestly wider than the inner line gaps (about 1.4-1.9x, not clearly over 2x). I split all of them under the 'split when ambiguous' rule; each is named in that poster's notes so it can be merged under a strict 2x reading. Two-column pages: the columns never overlap horizontally, so they are always separate.",
     "pass2_b34.json: 모든 장이 글줄 간격이 거의 같은 다단 목록이라, 틈이 조금 더 넓은 자리(평소 줄 간격보다 약 7-10px 더 넓음)에서 판정이 어려웠다. 이런 자리는 규칙대로 끊었다: 3611 15|16, 3620 39|40, 3629 38|39, 3638 22|23, 3540 67|68."
    ],
-   "sha256": "9dbec6f55f50db2a29e1b5ecf18a49a0f3cdca762613d88264a69ab6d2e2eb2f",
+   "sha256": "34bdd134e7046ca2e2023ca36bb3afeea48c4decf9f5dc96bd551dd19f420410",
    "n_posters": 280
   }
  ],

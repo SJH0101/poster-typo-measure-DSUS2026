@@ -1,7 +1,7 @@
 {
  "무엇": "정의로 정하는 상수 — constants_preregister 순서 2 (수정 4 의 e = 1). 계산 결과만, 코드의 값은 바꾸지 않음",
  "사전등록": "docs/constants_preregister.json",
- "사전등록_sha256": "d9d6987ea8ee897dd9b98b511b67676722fe5ca767d599adbc997cc0ed67d122",
+ "사전등록_sha256": "42e3a0fff1c4d0b3567070e2e84f75eccd0ee60893b3d8dc45a8ee6db71db1a4",
  "글꼴": {
   "파일": "/System/Library/Fonts/Helvetica.ttc",
   "index": 0,
@@ -292,8 +292,8 @@
   "grouping": "detect_surya.boxes_norm",
   "measurer": "measure/ground.py",
   "skew": "EasyOCR 상자 기울기 중앙값 · skewed = |각| >= 14°",
-  "commit": "970e435",
-  "date": "2026-09-18",
+  "commit": "384e9c4",
+  "date": "2026-09-20",
   "source": "eval/constants_definitions.py",
   "n": 7
  }

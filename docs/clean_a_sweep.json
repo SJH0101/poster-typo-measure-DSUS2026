@@ -5,10 +5,10 @@
  "사전등록": "docs/clean_a_sweep_preregister.json",
  "사전등록_sha256": "8c9b12bbeb7b932dc182c701ba76a6a7e5f58516030fd2c3a489695611189813",
  "manifest": "docs/clean_manifest.json",
- "manifest_sha256": "99ebcbe194a88daf633d48b79df1901eab420ad12c0eb96cb419a0631c9bccfe",
+ "manifest_sha256": "870cc8859b3f890ca232f2196940cff47cbc4b4fe6d66e1d002120aec7480408",
  "참조결과": "docs/clean_result.json",
- "참조결과_sha256": "2aa8e959cbc6fc9dd7f9fafcdcdb3a0e1bcd4680593dd13f7c7913a13ad81868",
- "detect_surya_sha256": "a3e8ed287a6e31b548f6624def513d0f3eccc17a623fb0c1ae6fd012e8da7125",
+ "참조결과_sha256": "b94682c2e79286849e7ab0b623eaad89ad6dadf190325c42cf1b3c6e8d7d61e9",
+ "detect_surya_sha256": "4bc79148ecab216228ac28699e7f0ee99b4442ffdba2d0e805c04ecf42bfaa7c",
  "훑은_값": {
   "Y_GAP상한": [
    0.0,

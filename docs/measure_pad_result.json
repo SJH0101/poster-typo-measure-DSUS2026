@@ -3,7 +3,7 @@
  "사전등록": "docs/measure_pad_preregister.json",
  "사전등록_sha256": "35f2dbc60b9a67d17411a5c2aadc4869e113552d67cb8228c6e59a44624b90c0",
  "manifest": "docs/measure_pad_manifest.json",
- "manifest_sha256": "f9c94d0ff8a81b2eece1f3b2d34d5717b9cce49371a6cbc57af40525040363ff",
+ "manifest_sha256": "766e87ef3f3789bc6917314c85167af46b0f65f031d058761bbd752c924ea78d",
  "줄_provenance": {
   "pipeline": "surya+ground",
   "detector": "surya-ocr 0.22.1",
@@ -16,7 +16,7 @@
   "n": 60,
   "synthetic": true
  },
- "commit": "970e435",
+ "commit": "384e9c4",
  "장": 60,
  "줄상자": 1811,
  "현재": {

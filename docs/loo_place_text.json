@@ -5,14 +5,14 @@
   "lines": "~/Downloads/lines_20260818-2048.csv",
   "blocks": "~/Downloads/blocks_20260818-2048.csv",
   "cache": "~/.typo-mcp/brockmann.json",
-  "cache_sha256": "66cc98bbb07cad8cdcdad26760eb8715d4d8a16358d4f7f2c9948a779069e460",
+  "cache_sha256": "079fec86640343b06dc5141663e5fc3440d352a303f4e382c1030381c0c298fc",
   "cache_provenance": {
    "pipeline": "surya+ground",
    "detector": "surya-ocr 0.22.1",
    "grouping": "detect_surya.boxes_norm",
    "measurer": "measure/ground.py",
    "skew": "EasyOCR 상자 기울기 중앙값 · skewed = |각| >= 14°",
-   "commit": "a0c9f3d",
+   "commit": "cb779ea",
    "date": "2026-09-18",
    "source": "remeasure.py — ~/Documents/연구2/브로크만 정리/corpus/index.csv 코어 123장",
    "n": 123
