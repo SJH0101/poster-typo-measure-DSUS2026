@@ -1,0 +1,45 @@
+{
+ "무엇": "VLM 베이스라인 좌표 정확도를 선정 조건 없는 표본(사람 라벨이 있는 뮐러-브로크만 50장 전부)으로 다시 잰다. 조건 (a) 포스터만 · (b) 번호 딱지 2배 이미지, 회차 2. 참고로 (c) 현행 파이프라인. 정답은 라벨러A 기준 · 라벨러B 기준 · 합의 참조 셋",
+ "날짜": "2026-10-04",
+ "박은 때": "스크립트를 고치기 전, prepare 를 돌리기 전, VLM 을 한 번도 부르기 전. 이 파일을 단독 커밋한 뒤 스크립트를 고치고 돌린다",
+ "왜 다시 하나": "2026-09-19 실행(docs/vlm_baseline_explore.json, 커밋 9b6c22a)은 «합의 라벨 기준 현행 미검출 0 · 글줄 5 이상인 판 19장에서 순서대로 고르게 10장» 을 골랐다. 파이프라인이 잘 되는 판으로 표본을 좁힌 것이라 공정한 비교가 아니다. 그 실행은 줄 가르기(사전등록 constants 수정 16) 이전 줄로 (b) 번호를 매겼고 합의 참조 하나로만 채점했다",
+ "9/19 와 같은 것": [
+  "지시문 docs/vlm_baseline_a_prompt.md (sha256 c85f49025766d4c8b066c2e6e2cdb0c29e23898ed5f1832dcb5f9f3a00e33dd5) · docs/vlm_baseline_b_prompt.md (sha256 67bfca94083fe51a4b552d8b6ba20f305d87cdf0cef0b7c85663122ec5e0bb83) — 9/19 응답 파일에 적힌 해시와 같다",
+  "서브에이전트에게 주는 말 (경로만 바꾼다): «너는 이 작업만 한다. 1. 다음 두 파일을 Read 로 연다: <지시문> (지시문) · <묶음 입력> (이 묶음의 판 목록). 2. 지시문을 그대로 따른다. 3. 그 두 파일과 목록의 «image» 이미지 파일 말고는 어떤 파일도 열거나 찾지 말라 (ls·grep·glob·find·셸 명령 금지). 4. 출력은 입력 파일의 «출력» 경로에 JSON 하나로 쓴다. model 필드에는 네가 아는 네 모델 이름을 적는다.»",
+  "모델 설정: Claude Code 서브에이전트 (subagent_type general-purpose), Agent 도구 model=opus. 묶음(5장)마다 서로 모르는 새 세션. 사람 상자 · 라벨을 본 적 없는 세션이다 (CLAUDE.md 실험 7)",
+  "묶음 크기 5장, 판 순서(order) 대로 자른다",
+  "(a) 입력: 원본 이미지와 그 크기. 원본 픽셀로 y · x1 · x2 를 답한다",
+  "(b) 입력: group_score.draw_som 으로 줄 상자와 번호 딱지를 그린 2배 이미지. 번호마다 y 를 답하고, 채점 때 ÷ 2 (SOM_SCALE) 한다. 가로 범위는 그 번호의 줄 상자를 쓴다",
+  "채점: eval/explore_vlm_baseline.py score 의 정의 그대로 — 짝짓기 brockmann_stage2_score._direct (창 0.5·행간 · 가로 겹침 · 가까운 순 1:1), 참조마다 그 참조의 제외 사유 블록 · 글줄 판독 불가 블록 안의 답을 뺀다 (targets · keep), 1px 이내 = |오차| ≤ 1 px, 허용 = |오차| ≤ 0.2·행간"
+ ],
+ "9/19 와 다른 것": {
+  "대상": "docs/labeling/posters_for_labelers.json 의 main 50장 전부. 선정 조건 없음. 세 참조 모두 50장이 채점 대상이다 (brockmann_stage2_score.kept, 2026-10-04 확인). 9/19 의 10장도 들어가며, 그 판들도 새로 묻는다",
+  "정답": "세 참조 각각 — 라벨러A (labels/guides/guides_labelerA_20260917-2016.json) · 라벨러B (labels/guides/guides_labelerB_20260916-0201.json) · 합의 참조 (docs/brockmann_consensus_refs.json). 라벨 파일은 brockmann_stage2_score.load_labelers · load_consensus 로만 읽는다. 참값 줄은 참조마다 explore_vlm_baseline.targets 와 같은 정의",
+  "(c) 파이프라인": "현행 캐시 ~/.typo-mcp/brockmann.json (provenance commit 8a5b0a1 — 줄 가르기 적용 후)",
+  "(b) 번호 → 줄 상자": "현행 Surya 줄 = ~/.typo-mcp/brockmann50/lines.json 의 원본 줄에 detect_surya.split_wide_lines 를 건 줄 (brockmann_stage2_score 의 2단계 채점과 같은 처리). SoM 그리기와 채점의 번호 대응이 같은 줄 목록을 쓴다",
+  "더하는 보고 필드 (채점 정의는 그대로)": "1px 이내 몫을 분모 둘로 낸다 — 기존 일행_이내_몫 (분모 = 짝지은 줄) 과 새 일행_이내_몫_라벨분모 (분모 = 라벨 줄)"
+ },
+ "실행 전에 하는 스크립트 수정 (기본 동작은 바꾸지 않는다)": {
+  "eval/explore_vlm_baseline.py prepare": "--all — 선정 조건 없이 목록의 판 전부 · --split-lines — 원본 줄에 split_wide_lines 를 건 줄로 SoM 을 그리고 som_lines 를 적는다",
+  "eval/explore_vlm_baseline.py score": "--split-lines — 번호 대응에 같은 갈린 줄을 쓴다 · --guides — 라벨러 두 파일을 받아 라벨러A · 라벨러B · 합의 세 참조로 채점하고 참조마다 따로 적는다 · 일행_이내_몫_라벨분모 필드",
+  "확인": "새 인자 없이 돌리면 9/19 실행과 같은 결과가 나오는지, 수정 전 코드의 출력과 바이트로 견준다"
+ },
+ "회차와 실패 처리": "회차 2 — 조건 · 회차마다 묶음 10개, 모두 40 세션. 묶음 하나가 출력 파일을 쓰지 못하거나 JSON 이 깨지면 그 묶음만 새 세션으로 한 번 다시 부르고, 다시 부른 묶음과 까닭을 결과 파일에 적는다. 두 번째도 실패하면 그 묶음의 판은 «답 없음» 으로 센다. 그 밖의 까닭으로 다시 부르지 않는다",
+ "파일": {
+  "사전등록": "docs/vlm_baseline_all50_preregister.json (이 파일)",
+  "표본 기록": "docs/vlm_baseline_all50_sample.json",
+  "묶음 입력 · 묶음 답 · SoM": "~/.typo-mcp/vlm_baseline_all50/ (9/19 의 ~/.typo-mcp/vlm_baseline/ 은 건드리지 않는다)",
+  "응답 원본 (회차 · 조건마다 합친 것)": "~/Documents/poster/vlm_responses_archive/vlm_baseline_all50_{a1,a2,b1,b2}.json — 저장소 밖 (boxes/VLM_RESPONSES.md 의 원칙). 경로와 sha256 을 결과 파일과 boxes/VLM_RESPONSES.md 에 적는다. 합칠 때 경로의 홈은 ~ 로 접는다",
+  "결과": "docs/vlm_baseline_all50.json (새 파일). 9/19 의 docs/vlm_baseline_explore.json 은 덮어쓰지 않는다"
+ },
+ "결과를 보고 바꾸지 않는 것": "표본(50장 전부) · 지시문 · 서브에이전트에게 주는 말 · 묶음 크기 · 회차 수 · 채점 정의 · 세 참조 · 실패 처리 규칙",
+ "예측": "적지 않는다. 판정하는 예측 없이 표로 서술한다",
+ "보고": "조건(a1 · a2 · b1 · b2 · c) × 참조(라벨러A · 라벨러B · 합의)마다 라벨 줄 · 답한 줄 · 짝지은 줄 · 짝 못 지은 답 · 놓친 라벨 · |오차| 중앙 · p90 (px) · 1px 이내 몫 (분모 짝 / 분모 라벨). 회차 간 차이 (score 의 기존 정의)",
+ "한계 (미리)": [
+  "VLM 은 호스팅 모델이라 버전을 고정할 수 없다. Agent 도구 model=opus 가 가리키는 판이 9/19(자기 보고 claude-opus-5) 와 다를 수 있다. 세션마다 자기 보고한 모델 이름을 적는다",
+  "서브에이전트의 파일 접근은 자기 보고(files_opened)로만 안다",
+  "사람 라벨은 정답이 아니라 참조다. 라벨러 2명. 결과는 «참조와의 일치도» 다",
+  "(c) 는 파이프라인 측정 캐시를 그대로 쓰므로, 파이프라인 상수를 정할 때 쓴 적 없는 세트라는 보장은 없다 — 브로크만 50장은 constants 수정 15 · 16 의 확인에 쓰였다",
+  "짝짓기 창이 0.5·행간이라 창 밖의 답은 «짝 못 지은 답» 으로 세지고 |오차| 통계에 들어가지 않는다"
+ ]
+}
