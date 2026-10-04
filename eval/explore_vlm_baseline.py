@@ -260,7 +260,7 @@ def score(a):
                            참조='라벨러A · 라벨러B (brockmann_stage2_score.load_labelers) · 합의 (docs/brockmann_consensus_refs.json). '
                               '참값 줄과 제외 영역은 참조마다 targets 로 따로 구한다')
         cprov = json.load(open(_p(a.cache))).get('provenance', {})
-        json.dump(dict(what=f'사전등록 {a.prereg} 의 결과' if a.prereg else '탐색용 · 논문 수치 아님',
+        json.dump(dict(what=a.what or (f'사전등록 {a.prereg} 의 결과' if a.prereg else '탐색용 · 논문 수치 아님'),
                        **({'사전등록_sha256': _sha(a.prereg)} if a.prereg else {}),
                        무엇='VLM 베이스라인 좌표 정확도 — (a) 원본만 · (b) 번호 딱지 2배 이미지 · (c) 현행 파이프라인, 세 참조',
                        정의=defs,
@@ -305,6 +305,7 @@ def main():
         p2.add_argument(k, required=True)
     p2.add_argument('--a', nargs='+', required=True); p2.add_argument('--b', nargs='+', required=True)
     p2.add_argument('--guides', nargs='+', help='라벨러 두 파일 — 주면 라벨러A · 라벨러B · 합의 세 참조로 채점한다')
+    p2.add_argument('--what', help='세 참조 결과의 머리 what 을 이 문장으로 둔다 (참고 결과 표시용)')
     for p in (p1, p2):
         p.add_argument('--split-lines', action='store_true',
                        help='번호 딱지 · 번호 대응에 원본 줄 대신 detect_surya.split_wide_lines 를 건 줄을 쓴다')
