@@ -1,0 +1,808 @@
+{
+ "what": "사전등록 docs/vlm_baseline_all50_preregister.json 의 표본",
+ "사전등록_sha256": "d418b828e429eaa6ac83514a5a1612aaf224f3ef5f8ef38daaa6275069524f8d",
+ "고른_방식": "선정 조건 없음 — 목록의 판 전부 50장",
+ "번호_줄": "원본 줄에 detect_surya.split_wide_lines 를 건 줄",
+ "판": [
+  {
+   "order": 1,
+   "key": "Ausstellung__1948_Deine Wohnung - Dein Nachbar - Deine Heimat - Ausstellung im.jpg",
+   "image": "Ausstellung/1948_Deine Wohnung - Dein Nachbar - Deine Heimat - Ausstellung im.jpg",
+   "seed": 101,
+   "글줄": 18,
+   "미검출": 7,
+   "size": [
+    562,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Ausstellung/1948_Deine Wohnung - Dein Nachbar - Deine Heimat - Ausstellung im.jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/01_som.png",
+   "file": "1948_Deine Wohnung - Dein Nachbar - Deine Heimat - Ausstellung im.jpg",
+   "번호_수": 20
+  },
+  {
+   "order": 2,
+   "key": "Juni_Festwochen__1956_Juni-Festwochen Zürich 1956 - 1. Juni-Festkonzert - Leitung .jpg",
+   "image": "Juni_Festwochen/1956_Juni-Festwochen Zürich 1956 - 1. Juni-Festkonzert - Leitung .jpg",
+   "seed": 102,
+   "글줄": 21,
+   "미검출": 3,
+   "size": [
+    566,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Juni_Festwochen/1956_Juni-Festwochen Zürich 1956 - 1. Juni-Festkonzert - Leitung .jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/02_som.png",
+   "file": "1956_Juni-Festwochen Zürich 1956 - 1. Juni-Festkonzert - Leitung .jpg",
+   "번호_수": 19
+  },
+  {
+   "order": 3,
+   "key": "Juni_Festwochen__1956_Juni-Festwochen Zürich 1956 - 3. Juni-Festkonzert - Leitung .jpg",
+   "image": "Juni_Festwochen/1956_Juni-Festwochen Zürich 1956 - 3. Juni-Festkonzert - Leitung .jpg",
+   "seed": 103,
+   "글줄": 30,
+   "미검출": 5,
+   "size": [
+    566,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Juni_Festwochen/1956_Juni-Festwochen Zürich 1956 - 3. Juni-Festkonzert - Leitung .jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/03_som.png",
+   "file": "1956_Juni-Festwochen Zürich 1956 - 3. Juni-Festkonzert - Leitung .jpg",
+   "번호_수": 29
+  },
+  {
+   "order": 4,
+   "key": "Musica_Viva__1957_Musica Viva - 16. Volkskonzert - 26.März 1957 - Tonhalle Gro.jpg",
+   "image": "Musica_Viva/1957_Musica Viva - 16. Volkskonzert - 26.März 1957 - Tonhalle Gro.jpg",
+   "seed": 104,
+   "글줄": 25,
+   "미검출": 0,
+   "size": [
+    566,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Musica_Viva/1957_Musica Viva - 16. Volkskonzert - 26.März 1957 - Tonhalle Gro.jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/04_som.png",
+   "file": "1957_Musica Viva - 16. Volkskonzert - 26.März 1957 - Tonhalle Gro.jpg",
+   "번호_수": 25
+  },
+  {
+   "order": 5,
+   "key": "Ausstellung__1957_Werner Bischof - Das fotografische Werk - Kunstgewerbemuseum.jpg",
+   "image": "Ausstellung/1957_Werner Bischof - Das fotografische Werk - Kunstgewerbemuseum.jpg",
+   "seed": 105,
+   "글줄": 10,
+   "미검출": 2,
+   "size": [
+    566,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Ausstellung/1957_Werner Bischof - Das fotografische Werk - Kunstgewerbemuseum.jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/05_som.png",
+   "file": "1957_Werner Bischof - Das fotografische Werk - Kunstgewerbemuseum.jpg",
+   "번호_수": 10
+  },
+  {
+   "order": 6,
+   "key": "Opernhaus__1965_Opernhaus Zürich - Eröffnung der Spielzeit 1965-66 - Die ver.jpg",
+   "image": "Opernhaus/1965_Opernhaus Zürich - Eröffnung der Spielzeit 1965-66 - Die ver.jpg",
+   "seed": 106,
+   "글줄": 38,
+   "미검출": 9,
+   "size": [
+    566,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Opernhaus/1965_Opernhaus Zürich - Eröffnung der Spielzeit 1965-66 - Die ver.jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/06_som.png",
+   "file": "1965_Opernhaus Zürich - Eröffnung der Spielzeit 1965-66 - Die ver.jpg",
+   "번호_수": 37
+  },
+  {
+   "order": 7,
+   "key": "Opernhaus__1964_Opernhaus Zürich - Dornröschen - Musik von Peter Iljitsch Ts.jpg",
+   "image": "Opernhaus/1964_Opernhaus Zürich - Dornröschen - Musik von Peter Iljitsch Ts.jpg",
+   "seed": 107,
+   "글줄": 12,
+   "미검출": 0,
+   "size": [
+    566,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Opernhaus/1964_Opernhaus Zürich - Dornröschen - Musik von Peter Iljitsch Ts.jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/07_som.png",
+   "file": "1964_Opernhaus Zürich - Dornröschen - Musik von Peter Iljitsch Ts.jpg",
+   "번호_수": 11
+  },
+  {
+   "order": 8,
+   "key": "Opernhaus__1966_Opernhaus Zürich - Der fliegende Holländer - von Richard Wag.jpg",
+   "image": "Opernhaus/1966_Opernhaus Zürich - Der fliegende Holländer - von Richard Wag.jpg",
+   "seed": 108,
+   "글줄": 12,
+   "미검출": 2,
+   "size": [
+    570,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Opernhaus/1966_Opernhaus Zürich - Der fliegende Holländer - von Richard Wag.jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/08_som.png",
+   "file": "1966_Opernhaus Zürich - Der fliegende Holländer - von Richard Wag.jpg",
+   "번호_수": 10
+  },
+  {
+   "order": 9,
+   "key": "Volg__1956_Volg -Traubensaft - naturrein.jpg",
+   "image": "Volg/1956_Volg -Traubensaft - naturrein.jpg",
+   "seed": 109,
+   "글줄": 3,
+   "미검출": 1,
+   "size": [
+    565,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Volg/1956_Volg -Traubensaft - naturrein.jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/09_som.png",
+   "file": "1956_Volg -Traubensaft - naturrein.jpg",
+   "번호_수": 3
+  },
+  {
+   "order": 10,
+   "key": "Musica_Viva__1962_Musica Viva - Hans Rosbaud - Anton Fietz (...) - 2. Musica V.jpg",
+   "image": "Musica_Viva/1962_Musica Viva - Hans Rosbaud - Anton Fietz (...) - 2. Musica V.jpg",
+   "seed": 110,
+   "글줄": 33,
+   "미검출": 6,
+   "size": [
+    566,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Musica_Viva/1962_Musica Viva - Hans Rosbaud - Anton Fietz (...) - 2. Musica V.jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/10_som.png",
+   "file": "1962_Musica Viva - Hans Rosbaud - Anton Fietz (...) - 2. Musica V.jpg",
+   "번호_수": 31
+  },
+  {
+   "order": 11,
+   "key": "Opernhaus__1964_Opernhaus Zürich - Die Schneekönigin - Märchenvorstellung. U.jpg",
+   "image": "Opernhaus/1964_Opernhaus Zürich - Die Schneekönigin - Märchenvorstellung. U.jpg",
+   "seed": 111,
+   "글줄": 12,
+   "미검출": 0,
+   "size": [
+    566,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Opernhaus/1964_Opernhaus Zürich - Die Schneekönigin - Märchenvorstellung. U.jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/11_som.png",
+   "file": "1964_Opernhaus Zürich - Die Schneekönigin - Märchenvorstellung. U.jpg",
+   "번호_수": 10
+  },
+  {
+   "order": 12,
+   "key": "Volg__1957_Volg Traubensaft naturrein - Gesundheit.jpg",
+   "image": "Volg/1957_Volg Traubensaft naturrein - Gesundheit.jpg",
+   "seed": 112,
+   "글줄": 3,
+   "미검출": 0,
+   "size": [
+    562,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Volg/1957_Volg Traubensaft naturrein - Gesundheit.jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/12_som.png",
+   "file": "1957_Volg Traubensaft naturrein - Gesundheit.jpg",
+   "번호_수": 7
+  },
+  {
+   "order": 13,
+   "key": "Juni_Festwochen__1956_Juni-Festwochen Zürich 1956 - 5. Juni-Festkonzert - Leitung .jpg",
+   "image": "Juni_Festwochen/1956_Juni-Festwochen Zürich 1956 - 5. Juni-Festkonzert - Leitung .jpg",
+   "seed": 113,
+   "글줄": 22,
+   "미검출": 4,
+   "size": [
+    565,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Juni_Festwochen/1956_Juni-Festwochen Zürich 1956 - 5. Juni-Festkonzert - Leitung .jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/13_som.png",
+   "file": "1956_Juni-Festwochen Zürich 1956 - 5. Juni-Festkonzert - Leitung .jpg",
+   "번호_수": 23
+  },
+  {
+   "order": 14,
+   "key": "Juni_Festwochen__1959_Juni-Festwochen Zürich 1959 - Abschiedskonzerte von Dr. Volk.jpg",
+   "image": "Juni_Festwochen/1959_Juni-Festwochen Zürich 1959 - Abschiedskonzerte von Dr. Volk.jpg",
+   "seed": 114,
+   "글줄": 22,
+   "미검출": 8,
+   "size": [
+    572,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Juni_Festwochen/1959_Juni-Festwochen Zürich 1959 - Abschiedskonzerte von Dr. Volk.jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/14_som.png",
+   "file": "1959_Juni-Festwochen Zürich 1959 - Abschiedskonzerte von Dr. Volk.jpg",
+   "번호_수": 12
+  },
+  {
+   "order": 15,
+   "key": "Sonstige__1900_Josef Müller-Brockmann - Affiches-projets - Impressions 1900.jpg",
+   "image": "Sonstige/1900_Josef Müller-Brockmann - Affiches-projets - Impressions 1900.jpg",
+   "seed": 115,
+   "글줄": 11,
+   "미검출": 0,
+   "size": [
+    566,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Sonstige/1900_Josef Müller-Brockmann - Affiches-projets - Impressions 1900.jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/15_som.png",
+   "file": "1900_Josef Müller-Brockmann - Affiches-projets - Impressions 1900.jpg",
+   "번호_수": 11
+  },
+  {
+   "order": 16,
+   "key": "Ausstellung__1960_Kunstgewerbemuseum Zürich - Ausstellung - Der Film.jpg",
+   "image": "Ausstellung/1960_Kunstgewerbemuseum Zürich - Ausstellung - Der Film.jpg",
+   "seed": 116,
+   "글줄": 6,
+   "미검출": 2,
+   "size": [
+    565,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Ausstellung/1960_Kunstgewerbemuseum Zürich - Ausstellung - Der Film.jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/16_som.png",
+   "file": "1960_Kunstgewerbemuseum Zürich - Ausstellung - Der Film.jpg",
+   "번호_수": 8
+  },
+  {
+   "order": 17,
+   "key": "Tonhalle_Konzert__1952_Tonhalle Zürich Grosser Saal - 10. Abonnementskonzert der To.jpg",
+   "image": "Tonhalle_Konzert/1952_Tonhalle Zürich Grosser Saal - 10. Abonnementskonzert der To.jpg",
+   "seed": 117,
+   "글줄": 17,
+   "미검출": 0,
+   "size": [
+    569,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Tonhalle_Konzert/1952_Tonhalle Zürich Grosser Saal - 10. Abonnementskonzert der To.jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/17_som.png",
+   "file": "1952_Tonhalle Zürich Grosser Saal - 10. Abonnementskonzert der To.jpg",
+   "번호_수": 20
+  },
+  {
+   "order": 18,
+   "key": "Tonhalle_Konzert__1955_Ferenc Fricsay - Leitung - Arthur Rubinstein - Solist - Tonh.jpg",
+   "image": "Tonhalle_Konzert/1955_Ferenc Fricsay - Leitung - Arthur Rubinstein - Solist - Tonh.jpg",
+   "seed": 118,
+   "글줄": 18,
+   "미검출": 1,
+   "size": [
+    568,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Tonhalle_Konzert/1955_Ferenc Fricsay - Leitung - Arthur Rubinstein - Solist - Tonh.jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/18_som.png",
+   "file": "1955_Ferenc Fricsay - Leitung - Arthur Rubinstein - Solist - Tonh.jpg",
+   "번호_수": 16
+  },
+  {
+   "order": 19,
+   "key": "Musica_Viva__1958_Tonhalle-Quartett - Zürcher Bläser-Quintett - Strawinsky - S.jpg",
+   "image": "Musica_Viva/1958_Tonhalle-Quartett - Zürcher Bläser-Quintett - Strawinsky - S.jpg",
+   "seed": 119,
+   "글줄": 11,
+   "미검출": 0,
+   "size": [
+    564,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Musica_Viva/1958_Tonhalle-Quartett - Zürcher Bläser-Quintett - Strawinsky - S.jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/19_som.png",
+   "file": "1958_Tonhalle-Quartett - Zürcher Bläser-Quintett - Strawinsky - S.jpg",
+   "번호_수": 14
+  },
+  {
+   "order": 20,
+   "key": "Ausstellung__1994_Zürcher Szenen von Edi Baur - Ausstellung im Stadthaus Züric.jpg",
+   "image": "Ausstellung/1994_Zürcher Szenen von Edi Baur - Ausstellung im Stadthaus Züric.jpg",
+   "seed": 120,
+   "글줄": 10,
+   "미검출": 0,
+   "size": [
+    568,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Ausstellung/1994_Zürcher Szenen von Edi Baur - Ausstellung im Stadthaus Züric.jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/20_som.png",
+   "file": "1994_Zürcher Szenen von Edi Baur - Ausstellung im Stadthaus Züric.jpg",
+   "번호_수": 10
+  },
+  {
+   "order": 21,
+   "key": "Opernhaus__1966_Opernhaus Zürich - Don Carlos - Oper von Giuseppe Verdi - 5..jpg",
+   "image": "Opernhaus/1966_Opernhaus Zürich - Don Carlos - Oper von Giuseppe Verdi - 5..jpg",
+   "seed": 121,
+   "글줄": 10,
+   "미검출": 0,
+   "size": [
+    566,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Opernhaus/1966_Opernhaus Zürich - Don Carlos - Oper von Giuseppe Verdi - 5..jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/21_som.png",
+   "file": "1966_Opernhaus Zürich - Don Carlos - Oper von Giuseppe Verdi - 5..jpg",
+   "번호_수": 9
+  },
+  {
+   "order": 22,
+   "key": "Juni_Festwochen__1957_Juni-Festwochen Zürich 1957 - Tonhalle Grosser Saal - 4. Jun.jpg",
+   "image": "Juni_Festwochen/1957_Juni-Festwochen Zürich 1957 - Tonhalle Grosser Saal - 4. Jun.jpg",
+   "seed": 122,
+   "글줄": 33,
+   "미검출": 0,
+   "size": [
+    566,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Juni_Festwochen/1957_Juni-Festwochen Zürich 1957 - Tonhalle Grosser Saal - 4. Jun.jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/22_som.png",
+   "file": "1957_Juni-Festwochen Zürich 1957 - Tonhalle Grosser Saal - 4. Jun.jpg",
+   "번호_수": 33
+  },
+  {
+   "order": 23,
+   "key": "Tonhalle_Konzert__1955_Beethoven - Tonhalle - Grosser Saal.jpg",
+   "image": "Tonhalle_Konzert/1955_Beethoven - Tonhalle - Grosser Saal.jpg",
+   "seed": 123,
+   "글줄": 19,
+   "미검출": 0,
+   "size": [
+    563,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Tonhalle_Konzert/1955_Beethoven - Tonhalle - Grosser Saal.jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/23_som.png",
+   "file": "1955_Beethoven - Tonhalle - Grosser Saal.jpg",
+   "번호_수": 19
+  },
+  {
+   "order": 24,
+   "key": "Juni_Festwochen__1953_Juni-Festwochen Zürich 1953 - Tonhalle Grosser Saal - George.jpg",
+   "image": "Juni_Festwochen/1953_Juni-Festwochen Zürich 1953 - Tonhalle Grosser Saal - George.jpg",
+   "seed": 124,
+   "글줄": 19,
+   "미검출": 1,
+   "size": [
+    566,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Juni_Festwochen/1953_Juni-Festwochen Zürich 1953 - Tonhalle Grosser Saal - George.jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/24_som.png",
+   "file": "1953_Juni-Festwochen Zürich 1953 - Tonhalle Grosser Saal - George.jpg",
+   "번호_수": 18
+  },
+  {
+   "order": 25,
+   "key": "Juni_Festwochen__1971_Junifestwochen Zürich 1971 - 1. Junifestkonzert - Tonhalle -.jpg",
+   "image": "Juni_Festwochen/1971_Junifestwochen Zürich 1971 - 1. Junifestkonzert - Tonhalle -.jpg",
+   "seed": 125,
+   "글줄": 27,
+   "미검출": 0,
+   "size": [
+    566,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Juni_Festwochen/1971_Junifestwochen Zürich 1971 - 1. Junifestkonzert - Tonhalle -.jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/25_som.png",
+   "file": "1971_Junifestwochen Zürich 1971 - 1. Junifestkonzert - Tonhalle -.jpg",
+   "번호_수": 27
+  },
+  {
+   "order": 26,
+   "key": "Tonhalle_Konzert__1954_Extrakonzert - Tonhalle Grosser Saal - Solistin Clara Haskil.jpg",
+   "image": "Tonhalle_Konzert/1954_Extrakonzert - Tonhalle Grosser Saal - Solistin Clara Haskil.jpg",
+   "seed": 126,
+   "글줄": 17,
+   "미검출": 0,
+   "size": [
+    565,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Tonhalle_Konzert/1954_Extrakonzert - Tonhalle Grosser Saal - Solistin Clara Haskil.jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/26_som.png",
+   "file": "1954_Extrakonzert - Tonhalle Grosser Saal - Solistin Clara Haskil.jpg",
+   "번호_수": 17
+  },
+  {
+   "order": 27,
+   "key": "Musica_Viva__1959_Musica viva - Erich Schmid Leitung - Adolf Neumeier Schlagze.jpg",
+   "image": "Musica_Viva/1959_Musica viva - Erich Schmid Leitung - Adolf Neumeier Schlagze.jpg",
+   "seed": 127,
+   "글줄": 8,
+   "미검출": 0,
+   "size": [
+    566,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Musica_Viva/1959_Musica viva - Erich Schmid Leitung - Adolf Neumeier Schlagze.jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/27_som.png",
+   "file": "1959_Musica viva - Erich Schmid Leitung - Adolf Neumeier Schlagze.jpg",
+   "번호_수": 16
+  },
+  {
+   "order": 28,
+   "key": "Musica_Viva__1957_Musica Viva - Grosser Saal Tonhalle - Leitung Erich Schmid.jpg",
+   "image": "Musica_Viva/1957_Musica Viva - Grosser Saal Tonhalle - Leitung Erich Schmid.jpg",
+   "seed": 128,
+   "글줄": 36,
+   "미검출": 0,
+   "size": [
+    560,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Musica_Viva/1957_Musica Viva - Grosser Saal Tonhalle - Leitung Erich Schmid.jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/28_som.png",
+   "file": "1957_Musica Viva - Grosser Saal Tonhalle - Leitung Erich Schmid.jpg",
+   "번호_수": 36
+  },
+  {
+   "order": 29,
+   "key": "Juni_Festwochen__1959_Juni-Festwochen Zürich 1959 - Tonhalle Grosser Saal - Leitun.jpg",
+   "image": "Juni_Festwochen/1959_Juni-Festwochen Zürich 1959 - Tonhalle Grosser Saal - Leitun.jpg",
+   "seed": 129,
+   "글줄": 25,
+   "미검출": 1,
+   "size": [
+    568,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Juni_Festwochen/1959_Juni-Festwochen Zürich 1959 - Tonhalle Grosser Saal - Leitun.jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/29_som.png",
+   "file": "1959_Juni-Festwochen Zürich 1959 - Tonhalle Grosser Saal - Leitun.jpg",
+   "번호_수": 16
+  },
+  {
+   "order": 30,
+   "key": "Musica_Viva__1956_Strawinsky - Musica viva - Dienstag, 16. Okt. 1956 - 1. Extr.jpg",
+   "image": "Musica_Viva/1956_Strawinsky - Musica viva - Dienstag, 16. Okt. 1956 - 1. Extr.jpg",
+   "seed": 130,
+   "글줄": 16,
+   "미검출": 0,
+   "size": [
+    567,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Musica_Viva/1956_Strawinsky - Musica viva - Dienstag, 16. Okt. 1956 - 1. Extr.jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/30_som.png",
+   "file": "1956_Strawinsky - Musica viva - Dienstag, 16. Okt. 1956 - 1. Extr.jpg",
+   "번호_수": 11
+  },
+  {
+   "order": 31,
+   "key": "Verkehr__1953_Schützt das Kind!.jpg",
+   "image": "Verkehr/1953_Schützt das Kind!.jpg",
+   "seed": 131,
+   "글줄": 2,
+   "미검출": 0,
+   "size": [
+    566,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Verkehr/1953_Schützt das Kind!.jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/31_som.png",
+   "file": "1953_Schützt das Kind!.jpg",
+   "번호_수": 2
+  },
+  {
+   "order": 32,
+   "key": "Juni_Festwochen__1953_Tonhalle Grosser Saal - Juni-Festwochen Zürich 1953 - Tonhal.jpg",
+   "image": "Juni_Festwochen/1953_Tonhalle Grosser Saal - Juni-Festwochen Zürich 1953 - Tonhal.jpg",
+   "seed": 132,
+   "글줄": 18,
+   "미검출": 0,
+   "size": [
+    569,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Juni_Festwochen/1953_Tonhalle Grosser Saal - Juni-Festwochen Zürich 1953 - Tonhal.jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/32_som.png",
+   "file": "1953_Tonhalle Grosser Saal - Juni-Festwochen Zürich 1953 - Tonhal.jpg",
+   "번호_수": 18
+  },
+  {
+   "order": 33,
+   "key": "Juni_Festwochen__1960_Viertes Juni-Festkonzert 1960 der Tonhalle-Gesellschaft - Fr.jpg",
+   "image": "Juni_Festwochen/1960_Viertes Juni-Festkonzert 1960 der Tonhalle-Gesellschaft - Fr.jpg",
+   "seed": 133,
+   "글줄": 15,
+   "미검출": 0,
+   "size": [
+    563,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Juni_Festwochen/1960_Viertes Juni-Festkonzert 1960 der Tonhalle-Gesellschaft - Fr.jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/33_som.png",
+   "file": "1960_Viertes Juni-Festkonzert 1960 der Tonhalle-Gesellschaft - Fr.jpg",
+   "번호_수": 15
+  },
+  {
+   "order": 34,
+   "key": "Opernhaus__1966_Opernhaus Zürich - Ballettabend - Don Quijote - Lessons in l.jpg",
+   "image": "Opernhaus/1966_Opernhaus Zürich - Ballettabend - Don Quijote - Lessons in l.jpg",
+   "seed": 134,
+   "글줄": 42,
+   "미검출": 4,
+   "size": [
+    566,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Opernhaus/1966_Opernhaus Zürich - Ballettabend - Don Quijote - Lessons in l.jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/34_som.png",
+   "file": "1966_Opernhaus Zürich - Ballettabend - Don Quijote - Lessons in l.jpg",
+   "번호_수": 43
+  },
+  {
+   "order": 35,
+   "key": "Opernhaus__1965_Opernhaus Zürich - Der Opernball - von Richard Heuberger - 3.jpg",
+   "image": "Opernhaus/1965_Opernhaus Zürich - Der Opernball - von Richard Heuberger - 3.jpg",
+   "seed": 135,
+   "글줄": 12,
+   "미검출": 0,
+   "size": [
+    566,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Opernhaus/1965_Opernhaus Zürich - Der Opernball - von Richard Heuberger - 3.jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/35_som.png",
+   "file": "1965_Opernhaus Zürich - Der Opernball - von Richard Heuberger - 3.jpg",
+   "번호_수": 11
+  },
+  {
+   "order": 36,
+   "key": "Verkehr__1958_Projet constitutionnel sur le routier réseau Oui.jpg",
+   "image": "Verkehr/1958_Projet constitutionnel sur le routier réseau Oui.jpg",
+   "seed": 136,
+   "글줄": 4,
+   "미검출": 2,
+   "size": [
+    564,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Verkehr/1958_Projet constitutionnel sur le routier réseau Oui.jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/36_som.png",
+   "file": "1958_Projet constitutionnel sur le routier réseau Oui.jpg",
+   "번호_수": 3
+  },
+  {
+   "order": 37,
+   "key": "Juni_Festwochen__1956_Juni-Festwochen Zürich 1956 - 2. Juni-Festkonzert - Leitung .jpg",
+   "image": "Juni_Festwochen/1956_Juni-Festwochen Zürich 1956 - 2. Juni-Festkonzert - Leitung .jpg",
+   "seed": 137,
+   "글줄": 21,
+   "미검출": 5,
+   "size": [
+    567,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Juni_Festwochen/1956_Juni-Festwochen Zürich 1956 - 2. Juni-Festkonzert - Leitung .jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/37_som.png",
+   "file": "1956_Juni-Festwochen Zürich 1956 - 2. Juni-Festkonzert - Leitung .jpg",
+   "번호_수": 26
+  },
+  {
+   "order": 38,
+   "key": "Ausstellung__1958_Henry van de Velde - Kunstgewerbemuseum Zürich - 6. Juni - 3.jpg",
+   "image": "Ausstellung/1958_Henry van de Velde - Kunstgewerbemuseum Zürich - 6. Juni - 3.jpg",
+   "seed": 138,
+   "글줄": 12,
+   "미검출": 0,
+   "size": [
+    566,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Ausstellung/1958_Henry van de Velde - Kunstgewerbemuseum Zürich - 6. Juni - 3.jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/38_som.png",
+   "file": "1958_Henry van de Velde - Kunstgewerbemuseum Zürich - 6. Juni - 3.jpg",
+   "번호_수": 8
+  },
+  {
+   "order": 39,
+   "key": "Opernhaus__1966_Opernhaus Zürich - Eröffnung der Spielzeit 1966-67 - Tannhäu.jpg",
+   "image": "Opernhaus/1966_Opernhaus Zürich - Eröffnung der Spielzeit 1966-67 - Tannhäu.jpg",
+   "seed": 139,
+   "글줄": 21,
+   "미검출": 10,
+   "size": [
+    562,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Opernhaus/1966_Opernhaus Zürich - Eröffnung der Spielzeit 1966-67 - Tannhäu.jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/39_som.png",
+   "file": "1966_Opernhaus Zürich - Eröffnung der Spielzeit 1966-67 - Tannhäu.jpg",
+   "번호_수": 23
+  },
+  {
+   "order": 40,
+   "key": "Musica_Viva__1960_Musica viva - Donnerstag, 10. März 1960 - Tonhalle Grosser S.jpg",
+   "image": "Musica_Viva/1960_Musica viva - Donnerstag, 10. März 1960 - Tonhalle Grosser S.jpg",
+   "seed": 140,
+   "글줄": 30,
+   "미검출": 0,
+   "size": [
+    563,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Musica_Viva/1960_Musica viva - Donnerstag, 10. März 1960 - Tonhalle Grosser S.jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/40_som.png",
+   "file": "1960_Musica viva - Donnerstag, 10. März 1960 - Tonhalle Grosser S.jpg",
+   "번호_수": 30
+  },
+  {
+   "order": 41,
+   "key": "Tonhalle_Konzert__1957_Extra-Konzert - Leitung Carl Schuricht - Violine Johanna Mar.jpg",
+   "image": "Tonhalle_Konzert/1957_Extra-Konzert - Leitung Carl Schuricht - Violine Johanna Mar.jpg",
+   "seed": 141,
+   "글줄": 17,
+   "미검출": 1,
+   "size": [
+    566,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Tonhalle_Konzert/1957_Extra-Konzert - Leitung Carl Schuricht - Violine Johanna Mar.jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/41_som.png",
+   "file": "1957_Extra-Konzert - Leitung Carl Schuricht - Violine Johanna Mar.jpg",
+   "번호_수": 18
+  },
+  {
+   "order": 42,
+   "key": "Musica_Viva__1957_Musica Viva - Thyl Claes - Tonhalle Grosser Saal.jpg",
+   "image": "Musica_Viva/1957_Musica Viva - Thyl Claes - Tonhalle Grosser Saal.jpg",
+   "seed": 142,
+   "글줄": 27,
+   "미검출": 0,
+   "size": [
+    568,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Musica_Viva/1957_Musica Viva - Thyl Claes - Tonhalle Grosser Saal.jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/42_som.png",
+   "file": "1957_Musica Viva - Thyl Claes - Tonhalle Grosser Saal.jpg",
+   "번호_수": 27
+  },
+  {
+   "order": 43,
+   "key": "Juni_Festwochen__1965_Internationale Juni-Festwochen Zürich 1965 - Konzerte der To.jpg",
+   "image": "Juni_Festwochen/1965_Internationale Juni-Festwochen Zürich 1965 - Konzerte der To.jpg",
+   "seed": 143,
+   "글줄": 31,
+   "미검출": 4,
+   "size": [
+    566,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Juni_Festwochen/1965_Internationale Juni-Festwochen Zürich 1965 - Konzerte der To.jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/43_som.png",
+   "file": "1965_Internationale Juni-Festwochen Zürich 1965 - Konzerte der To.jpg",
+   "번호_수": 31
+  },
+  {
+   "order": 44,
+   "key": "Opernhaus__1964_Opernhaus Zürich - Die vier Grobiane - Komische Oper von Erm.jpg",
+   "image": "Opernhaus/1964_Opernhaus Zürich - Die vier Grobiane - Komische Oper von Erm.jpg",
+   "seed": 144,
+   "글줄": 15,
+   "미검출": 3,
+   "size": [
+    566,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Opernhaus/1964_Opernhaus Zürich - Die vier Grobiane - Komische Oper von Erm.jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/44_som.png",
+   "file": "1964_Opernhaus Zürich - Die vier Grobiane - Komische Oper von Erm.jpg",
+   "번호_수": 16
+  },
+  {
+   "order": 45,
+   "key": "Ausstellung__1958_The Family of Man - -Wir Menschen- - Kunsthalle Bern - Foto-.jpg",
+   "image": "Ausstellung/1958_The Family of Man - -Wir Menschen- - Kunsthalle Bern - Foto-.jpg",
+   "seed": 145,
+   "글줄": 9,
+   "미검출": 0,
+   "size": [
+    562,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Ausstellung/1958_The Family of Man - -Wir Menschen- - Kunsthalle Bern - Foto-.jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/45_som.png",
+   "file": "1958_The Family of Man - -Wir Menschen- - Kunsthalle Bern - Foto-.jpg",
+   "번호_수": 10
+  },
+  {
+   "order": 46,
+   "key": "Opernhaus__1965_Opernhaus Zürich - Orpheus in der Unterwelt - Operette von J.jpg",
+   "image": "Opernhaus/1965_Opernhaus Zürich - Orpheus in der Unterwelt - Operette von J.jpg",
+   "seed": 146,
+   "글줄": 16,
+   "미검출": 5,
+   "size": [
+    572,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Opernhaus/1965_Opernhaus Zürich - Orpheus in der Unterwelt - Operette von J.jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/46_som.png",
+   "file": "1965_Opernhaus Zürich - Orpheus in der Unterwelt - Operette von J.jpg",
+   "번호_수": 18
+  },
+  {
+   "order": 47,
+   "key": "Juni_Festwochen__1956_Juni-Festwochen Zürich 1956 - 4. Juni-Festkonzert - Leitung .jpg",
+   "image": "Juni_Festwochen/1956_Juni-Festwochen Zürich 1956 - 4. Juni-Festkonzert - Leitung .jpg",
+   "seed": 147,
+   "글줄": 25,
+   "미검출": 6,
+   "size": [
+    565,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Juni_Festwochen/1956_Juni-Festwochen Zürich 1956 - 4. Juni-Festkonzert - Leitung .jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/47_som.png",
+   "file": "1956_Juni-Festwochen Zürich 1956 - 4. Juni-Festkonzert - Leitung .jpg",
+   "번호_수": 23
+  },
+  {
+   "order": 48,
+   "key": "Juni_Festwochen__1950_Kunstgewerbemuseum - Die gute Form - Wanderausstellung der S.jpg",
+   "image": "Juni_Festwochen/1950_Kunstgewerbemuseum - Die gute Form - Wanderausstellung der S.jpg",
+   "seed": 148,
+   "글줄": 27,
+   "미검출": 1,
+   "size": [
+    569,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Juni_Festwochen/1950_Kunstgewerbemuseum - Die gute Form - Wanderausstellung der S.jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/48_som.png",
+   "file": "1950_Kunstgewerbemuseum - Die gute Form - Wanderausstellung der S.jpg",
+   "번호_수": 25
+  },
+  {
+   "order": 49,
+   "key": "Musica_Viva__1959_Musica Viva - Kleiner Tonhallesaal - Matthias Hauer - Werner.jpg",
+   "image": "Musica_Viva/1959_Musica Viva - Kleiner Tonhallesaal - Matthias Hauer - Werner.jpg",
+   "seed": 149,
+   "글줄": 29,
+   "미검출": 0,
+   "size": [
+    563,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Musica_Viva/1959_Musica Viva - Kleiner Tonhallesaal - Matthias Hauer - Werner.jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/49_som.png",
+   "file": "1959_Musica Viva - Kleiner Tonhallesaal - Matthias Hauer - Werner.jpg",
+   "번호_수": 29
+  },
+  {
+   "order": 50,
+   "key": "Verkehr__1958_Radfahrer - Achtung - Achtung - Radfahrer.jpg",
+   "image": "Verkehr/1958_Radfahrer - Achtung - Achtung - Radfahrer.jpg",
+   "seed": 150,
+   "글줄": 4,
+   "미검출": 0,
+   "size": [
+    563,
+    800
+   ],
+   "path": "~/Documents/연구2/브로크만 정리/corpus/코어/Verkehr/1958_Radfahrer - Achtung - Achtung - Radfahrer.jpg",
+   "som": "~/.typo-mcp/vlm_baseline_all50/som/50_som.png",
+   "file": "1958_Radfahrer - Achtung - Achtung - Radfahrer.jpg",
+   "번호_수": 6
+  }
+ ]
+}
