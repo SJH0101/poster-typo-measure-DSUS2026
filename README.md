@@ -2,6 +2,10 @@
 
 > 이 저장소는 **논문의 수치를 다시 내기 위한 것**이다. 파이프라인 코드 · 합성 포스터 생성기 ·
 > 채점 스크립트 · 사전등록 · 사람 정답 라벨 · 결과 JSON 을 담는다. 실물 포스터 이미지는 들어 있지 않다.
+>
+> **논문 숫자의 근거는 [`docs/paper_numbers.md`](docs/paper_numbers.md) 다.** 원고에 적힌 수마다
+> 어느 파일 · 어느 함수 · 어느 줄에서 나왔는지와, 원고 1~5장 전수 대조(13~15 절)를 적어 두었다.
+> 어떤 수를 확인하려면 그 문서를 먼저 본다.
 
 포스터 인쇄물에서 조판을 **재는** 도구와, 그 도구가 무엇을 얼마나 되찾는지 확인한 실험이다.
 파이프라인은 «어디를 잴지 짚는 일»(줄 검출 · 블록 묶기)과 «그 안을 재는 일»(베이스라인 · x높이선 ·
@@ -67,12 +71,53 @@ python -m venv .venv && .venv/bin/pip install -r requirements.txt
 | | 값 |
 |---|---|
 | 베이스라인 재현율 | **0.894** (참값 글줄 921 · 오차 절대 중앙 0.0 px) |
-| Surya 가 못 찾은 글줄 | **93 / 921** — 줄 상자 가르기를 켜기 전에는 126 (`docs/split_lines_score_explore.json`, 탐색용) |
+| 맞은 짝이 없어 재현율에서 빠진 글줄 | **98 / 921** — 줄 상자 가르기를 켜기 전에는 131 (`docs/split_only_score.json` · `docs/paper_numbers.md` 12 절). 옛 셈 93 → 126 은 채점 정의가 달라 쓰지 않는다 |
 | 오라클(묶기 상한) 블록 F1 | **0.918** (재현 0.895, 참조 블록 352) |
 | 묶기 블록 F1 (IoU ≥ 0.5) | C 0.761 · VLM2 0.756 · VLM1 0.706 · A 0.705 |
 
 상수는 `docs/constants_preregister.json` 수정 15 (`H_RATIO` 상한 2.55 → 3.4) 와 수정 16
 (줄 상자 가르기를 기본 경로로) 까지 반영한 값이다. 합성 650장 쪽 수치는 `docs/synth_result.json` 에 있다.
+
+## 실험 — 검증과 탐색
+
+**검증 실험**은 사전등록을 돌리기 전에 단독 커밋하고 그대로 돌린 것이다. 논문의 표와 본문 수는
+여기서 나온다.
+
+| 실험 | 사전등록 | 결과 파일 | 논문 자리 |
+|---|---|---|---|
+| 실물 50점 채점 | `docs/brockmann_stage2_preregister.json` | `docs/brockmann_stage2_result.json` · `docs/brockmann_consensus_refs.json` | 표 5 · 4-4 |
+| └ 가르기만 다른 비교 · 미검출 원인 | (위와 같음) | `docs/split_only_score.json` | 4-4 본문 |
+| VLM 좌표 50점 | `docs/vlm_baseline_all50_preregister.json` | `docs/vlm_baseline_all50.json` · `docs/vlm_baseline_all50_opus55.json` (참고) | 표 1 · 4-1 |
+| 합성 측정 | `docs/synth_preregister.json` | `docs/synth_result.json` | 표 3 · 4-3 |
+| 블록 나누기 (깨끗한 세트) | `docs/clean_preregister.json` | `docs/clean_result.json` · `docs/clean_check.json` | 표 4 · 4-3 |
+| 격자 재분석 (N등분) | `docs/grid_ndiv_preregister.json` | `docs/grid_ndiv_result.json` | 표 7 · 4-5 |
+
+**탐색 실험**은 사전등록 없이 돌린 것이다. 결과 파일에 «탐색용 · 논문 수치 아님» 이 적혀 있다.
+논문이 이 가운데 일부 수를 인용하므로, 어디서 왔는지 `docs/paper_numbers.md` 에 표시해 두었다.
+
+| 실험 | 결과 파일 | 논문 자리 |
+|---|---|---|
+| 입력 형태 비교 (a · b · c) | `docs/vlm_input_form_explore.json` | 표 2 · 4-2 |
+| 조판 규칙 분석 | `docs/typography_rules_explore.json` · `docs/typography_rules2_explore.json` | 표 6 · 4-5 |
+| 줄 상자 가르기 — 분할 지점 채점 | `docs/split_lines_score_explore.json` (`분할_채점`) | 4-4 본문 |
+
+## 논문 미사용 결과
+
+지우지 않고 남긴다. 아래는 **논문 수치가 아니다** — 설계가 바뀌거나 세트를 폐기해서 쓰지 않거나,
+같은 값을 다른 정의로 다시 낸 것이 있다.
+
+| 결과 파일 | 무엇 | 왜 쓰지 않나 |
+|---|---|---|
+| `docs/vlm_baseline_explore.json` | VLM 좌표 10점 (2026-09-19) | 50점 전부로 다시 했다 → `docs/vlm_baseline_all50.json` |
+| `docs/split_lines_score_explore.json` 의 `미검출_합의` | 옛 미검출 셈 (끔 126 → 켬 93) | 원고 3-1 의 채점 정의와 다른 함수다. 같은 정의로 다시 센 값은 `docs/split_only_score.json` (끔 131 → 켬 98, `paper_numbers.md` 12 절). 같은 파일의 `분할_채점` 은 논문에 쓴다 |
+| `docs/split_lines_signals_explore.json` | 줄 상자 빈틈 신호 분포 | 원고가 빈틈 중앙값(1.34 · 0.15)을 더 적지 않는다. 이 파일을 낸 스크립트는 저장소에 없다 |
+| `docs/split_lines_075_*.json` · `docs/split_lines_channel_*.json` | 분할 문턱 후보 훑기 | 설계 과정 기록 |
+| `docs/group_result.json` · `docs/group_diag.json` | 묶기 비교 240장 | **폐기** — 경위는 `docs/GROUP_SET_ANATOMY.md` 8 절. 깨끗한 세트로 다시 했다 |
+| `docs/detector_compare.json` · `docs/oracle_upper.json` | 검출기 셋 비교 · 묶기 오라클 상한 (저해상도 123장) | 방향 확인용. 상한은 50점 채점에서 다시 냈다 (표 5 oracle 행) |
+| `docs/series_check*.json` · `docs/loo_place_text.json` · `docs/idml_explore.json` | 시리즈 판별 · place_text LOO · IDML 가이드 | 논문에 들어가지 않는다 |
+| `docs/rerun_*.json` · `docs/surya_*.json` · `docs/*_test.json` | 경로 바꾸기 재확인 · 단위 시험 | 개발 기록 |
+| `docs/synth_b_result.json` · `docs/constants_*.json` · `docs/measure_pad_result.json` | 기준값 조정 세트 · 상수 훑기 | 조정용이다. 4장 채점은 평가 세트만 쓴다 (`constants_preregister` 수정 12) |
+| `docs/explore/*.json` | 사전등록 없는 탐색 | `docs/explore/README.md` |
 
 ## 폴더
 
@@ -89,6 +134,7 @@ python -m venv .venv && .venv/bin/pip install -r requirements.txt
 | `labels/guides/` | 브로크만 50장 가이드 라벨 두 벌 (라벨러A · 라벨러B) |
 | `docs/corpus_list/` | 네 코퍼스 판 목록과 eMuseum 원본 URL (이미지는 넣지 않는다) |
 | `boxes/` | 검출기 상자 (EasyOCR · Surya) · 사람 상자 · 남겨 둔 VLM 묶음 (`VLM_RESPONSES.md` 참조) |
+| `vlm_responses/` | VLM 좌표 응답 원본 — 표 1 과 1.4 절. 다시 받을 수 없으므로 넣어 둔다. `run_all.py` 의 `vlm_baseline` 단계가 이 파일에서 채점만 다시 돈다 |
 | `baseline/` · `viewer/` | 옛 검출 경로와 보기 도구 (참고용) |
 
 핵심 코드: `detect_surya.py`(줄 → 블록 묶기) · `measure_corpus.py`(코퍼스 측정) · `remeasure.py`
@@ -129,6 +175,7 @@ python -m venv .venv && .venv/bin/pip install -r requirements.txt
 
 ## 실험 기록
 
+- `docs/paper_numbers.md` — **논문 숫자의 근거** (값마다 파일 · 함수 · 줄, 원고 1~5장 전수 대조)
 - `docs/RESULTS_FOR_PAPER.md` — 논문에 들어갈 수치와 그 근거 파일 · 커밋
 - `docs/*_preregister.json` — 실험마다 돌리기 전에 단독 커밋한 사전등록
 - `docs/HANDOFF.md` — 연구 방향 · 파이프라인 구조 · 확정된 사실 · 보류한 작업
