@@ -40,22 +40,22 @@
   "응답": [
    {
     "조건": "a1",
-    "파일": "~/Documents/poster/vlm_responses_archive/vlm_baseline_all50_opus55_a1.json",
+    "파일": "vlm_responses/vlm_baseline_all50_opus55_a1.json",
     "sha256": "e724f674d0df4ff97d17c72b38a898dd04990f7691b1f0b12ede5d01883ab993"
    },
    {
     "조건": "a2",
-    "파일": "~/Documents/poster/vlm_responses_archive/vlm_baseline_all50_opus55_a2.json",
+    "파일": "vlm_responses/vlm_baseline_all50_opus55_a2.json",
     "sha256": "0b5170322e738edfddcbbe68dd3044b38300df627bfb84f10bf28cd36d599f23"
    },
    {
     "조건": "b1",
-    "파일": "~/Documents/poster/vlm_responses_archive/vlm_baseline_all50_opus55_b1.json",
+    "파일": "vlm_responses/vlm_baseline_all50_opus55_b1.json",
     "sha256": "d98af7e219cd56e6b7c3aedcaf46e3c281b4ddb1b3d92eb07ea7bdbd77ade332"
    },
    {
     "조건": "b2",
-    "파일": "~/Documents/poster/vlm_responses_archive/vlm_baseline_all50_opus55_b2.json",
+    "파일": "vlm_responses/vlm_baseline_all50_opus55_b2.json",
     "sha256": "2bc9bbbf82eb1fca243c3730a4d401ef18bfe7f763ce8438c0d98b8241cf5bc6"
    }
   ]
