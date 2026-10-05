@@ -289,6 +289,29 @@
    "~/.typo-mcp/synth_sweep_lines_d07b042"
   ]
  },
+ "vlm_baseline": {
+  "sample": "docs/vlm_baseline_all50_sample.json",
+  "work": "~/.typo-mcp/brockmann50",
+  "out_dir": "~/.typo-mcp/vlm_baseline_all50",
+  "split_lines": true,
+  "cache": "~/.typo-mcp/brockmann.json",
+  "consensus": "docs/brockmann_consensus_refs.json",
+  "guides": [
+   "labels/guides/guides_labelerA_20260917-2016.json",
+   "labels/guides/guides_labelerB_20260916-0201.json"
+  ],
+  "prereg": "docs/vlm_baseline_all50_preregister.json",
+  "a": ["vlm_responses/vlm_baseline_all50_a1.json", "vlm_responses/vlm_baseline_all50_a2.json"],
+  "b": ["vlm_responses/vlm_baseline_all50_b1.json", "vlm_responses/vlm_baseline_all50_b2.json"],
+  "out": "docs/vlm_baseline_all50.json",
+  "opus55": {
+   "a": ["vlm_responses/vlm_baseline_all50_opus55_a1.json", "vlm_responses/vlm_baseline_all50_opus55_a2.json"],
+   "b": ["vlm_responses/vlm_baseline_all50_opus55_b1.json", "vlm_responses/vlm_baseline_all50_opus55_b2.json"],
+   "out": "docs/vlm_baseline_all50_opus55.json",
+   "what": "참고 — 사전등록 docs/vlm_baseline_all50_preregister.json 수정 1 이 정한 모델(claude-opus-5)과 다른 claude-opus-5-5 로 받은 응답의 채점. 본 결과는 docs/vlm_baseline_all50.json"
+  },
+  "note": "표 1 (베이스라인 좌표 정확도). VLM 응답은 다시 받을 수 없으므로 vlm_responses/ 에 둔다 — 채점은 그 파일에서 다시 돈다. 응답 파일의 sha256 은 결과 파일 입력.응답 에 적힌다"
+ },
  "split_only": {
   "work": "~/.typo-mcp/brockmann50",
   "posters": "docs/labeling/posters_for_labelers.json",

@@ -219,6 +219,22 @@ def main(argv=None):
         else:
             print('브로크만 2단계 라벨 파일 또는 봉인 해제 기록이 없다 — 건너뛴다')
 
+    if R.get('vlm_baseline'):
+        Vb = R['vlm_baseline']     # 표 1 — VLM 응답 원본(vlm_responses/)에서 채점만 다시 돈다
+        if all(os.path.exists(os.path.join(ROOT, f)) for f in Vb['a'] + Vb['b']):
+            common = ['--sample', Vb['sample'], '--work', Vb['work'], '--out-dir', Vb['out_dir'],
+                      '--cache', Vb['cache'], '--consensus', Vb['consensus'],
+                      '--guides', *Vb['guides'], '--prereg', Vb['prereg']] \
+                + (['--split-lines'] if Vb.get('split_lines') else [])
+            run('eval/explore_vlm_baseline.py', 'score', *common,
+                '--a', *Vb['a'], '--b', *Vb['b'], '--out', Vb['out'])
+            O = Vb.get('opus55')
+            if O and all(os.path.exists(os.path.join(ROOT, f)) for f in O['a'] + O['b']):
+                run('eval/explore_vlm_baseline.py', 'score', *common,
+                    '--a', *O['a'], '--b', *O['b'], '--what', O['what'], '--out', O['out'])
+        else:
+            print('VLM 베이스라인 응답 파일이 없다 — 건너뛴다')
+
     if R.get('split_only'):
         So = R['split_only']       # paper_numbers 6.3 · 12 절 — 2단계 합의 참조가 있어야 돈다
         if os.path.exists(os.path.join(os.path.expanduser(So['work']), 'lines.json')) \
@@ -286,6 +302,8 @@ def main(argv=None):
             + ([R['constants_sweep4']['out']] if R.get('constants_sweep4') else [])
             + ([R['brockmann_group']['consensus_out'], R['brockmann_group']['stage2_out']]
                if R.get('brockmann_group') and R['brockmann_group'].get('guides') and R['brockmann_group'].get('봉인_해제') else [])
+            + ([R['vlm_baseline']['out'], R['vlm_baseline'].get('opus55', {}).get('out')]
+               if R.get('vlm_baseline') else [])
             + ([R['split_only']['out']] if R.get('split_only') else [])
             + ([R['typography_rules']['out']] if R.get('typography_rules') else [])
             + ([R['idml']['out']] if R.get('idml') else []))
