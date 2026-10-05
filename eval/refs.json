@@ -289,6 +289,18 @@
    "~/.typo-mcp/synth_sweep_lines_d07b042"
   ]
  },
+ "split_only": {
+  "work": "~/.typo-mcp/brockmann50",
+  "posters": "docs/labeling/posters_for_labelers.json",
+  "guides": [
+   "labels/guides/guides_labelerA_20260917-2016.json",
+   "labels/guides/guides_labelerB_20260916-0201.json"
+  ],
+  "consensus": "docs/brockmann_consensus_refs.json",
+  "cache": "~/.typo-mcp/brockmann.json",
+  "out": "docs/split_only_score.json",
+  "note": "줄 가르기만 다른 선 채점(paper_numbers 6.3) 과 미검출 원인 두 셈(12 절). 2단계 합의 참조가 있어야 돈다 — brockmann_group 뒤에 둔다"
+ },
  "typography_rules": {
   "caches": {
    "브로크만": "~/.typo-mcp/brockmann.json",

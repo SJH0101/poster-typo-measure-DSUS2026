@@ -500,7 +500,7 @@ H_RATIO = (0.675, 3.4)   # 높이가 이 배수 안이면 같은 크기 계층 (
 | 합의 | 가르기 끔 | 921 | 862 | 796 | 790 | 0.8578 | 0.9165 | — (현행 파일에 없음) |
 | 합의 | 가르기 켬 | 921 | 901 | 829 | 823 | 0.8936 | 0.9134 | 같다 |
 
-계산: `scratchpad/split_only.py` (저장소 밖). 파일은 고치지 않았고, 위 수는 이 표에만 둔다.
+계산: `eval/split_only_score.py` → `docs/split_only_score.json` — 위 표는 `대상."{상태}|{참조}".선채점`, 「일치」 행은 `일치.{상태}` 다. `python eval/run_all.py eval/refs.json` 의 `split_only` 단계가 다시 낸다. 채점은 기존 함수(`line_score` · `line_agreed` · `_stats` · `_stats_agreed`)를 그대로 부르고 고치지 않았다.
 
 ### 6.4 합의 기준 미검출 수와 원인 (가르기만 다름, `H_RATIO` 3.4)
 
@@ -917,8 +917,10 @@ def score_cuts(R, lines, parent, pieces):
 - 새 함수 `missed_causes_ls(p, mblocks)` — `S2.line_score(p, mblocks)[0]['베이스라인']` 의 `T` · `P` · `pairs` 를
   받아 원인만 분류한다. 창 `LINE_WIN` · 허용 `LINE_TOL` · ℓ `block_L` 을 그대로 쓴다.
 - **기존 함수는 고치지 않았다.** `missed_causes` 도 그대로다 — 아래 «기존» 열은 그 함수를 그대로 부른 값이다.
-- 계산: `scratchpad/missed_linescore.py` (저장소 밖, 6.3 절과 같은 방식). 저장소 파일은 이 절을 더한 것 말고
-  고치지 않았다. 조건은 6.3 · 6.4 절과 같다 — 봉인된 줄(`~/.typo-mcp/brockmann50/lines.json`)에
+- 계산: `eval/split_only_score.py` 의 `missed_causes_ls` → `docs/split_only_score.json` — 새 셈은
+  `대상."{상태}|{참조}".미검출_선채점`, 기존 셈은 `.미검출_기존` 이다.
+  `python eval/run_all.py eval/refs.json` 의 `split_only` 단계가 다시 낸다 (경로는 `eval/refs.json`
+  `split_only`). 조건은 6.3 · 6.4 절과 같다 — 봉인된 줄(`{work}/lines.json`)에
   `detect_surya.split_wide_lines` 를 끄고 · 켜고, `H_RATIO` 는 현행 `(0.675, 3.4)`.
 
 ### 12.1 새 값 — 참조 셋 × 줄 가르기 끔 · 켬
@@ -983,7 +985,7 @@ def score_cuts(R, lines, parent, pieces):
 
 ### 12.5 곁따라 확인한 것 — 코퍼스 캐시는 지금 «가르기 켬» 상태다
 
-위 계산 중에 확인했다. `~/.typo-mcp/brockmann.json` (provenance `8a5b0a1` · 2026-09-20 · n 123) 의 블록은
+위 계산 중에 확인했다 (`docs/split_only_score.json` `캐시와_같은_판`). `~/.typo-mcp/brockmann.json` (provenance `8a5b0a1` · 2026-09-20 · n 123) 의 블록은
 봉인된 줄에 **가르기를 켠** 측정과 50/50 판에서 같고, **끈** 측정과는 31/50 에서만 같다.
 
 | 견준 것 | 같은 판 |

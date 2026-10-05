@@ -219,6 +219,16 @@ def main(argv=None):
         else:
             print('브로크만 2단계 라벨 파일 또는 봉인 해제 기록이 없다 — 건너뛴다')
 
+    if R.get('split_only'):
+        So = R['split_only']       # paper_numbers 6.3 · 12 절 — 2단계 합의 참조가 있어야 돈다
+        if os.path.exists(os.path.join(os.path.expanduser(So['work']), 'lines.json')) \
+                and os.path.exists(os.path.join(ROOT, So['consensus'])):
+            run('eval/split_only_score.py', '--work', So['work'], '--posters', So['posters'],
+                '--guides', *So['guides'], '--consensus', So['consensus'],
+                *(['--cache', So['cache']] if So.get('cache') else []), '--out', So['out'])
+        else:
+            print('브로크만 줄 파일 또는 합의 참조가 없다 — split_only 를 건너뛴다')
+
     if R.get('measure_pad'):
         Mp = R['measure_pad']
         if os.path.exists(os.path.expanduser(Mp['lines'])):
@@ -276,6 +286,7 @@ def main(argv=None):
             + ([R['constants_sweep4']['out']] if R.get('constants_sweep4') else [])
             + ([R['brockmann_group']['consensus_out'], R['brockmann_group']['stage2_out']]
                if R.get('brockmann_group') and R['brockmann_group'].get('guides') and R['brockmann_group'].get('봉인_해제') else [])
+            + ([R['split_only']['out']] if R.get('split_only') else [])
             + ([R['typography_rules']['out']] if R.get('typography_rules') else [])
             + ([R['idml']['out']] if R.get('idml') else []))
     subprocess.run(['git', 'status', '--short', '--', *outs], cwd=ROOT)
