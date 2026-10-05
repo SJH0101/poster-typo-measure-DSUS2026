@@ -28,6 +28,7 @@ sys.path.insert(0, ROOT); sys.path.insert(0, HERE)
 import detect_surya as DS                  # noqa: E402
 import detector_score as DSc               # noqa: E402
 import group_gap as GG                     # noqa: E402
+import linepair as LP                     # noqa: E402  선 짝짓기 — 창 · 겹침 · 1:1 · 허용
 import group_score as GS                   # noqa: E402
 import oracle_group as OG                  # noqa: E402  ink_lines · covered (오라클 원인 3 의 잉크 줄)
 from measure import ground as G            # noqa: E402
@@ -38,7 +39,7 @@ LABELERS = ('라벨러A', '라벨러B')             # 차 = 라벨러A − 라�
 VALUES = ('라벨러B', '라벨러A', '일치')        # 보고 차례 — ① 라벨러B 기준 · ② 라벨러A 기준 · ③ 두 라벨러 일치 항목 (수정 1)
 IOU_MAIN, IOU_SENS = 0.5, 0.3
 INSIDE = DSc.INSIDE                        # 0.5
-LINE_WIN, LINE_TOL = 0.5, 0.2              # 합성 판 전체 직접 짝과 같다
+LINE_WIN, LINE_TOL = LP.WIN, LP.TOL        # 선 짝짓기 창 · 허용 — eval/linepair.py 에만 둔다
 OUTSIDE = OG.OUTSIDE                       # 0.5 — 오라클 원인 «상자를 넘는 줄»
 SIZE_RATIO, SMALL_H, SMALL_W = 1.5, 0.6, 0.25   # 추가 1 유형 값
 MIN_PAIRS = 10                             # 추가 1 · S3 판단 가능 최소 수
@@ -465,16 +466,8 @@ DIRECT = [('베이스라인', 'bases', lambda l: l['base']),
 
 
 def _direct(T, P):
-    cand = sorted((abs(p[0] - t['y']), i, j) for i, t in enumerate(T) for j, p in enumerate(P)
-                  if abs(p[0] - t['y']) <= LINE_WIN * t['lead'] and min(t['x2'], p[2]) - max(t['x1'], p[1]) > 0)
-    mi, mj, pairs = set(), set(), []
-    for _d, i, j in cand:
-        if i in mi or j in mj:
-            continue
-        mi.add(i); mj.add(j)
-        e = P[j][0] - T[i]['y']
-        pairs.append(dict(t=i, p=j, err=e, hit=abs(e) <= LINE_TOL * T[i]['lead']))
-    return pairs
+    """선 짝짓기 — eval/linepair.direct 그대로 (창 0.5·행간 · 가로 겹침 · 가까운 순 1:1 · 허용 0.2·행간)."""
+    return LP.direct(T, P)
 
 
 def line_score(p, mblocks):
@@ -600,12 +593,12 @@ def neighbours_agreed(pairs, npS, npM):
 
 
 def _cand1(p, t):
-    return abs(p[0] - t['y']) <= LINE_WIN * t['lead'] and min(t['x2'], p[2]) - max(t['x1'], p[1]) > 0
+    return LP.in_window(t, p)
 
 
 def _cand2(p, t):
     return (abs(p[0] - t['yS']) <= LINE_WIN * t['lead'] and abs(p[0] - t['yM']) <= LINE_WIN * t['lead']
-            and min(t['x2'], p[2]) - max(t['x1'], p[1]) > 0)
+            and LP.overlap(t, p))
 
 
 def _match_agreed(T, P, fullS, fullM):

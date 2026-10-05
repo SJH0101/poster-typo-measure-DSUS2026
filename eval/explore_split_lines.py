@@ -29,6 +29,7 @@ sys.path.insert(0, os.path.dirname(HERE)); sys.path.insert(0, HERE)
 import detect_surya as DS                  # noqa: E402
 import detector_score as DSc               # noqa: E402
 import group_gap as GG                     # noqa: E402
+import linepair as LP                     # noqa: E402  선 짝짓기 — 창 · 겹침 · 1:1 · 허용
 import group_score as GS                   # noqa: E402
 import brockmann_stage2_score as S2        # noqa: E402
 import synth_score as SY                   # noqa: E402
@@ -104,14 +105,9 @@ def missed_causes(p, mblocks):
             if num(l.get('base')):
                 T.append(dict(y=l['base'], lead=Ld, x1=b['box'][0], x2=b['box'][2]))
     P = [(v, mb['x1'], mb['x2']) for mb in mblocks for v in mb['bases']]
-    cand = sorted((abs(q[0] - t['y']), i, j) for i, t in enumerate(T) for j, q in enumerate(P)
-                  if abs(q[0] - t['y']) <= 0.5 * t['lead'] and min(t['x2'], q[2]) - max(t['x1'], q[1]) > 0)
-    mi, mj, hit = set(), set(), {}
-    for _d, i, j in cand:
-        if i in mi or j in mj:
-            continue
-        mi.add(i); mj.add(j)
-        hit[i] = abs(P[j][0] - T[i]['y']) <= 0.2 * T[i]['lead']
+    prs = LP.direct(T, P)
+    mj = {q['p'] for q in prs}
+    hit = {q['t']: q['hit'] for q in prs}
     c = collections.Counter(글줄=len(T))
     st = []
     for i, t in enumerate(T):
@@ -121,7 +117,7 @@ def missed_causes(p, mblocks):
         near = [j for j, q in enumerate(P) if abs(q[0] - t['y']) <= 1 and min(t['x2'], q[2]) - max(t['x1'], q[1]) > 0]
         if any(j in mj for j in near):
             k_ = '가로 병합'
-        elif not any(abs(q[0] - t['y']) <= 0.5 * t['lead'] and min(t['x2'], q[2]) - max(t['x1'], q[1]) > 0 for q in P):
+        elif not any(LP.in_window(t, q) for q in P):
             k_ = '띠 없음'
         else:
             k_ = '어긋남'

@@ -14,7 +14,12 @@ import collections
 import json
 import os
 
+import sys
+
 import numpy as np
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import linepair as LP     # noqa: E402  선 짝짓기 — 창 · 겹침 · 1:1 · 허용
 
 NEAR = 0.15          # 정수에서 이만큼 안이면 «정수배» 로 센다
 GRID = (3.0, 80.5, 0.5)   # 격자 후보 g 를 훑는 범위 (px)
@@ -152,14 +157,8 @@ def missed(poster, m):
             if num(l.get('base')):
                 T.append(dict(y=l['base'], lead=L, x1=b['box'][0], x2=b['box'][2]))
     P = [(v, mb['x1'], mb['x2']) for mb in (m.get('blocks') or []) for v in mb['bases']]
-    cand = sorted((abs(p[0] - t['y']), i, j) for i, t in enumerate(T) for j, p in enumerate(P)
-                  if abs(p[0] - t['y']) <= 0.5 * t['lead'] and min(t['x2'], p[2]) - max(t['x1'], p[1]) > 0)
-    mi, mj, hit = set(), set(), {}
-    for _d, i, j in cand:
-        if i in mi or j in mj:
-            continue
-        mi.add(i); mj.add(j)
-        hit[i] = abs(P[j][0] - T[i]['y']) <= 0.2 * T[i]['lead']
+    prs = LP.direct(T, P)
+    hit = {q['t']: q['hit'] for q in prs}
     return dict(줄=len(T), 미검출=sum(1 for i in range(len(T)) if not hit.get(i)))
 
 

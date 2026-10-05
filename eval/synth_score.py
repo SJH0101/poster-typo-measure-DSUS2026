@@ -28,6 +28,7 @@ sys.path.insert(0, ROOT)
 sys.path.insert(0, os.path.join(ROOT, 'eval'))
 import detector_score as DSc      # noqa: E402  iou · held · inside (같은 정의를 쓴다)
 import discrim                    # noqa: E402
+import linepair as LP             # noqa: E402  선 짝짓기 — 창 · 겹침 · 1:1 · 허용
 import measure_corpus as MC       # noqa: E402
 import rules                      # noqa: E402
 import series_check as SC         # noqa: E402  grid_sharing · judge
@@ -35,8 +36,7 @@ import synth_gen as SG           # noqa: E402  stroke_overlaps (획 겹침 세�
 
 IOU_MIN = DSc.IOU_MIN             # 0.5
 INSIDE = DSc.INSIDE               # 0.5
-LINE_TOL = 0.2                    # 줄 재현: |오차| ≤ 0.2·행간
-MATCH_WIN = 0.5                   # 줄 짝짓기 창: 0.5·행간
+MATCH_WIN, LINE_TOL = LP.WIN, LP.TOL   # 짝짓기 창 0.5·행간 · 허용 0.2·행간 — eval/linepair.py 에만 둔다
 NULL_SEED = SC.SEED               # 20260911
 KEY = 'lead_over_cap'
 
@@ -185,15 +185,8 @@ def direct_lines(t, m):
                     continue
                 T.append(dict(y=ln[tk], lead=lead, x1=ln['x1'], x2=ln['x2'], upper=any(ch.isupper() for ch in ln['text'])))
         P = [(v, b['x1'], b['x2']) for b in m['blocks'] for v in b[mk] if v is not None]
-        cand = sorted((abs(p[0] - tl['y']), i, j) for i, tl in enumerate(T) for j, p in enumerate(P)
-                      if abs(p[0] - tl['y']) <= MATCH_WIN * tl['lead'] and min(tl['x2'], p[2]) - max(tl['x1'], p[1]) > 0)
-        mi, mj, pairs = set(), set(), []
-        for _d, i, j in cand:
-            if i in mi or j in mj:
-                continue
-            mi.add(i); mj.add(j)
-            e = P[j][0] - T[i]['y']
-            pairs.append(dict(err=e, hit=abs(e) <= LINE_TOL * T[i]['lead'], upper=T[i]['upper']))
+        pairs = [dict(err=q['err'], hit=q['hit'], upper=T[q['t']]['upper'])
+                 for q in LP.direct(T, P)]
         out[name] = dict(n_truth=len(T), n_truth_upper=sum(tl['upper'] for tl in T), n_meas=len(P), pairs=pairs)
     return out
 

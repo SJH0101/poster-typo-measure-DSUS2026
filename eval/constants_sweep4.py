@@ -28,6 +28,7 @@ import detect_surya as DS          # noqa: E402
 import detector_score as DSc       # noqa: E402
 import measure_corpus as MC        # noqa: E402
 import synth_score as SS           # noqa: E402
+import linepair as LP            # noqa: E402  선 짝짓기 — 창 · 겹침 · 1:1
 from measure import ground as G    # noqa: E402
 from measure import ink, region    # noqa: E402
 
@@ -138,16 +139,9 @@ def g1_stats(t, m, g1):
     for b in m['blocks']:
         for v in b['xtops']:
             P.append((v, b['x1'], b['x2'])); flag.append(g1[k] if k < len(g1) else None); k += 1
-    cand = sorted((abs(p[0] - tl['y']), i, j) for i, tl in enumerate(T) for j, p in enumerate(P)
-                  if abs(p[0] - tl['y']) <= SS.MATCH_WIN * tl['lead'] and min(tl['x2'], p[2]) - max(tl['x1'], p[1]) > 0)
-    mi, mj, n, ok = set(), set(), 0, 0
-    for _d, i, j in cand:
-        if i in mi or j in mj:
-            continue
-        mi.add(i); mj.add(j)
-        if flag[j]:
-            n += 1; ok += abs(P[j][0] - T[i]['y']) <= 0.5
-    return dict(되돌림_짝=n, 행일치=ok)
+    prs = [q for q in LP.direct(T, P) if flag[q['p']]]       # 짝짓기는 eval/linepair.py 하나로
+    return dict(되돌림_짝=len(prs),
+                행일치=sum(1 for q in prs if abs(P[q['p']][0] - T[q['t']]['y']) <= 0.5))
 
 
 def flat(points, vals, delta):
