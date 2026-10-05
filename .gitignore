@@ -3,3 +3,6 @@ __pycache__/
 corpus.json
 .DS_Store
 .venv/
+
+# 원고는 투고 전이라 공개하지 않는다 — 사본은 비공개 저장소 typo-map 에 둔다
+docs/manuscript_current.md
