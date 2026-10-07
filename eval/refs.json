@@ -312,6 +312,18 @@
   },
   "note": "표 1 (베이스라인 좌표 정확도). VLM 응답은 다시 받을 수 없으므로 vlm_responses/ 에 둔다 — 채점은 그 파일에서 다시 돈다. 응답 파일의 sha256 은 결과 파일 입력.응답 에 적힌다"
  },
+ "grid_module": {
+  "cache": "~/.typo-mcp/brockmann.json",
+  "posters": "docs/labeling/posters_for_labelers.json",
+  "guides": [
+   "labels/guides/guides_labelerA_20260917-2016.json",
+   "labels/guides/guides_labelerB_20260916-0201.json"
+  ],
+  "consensus": "docs/brockmann_consensus_refs.json",
+  "prereg": "docs/grid_module_preregister.json",
+  "out": "docs/grid_module_result.json",
+  "note": "가로 정렬 위치가 한 단위 u 의 정수배 간격으로 놓이는지 (paper_numbers 18절, 사전등록 ac6dec3). 정렬 위치의 개수를 유지한 대조를 쓴다 — grid_ndiv 의 대조 (ii) 와 다르다 (19절). 2단계 합의 참조가 있어야 돈다"
+ },
  "split_only": {
   "work": "~/.typo-mcp/brockmann50",
   "posters": "docs/labeling/posters_for_labelers.json",

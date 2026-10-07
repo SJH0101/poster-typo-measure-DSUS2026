@@ -91,6 +91,7 @@ python -m venv .venv && .venv/bin/pip install -r requirements.txt
 | 합성 측정 | `docs/synth_preregister.json` | `docs/synth_result.json` | 표 3 · 4-3 |
 | 블록 나누기 (깨끗한 세트) | `docs/clean_preregister.json` | `docs/clean_result.json` · `docs/clean_check.json` | 표 4 · 4-3 |
 | 격자 재분석 (N등분) | `docs/grid_ndiv_preregister.json` | `docs/grid_ndiv_result.json` | 표 7 · 4-5 |
+| 가로 정렬 위치의 배수 간격 | `docs/grid_module_preregister.json` (`ac6dec3`) | `docs/grid_module_result.json` | 4-5 · `paper_numbers.md` 18절 |
 
 **탐색 실험**은 사전등록 없이 돌린 것이다. 결과 파일에 «탐색용 · 논문 수치 아님» 이 적혀 있다.
 논문이 이 가운데 일부 수를 인용하므로, 어디서 왔는지 `docs/paper_numbers.md` 에 표시해 두었다.

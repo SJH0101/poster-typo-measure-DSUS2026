@@ -235,6 +235,15 @@ def main(argv=None):
         else:
             print('VLM 베이스라인 응답 파일이 없다 — 건너뛴다')
 
+    if R.get('grid_module'):
+        Gm = R['grid_module']      # paper_numbers 18절 — 2단계 합의 참조가 있어야 돈다
+        if os.path.exists(os.path.expanduser(Gm['cache'])) and os.path.exists(os.path.join(ROOT, Gm['consensus'])):
+            run('eval/grid_module.py', '--cache', Gm['cache'], '--posters', Gm['posters'],
+                '--guides', *Gm['guides'], '--consensus', Gm['consensus'],
+                '--prereg', Gm['prereg'], '--out', Gm['out'])
+        else:
+            print('브로크만 캐시 또는 합의 참조가 없다 — grid_module 을 건너뛴다')
+
     if R.get('split_only'):
         So = R['split_only']       # paper_numbers 6.3 · 12 절 — 2단계 합의 참조가 있어야 돈다
         if os.path.exists(os.path.join(os.path.expanduser(So['work']), 'lines.json')) \
@@ -304,6 +313,7 @@ def main(argv=None):
                if R.get('brockmann_group') and R['brockmann_group'].get('guides') and R['brockmann_group'].get('봉인_해제') else [])
             + ([R['vlm_baseline']['out'], R['vlm_baseline'].get('opus55', {}).get('out')]
                if R.get('vlm_baseline') else [])
+            + ([R['grid_module']['out']] if R.get('grid_module') else [])
             + ([R['split_only']['out']] if R.get('split_only') else [])
             + ([R['typography_rules']['out']] if R.get('typography_rules') else [])
             + ([R['idml']['out']] if R.get('idml') else []))
