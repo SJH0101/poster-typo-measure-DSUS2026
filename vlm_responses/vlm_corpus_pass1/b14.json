@@ -1,0 +1,69 @@
+{
+  "posters": [
+    {
+      "file": "131_som.png",
+      "groups": [[1]],
+      "notes": "상자 하나뿐."
+    },
+    {
+      "file": "132_som.png",
+      "groups": [[1], [2, 3, 4, 5]],
+      "notes": "1 은 판 맨 위, 2-5 는 오른쪽 아래에 바짝 붙은 넉 줄. 사이 틈이 안쪽 틈보다 훨씬 넓다."
+    },
+    {
+      "file": "133_som.png",
+      "groups": [[1]],
+      "notes": "상자 하나뿐."
+    },
+    {
+      "file": "134_som.png",
+      "groups": [[1, 2, 3], [4], [5], [6]],
+      "notes": "1-2-3 은 왼쪽에 붙은 세 줄. 4 · 5 · 6 은 서로 가로로 전혀 안 겹쳐 따로 두었다."
+    },
+    {
+      "file": "135_som.png",
+      "groups": [[1], [2]],
+      "notes": "2 는 왼쪽 아래 글 덩어리 전체, 1 은 판 맨 아래 왼쪽 모서리의 아주 작은 상자. 가로로 겹치지 않는다."
+    },
+    {
+      "file": "136_som.png",
+      "groups": [[1], [2], [3], [4]],
+      "notes": "넷 다 판의 다른 구석에 떨어져 있다."
+    },
+    {
+      "file": "137_som.png",
+      "groups": [[1, 2, 3], [4], [5, 6], [7]],
+      "notes": "5 와 6 은 한 줄(Skulptur)을 가로로 쪼갠 상자라 맞붙어 있다. 1-2-3 은 가운데 이름 목록으로, 빠진 줄을 감안해도 틈이 고르다."
+    },
+    {
+      "file": "138_som.png",
+      "groups": [[1, 2], [3], [4, 5], [6], [7, 8]],
+      "notes": "4 와 5 는 세로 틈이 거의 0 이고 가로로 조금 겹쳐 붙였다 — 이 판에서 가장 애매한 자리. 3 은 4 와 세로로 겹치지만 가로로 전혀 안 겹쳐 따로 두었다."
+    },
+    {
+      "file": "139_som.png",
+      "groups": [[1], [2, 3]],
+      "notes": "세 상자 모두 한 글 덩어리의 조각이지만, 1 은 2 · 3 과 가로로 전혀 겹치지 않아 규칙대로 끊었다. 상자가 줄 일부만 덮은 탓."
+    },
+    {
+      "file": "140_som.png",
+      "groups": [[1], [2]],
+      "notes": "1 은 판 맨 위의 아주 작은 상자, 2 는 가운데 글 덩어리 전체. 사이가 매우 멀다."
+    }
+  ],
+  "files_opened": [
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/pass1_input/b14_input.json",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/131_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/132_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/133_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/134_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/135_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/136_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/137_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/138_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/139_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/140_som.png"
+  ],
+  "model": "claude-opus-5",
+  "notes": "138 의 4 · 5 가 가장 애매했다 (세로 틈 거의 0, 가로 겹침은 조금) — 틈 규칙을 따라 붙였다. 139 · 135 는 상자가 줄 일부만 덮거나 판 모서리에 있어 가로 겹침 규칙대로 끊었다. 137 의 5 · 6 은 한 줄을 가로로 쪼갠 상자로 보인다."
+}

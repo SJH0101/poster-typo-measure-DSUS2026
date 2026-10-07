@@ -1,0 +1,69 @@
+{
+  "posters": [
+    {
+      "file": "061_som.png",
+      "groups": [[1, 2], [3]],
+      "notes": "1 과 2 는 같은 줄(위쪽 가는 줄) 에서 겹친다. 3 은 아래로 큰 틈."
+    },
+    {
+      "file": "062_som.png",
+      "groups": [[1], [2], [3]],
+      "notes": "1 은 왼쪽 세로 줄, 2 는 오른쪽 중간의 작은 조각, 3 은 오른쪽 아래. 셋 다 서로 멀다."
+    },
+    {
+      "file": "063_som.png",
+      "groups": [[1, 2], [3]],
+      "notes": "1-2 는 줄 사이 틈이 좁다. 3 은 판 아래쪽의 떨어진 작은 상자."
+    },
+    {
+      "file": "064_som.png",
+      "groups": [[1, 2], [3, 4, 5], [6], [7], [8]],
+      "notes": "1-2 와 3-5 사이 틈이 각 묶음 안쪽 틈의 두 배를 넘어 끊었다. 4 는 3 과 같은 줄에서 겹친다."
+    },
+    {
+      "file": "065_som.png",
+      "groups": [[1], [2]],
+      "notes": "1 과 2 는 세로로는 겹치지만 가로로 전혀 안 겹치고 옆 틈이 넓다. 애매해서 끊었다."
+    },
+    {
+      "file": "066_som.png",
+      "groups": [[1, 2, 3], [4], [5, 6, 7]],
+      "notes": "비스듬한 글. 1-3 은 서로 닿는다. 4 와 5 사이 틈이 5-6-7 안쪽 틈의 두 배를 넘는다."
+    },
+    {
+      "file": "067_som.png",
+      "groups": [[1], [2, 3]],
+      "notes": "2 와 3 은 같은 비스듬한 줄 위에서 가깝고, 1 은 아주 멀다. 2-3 을 붙일지는 애매했다."
+    },
+    {
+      "file": "068_som.png",
+      "groups": [[1, 2, 3, 4], [5]],
+      "notes": "1-4 의 줄 사이 틈이 서로 비슷해 끊을 자리가 없다. 5 는 판 맨 아래로 틈이 아주 크다."
+    },
+    {
+      "file": "069_som.png",
+      "groups": [[1, 2, 3], [4]],
+      "notes": ""
+    },
+    {
+      "file": "070_som.png",
+      "groups": [[1, 2, 3], [4]],
+      "notes": ""
+    }
+  ],
+  "files_opened": [
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/pass1_input/b07_input.json",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/061_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/062_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/063_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/064_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/065_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/066_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/067_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/068_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/069_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/070_som.png"
+  ],
+  "model": "Claude Opus 5 (claude-opus-5)",
+  "notes": "어려웠던 장: 065 (큰 «ja» 가 한 줄의 오른쪽에 떨어져 있어 가로 겹침 없음 규칙대로 끊음), 066 · 067 (비스듬한 글의 조각 상자들), 064 (두 줄씩 두 묶음의 끊을 자리)."
+}

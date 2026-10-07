@@ -1,0 +1,69 @@
+{
+  "posters": [
+    {
+      "file": "141_som.png",
+      "groups": [[1], [2, 3]],
+      "notes": "1은 왼쪽 날짜 단, 2·3은 오른쪽 단. 두 단은 가로로 전혀 겹치지 않는다. 2는 3 안쪽 첫 줄과 겹쳐 있어 한 덩어리."
+    },
+    {
+      "file": "142_som.png",
+      "groups": [[1]],
+      "notes": ""
+    },
+    {
+      "file": "143_som.png",
+      "groups": [[1], [2]],
+      "notes": "1은 왼쪽 아래 날짜, 2는 오른쪽 블록. 가로로 겹치지 않는다."
+    },
+    {
+      "file": "144_som.png",
+      "groups": [[1]],
+      "notes": ""
+    },
+    {
+      "file": "145_som.png",
+      "groups": [[1, 2, 3, 4, 5], [6, 7]],
+      "notes": "1~5는 줄간이 고른 한 묶음. 아래 6·7은 같은 줄에 나란히 놓인 «Kunsthalle Basel» 로 한 묶음이고, 위 묶음과는 틈이 매우 넓다."
+    },
+    {
+      "file": "146_som.png",
+      "groups": [[1, 2, 3, 4, 5, 6, 7], [8, 9]],
+      "notes": "왼쪽 세로 단 1~7이 한 묶음. 아래 8·9는 겹쳐 있고 줄간이 이어져 한 묶음. 두 묶음은 가로로 겹치지 않는다."
+    },
+    {
+      "file": "147_som.png",
+      "groups": [[1]],
+      "notes": ""
+    },
+    {
+      "file": "148_som.png",
+      "groups": [[1, 2, 3, 4, 5, 6]],
+      "notes": "위쪽 여섯 줄 모두 줄간이 고르고 서로 붙어 있다."
+    },
+    {
+      "file": "149_som.png",
+      "groups": [[1, 2], [3], [4]],
+      "notes": "1은 2의 첫 줄과 겹쳐 한 묶음. 4(Klee)는 가로로 겹치지 않는 오른쪽 자리라 따로. 3은 그림 속 긁힌 자국에 잡힌 듯한 작은 상자로 둘레에 아무것도 없어 홀로 두었다."
+    },
+    {
+      "file": "150_som.png",
+      "groups": [[1, 2, 3]],
+      "notes": "세 상자가 맞닿아 있고 줄간이 이어진다."
+    }
+  ],
+  "files_opened": [
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/pass2_input/b15_input.json",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/141_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/142_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/143_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/144_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/145_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/146_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/147_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/148_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/149_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/150_som.png"
+  ],
+  "model": "Claude Opus 5 (claude-opus-5)",
+  "notes": "149 의 3번 상자는 글줄이 아니라 그림 속 무늬에 잡힌 것으로 보여 홀로 두었다. 145 의 6·7, 141 의 2·3 처럼 한 줄이 두 상자로 쪼개진 자리는 붙여 놓았다. 146 의 8·9 는 상자가 서로 겹쳐 한 덩어리로 보았다."
+}

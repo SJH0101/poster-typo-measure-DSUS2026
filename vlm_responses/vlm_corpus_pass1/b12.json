@@ -1,0 +1,69 @@
+{
+  "posters": [
+    {
+      "file": "111_som.png",
+      "groups": [[1, 2, 3, 4]],
+      "notes": "네 줄의 줄 간격(윗변 간 거리 250·275·270)이 고르다. 3→4 틈이 조금 넓지만 두 배에 못 미쳐 한 덩어리로 둔다."
+    },
+    {
+      "file": "112_som.png",
+      "groups": [[1]],
+      "notes": "상자 하나."
+    },
+    {
+      "file": "113_som.png",
+      "groups": [[1, 2, 3, 4]],
+      "notes": "오른쪽 아래 한 자리에 모여 있고 줄 간격이 처음부터 끝까지 고르다."
+    },
+    {
+      "file": "114_som.png",
+      "groups": [[6], [1, 2, 3, 4, 5], [7, 8, 9]],
+      "notes": "6은 판 맨 위에 혼자 있다. 1-5(왼쪽 아래)와 7-9(오른쪽 아래)는 가로로 전혀 겹치지 않아 따로 둔다."
+    },
+    {
+      "file": "115_som.png",
+      "groups": [[1]],
+      "notes": "상자 하나."
+    },
+    {
+      "file": "116_som.png",
+      "groups": [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]],
+      "notes": "5-8과 9-12는 세로로는 이어지는 듯 보이나 가로로 거의 겹치지 않는 별개의 계단 덩어리라 끊었다. 애매한 자리."
+    },
+    {
+      "file": "117_som.png",
+      "groups": [[1], [2], [3], [4]],
+      "notes": "네 자리 모두 둘레에 넓은 빈 자리가 있다."
+    },
+    {
+      "file": "118_som.png",
+      "groups": [[1, 2, 3, 4, 5], [6, 7, 8, 9, 10, 11]],
+      "notes": "1-5는 줄 간격이 고른 큰 글자 덩어리. 7(«4»)은 6(«Bildhauer»)과 같은 줄에 바싹 붙어 있어 아래 덩어리에 넣었다."
+    },
+    {
+      "file": "119_som.png",
+      "groups": [[1, 2, 3], [4, 5, 6], [7, 8, 9]],
+      "notes": "세 단이 가로로 겹치지 않는다. 단마다 줄 간격은 고르다."
+    },
+    {
+      "file": "120_som.png",
+      "groups": [[1], [2], [3], [4]],
+      "notes": "네 상자가 판 곳곳에 흩어져 있다. 1은 큰 기울어진 글자 위에 놓인 작은 상자인데 둘레에 다른 상자가 없다."
+    }
+  ],
+  "files_opened": [
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/pass1_input/b12_input.json",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/111_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/112_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/113_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/114_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/115_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/116_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/117_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/118_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/119_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/120_som.png"
+  ],
+  "model": "Claude Opus 5 (claude-opus-5)",
+  "notes": "어려웠던 장: 116 — 5-8 덩어리와 9-12 덩어리가 세로로는 이어 보이나 가로 겹침이 거의 없어 끊었다. 111 — 3→4 틈이 다른 틈보다 다소 넓지만 두 배에는 못 미쳐 합쳤다. 118 — 7(«4»)을 같은 줄의 6에 붙였다."
+}

@@ -1,0 +1,69 @@
+{
+  "posters": [
+    {
+      "file": "141_som.png",
+      "groups": [[1], [2, 3]],
+      "notes": "1 은 왼쪽 단의 날짜 블록, 2·3 은 오른쪽 단. 두 단은 가로로 겹치지 않아 따로 둔다. 2(Kunsthalle)와 3(Kunsthalle~Graphik 블록)은 서로 맞닿아 한 덩어리."
+    },
+    {
+      "file": "142_som.png",
+      "groups": [[1]],
+      "notes": ""
+    },
+    {
+      "file": "143_som.png",
+      "groups": [[1], [2]],
+      "notes": "1(7.5-12.6)은 왼쪽 아래, 2(Kunsthalle~Künstler)는 오른쪽. 가로로 겹치지 않고 사이 틈이 매우 넓다."
+    },
+    {
+      "file": "144_som.png",
+      "groups": [[1]],
+      "notes": ""
+    },
+    {
+      "file": "145_som.png",
+      "groups": [[1, 2, 3, 4, 5], [6, 7]],
+      "notes": "1~5 는 줄 간격이 고르게 붙은 가운데 블록. 6·7 은 판 아래 같은 줄에 나란히 붙어 있고 위 블록과는 아주 멀다."
+    },
+    {
+      "file": "146_som.png",
+      "groups": [[1, 2, 3, 4, 5, 6, 7], [8, 9]],
+      "notes": "1~7 은 왼쪽 가장자리 단, 8·9 는 아래 블록. 8(E.L.Kirchner) 과 9(und~bis 15.Okt.) 는 바로 붙어 있어 한 덩어리."
+    },
+    {
+      "file": "147_som.png",
+      "groups": [[1]],
+      "notes": ""
+    },
+    {
+      "file": "148_som.png",
+      "groups": [[1, 2, 3, 4, 5, 6]],
+      "notes": "여섯 줄 모두 같은 간격으로 붙어 있다."
+    },
+    {
+      "file": "149_som.png",
+      "groups": [[1, 2], [3], [4]],
+      "notes": "1·2 는 왼쪽 위 블록으로 맞닿아 있다. 4(Klee)는 같은 띠 안이지만 가로로 전혀 안 겹치는 오른쪽 자리. 3 은 그림 한가운데 홀로 떨어진 작은 상자."
+    },
+    {
+      "file": "150_som.png",
+      "groups": [[1, 2, 3]],
+      "notes": "1·2·3 이 아래쪽에서 거의 맞닿아 쌓여 있고 둘레에 넓은 여백이 있다."
+    }
+  ],
+  "files_opened": [
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/pass1_input/b15_input.json",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/141_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/142_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/143_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/144_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/145_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/146_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/147_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/148_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/149_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/150_som.png"
+  ],
+  "model": "claude-opus-5",
+  "notes": "141 은 2 번 상자(Kunsthalle)가 3 번 큰 상자와 겹쳐 있어 판정이 애매했다. 149 의 3 번은 그림 속 선을 잡은 것으로 보여 주변에 이웃이 없어 홀로 두었고, 4 번(Klee)은 1·2 와 같은 띠에 있으나 가로로 전혀 겹치지 않아 따로 두었다. 145 의 5 번(10.Sept. 9.Okt.)은 위 줄들과 틈이 조금 더 넓어 보였으나 두 배를 넘지 않아 합쳤다."
+}

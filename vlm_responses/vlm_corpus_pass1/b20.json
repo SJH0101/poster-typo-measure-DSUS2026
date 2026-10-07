@@ -1,0 +1,69 @@
+{
+  "posters": [
+    {
+      "file": "191_som.png",
+      "groups": [[1, 2], [3, 4, 5, 6, 7], [8, 9], [10, 11, 12, 13, 14]],
+      "notes": "좌하단: 관명 2줄과 그 아래 작은 일정 5줄 사이 틈이 안쪽 틈의 몇 배라 끊었다. 우측: 표제+부제 2줄과 분야 목록 5줄 사이도 같은 이유로 끊었다."
+    },
+    {
+      "file": "192_som.png",
+      "groups": [[1, 2, 3, 4], [5, 6, 7, 8, 9, 10, 11, 12, 13], [14, 15]],
+      "notes": "11번은 10번과 같은 줄에 가로로 이어진 상자라 같은 덩어리로 보았다. 13과 14 사이에 한 줄 비는 틈이 있어 끊었다."
+    },
+    {
+      "file": "193_som.png",
+      "groups": [[1, 2, 3, 4, 5], [6, 7, 8, 9, 10, 11]],
+      "notes": "상단 5줄은 5번 글자가 작아 틈이 조금 좁아졌을 뿐 두 배를 넘지 않아 한 덩어리로 두었다."
+    },
+    {
+      "file": "194_som.png",
+      "groups": [[1, 2, 3, 4], [5], [9, 11, 13], [16, 18], [6, 7, 8, 10, 12, 14, 15, 17, 19, 20]],
+      "notes": "하단이 두 단이다. 왼쪽 작곡가 이름 단과 오른쪽 곡목 단은 가로로 전혀 안 겹쳐 따로 두었다. 왼쪽 단은 이름이 없는 행 때문에 빈 줄이 생겨 세 덩어리로 끊겼고, 오른쪽 단은 빈 줄 없이 이어져 한 덩어리다. 이 장이 가장 애매했다."
+    },
+    {
+      "file": "195_som.png",
+      "groups": [[1], [2]],
+      "notes": "1번 상자 안의 네 줄 간격보다 1번과 2번 사이 틈이 두 배 넘게 벌어져 끊었다."
+    },
+    {
+      "file": "196_som.png",
+      "groups": [[1, 2, 3], [4], [5, 6]],
+      "notes": "왼쪽 작은 3줄은 틈이 고르다. 우상단 표제 상자와 우하단 2줄은 가로로 겹치지 않고 멀리 떨어져 따로다."
+    },
+    {
+      "file": "197_som.png",
+      "groups": [[1, 2, 3], [4], [5], [6, 7, 8, 9, 10]],
+      "notes": "상단은 세 단이다. 4번과 5번은 가로로 겹치지 않아 따로 두었다."
+    },
+    {
+      "file": "198_som.png",
+      "groups": [[1], [2], [3, 4], [5, 6, 7, 8], [9, 10, 11, 12, 13]],
+      "notes": "1번은 왼쪽 가장자리의 세로 글줄이라 혼자다. 2번(큰 표제)은 오른쪽 9-13번 단과 가로로 겹치지 않아 따로 두었다. 오른쪽 단은 빈 줄 두 자리에서 세 덩어리로 끊었다."
+    },
+    {
+      "file": "199_som.png",
+      "groups": [[1], [2, 3, 4]],
+      "notes": "하단 세 상자는 서로 맞붙어 한 덩어리다."
+    },
+    {
+      "file": "200_som.png",
+      "groups": [[1, 2], [3, 4, 5, 6, 7], [8], [9, 10, 11, 12, 13, 14]],
+      "notes": "2번(benziger)과 3번(bücher) 사이 틈이 아래 줄들의 틈보다 눈에 띄게 넓어 끊었다. 다만 두 배에 겨우 걸치는 정도라 애매했고, 규칙대로 끊는 쪽을 골랐다. 3-7번은 줄 사이가 고르게 이어져 한 덩어리다. 오른쪽 9-14번은 가로로 겹치지 않는 별도 단이다."
+    }
+  ],
+  "files_opened": [
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/pass1_input/b20_input.json",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/191_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/192_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/193_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/194_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/195_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/196_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/197_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/198_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/199_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/200_som.png"
+  ],
+  "model": "Claude Opus 5 (claude-opus-5)",
+  "notes": "가장 애매했던 장은 194 (두 단 짜리 공연 목록 — 왼쪽 이름 단이 빈 행 때문에 세 토막으로 끊겼다) 와 200 (benziger / bücher 사이 틈이 두 배 문턱에 겨우 걸쳤다). 195 는 상자가 둘뿐이라 상자 안 줄 간격과 견주어 끊었다. 191 · 198 처럼 큰 표제와 옆 단이 가로로 안 겹치는 경우는 단 규칙대로 따로 두었다."
+}

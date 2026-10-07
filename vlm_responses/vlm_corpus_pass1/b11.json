@@ -1,0 +1,69 @@
+{
+  "posters": [
+    {
+      "file": "101_som.png",
+      "groups": [[1, 2], [3, 4], [5, 6, 7, 8, 9, 10, 11, 12, 13], [14, 15], [16, 17, 18, 19]],
+      "notes": "1+2 같은 줄(«Basler» «Münster»), 14+15 같은 제목 줄. 2→3, 4→5 자리의 틈이 안쪽 틈의 3~4배라 끊었다."
+    },
+    {
+      "file": "102_som.png",
+      "groups": [[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]],
+      "notes": "줄 간격(줄머리 사이)이 113~137px 로 고르다. 2→3/4 의 상자 틈이 커 보이는 것은 «SEIT» 상자가 낮기 때문이라 끊지 않았다. 3은 «1945», 4는 같은 줄의 «SEIT»."
+    },
+    {
+      "file": "103_som.png",
+      "groups": [[1, 2], [3], [4], [5], [6], [7, 10], [8], [9, 11], [12], [13], [14], [15]],
+      "notes": "이름이 흩뿌려진 판. 7+10, 9+11 만 위아래로 붙어 있고(틈 ~18px, 둘레는 50~120px) 나머지는 가로로 겹치지 않거나 멀어 따로 두었다. 6번 딱지는 7번 딱지에 가려 자리를 못 찾아 홀로 두었다."
+    },
+    {
+      "file": "104_som.png",
+      "groups": [[1], [2], [3], [4], [5]],
+      "notes": "상자 하나하나가 이미 덩어리다. 3(이름 목록)과 4(«Kreis 48»)는 좌우로 나란한 단이고 가로로 겹치지 않아 따로 두었다."
+    },
+    {
+      "file": "105_som.png",
+      "groups": [[1], [2], [3], [4, 5], [6]],
+      "notes": "기울어진 조판이라 상자끼리 겹친다. 4+5 는 «Kunsthalle Basel» 한 줄로 보아 묶었다. 1(«Henry Moore / Bildhauer»)과 3(날짜 세 줄)은 기울기 방향으로 보면 떨어져 있어 끊었다. 6 은 오른쪽 위 귀퉁이의 아주 작은 상자."
+    },
+    {
+      "file": "106_som.png",
+      "groups": [[1, 2], [3, 4, 5, 6, 7, 8, 9, 10, 11, 12], [13, 14], [15], [16, 17, 18], [19, 20], [21, 22, 23, 24, 25, 26, 27, 28, 29, 30]],
+      "notes": "10번 상자는 9번(«Schwarzenbach») 줄에 겹쳐 있어 같은 덩어리에 넣었다. 14→15 틈(58px)이 13→14(3px)의 여러 배라 끊었다."
+    },
+    {
+      "file": "107_som.png",
+      "groups": [[1], [2, 3, 4, 5, 6], [7]],
+      "notes": "1(«Kunsthalle Basel»)은 2와 같은 높이지만 가로로 전혀 겹치지 않는 왼쪽 단이라 따로 두었다."
+    },
+    {
+      "file": "108_som.png",
+      "groups": [[1], [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]],
+      "notes": "아래 오른쪽 18줄은 줄머리 간격이 33~35px 로 고르게 이어져 한 덩어리다."
+    },
+    {
+      "file": "109_som.png",
+      "groups": [[1], [2, 3, 4, 5, 6], [7]],
+      "notes": "4(«und»)는 5(«KVNST»)와 같은 줄. 제목 네 줄의 틈은 53~60px 로 고르다. 1 은 2와 가로로 안 겹치는 오른쪽 위 단."
+    },
+    {
+      "file": "110_som.png",
+      "groups": [[1]],
+      "notes": "상자 하나."
+    }
+  ],
+  "files_opened": [
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/pass1_input/b11_input.json",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/101_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/102_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/103_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/104_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/105_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/106_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/107_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/108_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/109_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/110_som.png"
+  ],
+  "model": "Claude Opus 5 (claude-opus-5)",
+  "notes": "어려웠던 장: 103(이름이 흩어져 있어 어디까지 붙었다고 볼지 · 6번 딱지를 못 찾음), 105(기울어진 조판이라 축 정렬 상자끼리 겹침), 102(2→3 틈이 두 배 언저리라 줄머리 간격으로 판정). 102·103·106 에는 줄 하나 안에 상자가 둘인 자리가 있었다."
+}

@@ -1,0 +1,69 @@
+{
+  "posters": [
+    {
+      "file": "071_som.png",
+      "groups": [[1, 2, 3], [4]],
+      "notes": "1-3 은 위에서 서로 붙어 있고, 4 는 판 아래쪽에 멀리 떨어져 있다."
+    },
+    {
+      "file": "072_som.png",
+      "groups": [[1], [2, 3, 4, 5, 6], [7], [8, 9, 10, 11, 12, 13, 14], [15, 16, 17]],
+      "notes": "1 은 맨 위의 아주 작은 조각이고 2 와 가로로 겹치지 않아 따로 두었다. 2-6 은 계단식 큰 글자 네 줄로 틈이 고르다(5·6 은 같은 줄). 7 과 8 사이 틈이 8-14 사이 틈보다 여러 배라 끊었다 — 애매한 자리다. 15-17 은 아래쪽에서 틈이 고르다."
+    },
+    {
+      "file": "073_som.png",
+      "groups": [[1, 2], [3], [4]],
+      "notes": "1 과 2 는 맞붙어 있고, 2|3 과 3|4 자리에 빈 줄만큼 틈이 있다."
+    },
+    {
+      "file": "074_som.png",
+      "groups": [[1, 2], [3], [4]],
+      "notes": "073 과 같은 짜임. 1-2 가 붙고, 3 과 4 앞뒤로 넓은 틈이 있다."
+    },
+    {
+      "file": "075_som.png",
+      "groups": [[1], [2, 3], [4, 5, 6, 7, 8], [9, 10, 11, 12, 13, 14, 15, 16]],
+      "notes": "1 은 큰 제목 덩어리 하나로 잡힌 상자다. 왼쪽 작은 글 세 덩어리는 3|4 와 8|9 자리에서 안쪽 틈의 열 배 넘게 벌어진다."
+    },
+    {
+      "file": "076_som.png",
+      "groups": [[1], [2, 3, 4], [5, 6]],
+      "notes": "1 은 사진 안의 붉은 글자 상자로, 2-4 와 가로로 전혀 겹치지 않는다. 4|5 자리 틈이 안쪽 틈보다 훨씬 넓다."
+    },
+    {
+      "file": "077_som.png",
+      "groups": [[1, 2, 3, 4], [5, 6, 7, 8]],
+      "notes": "왼쪽 위 네 줄은 틈이 고르게 붙어 있고, 오른쪽 아래 네 줄도 그렇다. 두 무리는 멀고 가로로도 겹치지 않는다."
+    },
+    {
+      "file": "078_som.png",
+      "groups": [[1], [2, 3], [4], [5]],
+      "notes": "2-5 는 세로로 놓인 큰 글자에 걸린 조각 상자들이다. 2 와 3 은 서로 겹쳐 한 덩어리로 두었고, 그 아래 틈(약 100)과 4|5 틈(약 255)이 각각 안쪽 틈의 두 배를 넘어 끊었다. 판정이 어려웠다."
+    },
+    {
+      "file": "079_som.png",
+      "groups": [[1], [2]],
+      "notes": "세로로는 겹치지만 가로로 전혀 겹치지 않아 따로 두었다."
+    },
+    {
+      "file": "080_som.png",
+      "groups": [[1], [2, 3, 4, 5]],
+      "notes": "2-5 의 틈은 고르고, 1|2 틈은 그 두 배에 조금 못 미친다(약 1.9 배). 애매해서 끊었다."
+    }
+  ],
+  "files_opened": [
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/pass1_input/b08_input.json",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/071_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/072_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/073_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/074_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/075_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/076_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/077_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/078_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/079_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/080_som.png"
+  ],
+  "model": "claude-opus-5",
+  "notes": "틈끼리 견주어 판정했고, 애매한 자리는 끊었다. 어려웠던 장: 072(7|8 자리), 078(큰 세로 글자에 걸린 조각 상자들), 080(1|2 틈이 두 배에 못 미쳐 애매)."
+}

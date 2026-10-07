@@ -1,0 +1,69 @@
+{
+  "posters": [
+    {
+      "file": "191_som.png",
+      "groups": [[1, 2], [3, 4, 5, 6, 7], [8, 9], [10, 11, 12, 13, 14]],
+      "notes": "1-2 큰 글자와 3-7 작은 정보줄 사이 틈이 안쪽 틈보다 뚜렷이 넓어 끊었다. 8-9 는 붙어 있고 9-10 사이가 넓어 끊었다."
+    },
+    {
+      "file": "192_som.png",
+      "groups": [[1, 2, 3, 4], [5, 6, 7, 8, 9, 10, 11, 12, 13], [14, 15]],
+      "notes": "아래 노란 판에서 13 과 14 사이 틈이 안쪽 줄 틈의 여러 배라 끊었다. 11 은 10 과 같은 줄의 오른쪽 상자."
+    },
+    {
+      "file": "193_som.png",
+      "groups": [[1, 2, 3, 4, 5], [6, 7, 8, 9, 10, 11]],
+      "notes": ""
+    },
+    {
+      "file": "194_som.png",
+      "groups": [[1, 2, 3, 4], [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]],
+      "notes": "아래 표는 줄 간격이 처음부터 끝까지 고르고 두 배 넘게 벌어지는 자리가 없어 한 덩어리로 두었다. 왼쪽 작곡가 이름(5·9·11·13·16·18)은 각 줄의 머리라 오른쪽 목록과 같은 덩어리로 보았다 — 단이 나뉜 것으로 보면 갈라질 수도 있는 애매한 장."
+    },
+    {
+      "file": "195_som.png",
+      "groups": [[1, 2]],
+      "notes": "1 은 네 줄을 한 상자로 묶은 것이고 2 와의 틈이 1 안쪽 줄 틈과 비슷해 한 덩어리."
+    },
+    {
+      "file": "196_som.png",
+      "groups": [[1, 2, 3], [4], [5, 6]],
+      "notes": "4 는 오른쪽에 따로 선 큰 덩어리로 1-3 과 가로로 겹치지 않는다."
+    },
+    {
+      "file": "197_som.png",
+      "groups": [[1, 2, 3], [4], [5], [6, 7, 8, 9, 10]],
+      "notes": "4(lucien clergue)와 5(photos 1954 bis 1964)는 나란한 두 단으로 가로로 전혀 겹치지 않아 따로 두었다."
+    },
+    {
+      "file": "198_som.png",
+      "groups": [[1], [2], [3, 4], [5, 6, 7, 8], [9, 10, 11, 12, 13]],
+      "notes": "1 은 왼쪽 가장자리의 세로 글줄로 홀로. 2 는 아래 왼쪽의 큰 제목으로 오른쪽 단 9-13 과 가로로 겹치지 않는다. 4-5, 8-9 사이에 안쪽 틈의 네 배 넘는 틈이 있다."
+    },
+    {
+      "file": "199_som.png",
+      "groups": [[1], [2, 3, 4]],
+      "notes": ""
+    },
+    {
+      "file": "200_som.png",
+      "groups": [[1, 2], [3, 4, 5, 6, 7], [8], [9, 10, 11, 12, 13, 14]],
+      "notes": "2(benziger)와 3(bücher) 사이 틈이 안쪽 줄 틈의 두 배를 넘어 끊었다. 5-6 사이는 조금 넓지만 두 배에 못 미쳐 붙였다 — 애매한 자리. 8 은 판 아래 홀로 선 작은 줄, 9-14 는 오른쪽 단."
+    }
+  ],
+  "files_opened": [
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/pass2_input/b20_input.json",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/191_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/192_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/193_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/194_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/195_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/196_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/197_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/198_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/199_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/200_som.png"
+  ],
+  "model": "Claude Opus 5 (claude-opus-5)",
+  "notes": "194 의 아래 표(작곡가 | 작품)가 가장 애매했다 — 한 덩어리로 두었으나 단으로 갈라 볼 여지가 있다. 197 의 4·5, 200 의 5-6 자리도 애매. 장마다 1 부터 상자_수 까지 모든 번호가 정확히 한 묶음에 한 번씩 들어가는지 쓰기 전에 세어 확인했다."
+}

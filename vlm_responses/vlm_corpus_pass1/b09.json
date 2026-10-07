@@ -1,0 +1,69 @@
+{
+  "posters": [
+    {
+      "file": "081_som.png",
+      "groups": [[1, 2, 3, 4, 5, 6], [7]],
+      "notes": "왼쪽 띠의 1-6 은 간격이 고르게 넓어 끊을 자리가 없다. 7 은 맨 위 제목으로 가로로도 겹치지 않는다."
+    },
+    {
+      "file": "082_som.png",
+      "groups": [[1, 2], [3, 4, 5, 6, 7]],
+      "notes": "5 는 4 와 같은 줄에서 오른쪽으로 떨어져 있으나 3 과 가로로 겹쳐 아래 덩어리에 넣었다."
+    },
+    {
+      "file": "083_som.png",
+      "groups": [[1, 7, 8, 9, 10, 11], [2, 3, 4, 5, 6, 12, 13, 14, 15, 16, 17]],
+      "notes": "맨 위 밝은 띠의 잔글씨 조각들이 한 줄로 이어져 한 덩어리. 아래 큰 레터링은 줄끼리 거의 닿아 전부 한 덩어리."
+    },
+    {
+      "file": "084_som.png",
+      "groups": [[1], [2, 3, 4, 5, 6, 7, 8]],
+      "notes": "1 은 왼쪽 아래 큰 글자꼴 일부로 혼자 떨어져 있다. 오른쪽 2-8 은 간격 차가 1.4배 안이라 끊지 않았다."
+    },
+    {
+      "file": "085_som.png",
+      "groups": [[1, 2, 3], [4, 5, 6], [7, 8], [9, 10, 11, 12], [13]],
+      "notes": "8 과 9 사이에 한 줄 높이의 0.8배쯤 되는 빈틈이 있어 끊었다 — 애매했다. 13 은 오른쪽 가장자리 세로 잔글씨."
+    },
+    {
+      "file": "086_som.png",
+      "groups": [[1], [2], [3], [4, 5, 6]],
+      "notes": "1 과 2 는 같은 줄이지만 가로로 전혀 겹치지 않고 사이 틈이 글자 사이 틈의 열 배라 끊었다. 3 과 4 사이 세로 틈도 아래쪽 틈의 다섯 배다."
+    },
+    {
+      "file": "087_som.png",
+      "groups": [[1], [2, 3], [4]],
+      "notes": "1 «in» 과 4 «und» 는 큰 레터링 중 잔글씨만 상자가 잡혀 서로 멀리 떨어져 있다."
+    },
+    {
+      "file": "088_som.png",
+      "groups": [[1, 2, 3], [4, 5, 6, 7]],
+      "notes": "두 덩어리는 가로로 겹치지 않는 별도 자리다."
+    },
+    {
+      "file": "089_som.png",
+      "groups": [[1, 2, 3], [4, 5, 6, 7], [8], [9]],
+      "notes": "1 과 2 사이 틈은 줄 높이의 0.4배로 반 줄도 안 되어 붙였다. 8 은 4-7 과 가로로 겹치지 않는다."
+    },
+    {
+      "file": "090_som.png",
+      "groups": [[1]],
+      "notes": "상자가 하나뿐이다."
+    }
+  ],
+  "files_opened": [
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/pass1_input/b09_input.json",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/081_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/082_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/083_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/084_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/085_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/086_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/087_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/088_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/089_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/090_som.png"
+  ],
+  "model": "Claude Opus 5 (claude-opus-5)",
+  "notes": "어려웠던 장: 085 — 8 «Basel» 과 9 «Ausstellung der an» 사이가 반 줄쯤 벌어져 끊을지 말지 애매했고, 애매하면 끊으라는 규칙을 따랐다. 089 의 1-3 은 같은 모양의 틈이지만 줄 높이 대비 더 작아 붙였다. 086 의 1·2 는 같은 줄의 가로 분리라 끊었다. 083 은 큰 레터링 한 줄에 여러 상자가 걸쳐 있어 줄 단위로 보고 전부 한 덩어리로 묶었다."
+}

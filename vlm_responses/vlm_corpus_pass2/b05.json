@@ -1,0 +1,69 @@
+{
+  "posters": [
+    {
+      "file": "041_som.png",
+      "groups": [[1], [2, 3], [4], [5], [6, 7, 8, 9]],
+      "notes": "4와 5 사이 틈과 5와 6 사이 틈이 거의 같아 애매 — 규칙대로 둘 다 끊었다. 6~9는 틈이 거의 없어 한 덩어리."
+    },
+    {
+      "file": "042_som.png",
+      "groups": [[1], [2], [3, 4], [5, 6, 7]],
+      "notes": "3과 4는 상자가 거의 닿아 있고 그 아래 틈이 더 넓어 묶었다."
+    },
+    {
+      "file": "043_som.png",
+      "groups": [[1, 2, 3], [4, 5, 6, 7, 8], [10, 11, 15, 17], [9, 12, 13, 14, 16, 18, 19]],
+      "notes": "1·2·3 상자는 서로 겹친다. 4~8은 틈이 모두 비슷한 폭이라 한 덩어리로 두었다(큰 제목 줄 사이 틈 차이는 어센더·디센더 탓). 아래 표는 가로로 전혀 안 겹치는 왼쪽 단(10·11·15·17)과, 9가 가로로 이어 주는 오른쪽 두 단으로 나눴다."
+    },
+    {
+      "file": "044_som.png",
+      "groups": [[1], [2, 3], [4], [5], [6, 7, 8, 9]],
+      "notes": ""
+    },
+    {
+      "file": "045_som.png",
+      "groups": [[1], [2, 3], [4], [5], [6, 7, 8]],
+      "notes": "6과 7 상자가 겹친다."
+    },
+    {
+      "file": "046_som.png",
+      "groups": [[1, 2], [3, 4, 5], [6], [8, 10, 11, 14], [7, 9, 12, 13]],
+      "notes": "1·2 상자가 겹친다. 아래 표는 왼쪽 단과 오른쪽 단이 가로로 전혀 안 겹쳐 따로 두었다."
+    },
+    {
+      "file": "047_som.png",
+      "groups": [[1], [2], [3, 4], [5], [6]],
+      "notes": ""
+    },
+    {
+      "file": "048_som.png",
+      "groups": [[1], [2], [3], [4], [5, 6]],
+      "notes": "5와 6 상자가 겹친다."
+    },
+    {
+      "file": "049_som.png",
+      "groups": [[1], [2, 5, 8, 11], [3, 6, 9, 12, 14], [4, 7, 10, 13, 15], [16], [17]],
+      "notes": "위쪽 표는 세 단이 서로 가로로 전혀 안 겹쳐 셋으로 나눴다. 2·3단 사이 틈이 좁아 판정이 애매했지만 겹침이 없어 끊었다."
+    },
+    {
+      "file": "050_som.png",
+      "groups": [[1, 2], [3], [4, 5], [6], [7, 8, 9]],
+      "notes": "1·2 상자가 겹친다. 9와 8은 서로 안 겹치지만 둘 다 7과 가로로 겹쳐 한 덩어리."
+    }
+  ],
+  "files_opened": [
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/pass2_input/b05_input.json",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/041_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/042_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/043_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/044_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/045_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/046_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/047_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/048_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/049_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/050_som.png"
+  ],
+  "model": "Claude Opus 5 (claude-opus-5)",
+  "notes": "판정이 어려웠던 장: 041(제목·부제·크레딧 사이 틈이 30·32px 로 거의 같음), 043(큰 제목 줄 사이 틈 차이가 글자 모양 탓이라 베이스라인 간격이 고르다 — 한 덩어리로 두었다), 049(표의 2단과 3단 사이 가로 틈이 좁다). 모든 장에서 1부터 상자_수까지 번호가 정확히 한 묶음에 한 번씩 들어가는지 세어 확인했다."
+}

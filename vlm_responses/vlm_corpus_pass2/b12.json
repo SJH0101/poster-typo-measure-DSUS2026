@@ -1,0 +1,69 @@
+{
+  "posters": [
+    {
+      "file": "111_som.png",
+      "groups": [[1, 2, 3, 4]],
+      "notes": "네 줄의 틈이 거의 같다 (서로 2배를 넘지 않는다). 한 덩어리."
+    },
+    {
+      "file": "112_som.png",
+      "groups": [[1]],
+      "notes": "줄 하나."
+    },
+    {
+      "file": "113_som.png",
+      "groups": [[1, 2, 3, 4]],
+      "notes": "오른쪽 아래 한 단에 네 상자가 맞닿아 있다."
+    },
+    {
+      "file": "114_som.png",
+      "groups": [[6], [1, 2, 3, 4, 5], [7, 8, 9]],
+      "notes": "맨 위 AHP 는 멀리 떨어져 홀로. 아래는 왼쪽 단(1-5)과 오른쪽 단(7-9)이 가로로 안 겹쳐 따로."
+    },
+    {
+      "file": "115_som.png",
+      "groups": [[1]],
+      "notes": "줄 하나."
+    },
+    {
+      "file": "116_som.png",
+      "groups": [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]],
+      "notes": "계단식 배치. 오른쪽 위 블록, 왼쪽 가운데 블록, 오른쪽 아래 블록. 8(und)과 9(Maler)는 같은 줄 높이지만 가로로 전혀 안 겹쳐 끊었다."
+    },
+    {
+      "file": "117_som.png",
+      "groups": [[1], [2], [3], [4]],
+      "notes": "네 상자가 판 전체에 흩어져 있고 서로 틈이 매우 크다."
+    },
+    {
+      "file": "118_som.png",
+      "groups": [[1, 2, 3, 4, 5], [6, 7, 8, 9, 10, 11]],
+      "notes": "위 제목 다섯 줄은 기준선 간격이 고르다. 아래 블록에서 7(4)은 6(Bildhauer)과 같은 줄에 바로 붙어 있어 같은 덩어리로 두었다."
+    },
+    {
+      "file": "119_som.png",
+      "groups": [[1, 2, 3], [4, 5, 6], [7, 8, 9]],
+      "notes": "세 단이 가로로 전혀 안 겹친다. 단 안의 세 줄은 맞닿아 있다."
+    },
+    {
+      "file": "120_som.png",
+      "groups": [[1], [2], [3], [4]],
+      "notes": "기울어진 판. 네 상자가 서로 멀리 떨어져 있다."
+    }
+  ],
+  "files_opened": [
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/pass2_input/b12_input.json",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/111_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/112_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/113_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/114_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/115_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/116_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/117_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/118_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/119_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/120_som.png"
+  ],
+  "model": "Claude Opus 5 (claude-opus-5)",
+  "notes": "어려웠던 장: 116 — 계단식으로 내려가는 배치라 8(und)과 9(Maler)가 같은 줄 높이에 있으나 가로로 안 겹쳐 끊었다. 118 — 7(«4»)이 6(«Bildhauer»)과 같은 줄에 바로 이어져 있어 한 덩어리로 두었다(가로 겹침 규칙은 단이 나뉜 경우로 보았다). 114 — 왼쪽·오른쪽 두 단이 세로로는 겹치나 가로로 멀리 떨어져 따로 두었다."
+}

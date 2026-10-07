@@ -1,0 +1,69 @@
+{
+  "posters": [
+    {
+      "file": "131_som.png",
+      "groups": [[1]],
+      "notes": "상자 하나뿐."
+    },
+    {
+      "file": "132_som.png",
+      "groups": [[1], [2, 3, 4, 5]],
+      "notes": "1(날짜)은 판 위쪽에 멀리 떨어져 있다. 2~5는 줄 간격이 고르게 좁아 한 덩어리."
+    },
+    {
+      "file": "133_som.png",
+      "groups": [[1]],
+      "notes": "상자 하나뿐."
+    },
+    {
+      "file": "134_som.png",
+      "groups": [[1, 2, 3], [4, 6], [5]],
+      "notes": "1~3(Kunst/halle/Basel)은 붙어 있다. 4(Hans)와 6(Arp)은 세로로 가깝고 가로로 겹쳐 한 덩어리로 보았다 — 6의 상자가 글줄 일부만 덮고 있어 애매했다. 5(날짜)는 아래로 크게 벌어져 따로."
+    },
+    {
+      "file": "135_som.png",
+      "groups": [[1], [2]],
+      "notes": "2가 본문 덩어리 전체. 1은 판 왼쪽 맨 아래 귀퉁이의 아주 작은 상자로 2와 가로로 겹치지 않아 따로 두었다."
+    },
+    {
+      "file": "136_som.png",
+      "groups": [[1], [2], [3], [4]],
+      "notes": "네 상자가 판 네 군데에 멀리 흩어져 있다."
+    },
+    {
+      "file": "137_som.png",
+      "groups": [[1, 2, 3], [4], [5, 6], [7]],
+      "notes": "1·2·3은 가운데 이름 목록의 같은 줄 묶음(중간 줄들이 상자로 안 잡혔을 뿐 간격이 고르다). 5와 6은 «Skulptur» 한 줄이 둘로 쪼개진 것이라 붙였다."
+    },
+    {
+      "file": "138_som.png",
+      "groups": [[1, 2], [3], [4], [5], [6], [7, 8]],
+      "notes": "1·2(Kunsthalle/Basel), 7·8(Karl/Moor)은 붙어 있다. 3·4·5는 세로로는 이어지지만 가로로 어긋난 계단 배치라 따로 끊었다 — 4와 5는 가로로 조금 겹쳐 애매했으나 끊는 쪽으로 했다."
+    },
+    {
+      "file": "139_som.png",
+      "groups": [[1, 2, 3]],
+      "notes": "세 상자 모두 같은 한 덩어리의 글줄이다. 사이 줄들이 상자로 안 잡혔고 1은 줄 일부만 덮고 있으나 간격이 고른 한 문단이다."
+    },
+    {
+      "file": "140_som.png",
+      "groups": [[1], [2]],
+      "notes": "1은 판 맨 위 가장자리의 아주 작은 상자, 2는 가운데 본문 덩어리. 멀리 떨어져 따로."
+    }
+  ],
+  "files_opened": [
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/pass2_input/b14_input.json",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/131_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/132_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/133_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/134_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/135_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/136_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/137_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/138_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/139_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/140_som.png"
+  ],
+  "model": "Claude Opus 5 (claude-opus-5)",
+  "notes": "어려웠던 장: 134(«Arp» 상자가 글줄의 일부만 덮어 4와 6을 붙일지 애매), 138(계단식 이름 배치 — 세로로는 이어지나 가로로 어긋남, 4와 5는 가로로 조금 겹쳐 애매), 139(세 상자가 한 문단의 띄엄띄엄한 줄들, 1은 줄 일부만 덮음), 135·140(판 가장자리의 아주 작은 상자 1의 정체가 불분명해 홀로 두었다)."
+}

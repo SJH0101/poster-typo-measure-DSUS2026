@@ -1,0 +1,69 @@
+{
+  "posters": [
+    {
+      "file": "081_som.png",
+      "groups": [[1, 2, 3, 4, 5, 6], [7]],
+      "notes": "왼쪽 기둥 1-6 은 틈이 모두 같다(약 60px). 7 은 맨 위 제목으로 멀리 떨어져 있다."
+    },
+    {
+      "file": "082_som.png",
+      "groups": [[1, 2], [3, 4, 6, 7], [5]],
+      "notes": "1-2 는 맞붙은 큰 제목 두 줄. 아래 덩어리 3·4·6·7 의 세로 틈은 약 30px 로 고르다. 5 는 4 와 같은 줄이지만 가로로 약 60px 벌어져 애매해서 끊었다."
+    },
+    {
+      "file": "083_som.png",
+      "groups": [[1, 7, 8, 9, 10, 11], [2, 3, 4, 5, 6, 12, 13, 14, 15, 16, 17]],
+      "notes": "위쪽 작은 글씨 한 줄이 토막 여섯으로 나뉘어 있는데 토막 사이 틈이 모두 약 18px 로 고르다. 아래 큰 글씨 여섯 줄은 서로 거의 닿아 있어 한 덩어리."
+    },
+    {
+      "file": "084_som.png",
+      "groups": [[1], [2, 3, 4, 5, 6, 7, 8]],
+      "notes": "1 은 아래쪽 거대한 글자 안에 홀로 있다. 오른쪽 기둥 2-8 은 틈이 33-48px 로 고르다."
+    },
+    {
+      "file": "085_som.png",
+      "groups": [[1, 2, 3], [4, 5, 6], [7, 8, 9, 10, 11, 12], [13]],
+      "notes": "1-3 은 원 안에서 맞붙은 묶음(세로 글씨 섞여 있으나 틈만 봤다). 아래 두 기둥 4-6 과 7-12 는 가로로 전혀 겹치지 않아 따로. 13 은 오른쪽 가장자리 세로 글씨."
+    },
+    {
+      "file": "086_som.png",
+      "groups": [[1], [2], [3], [4, 5, 6]],
+      "notes": "1 과 2 는 같은 줄이지만 가로 틈 약 180px 로 낱말 사이 틈의 열 배가 넘어 끊었다. 3 과 4 사이 틈(약 57px)이 4·5·6 안쪽 틈(6-8px)보다 훨씬 커서 끊었다."
+    },
+    {
+      "file": "087_som.png",
+      "groups": [[1], [2, 3], [4]],
+      "notes": "1(in) 과 4(und) 는 큰 글씨 사이에 홀로 박힌 작은 낱말이라 각각 따로. 2 와 3 은 아래 글 덩어리에서 서로 겹쳐 있다."
+    },
+    {
+      "file": "088_som.png",
+      "groups": [[1, 2, 3], [4, 5, 6, 7]],
+      "notes": "두 묶음이 가로로 전혀 겹치지 않아 따로 두었다. 각 묶음 안쪽 틈은 3-7px 로 매우 좁다."
+    },
+    {
+      "file": "089_som.png",
+      "groups": [[1], [2, 3], [4, 5, 6, 7], [8], [9]],
+      "notes": "1 과 2 사이는 애매했다 — 1 안쪽 줄 사이는 거의 붙어 있는데 Zukunft 와 Gewerbe 사이만 한 줄 가까이 벌어져 있어 규칙대로 끊었다. 4-7 은 서로 겹쳐 한 덩어리, 8 은 가로로 약 130px 떨어져 따로, 9 는 오른쪽 위 아주 작은 글."
+    },
+    {
+      "file": "090_som.png",
+      "groups": [[1]],
+      "notes": "상자가 하나뿐이다."
+    }
+  ],
+  "files_opened": [
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/pass2_input/b09_input.json",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/081_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/082_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/083_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/084_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/085_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/086_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/087_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/088_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/089_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/090_som.png"
+  ],
+  "model": "Claude Opus 5 (claude-opus-5)",
+  "notes": "089 가 가장 애매했다(제목 덩어리와 Gewerbemuseum Basel 사이 틈이 안쪽 줄 틈의 두 배 언저리). 082 의 5(Eintritt frei) 와 086 의 1·2 는 같은 줄 안의 가로 틈 판정이라 역시 애매해서 규칙대로 끊었다. 083 은 위쪽 작은 글씨 한 줄이 여섯 토막으로 잘려 있어 토막 사이 고른 틈을 보고 한 덩어리로 묶었다. 쓰기 전에 장마다 1 부터 상자_수 까지 모든 번호가 정확히 한 묶음에 한 번씩 들어갔는지 세어 확인했다."
+}

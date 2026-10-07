@@ -1,0 +1,69 @@
+{
+  "posters": [
+    {
+      "file": "041_som.png",
+      "groups": [[1], [2, 3], [4, 5], [6, 7, 8, 9]],
+      "notes": "4-5 (제목+부제) 와 6-9 (크레디트) 사이에 가로줄과 더 넓은 틈. 7·8 은 같은 행의 좌/우 단이지만 6·9 가 가로로 걸쳐 있어 한 덩어리로 둠."
+    },
+    {
+      "file": "042_som.png",
+      "groups": [[1], [2], [3, 4], [5, 6, 7]],
+      "notes": "041 과 같은 판짜기. 3-4 위쪽 틈이 아주 넓고, 4 와 5 사이에 가로줄."
+    },
+    {
+      "file": "043_som.png",
+      "groups": [[1, 2, 3], [4, 5, 6, 7], [8], [10, 11, 15, 17], [9, 12, 13, 14, 16, 18, 19]],
+      "notes": "1·2·3 은 제목 한 덩어리를 세 상자가 겹쳐 덮은 것. 아래 표는 왼쪽 단(10·11·15·17, x~78-290)과 오른쪽 블록(x~340 이후)이 가로로 전혀 안 겹쳐 단으로 나눔. 8 은 위아래 틈이 모두 2배 넘게 벌어져 단독."
+    },
+    {
+      "file": "044_som.png",
+      "groups": [[1], [2, 3], [4, 5], [6, 7, 8, 9]],
+      "notes": "4-5 틈이 5-6 틈의 2배에 못 미쳐 제목+부제를 묶음. 5 와 6 사이에 가로줄."
+    },
+    {
+      "file": "045_som.png",
+      "groups": [[1], [2, 3], [4, 5], [6, 7, 8]],
+      "notes": "044 와 같은 판짜기."
+    },
+    {
+      "file": "046_som.png",
+      "groups": [[1, 2], [3, 4, 5, 6], [8, 10, 11, 14], [7, 9, 12, 13]],
+      "notes": "3-4-5 제목 세 줄과 6 부제의 틈이 거의 같아(약 33·42·43) 한 덩어리. 아래 표는 왼쪽 단(x~85-310)과 오른쪽 단(x~388 이후)이 가로로 안 겹쳐 둘로 나눔."
+    },
+    {
+      "file": "047_som.png",
+      "groups": [[1], [2], [3, 4], [5], [6]],
+      "notes": "3-4 는 붙어 있고, 4 와 5 사이 틈이 매우 넓음. 5 와 6 사이에 가로줄과 2배 넘는 틈."
+    },
+    {
+      "file": "048_som.png",
+      "groups": [[1], [2], [3], [4], [5, 6]],
+      "notes": "가로줄로 나뉜 띠마다 한 덩어리씩. 둘레 틈이 모두 매우 넓음."
+    },
+    {
+      "file": "049_som.png",
+      "groups": [[1], [2, 5, 8, 11], [3, 6, 9, 12, 14], [4, 7, 10, 13, 15], [16, 17]],
+      "notes": "가운데 표가 세 단(x~80-340 / 395-685 / 712-1000)으로 가로 겹침이 전혀 없어 셋으로 나눔. 16(부제)은 17(제목) 위에 붙어 있어 함께 묶음."
+    },
+    {
+      "file": "050_som.png",
+      "groups": [[1, 2], [3], [4, 5, 6], [7, 8, 9]],
+      "notes": "1·2 는 제목 두 줄을 상자가 겹쳐 덮은 것. 5-6 틈(약 67)이 4-5 틈(약 33)의 2배 언저리라 애매했으나, 6 아래 가로줄을 끊는 자리로 보고 4-5-6 을 묶음. 8·9 는 같은 행의 좌/우지만 7 이 가로로 걸쳐 있어 한 덩어리."
+    }
+  ],
+  "files_opened": [
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/pass1_input/b05_input.json",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/041_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/042_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/043_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/044_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/045_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/046_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/047_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/048_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/049_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/050_som.png"
+  ],
+  "model": "Claude Opus 5 (claude-opus-5)",
+  "notes": "열 장 모두 같은 오페라하우스 취리히 연작이라 판짜기가 비슷하다. 어려웠던 자리: (가) 제목과 그 아래 부제 한 줄을 묶을지 — 041·042·044·045·046·050 은 위 틈이 아래 틈의 2배에 못 미쳐 묶었고, 043(2.4배)·047(매우 넓음)은 끊었다. 050 은 2.0배 언저리라 가장 애매했다. (나) 크레디트 표의 단 나누기 — 043·046·049 는 좌우 단이 가로로 전혀 안 겹쳐 단마다 따로 두었고, 041·050 은 한 상자가 좌우를 가로로 걸쳐 있어 묶었다. (다) 043·046·050 은 제목 한 덩어리를 상자 둘·셋이 겹쳐 덮고 있어 그 상자들을 한 묶음으로 두었다."
+}

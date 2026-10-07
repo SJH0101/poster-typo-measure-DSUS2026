@@ -1,0 +1,69 @@
+{
+  "posters": [
+    {
+      "file": "161_som.png",
+      "groups": [[4, 5, 6], [7], [9], [2], [3], [1], [8], [10]],
+      "notes": "책등 위의 아주 작은 상자들뿐이다. 4·5·6 만 간격 22·16 으로 붙어 있고 6→7 은 43 으로 두 배 넘게 벌어져 끊었다. 2 와 3 은 가로로 겹치지만 세로 틈이 45 라 끊었고, 1·8·9·10 은 가로로 전혀 겹치지 않아 따로 두었다."
+    },
+    {
+      "file": "162_som.png",
+      "groups": [[1], [2, 3, 4]],
+      "notes": "1 은 큰 «für Brüder» 로 아래 블록과 아주 멀다. 2·3·4 는 서로 맞닿아 있다."
+    },
+    {
+      "file": "163_som.png",
+      "groups": [[1], [2, 3]],
+      "notes": "1 과 2 사이 틈이 약 60, 2 와 3 사이는 거의 0 이라 1 을 떼었다."
+    },
+    {
+      "file": "164_som.png",
+      "groups": [[1, 2, 3, 4, 7, 8, 9, 12], [5, 6], [10, 11], [13]],
+      "notes": "왼쪽 작은 크레디트 줄 여덟 개는 틈이 8~15 로 고르다. 5·6 은 «GÖTHE» 한 줄이 가로로 쪼개진 것. 10·11 은 아래로 길게 내려가는 큰 겹친 상자 두 개로 보여 따로 묶었다 — 이 장이 가장 애매했다."
+    },
+    {
+      "file": "165_som.png",
+      "groups": [[1, 2], [3], [4, 5, 6, 7, 8, 9, 10, 11], [12, 13, 14, 15], [16], [17, 18, 21, 22, 24], [19, 20, 23]],
+      "notes": "오른쪽 아래 작은 글 블록은 빈 줄로 네 덩이로 갈린다(틈 약 28~30 대 안쪽 3~8). 마지막 블록은 왼쪽 장르 단(19·20·23)과 오른쪽 제목 단(17·18·21·22·24)이 가로로 전혀 겹치지 않아 단을 나눴다."
+    },
+    {
+      "file": "166_som.png",
+      "groups": [[1], [2], [3], [10], [5, 6, 8], [4, 7, 9, 11], [12, 13]],
+      "notes": "가운데 아래는 왼쪽 단(5·6·8)과 오른쪽 단(4·7·9·11)이 가로로 겹치지 않는다. 2·3·10 은 외딴 작은 상자다."
+    },
+    {
+      "file": "167_som.png",
+      "groups": [[1, 2], [3, 4, 5, 6]],
+      "notes": "아래 네 상자는 «Stadt Theater Basel» 한 줄이 쪼개진 것."
+    },
+    {
+      "file": "168_som.png",
+      "groups": [[1, 2], [3]],
+      "notes": "1·2 는 같은 줄. 3 은 한 줄 높이만큼(약 43) 떨어져 있고 오른쪽으로 들여져 있어 끊었다."
+    },
+    {
+      "file": "169_som.png",
+      "groups": [[1], [2, 3], [4], [5], [6, 7], [8], [9], [10], [11]],
+      "notes": "가운데 목록은 상자가 군데군데만 쳐져 있다. 6→7 틈이 4 인데 5→6 은 36, 7→8 은 82 라 그 자리에서 끊었다. 10 은 왼쪽 이름 단이라 오른쪽 제목 단(9)과 가로로 겹치지 않는다."
+    },
+    {
+      "file": "170_som.png",
+      "groups": [[1, 2], [3]],
+      "notes": "2 는 90도 돌아간 «Basel» 이지만 1 과 가로로 겹치고 틈이 약 10 이라 함께 묶었다."
+    }
+  ],
+  "files_opened": [
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/pass2_input/b17_input.json",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/161_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/162_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/163_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/164_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/165_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/166_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/167_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/168_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/169_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/170_som.png"
+  ],
+  "model": "Claude Opus 5 (claude-opus-5)",
+  "notes": "164 가 가장 어려웠다 — 10·11 이 아래로 길게 뻗은 큰 상자로 보이는데 오른쪽 끝이 판 밖으로 나가 경계를 확인하기 어려웠다. 161 은 모두 책등 위의 1~2mm 짜리 점 같은 상자라 틈 견주기가 불안정했다. 169 는 목록 가운데 일부 줄에만 상자가 쳐져 있어 상자끼리의 틈으로만 판정했다."
+}

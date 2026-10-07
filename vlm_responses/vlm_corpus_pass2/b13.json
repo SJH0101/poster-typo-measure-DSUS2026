@@ -1,0 +1,69 @@
+{
+  "posters": [
+    {
+      "file": "121_som.png",
+      "groups": [[1, 2, 3, 5, 6], [4], [7]],
+      "notes": "왼쪽 글줄 기둥(1,2,3,5,6)은 줄 사이 틈이 고르게 좁다. 4(서명)는 그 기둥 오른쪽에 있어 가로로 겹치지 않는다. 7은 맨 아래 작은 줄로 멀리 떨어져 있다."
+    },
+    {
+      "file": "122_som.png",
+      "groups": [[1, 2, 3, 4, 5, 6]],
+      "notes": "여섯 줄이 모두 같은 간격으로 붙어 있다."
+    },
+    {
+      "file": "123_som.png",
+      "groups": [[1, 2, 3, 4, 5], [6]],
+      "notes": "1과 2 사이 틈이 2-3, 3-4, 4-5 사이 틈보다 오히려 좁다. 크기 차이는 보지 않으므로 1을 큰 이름줄들과 한 덩어리로 두었다. 6은 맨 아래 작은 줄."
+    },
+    {
+      "file": "124_som.png",
+      "groups": [[1, 2, 3, 4, 5]],
+      "notes": "상자 4와 5 사이가 벌어져 보이지만 그 자리에 상자가 붙지 않은 «-22.» 줄이 들어 있고, 줄 사이 피치는 판 전체에서 고르다. 그래서 한 덩어리로 두었다."
+    },
+    {
+      "file": "125_som.png",
+      "groups": [[1, 2]],
+      "notes": "1의 아래 테두리와 2의 위 테두리가 맞닿아 있고 줄 간격이 안쪽과 같다."
+    },
+    {
+      "file": "126_som.png",
+      "groups": [[1], [2], [3], [4]],
+      "notes": "네 덩어리가 판 위에 멀리 흩어져 있다."
+    },
+    {
+      "file": "127_som.png",
+      "groups": [[1]],
+      "notes": ""
+    },
+    {
+      "file": "128_som.png",
+      "groups": [[1, 2, 3], [4, 5], [6], [7]],
+      "notes": "1·2·3 은 테두리가 서로 맞닿는다. 4·5 는 아래 왼쪽 기둥에서 붙어 있고 3 과는 크게 떨어져 있다. 7 은 오른쪽, 6 은 맨 아래 작은 줄."
+    },
+    {
+      "file": "129_som.png",
+      "groups": [[1]],
+      "notes": ""
+    },
+    {
+      "file": "130_som.png",
+      "groups": [[1], [2], [3], [4]],
+      "notes": "2와 3은 판 맨 위 가장자리에 잘려 있는 아주 작은 조각으로, 같은 높이에서 좌우로 나란하고 가로로 겹치지 않아 따로 두었다."
+    }
+  ],
+  "files_opened": [
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/pass2_input/b13_input.json",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/121_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/122_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/123_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/124_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/125_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/126_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/127_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/128_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/129_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/130_som.png"
+  ],
+  "model": "Claude Opus 5",
+  "notes": "어려웠던 장: 124 (상자 4와 5 사이에 번호 없는 줄이 끼어 있어 틈이 벌어져 보임 — 피치가 고르므로 한 덩어리), 123 (첫 줄이 작지만 틈은 아래 큰 줄들과 같아 한 덩어리), 130 (맨 위 가장자리의 작은 조각 2·3 판정)."
+}

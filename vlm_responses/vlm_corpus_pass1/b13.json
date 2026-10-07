@@ -1,0 +1,69 @@
+{
+  "posters": [
+    {
+      "file": "121_som.png",
+      "groups": [[1, 2, 3, 5, 6], [4], [7]],
+      "notes": "4번(서명)은 3번 오른쪽에 나란히 있고 가로로 겹치지 않아 따로 두었다. 7번은 판 아래 끝에 멀리 떨어져 있다."
+    },
+    {
+      "file": "122_som.png",
+      "groups": [[1, 2, 3, 4, 5, 6]],
+      "notes": "여섯 줄의 틈이 고르게 좁다."
+    },
+    {
+      "file": "123_som.png",
+      "groups": [[1, 2, 3, 4, 5], [6]],
+      "notes": "1번은 글자가 훨씬 작지만 2번과의 틈이 아래 줄들 사이 틈과 비슷해 같이 묶었다. 6번은 판 아래 끝."
+    },
+    {
+      "file": "124_som.png",
+      "groups": [[1, 2, 3], [4], [5]],
+      "notes": "1~3 사이 틈은 아주 좁고, 3과 4 사이, 4와 5 사이는 두 배 넘게 벌어져 끊었다. 4와 5 사이에는 상자 없는 줄이 하나 끼어 있다."
+    },
+    {
+      "file": "125_som.png",
+      "groups": [[1, 2]],
+      "notes": "두 상자가 맞닿아 있다."
+    },
+    {
+      "file": "126_som.png",
+      "groups": [[1], [2], [3], [4]],
+      "notes": "네 덩어리가 판 곳곳에 멀리 떨어져 있다."
+    },
+    {
+      "file": "127_som.png",
+      "groups": [[1]],
+      "notes": ""
+    },
+    {
+      "file": "128_som.png",
+      "groups": [[1, 2, 3], [4, 5], [6], [7]],
+      "notes": "1~3은 서로 맞닿아 있고 4·5도 맞닿아 있다. 둘 사이는 크게 벌어진다. 7번은 오른쪽 다른 자리, 6번은 판 아래 끝."
+    },
+    {
+      "file": "129_som.png",
+      "groups": [[1]],
+      "notes": ""
+    },
+    {
+      "file": "130_som.png",
+      "groups": [[1], [2], [3], [4]],
+      "notes": "2·3은 판 위쪽 가장자리에 아주 작게 나란히 있고 가로로 겹치지 않아 따로 두었다. 애매해서 끊었다."
+    }
+  ],
+  "files_opened": [
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/pass1_input/b13_input.json",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/121_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/122_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/123_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/124_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/125_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/126_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/127_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/128_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/129_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/130_som.png"
+  ],
+  "model": "Claude Opus 5 (claude-opus-5)",
+  "notes": "어려웠던 장: 124 (날짜 덩어리의 24.Okt.와 Nov. 사이에 상자 없는 줄이 끼어 틈이 커서 끊었다), 130 (위 가장자리의 2·3번 상자가 아주 작고 나란히 있어 판정이 애매했다 — 끊는 쪽으로 했다), 121 (서명 상자 4번이 3번과 세로로는 같은 높이지만 가로로 겹치지 않아 따로 두었다)."
+}

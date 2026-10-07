@@ -1,0 +1,69 @@
+{
+  "posters": [
+    {
+      "file": "151_som.png",
+      "groups": [[1], [2], [3, 4]],
+      "notes": "제목 덩어리(1)·날짜 덩어리(2)·작은 안내문(3,4). 3과 4는 상자가 서로 겹칠 만큼 붙어 있어 한 덩어리. 1-2 사이 틈이 각 덩어리 안 줄간격의 3배쯤이라 끊음."
+    },
+    {
+      "file": "152_som.png",
+      "groups": [[1], [2, 3], [4, 5]],
+      "notes": "2와 3은 같은 제목 영역을 덮는 겹친 상자라 한 덩어리. 4와 5도 'Kunsthalle Basel 20.Jan.-18.Febr. 1962' 한 블록을 덮는 겹친 상자. 1은 왼쪽 사진 가장자리의 작은 상자로 홀로."
+    },
+    {
+      "file": "153_som.png",
+      "groups": [[1], [2, 3, 4], [5], [6]],
+      "notes": "위쪽 KUNST/KREDIT/1984-85 는 줄간격이 고르게 이어져 한 덩어리. 5와 6은 한 줄 비는 문단 구분으로 보여 끊음(애매해서 끊는 쪽). 1은 왼쪽 단이라 가로로 안 겹쳐 따로."
+    },
+    {
+      "file": "154_som.png",
+      "groups": [[1], [2], [3, 4], [5]],
+      "notes": "1(Ausstellung)과 2는 가로로 전혀 안 겹치는 좌우 단이라 따로. 3과 4는 상자가 겹칠 만큼 붙어 한 덩어리. 5는 위 블록과 두 배 넘는 틈."
+    },
+    {
+      "file": "155_som.png",
+      "groups": [[1, 2], [3], [4], [5], [6]],
+      "notes": "1과 2는 상자가 맞닿아 왼쪽 제목 한 덩어리. 4와 5는 가운데·오른쪽 단으로 1,2 및 서로와 가로로 안 겹침. 3은 붓 사진 위의 작은 상자, 6은 오른쪽 가장자리 세로 글줄."
+    },
+    {
+      "file": "156_som.png",
+      "groups": [[1], [2], [3], [4]],
+      "notes": "154 와 같은 판형. 1은 왼쪽 단이라 따로. 2-3, 3-4 모두 덩어리 안 줄간격의 두 배 넘는 틈(가로 괘선 자리)."
+    },
+    {
+      "file": "157_som.png",
+      "groups": [[1, 2, 3, 4, 5, 6, 7, 8, 9, 10], [11]],
+      "notes": "왼쪽 아래 계단꼴 10줄은 줄간격이 고르게 이어져(틈 차이 없음) 한 덩어리. 정렬이 들쭉날쭉해도 가로로 겹치므로 나누지 않음. 11은 오른쪽 가장자리 세로 글줄."
+    },
+    {
+      "file": "158_som.png",
+      "groups": [[1], [2], [3]],
+      "notes": "1은 큰 제목 오른쪽 부분, 2는 그 아래 작은 안내 블록 — 틈이 2 안쪽 줄간격의 두 배 넘음. 3은 판 아래쪽으로 멀리 떨어짐."
+    },
+    {
+      "file": "159_som.png",
+      "groups": [[1], [2], [3, 4, 5], [6, 7], [8], [9]],
+      "notes": "6(Exposition)과 7은 한 줄 간격으로 이어져 한 덩어리, 아래 3(Mostra)+4+5 도 같은 꼴. 8은 이탈리아어 단으로 3-5 와 가로로 안 겹침. 2와 9는 큰 제목 글자 위에 생긴 외톨이 상자라 각각 홀로."
+    },
+    {
+      "file": "160_som.png",
+      "groups": [[1, 2], [3, 4, 5], [6]],
+      "notes": "1과 2는 같은 제목 영역의 겹친 상자. 3,4,5 는 'Verkauf ab' 부터 'Passage' 까지 줄간격이 48px 로 한결같아 한 덩어리이고, 제목(1,2)과는 빈 줄 하나만큼 벌어져 끊음. 6은 판 오른쪽 아래."
+    }
+  ],
+  "files_opened": [
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/pass2_input/b16_input.json",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/151_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/152_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/153_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/154_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/155_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/156_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/157_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/158_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/159_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/160_som.png"
+  ],
+  "model": "claude-opus-5",
+  "notes": "어려웠던 장: 153 (5와 6 사이가 한 줄 빈 문단 구분인지 이어진 본문인지 애매 — 규칙대로 끊음), 156 (2와 3 사이 틈이 작아 보였으나 글자 기준 공백이 안쪽 줄간격의 두 배를 넘어 끊음), 160 (1,2 와 3-5 사이가 빈 줄 하나 정도라 애매 — 끊음). 152·155·160 에는 같은 영역을 덮는 겹친 상자가 있어 겹친 것끼리 묶었다. 159 의 2·9 는 큰 제목 글자 위에 생긴 외톨이 상자라 홀로 두었다."
+}

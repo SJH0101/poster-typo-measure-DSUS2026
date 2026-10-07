@@ -1,0 +1,69 @@
+{
+  "posters": [
+    {
+      "file": "181_som.png",
+      "groups": [[1, 2], [3, 4, 5], [6, 7, 8]],
+      "notes": "상단 미술관명 2줄, 중앙 전시명 3줄, 하단 날짜·시간 3줄. 세 무리 사이 틈이 안쪽 틈보다 훨씬 넓다."
+    },
+    {
+      "file": "182_som.png",
+      "groups": [[1], [2, 3]],
+      "notes": "1(제목 블록) 아래 틈이 2와 3 사이 틈보다 3배 넘게 넓어 1을 끊었다."
+    },
+    {
+      "file": "183_som.png",
+      "groups": [[1], [2, 3, 4, 5, 6], [7], [8, 9], [10], [11, 12]],
+      "notes": "왼쪽 단과 오른쪽 단은 가로로 전혀 겹치지 않아 따로. 1과 2 사이 틈은 안쪽 틈의 약 2배로 애매해 규칙대로 끊었다."
+    },
+    {
+      "file": "184_som.png",
+      "groups": [[1, 2, 3, 4, 5], [6, 7, 8]],
+      "notes": "상단 작은 글 5줄이 한 덩어리, 큰 제목 3줄이 한 덩어리. 제목 줄들은 상자가 거의 맞닿아 있어 묶었다."
+    },
+    {
+      "file": "185_som.png",
+      "groups": [[1], [2, 3]],
+      "notes": "1(Lohse) 아래 틈이 매우 넓다. 2와 3 사이 틈은 2 안쪽 줄간과 비슷해 묶었다."
+    },
+    {
+      "file": "186_som.png",
+      "groups": [[1], [2, 3, 4], [5, 6, 7, 8, 9, 10]],
+      "notes": "1은 그림 바로 아래 한 줄로 떨어져 있다. 8 딱지가 다른 상자에 가려 잘 안 보였으나 위치상 시간 칸이라 보고 하단 시간표 덩어리에 넣었다."
+    },
+    {
+      "file": "187_som.png",
+      "groups": [[1, 2, 3], [4, 5, 6, 7, 8, 9, 10, 11], [12, 13, 14], [15]],
+      "notes": "작가 이름 목록(4-11)은 줄간이 고르게 좁아 한 덩어리. 15는 판 오른쪽 아래 홀로 있는 아주 작은 상자."
+    },
+    {
+      "file": "188_som.png",
+      "groups": [[1], [2, 3, 4]],
+      "notes": "1(큰 이름) 아래 틈이 2-3-4 사이 틈보다 8배 가까이 넓다."
+    },
+    {
+      "file": "189_som.png",
+      "groups": [[1], [2], [3, 4, 5, 6]],
+      "notes": "2(Kunstgewerbemuseum Zürich) 아래 틈이 3-6 사이 틈의 3배쯤 되어 끊었다. 2와 3 사이가 다소 애매했다."
+    },
+    {
+      "file": "190_som.png",
+      "groups": [[1, 2, 3], [4, 5, 6, 7]],
+      "notes": "제목 4줄(상자 1·2·3)은 색이 달라도 틈이 거의 없어 한 덩어리. 아래 정보 4줄이 따로."
+    }
+  ],
+  "files_opened": [
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/pass1_input/b19_input.json",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/181_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/182_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/183_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/184_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/185_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/186_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/187_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/188_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/189_som.png",
+    "/Users/junhyeoksong/.typo-mcp/vlm_corpus/som/190_som.png"
+  ],
+  "model": "Claude Opus 5 (claude-opus-5)",
+  "notes": "어려웠던 장: 183(1과 2 사이 틈이 안쪽 틈의 약 2배로 경계선 — 애매하면 끊는다는 규칙을 따랐다), 184(큰 제목 6·7·8 은 상자 사이 틈 비가 2 남짓이나 상자가 거의 맞닿아 한 덩어리로 보았다), 186(8번 딱지가 겹쳐 안 보임), 189(2와 3 사이 틈 판정)."
+}
