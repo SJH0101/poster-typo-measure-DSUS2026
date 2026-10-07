@@ -244,6 +244,15 @@ def main(argv=None):
         else:
             print('브로크만 캐시 또는 합의 참조가 없다 — grid_module 을 건너뛴다')
 
+    if R.get('vlm_input_form_baselines'):
+        Vb = R['vlm_input_form_baselines']   # 탐색용 — paper_numbers 10.4 의 A · C 값 (입력 형태 비교와 같은 30장)
+        if os.path.exists(os.path.join(os.path.expanduser(Vb['work']), 'sample.json')) \
+                and os.path.exists(os.path.expanduser(Vb['lines'])):
+            run('eval/vlm_input_form_baselines.py', '--work', Vb['work'], '--dir', Vb['dir'],
+                '--lines', Vb['lines'], '--c-pad-rule', Vb['c_pad_rule'], '--out', Vb['out'])
+        else:
+            print('vlm_input 표본 또는 깨끗한 세트 줄 파일이 없다 — vlm_input_form_baselines 를 건너뛴다')
+
     if R.get('split_only'):
         So = R['split_only']       # paper_numbers 6.3 · 12 절 — 2단계 합의 참조가 있어야 돈다
         if os.path.exists(os.path.join(os.path.expanduser(So['work']), 'lines.json')) \
@@ -314,6 +323,7 @@ def main(argv=None):
             + ([R['vlm_baseline']['out'], R['vlm_baseline'].get('opus55', {}).get('out')]
                if R.get('vlm_baseline') else [])
             + ([R['grid_module']['out']] if R.get('grid_module') else [])
+            + ([R['vlm_input_form_baselines']['out']] if R.get('vlm_input_form_baselines') else [])
             + ([R['split_only']['out']] if R.get('split_only') else [])
             + ([R['typography_rules']['out']] if R.get('typography_rules') else [])
             + ([R['idml']['out']] if R.get('idml') else []))

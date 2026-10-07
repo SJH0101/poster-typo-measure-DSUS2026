@@ -324,6 +324,14 @@
   "out": "docs/grid_module_result.json",
   "note": "가로 정렬 위치가 한 단위 u 의 정수배 간격으로 놓이는지 (paper_numbers 18절, 사전등록 ac6dec3). 정렬 위치의 개수를 유지한 대조를 쓴다 — grid_ndiv 의 대조 (ii) 와 다르다 (19절). 2단계 합의 참조가 있어야 돈다"
  },
+ "vlm_input_form_baselines": {
+  "work": "~/.typo-mcp/vlm_input",
+  "dir": "~/.typo-mcp/clean",
+  "lines": "~/.typo-mcp/clean-lines.json",
+  "c_pad_rule": "neighbor_half",
+  "out": "docs/vlm_input_form_baselines.json",
+  "note": "탐색용 · 사전등록 없음. 입력 형태 비교(docs/vlm_input_form_explore.json)와 같은 30장 · 같은 채점 정의로 VLM 없는 두 방식(A · C)의 블록 F1 — 원고 4-2 · paper_numbers 10.4 의 «규칙 기반 0.731 · 간격 기반 0.920». 깨끗한 세트와 vlm_input 의 sample.json 이 있어야 돈다"
+ },
  "split_only": {
   "work": "~/.typo-mcp/brockmann50",
   "posters": "docs/labeling/posters_for_labelers.json",
