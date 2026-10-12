@@ -528,7 +528,7 @@ def line_score(p, mblocks):
 # ── ③ 두 라벨러 일치 항목 (수정 1) ─────────────────────────────────
 
 def agreed_blocks(S, M):
-    """일치 블록 — 라벨러마다 제외 사유 없는 블록끼리 IoU ≥ 0.5 탐욕 1:1. (라벨러A 참조 블록, 라벨러B 참조 블록, [(송 번호, 신 번호)])."""
+    """일치 블록 — 라벨러마다 제외 사유 없는 블록끼리 IoU ≥ 0.5 탐욕 1:1. (라벨러A 참조 블록, 라벨러B 참조 블록, [(A 번호, B 번호)])."""
     RS, _ = refs_of(S, 'main'); RM, _ = refs_of(M, 'main')
     mr, _ = match_t([b['box'] for b in RS], [b['box'] for b in RM], IOU_MAIN)
     return RS, RM, sorted(mr.items())
