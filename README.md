@@ -4,7 +4,7 @@
 > 채점 스크립트 · 사전등록 · 사람 정답 라벨 · 결과 JSON 을 담는다. 실물 포스터 이미지는 들어 있지 않다.
 >
 > **논문 숫자의 근거는 [`docs/paper_numbers.md`](docs/paper_numbers.md) 다.** 원고에 적힌 수마다
-> 어느 파일 · 어느 함수 · 어느 줄에서 나왔는지와, 원고 1~5장 전수 대조(13~15 절)를 적어 두었다.
+> 어느 파일 · 어느 함수 · 어느 줄에서 나왔는지와, 원고 1–5장 전수 대조(13–15 절)를 적어 두었다.
 > 어떤 수를 확인하려면 그 문서를 먼저 본다.
 
 포스터 스캔 이미지에서 조판을 **재는** 파이프라인과, 그 파이프라인을 검증한 실험이다.
@@ -41,7 +41,7 @@ python -m venv .venv && .venv/bin/pip install -r requirements.txt
 `--remeasure` 가 Surya 줄 검출부터 다시 돌린다. 생략하면 `--cache-dir` 의 측정 캐시를 그대로 쓴다.
 채점 결과 `docs/synth_result.json` 이 논문 표 2 의 근거다.
 
-**소요 시간** (M4 맥북, 2026-09-21 실측): 합성 단계만 — 650장 생성 47초 + 재검출·채점 3분 29초 ≈ **약 4분**.
+**소요 시간** (M5 맥북, 2026-09-21 실측): 합성 단계만 — 650장 생성 47초 + 재검출·채점 3분 29초 ≈ **약 4분**.
 아래 `run_all` 전체는 측정 캐시가 있을 때 **약 28분**이고, 그 가운데 15분이 `eval/clean_a_sweep.py`,
 5분 30초가 `eval/constants_sweep4.py` 다. 자세한 기록은 `docs/REPRODUCTION.md`.
 
@@ -181,7 +181,7 @@ python -m venv .venv && .venv/bin/pip install -r requirements.txt
 
 ## 실험 기록
 
-- `docs/paper_numbers.md` — **논문 숫자의 근거** (값마다 파일 · 함수 · 줄, 원고 1~5장 전수 대조)
+- `docs/paper_numbers.md` — **논문 숫자의 근거** (값마다 파일 · 함수 · 줄, 원고 1–5장 전수 대조)
 - `docs/RESULTS_FOR_PAPER.md` — 논문에 들어갈 수치와 그 근거 파일 · 커밋
 - `docs/*_preregister.json` — 실험마다 돌리기 전에 단독 커밋한 사전등록
 - `docs/HANDOFF.md` — 연구 방향 · 파이프라인 구조 · 확정된 사실 · 보류한 작업
