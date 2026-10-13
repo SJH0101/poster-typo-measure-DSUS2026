@@ -151,7 +151,7 @@ python -m venv .venv && .venv/bin/pip install -r requirements.txt
 | 자료 | 출처 | 상태 |
 |---|---|---|
 | 합성 포스터 650장 | 이 저장소의 `eval/synth_gen.py` 가 만든다 (이미지 자체는 넣지 않는다) | 코드와 같은 라이선스 |
-| 실물 포스터 이미지 (브로크만 · 호프만 · 로제 · 루더) | 취리히 디자인미술관 eMuseum | **저장소에 없다.** 판마다의 원본 URL 은 `docs/corpus_list/posters.csv` 의 `url` 열에 있다. 내려받아 쓰는 조건은 eMuseum 을 따른다 (확인 중) |
+| 실물 포스터 이미지 (브로크만 · 호프만 · 로제 · 루더) | 취리히 디자인미술관 eMuseum | **저장소에 없다.** 판마다의 원본 URL 은 `docs/corpus_list/posters.csv` 의 `url` 열에 있다. 내려받아 쓰는 조건은 eMuseum 의 이용 조건을 따른다. |
 | 사람 가이드 라벨 (브로크만 50장, 2인) | **논문 저자 2인이 작성한 정답 라벨**이다 (`labels/guides/`) | 이름은 «라벨러A» · «라벨러B» 로 적는다. 좌표와 상태값만 들어 있고 이미지는 없다 |
 | VLM 묶음 `boxes/clean_vlm_pass1·2.json` | **Claude Opus 5(`claude-opus-5`)의 출력**이다. Anthropic 이용약관을 따른다 | 합성 세트 묶기 비교(`docs/clean_result.json`)를 다시 내려면 필요해 남겼다 |
 | VLM 묶음 `boxes/brockmann_vlm_split_pass1·2.json` | claude-opus-5 출력. **2026-09-21 에 새로 받은 두 회차**다 — 사전등록 수정 16 의 갈린 줄(910개)로 번호 이미지를 다시 그리고, 사람 상자를 본 적 없는 서로 모르는 새 세션에 같은 지시문(`docs/brockmann_vlm_prompt.md`) · 같은 모델로 받았다 | 2단계 채점(`docs/brockmann_stage2_result.json`)에 필요해 남겼다. **봉인** — 채점 밖에서는 열지 않는다. 옛 회차(갈리지 않은 줄)는 저장소 밖에 두고 sha256 만 `docs/sealed_hashes.md` 에 남겼다 |
